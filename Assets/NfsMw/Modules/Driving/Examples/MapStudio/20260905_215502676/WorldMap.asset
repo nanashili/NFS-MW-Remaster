@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097b7fc77b7d14eac823cd58726255cb, type: 3}
+  m_Name: WorldMap
+  m_EditorClassIdentifier: NfsMwRemaster.Maps::NfsMwRemaster.Maps.MapDefinition
+  schema: 1
+  id: 0007d3aadf8c4d16b95c5e43b5ba95a1
+  roads: {fileID: 11400000, guid: fc6ac2002d9904cf0858ded9e1817ccc, type: 2}
+  districts: []
+  frame:
+    origin:
+      x: 0
+      y: 0
+      z: 0
+    unitsPerMeter: 1
+    yawDegrees: 0
+    mirrorEast: 0
+  tileSize: 128
+  simplifyMeters: 0.25
+  levels:
+  - lane:
+      value: dd75293079e84e9a91eca910754ad04c
+    level: 0
+    structure: 0
+  - lane:
+      value: 78116abd73f143f9b76dbc2ed0ce8807
+    level: 0
+    structure: 0
+  - lane:
+      value: 227515ac02e74738bea96e4e06f6fe9f
+    level: 0
+    structure: 0
+  - lane:
+      value: aeb3d49ac857457eafed6f82c03592fa
+    level: 0
+    structure: 0
+  - lane:
+      value: 654223eb2ed24ef79179de971708dc88
+    level: 1
+    structure: 1
+  - lane:
+      value: 69231a889ee44bc181ad65438b258e09
+    level: -1
+    structure: 2
+  style: {fileID: 11400000, guid: 0b7a76844964c4e1e89d11fb3eba7d1f, type: 2}
+  publication: {fileID: 11400000, guid: 7006c6ec62f2d4879ac198d4cd89b909, type: 2}

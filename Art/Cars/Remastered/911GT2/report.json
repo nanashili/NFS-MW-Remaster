@@ -1,0 +1,101 @@
+{
+  "car": "911GT2",
+  "sourceSha256": "81a83cfed299f64311762b9900812b9a6a2359136f63c87895afb7d82d0124ab",
+  "stockParts": [
+    "911GT2_KIT00_BODY_A",
+    "911GT2_KIT00_FRONT_LEFT_WINDOW_A",
+    "911GT2_KIT00_FRONT_RIGHT_WINDOW_A",
+    "911GT2_KIT00_FRONT_WINDOW_A",
+    "911GT2_KIT00_INTERIOR_A",
+    "911GT2_KIT00_LEFT_BRAKELIGHT_A",
+    "911GT2_KIT00_LEFT_HEADLIGHT_A",
+    "911GT2_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "911GT2_KIT00_REAR_LEFT_WINDOW_A",
+    "911GT2_KIT00_REAR_RIGHT_WINDOW_A",
+    "911GT2_KIT00_REAR_WINDOW_A",
+    "911GT2_KIT00_RIGHT_BRAKELIGHT_A",
+    "911GT2_KIT00_RIGHT_HEADLIGHT_A",
+    "911GT2_KIT00_RIGHT_HEADLIGHT_GLASS_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 86177,
+      "meshObjects": 18
+    },
+    {
+      "lod": 1,
+      "triangles": 13526,
+      "meshObjects": 18
+    },
+    {
+      "lod": 2,
+      "triangles": 4715,
+      "meshObjects": 18
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.1299999952316284,
+        0.7381687164306641,
+        0.23499999940395355
+      ],
+      "radius": 0.3269692063331604,
+      "width": 0.24544711783528328
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.1299999952316284,
+        -0.7381687164306641,
+        0.23499999940395355
+      ],
+      "radius": 0.3269692063331604,
+      "width": 0.24544711783528328
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.2200000286102295,
+        0.788168728351593,
+        0.23499999940395355
+      ],
+      "radius": 0.3269692063331604,
+      "width": 0.24544711783528328
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.2200000286102295,
+        -0.788168728351593,
+        0.23499999940395355
+      ],
+      "radius": 0.3269692063331604,
+      "width": 0.24544711783528328
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.3550000190734863,
+    "RIDE_HEIGHT": [
+      8.5,
+      8.5
+    ],
+    "TRACK_WIDTH": [
+      1.4850000143051147,
+      1.5199999809265137
+    ],
+    "FRONT_AXLE": 1.1299999952316284,
+    "vehicle": "911gt2",
+    "record": "0xAFA210F0/0x9B3EF46F"
+  },
+  "sourceTextureCount": 30,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Porsche/911 GT2/Remastered.glb"
+}

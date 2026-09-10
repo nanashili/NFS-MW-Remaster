@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394df6ef4b31484ab100e8272275d635, type: 3}
+  m_Name: Definition
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleDefinition
+  vehicleId: coupe-rwd
+  variantId: street
+  manufacturer: Framework
+  model: Coupe 390
+  year: 2005
+  factoryTuning: {fileID: 11400000, guid: 2cad4d9918de641959b820c8b45e402b, type: 2}
+  prefab: {fileID: 8591924568928243624, guid: acbd1fb5d21a04675802f05c8ac5bf9d, type: 3}
+  performanceCatalog: {fileID: 11400000, guid: d9c919e793e0a47f49fd149aa5fcf592, type: 2}
+  customizationCatalog: {fileID: 11400000, guid: 8790c89083b1c436593999f1a490c54d, type: 2}
+  capabilities: 255
+  supportedSlots:
+  - front-bumper
+  - rear-bumper
+  - paint
+  - glass
+  - wheels
+  tuningLimits: []
+  referenceEvidence: Original approximation; no measured reference-game calibration.

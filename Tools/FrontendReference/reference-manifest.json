@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "analysis_evidence_incomplete",
+  "provisionalBehaviorTarget": "Unmodified MW2005 PC 1.3; not verified as supplied screenshot provenance",
+  "reference": {
+    "id": "user-main-career-still-01",
+    "file": "MainMenu.user-reference.png",
+    "sha256": "e449ec0704eaa2fd1d2604a216895fb875c098a578021c9dced2693dbd1d5ca1",
+    "source": "User supplied in this task, 2026-09-05",
+    "width": 1280,
+    "height": 720,
+    "visibleLanguage": "ru",
+    "visibleSelection": "Career",
+    "platform": null,
+    "edition": null,
+    "version": null,
+    "mods": null,
+    "inputDevice": null,
+    "visibleHints": ["Q: Exit", "1: Statistics"],
+    "referenceOnlyNotRuntimeAsset": true
+  },
+  "annotations": {
+    "method": "Approximate manual visual annotations, not segmentation or original-game coordinates",
+    "coordinateSystem": "top-left image origin; x right; y down; rectangles are x,y,width,height pixels",
+    "edgeUncertaintyPixels": 8,
+    "rectangles": [
+      { "id": "hero-car-no-shadow", "rect": [170, 182, 655, 282] },
+      { "id": "logo", "rect": [607, 44, 468, 102] },
+      { "id": "screen-heading", "rect": [772, 496, 307, 42] },
+      { "id": "selected-brackets", "rect": [788, 540, 112, 112] },
+      { "id": "selected-icon", "rect": [805, 559, 79, 76] },
+      { "id": "selected-title", "rect": [779, 660, 132, 32] },
+      { "id": "neighbors-and-arrow", "rect": [904, 564, 171, 64] },
+      { "id": "alias-panel", "rect": [178, 553, 276, 105] },
+      { "id": "exit-hint", "rect": [195, 663, 149, 41] },
+      { "id": "statistics-hint", "rect": [355, 663, 198, 41] }
+    ]
+  },
+  "camera": {
+    "shot": "MainMenuIdle",
+    "positionMeters": null,
+    "rotationDegrees": null,
+    "fovDegrees": null,
+    "rollDegrees": null,
+    "targetMeters": null,
+    "vehicleSteerDegrees": null,
+    "status": "Only low front-three-quarter composition is observed; numeric pose is unknown"
+  },
+  "requiredRecordings": [
+    { "id": "TitleToMain", "file": null },
+    { "id": "MainMenuIdle", "file": null },
+    { "id": "CarouselBothDirections", "file": null },
+    { "id": "MainToCareerAndBack", "file": null },
+    { "id": "MainToChallengeSeriesAndBack", "file": null },
+    { "id": "MainToQuickRaceAndBack", "file": null },
+    { "id": "MainToMyCarsAndBack", "file": null },
+    { "id": "MainToAliasManagerAndBack", "file": null },
+    { "id": "MainToOptionsAndNestedBack", "file": null },
+    { "id": "VehicleSelectionAndCustomization", "file": null },
+    { "id": "VehicleShowcaseOrbitZoomReset", "file": null },
+    { "id": "RapidTransitionInterruptions", "file": null },
+    { "id": "InputRepeatAndDeviceBehavior", "file": null },
+    { "id": "IdleAttractAndMusicContinuity", "file": null },
+    { "id": "ConsoleComparison", "file": null }
+  ],
+  "transitionMeasurementTemplate": {
+    "sourceRecordingId": null,
+    "commandTimestampSeconds": null,
+    "cameraStartTimestampSeconds": null,
+    "cameraSettleTimestampSeconds": null,
+    "uiStartTimestampSeconds": null,
+    "uiSettleTimestampSeconds": null,
+    "soundOnsetTimestampSeconds": null,
+    "keyframes": [
+      { "fraction": 0.0, "timestampSeconds": null, "file": null },
+      { "fraction": 0.25, "timestampSeconds": null, "file": null },
+      { "fraction": 0.5, "timestampSeconds": null, "file": null },
+      { "fraction": 0.75, "timestampSeconds": null, "file": null },
+      { "fraction": 1.0, "timestampSeconds": null, "file": null }
+    ],
+    "fittedCameraPath": null,
+    "fitIsOriginalGameData": false,
+    "status": "unmeasured"
+  }
+}

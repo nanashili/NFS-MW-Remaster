@@ -1,0 +1,102 @@
+{
+  "car": "COPSUV",
+  "sourceSha256": "355b0b21979255f90823f06fcced50f208960d23b1f97769044ca6e89237c1fb",
+  "stockParts": [
+    "COPSUV_KIT00_DAMAGE0_BODY_A",
+    "COPSUV_KIT00_DAMAGE0_COP_LIGHTS_A",
+    "COPSUV_KIT00_DAMAGE0_FRONT_BUMPER_A",
+    "COPSUV_KIT00_DAMAGE0_FRONT_WINDOW_A",
+    "COPSUV_KIT00_DAMAGE0_HOOD_A",
+    "COPSUV_KIT00_DAMAGE0_LEFT_BRAKELIGHT_A",
+    "COPSUV_KIT00_DAMAGE0_LEFT_DOOR_A",
+    "COPSUV_KIT00_DAMAGE0_LEFT_HEADLIGHT_A",
+    "COPSUV_KIT00_DAMAGE0_LEFT_REAR_DOOR_A",
+    "COPSUV_KIT00_DAMAGE0_REAR_BUMPER_A",
+    "COPSUV_KIT00_DAMAGE0_RIGHT_BRAKELIGHT_A",
+    "COPSUV_KIT00_DAMAGE0_RIGHT_DOOR_A",
+    "COPSUV_KIT00_DAMAGE0_RIGHT_HEADLIGHT_A",
+    "COPSUV_KIT00_DAMAGE0_RIGHT_REAR_DOOR_A",
+    "COPSUV_KIT00_DAMAGE0_TRUNK_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 75001,
+      "meshObjects": 19
+    },
+    {
+      "lod": 1,
+      "triangles": 8120,
+      "meshObjects": 19
+    },
+    {
+      "lod": 2,
+      "triangles": 2831,
+      "meshObjects": 19
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.5499999523162842,
+        0.9076841473579407,
+        0.2800000011920929
+      ],
+      "radius": 0.4112691283226013,
+      "width": 0.31734474375844
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.5499999523162842,
+        -0.9076841473579407,
+        0.2800000011920929
+      ],
+      "radius": 0.4112691283226013,
+      "width": 0.31734474375844
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.3600000143051147,
+        0.9176841378211975,
+        0.2800000011920929
+      ],
+      "radius": 0.4112691283226013,
+      "width": 0.31734474375844
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.3600000143051147,
+        -0.9176841378211975,
+        0.2800000011920929
+      ],
+      "radius": 0.4112691283226013,
+      "width": 0.31734474375844
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 3.299999952316284,
+    "RIDE_HEIGHT": [
+      15,
+      15
+    ],
+    "TRACK_WIDTH": [
+      1.7999999523162842,
+      1.7999999523162842
+    ],
+    "FRONT_AXLE": 1.7000000476837158,
+    "vehicle": "copsuv",
+    "record": "0xAFA210F0/0x38B38226"
+  },
+  "sourceTextureCount": 17,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Police/COPSUV/Remastered.glb"
+}

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e8712a7db4d4190b532f81d3b89053, type: 3}
+  m_Name: Night
+  m_EditorClassIdentifier: NfsMwRemaster.Lighting::NfsMwRemaster.Lighting.AtmosphereProfile
+  schemaVersion: 2
+  id: 3a5ed2c6157f41219b33d6c5ada22dba
+  intent: Synthetic industrial district, neutral baseline. Art direction requires review.
+  referenceNotes: 
+  semanticVariant: dry-night
+  look:
+    sky: {r: 0.035, g: 0.05, b: 0.085, a: 1}
+    equator: {r: 0.02, g: 0.025, b: 0.04, a: 1}
+    ground: {r: 0, g: 0, b: 0, a: 1}
+    keyColor: {r: 1, g: 1, b: 1, a: 1}
+    fogColor: {r: 0.025, g: 0.035, b: 0.06, a: 1}
+    filter: {r: 1, g: 1, b: 1, a: 1}
+    keyIntensity: 0.25
+    skyModel: 1
+    exposureEV100: 4
+    automaticExposure: 1
+    keyEuler: {x: 75, y: -30, z: 0}
+    fog: 1
+    fogMode: 3
+    fogDensity: 0.012
+    fogStart: 50
+    fogEnd: 500
+    exposure: 0.6
+    contrast: 0
+    saturation: 0
+    bloom: 0.12
+    vignette: 0
+    tonemapping: 2
+    reflectionIntensity: 1
+  lightingSeconds: 1
+  fogSeconds: 2
+  exposureSeconds: 1
+  reflectionSeconds: 2
+  bakedScenarioId: 
+  allowRealtimeFallback: 1
+  lowFixtureIntensity: 0.6
+  lowDecorativeShadows: 0
+  realtimeBudget: 32
+  shadowBudget: 8

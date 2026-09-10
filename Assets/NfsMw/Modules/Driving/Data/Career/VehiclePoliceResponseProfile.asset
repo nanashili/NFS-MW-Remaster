@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e8ac75a0a6844159c700284e58b202, type: 3}
+  m_Name: VehiclePoliceResponseProfile
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehiclePoliceResponseProfile
+  maxHeatLevel: 5
+  tiers:
+  - heatLevel: 1
+    maxUnits: 2
+    minimumPursuitUnits: 1
+    bustingUnitCount: 1
+    detectionRadius: 70
+    disengageRadius: 150
+    searchDuration: 8
+    cooldownDuration: 4
+    interceptLookAhead: 0.7
+    aggression: 0.45
+    ramForce: 8
+    boxStrength: 2
+    topSpeedMultiplier: 1
+    accelerationMultiplier: 1
+    bustRadius: 3.8
+    bustHoldDuration: 1.2
+    bustSpeedKph: 12
+  - heatLevel: 2
+    maxUnits: 3
+    minimumPursuitUnits: 2
+    bustingUnitCount: 1
+    detectionRadius: 80
+    disengageRadius: 165
+    searchDuration: 10
+    cooldownDuration: 5
+    interceptLookAhead: 1
+    aggression: 0.6
+    ramForce: 10
+    boxStrength: 3
+    topSpeedMultiplier: 1.05
+    accelerationMultiplier: 1.08
+    bustRadius: 3.9
+    bustHoldDuration: 1.15
+    bustSpeedKph: 13
+  - heatLevel: 3
+    maxUnits: 4
+    minimumPursuitUnits: 3
+    bustingUnitCount: 2
+    detectionRadius: 95
+    disengageRadius: 185
+    searchDuration: 12
+    cooldownDuration: 6
+    interceptLookAhead: 1.3
+    aggression: 0.72
+    ramForce: 13
+    boxStrength: 4
+    topSpeedMultiplier: 1.1
+    accelerationMultiplier: 1.16
+    bustRadius: 4
+    bustHoldDuration: 1.1
+    bustSpeedKph: 14
+  - heatLevel: 4
+    maxUnits: 5
+    minimumPursuitUnits: 4
+    bustingUnitCount: 2
+    detectionRadius: 110
+    disengageRadius: 210
+    searchDuration: 15
+    cooldownDuration: 8
+    interceptLookAhead: 1.6
+    aggression: 0.84
+    ramForce: 16
+    boxStrength: 5
+    topSpeedMultiplier: 1.15
+    accelerationMultiplier: 1.24
+    bustRadius: 4.1
+    bustHoldDuration: 1.05
+    bustSpeedKph: 15
+  - heatLevel: 5
+    maxUnits: 6
+    minimumPursuitUnits: 5
+    bustingUnitCount: 2
+    detectionRadius: 125
+    disengageRadius: 240
+    searchDuration: 20
+    cooldownDuration: 10
+    interceptLookAhead: 2
+    aggression: 0.94
+    ramForce: 20
+    boxStrength: 6
+    topSpeedMultiplier: 1.22
+    accelerationMultiplier: 1.32
+    bustRadius: 4.2
+    bustHoldDuration: 1
+    bustSpeedKph: 16

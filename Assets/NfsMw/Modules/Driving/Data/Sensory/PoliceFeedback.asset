@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc156df6329a4402abed3487ffff67e3, type: 3}
+  m_Name: PoliceFeedback
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.PoliceSensoryProfile
+  sirens:
+  - {fileID: 8300000, guid: 11114dae9ae3948b8bfe8af9c1d817cf, type: 3}
+  - {fileID: 8300000, guid: 139a282aec5c546f49ac585cd9d061c1, type: 3}
+  - {fileID: 8300000, guid: 46109ebc1d72b4ac18ee5bcec177299a, type: 3}
+  radio:
+  - kind: 0
+    variants:
+    - {fileID: 8300000, guid: 24422f6f98fa54211940b7ff01968d5a, type: 3}
+    subtitle: Vehicle observed.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 1
+    variants:
+    - {fileID: 8300000, guid: 8f193b190964047ad9e78500d07f5d88, type: 3}
+    subtitle: Pull over and switch off the engine.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 2
+    variants:
+    - {fileID: 8300000, guid: 3458d77708c2544e687c0c662a293f6d, type: 3}
+    subtitle: Pursuit active.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 3
+    variants:
+    - {fileID: 8300000, guid: 83c3e642fb68f4735896ab56c527e098, type: 3}
+    subtitle: Visual contact lost. Searching.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 4
+    variants:
+    - {fileID: 8300000, guid: d5e54f18bbfc64c9380275126cbf3b13, type: 3}
+    subtitle: Search area cooling down.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 5
+    variants:
+    - {fileID: 8300000, guid: bf767fdf5d6064f939da3b7e1ddc5ab2, type: 3}
+    subtitle: Additional units responding.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 6
+    variants:
+    - {fileID: 8300000, guid: eeea9fdd99c774e4ca61d8eeb4c52d6c, type: 3}
+    subtitle: Roadblock deployed.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 7
+    variants:
+    - {fileID: 8300000, guid: 5c71393b1ba2f4745ac61550957f0c29, type: 3}
+    subtitle: Spike strip deployed.
+    priority: 20
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 8
+    variants:
+    - {fileID: 8300000, guid: 607c24037561a40a996d04d5a5af2963, type: 3}
+    subtitle: Unit disabled.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 9
+    variants:
+    - {fileID: 8300000, guid: 41cd3a67d1deb4fa1bf7b548095469e9, type: 3}
+    subtitle: Heavy collision reported.
+    priority: 60
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 10
+    variants:
+    - {fileID: 8300000, guid: 572ab8d53955548948928ea134121e06, type: 3}
+    subtitle: Pursuit ended. Suspect escaped.
+    priority: 10
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 11
+    variants:
+    - {fileID: 8300000, guid: ec51e87846c904c0d9f0997d3b2bccd7, type: 3}
+    subtitle: Suspect arrested.
+    priority: 10
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5
+  - kind: 12
+    variants:
+    - {fileID: 8300000, guid: 2858436c21ba3415e8513a0d1b26c262, type: 3}
+    subtitle: Fine payment accepted.
+    priority: 10
+    cooldown: 12
+    expiry: 5
+    interruptible: 1
+    minimumHeat: 0
+    maximumHeat: 5

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905403ef1fc0948c3a95b211c0674aab, type: 3}
+  m_Name: Profile
+  m_EditorClassIdentifier: NfsMwRemaster.Driving.Editor::NfsMwRemaster.Driving.Editor.VehicleProfileDraft
+  schema: 2
+  id: 928d6caa527b42bcb72e06a08ad88871
+  catalog: {fileID: 0}
+  modelId: hatch-fwd
+  variantId: street
+  modelYear: 2005
+  localizationKey: 
+  tags: []
+  description: Original authored Fwd vehicle. Shared production runtime; no reference-game physics calibration.
+  provenance: 
+  vehiclePrefab: {fileID: 6694986953987785499, guid: 5e6a28d37847345399da447630585922, type: 3}
+  tuning: {fileID: 11400000, guid: 6755e229cf1354bf185e9aa8b1f3b0f4, type: 2}
+  runtimeDefinition: {fileID: 11400000, guid: 1b4c690a0d9904bb399cebe649447ace, type: 2}
+  physicsLabSetup: {fileID: 11400000, guid: b726311808f494f2bbc54760fa997632, type: 2}
+  physicsLabExperiment: {fileID: 11400000, guid: 5a2a9b551baa241e9a55e9337a53cff4, type: 2}
+  audio: {fileID: 11400000, guid: 09bae162943f344ed9f2b0a5370c6c7f, type: 2}
+  audioAnalysis: {fileID: 0}
+  customization: {fileID: 11400000, guid: 9da7fea610f034ceb98a427117ddbb3f, type: 2}
+  performance: {fileID: 11400000, guid: 6cf69b06524ba4e5ab57baceac6da881, type: 2}
+  thumbnail: {fileID: 0}
+  price: 0
+  availableInStore: 0
+  storeCatalog: {fileID: 0}
+  budget:
+    maximumLod0Triangles: 120000
+    maximumMaterialSlots: 32
+    maximumTextureDimension: 4096
+    maximumAudioMiB: 64
+    requireLods: 1
+    enforceAsErrors: 0
+  assembly:
+    bodySource: {fileID: 5338748890210569906, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+    presentationSource: {fileID: 2083633152062813950, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+    mirrorSource: {fileID: 5861840738772983803, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+    excludedBodyRenderers: []
+    bodyPosition: {x: 0, y: 0, z: 0}
+    bodyEuler: {x: 0, y: 0, z: 0}
+    bodyScale: {x: 1, y: 1, z: 1}
+    colliderCenter: {x: 0, y: 0.1, z: 0}
+    colliderSize: {x: 1.75, y: 0.5, z: 4.1}
+    wheels:
+    - visualSource: {fileID: 9082206521042865577, guid: a0e0640480cb6420c9d628aa2816b369, type: 3}
+      suspensionAnchor: {x: -0.82, y: -0.13, z: 1.3}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 1
+      handbrake: 0
+    - visualSource: {fileID: 9082206521042865577, guid: a0e0640480cb6420c9d628aa2816b369, type: 3}
+      suspensionAnchor: {x: 0.82, y: -0.13, z: 1.3}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 1
+      handbrake: 0
+    - visualSource: {fileID: 9082206521042865577, guid: a0e0640480cb6420c9d628aa2816b369, type: 3}
+      suspensionAnchor: {x: -0.82, y: -0.13, z: -1.3}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 0
+      handbrake: 1
+    - visualSource: {fileID: 9082206521042865577, guid: a0e0640480cb6420c9d628aa2816b369, type: 3}
+      suspensionAnchor: {x: 0.82, y: -0.13, z: -1.3}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 0
+      handbrake: 1
+    sockets:
+    - id: front-bumper
+      category: 0
+      stockRenderers:
+      - {fileID: 9221931350181656283, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+      position: {x: 0, y: 0.02, z: 2.05}
+      euler: {x: 0, y: 0, z: 0}
+    - id: rear-bumper
+      category: 0
+      stockRenderers:
+      - {fileID: 2143911144630608730, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+      position: {x: 0, y: 0.02, z: -2.05}
+      euler: {x: 0, y: 0, z: 0}
+    - id: paint
+      category: 5
+      stockRenderers:
+      - {fileID: 3533415917172158270, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    - id: glass
+      category: 7
+      stockRenderers:
+      - {fileID: 6676721348190322002, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+      - {fileID: 8363783335785380862, guid: 7acb6c5c023844a69bb8a572f6dd5c8a, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    includePlayerInput: 1
+  generatedProduct: {fileID: 0}
+  generatedFingerprint: 
+  generatedOutputHash: 

@@ -1,0 +1,102 @@
+{
+  "car": "ELISE",
+  "sourceSha256": "b7668ae02e1e05ab26296013e39c6cc2476a4ea89e0f2fd5b0b7273e062f6403",
+  "stockParts": [
+    "ELISE_KIT00_BODY_A",
+    "ELISE_KIT00_FRONT_LEFT_WINDOW_A",
+    "ELISE_KIT00_FRONT_RIGHT_WINDOW_A",
+    "ELISE_KIT00_FRONT_WINDOW_A",
+    "ELISE_KIT00_HOOD_A",
+    "ELISE_KIT00_INTERIOR_A",
+    "ELISE_KIT00_LEFT_BRAKELIGHT_A",
+    "ELISE_KIT00_LEFT_HEADLIGHT_A",
+    "ELISE_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "ELISE_KIT00_LEFT_SIDE_MIRROR_A",
+    "ELISE_KIT00_REAR_WINDOW_A",
+    "ELISE_KIT00_RIGHT_BRAKELIGHT_A",
+    "ELISE_KIT00_RIGHT_HEADLIGHT_A",
+    "ELISE_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "ELISE_KIT00_RIGHT_SIDE_MIRROR_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 84825,
+      "meshObjects": 19
+    },
+    {
+      "lod": 1,
+      "triangles": 13541,
+      "meshObjects": 19
+    },
+    {
+      "lod": 2,
+      "triangles": 4726,
+      "meshObjects": 19
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.1100000143051147,
+        0.7313646674156189,
+        0.23000000417232513
+      ],
+      "radius": 0.30937761068344116,
+      "width": 0.21820021234452724
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.1100000143051147,
+        -0.7313646674156189,
+        0.23000000417232513
+      ],
+      "radius": 0.30937761068344116,
+      "width": 0.21820021234452724
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.190000057220459,
+        0.7613646388053894,
+        0.23000000417232513
+      ],
+      "radius": 0.30937761068344116,
+      "width": 0.21820021234452724
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.190000057220459,
+        -0.7613646388053894,
+        0.23000000417232513
+      ],
+      "radius": 0.30937761068344116,
+      "width": 0.21820021234452724
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.3499999046325684,
+    "RIDE_HEIGHT": [
+      8,
+      8
+    ],
+    "TRACK_WIDTH": [
+      1.465000033378601,
+      1.5219999551773071
+    ],
+    "FRONT_AXLE": 1.1299999952316284,
+    "vehicle": "elise",
+    "record": "0xAFA210F0/0x313D4936"
+  },
+  "sourceTextureCount": 35,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Lotus/Elise/Remastered.glb"
+}

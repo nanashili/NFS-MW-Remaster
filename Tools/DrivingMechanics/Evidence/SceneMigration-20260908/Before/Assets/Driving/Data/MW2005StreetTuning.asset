@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac296239dbe2842f5a57ca32dba789f7, type: 3}
+  m_Name: MW2005StreetTuning
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleTuning
+  displayName: MW Street Racer
+  chassis:
+    mass: 1450
+    centerOfMass: {x: 0, y: -0.34, z: 0.05}
+    maxSpeedKph: 320
+    rollingResistance: 0.018
+    yawInertiaMultiplier: 1
+  engine:
+    idleRpm: 900
+    redlineRpm: 7200
+    maxTorqueNewtonMeters: 390
+    peakTorqueRpm: 4200
+    engineInertia: 0.22
+    drivelineEfficiency: 0.88
+    finalDrive: 3.42
+    gearRatios:
+    - 3.1
+    - 2.14
+    - 1.48
+    - 1.16
+    - 0.94
+    - 0.78
+    reverseRatio: -3.2
+    shiftUpRpm: 6800
+    shiftDownRpm: 2250
+    shiftDuration: 0.13
+    engineBrakingTorque: 42
+    nitrousTorque: 190
+    nitrousFuelSeconds: 8
+  tires:
+    wheelRadius: 0.34
+    wheelWidth: 0.26
+    suspensionRestLength: 0.32
+    suspensionTravel: 0.18
+    springRate: 31000
+    damperRate: 4700
+    wheelMass: 19
+    longitudinalGrip: 1.16
+    lateralGrip: 1.22
+    handbrakeRearGrip: 0.3
+    peakLongitudinalSlip: 0.105
+    peakLateralSlipRadians: 0.115
+    postPeakGrip: 0.78
+    rollingResistance: 0.014
+  controls:
+    maxSteerAngle: 31
+    highSpeedSteerScale: 0.38
+    highSpeedSteerKph: 185
+    steeringResponse: 7.5
+    throttleResponse: 6.5
+    brakeResponse: 11
+    steeringExponent: 1.35
+    autoReverseSpeedKph: 4
+    serviceBrakeTorque: 5200
+    handbrakeTorque: 6200
+    frontBrakeBias: 0.64
+  assists:
+    tractionControl: 1
+    tractionSlipLimit: 0.16
+    abs: 1
+    absSlipLimit: 0.19
+    stabilityControl: 1
+    stabilityStrength: 0.42
+    driftYawStrength: 0.35
+    driftSpeedKph: 25
+  aero:
+    airDensity: 1.225
+    dragCoefficient: 0.32
+    frontalArea: 2.05
+    downforceCoefficient: 0.85
+    downforceBalance: 0.5

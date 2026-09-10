@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf00569fce8b42e3a8525f5dbde3c54, type: 3}
+  m_Name: GripSetup
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.RacingVehicleSetup
+  id: fefaba7258554dac93e18ff504a8a924
+  tuning: {fileID: 11400000, guid: 676351ee5fd734e4e9db116914a53c7f, type: 2}
+  upgrades: []
+  physicsPrefab: {fileID: 0}
+  dimensions: {x: 1.8, y: 1.2, z: 4.3}
+  wheelbase: 2.65
+  trackWidth: 1.55
+  fixedStep: 0.02
+  controller:
+    minimumLookahead: 5
+    lookaheadSeconds: 0.5
+    speedGain: 0.6
+    integralGain: 0.06
+    yawDamping: 0.1

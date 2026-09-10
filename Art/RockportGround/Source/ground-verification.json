@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "layers": [
+    {
+      "layer": "roads",
+      "instances": 11764,
+      "triangles": 920152,
+      "min": [
+        -4875.6382283028215,
+        -20.383035650476813,
+        -4650.26171875
+      ],
+      "max": [
+        1466.333984375,
+        270.4058890417218,
+        1029.9068603515625
+      ],
+      "missingTextures": [
+        "61a56b42"
+      ],
+      "gltfSha256": "701480b4fe2c302f96ac458680b54416025954896a2f07d6c99ba58e280268a9",
+      "binarySha256": "ecdefd230f45215f2d8bbad8f6bbee7485ed45131240d499c880e2b96dc7dfeb"
+    },
+    {
+      "layer": "terrain",
+      "instances": 3334,
+      "triangles": 213889,
+      "min": [
+        -4916.8291015625,
+        -29.323158264160156,
+        -5270.22607421875
+      ],
+      "max": [
+        1460.5,
+        456.48101806640625,
+        953.7113647460938
+      ],
+      "missingTextures": [],
+      "gltfSha256": "ca511879f26e47ce5afc5f8b8f038b09c358ec56551e12baad4643d1e9c591c9",
+      "binarySha256": "378f1351a568e00f4f59ba6aa1201597562a3e3d5cc4d49a06f2501e6f703df8"
+    }
+  ],
+  "rasterValidation": {
+    "independentSampleLocations": 2000,
+    "coveredSamplesChecked": 1999,
+    "maximumInterpolationErrorMetres": 1.4115735439190757e-05,
+    "syntheticLayersAndCoverage": "PASS"
+  },
+  "tileValidation": {
+    "tiles": 39,
+    "coveredSamplesIncludingSharedBorders": 14272025,
+    "maxQuantizationErrorMetres": 0.003730830504508731,
+    "allSharedEdges": "bit-identical",
+    "coverage": "Every tile sample matches source coverage; empty samples stay zero and masked."
+  },
+  "unityMeshValidation": "PASS: source instance/triangle counts and bounds match actual imports.",
+  "originalPlacementValidation": "All 15098 original positions and packed rotations match the complete game inventory.",
+  "unityTerrainValidation": {
+    "tiles": 39,
+    "resolution": 1025,
+    "missingNeighbors": 0,
+    "heightSamplesChecked": 40974375,
+    "naturalCells": 9459809,
+    "holeCells": 31434655,
+    "maxUnityHeightErrorMetres": 0.0074615478515625,
+    "terrainGroupActive": false,
+    "holesPolicy": "Only four covered natural-ground corners produce a Terrain cell. Original road meshes fill road-only areas."
+  },
+  "unityCollisionValidation": {
+    "meshColliders": 15098,
+    "roadRaycasts": 250,
+    "groundRaycasts": 250,
+    "raycastMisses": 0,
+    "maxHitDistanceErrorMetres": 0.00025366246700286865,
+    "misses": []
+  },
+  "fullPngValidation": {
+    "heightmapBitDepth": 16,
+    "width": 7169,
+    "height": 8193,
+    "allTileRowsMatch": "PASS, including north/south row reversal and endian conversion",
+    "coverageAndNaturalTerrainMasks": "PASS",
+    "heightmapSha256": "7eda8a3f2333992392bee8c4c03c64df6cd43b6a9cd447ed0e3084a44b80729d",
+    "coverageSha256": "0385348c2b3c7b795ce335ac2198daeab52281e571dc6a49b4bed56195d6e18f"
+  },
+  "editorNote": "Unity hit an Undo-stack limit at 8000 colliders. The remaining colliders were added without per-component Undo snapshots; final scene counts and 500 raycasts passed."
+}

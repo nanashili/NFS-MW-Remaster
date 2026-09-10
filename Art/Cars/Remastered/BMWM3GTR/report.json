@@ -1,0 +1,101 @@
+{
+  "car": "BMWM3GTR",
+  "sourceSha256": "3952ffa27724d9b4f4885eae11004dd7bc2822a2c7d93d711d297baa482e048b",
+  "stockParts": [
+    "BMWM3GTR_KIT00_BODY_A",
+    "BMWM3GTR_KIT00_FRONT_LEFT_WINDOW_A",
+    "BMWM3GTR_KIT00_FRONT_RIGHT_WINDOW_A",
+    "BMWM3GTR_KIT00_FRONT_WINDOW_A",
+    "BMWM3GTR_KIT00_INTERIOR_A",
+    "BMWM3GTR_KIT00_LEFT_BRAKELIGHT_A",
+    "BMWM3GTR_KIT00_LEFT_HEADLIGHT_A",
+    "BMWM3GTR_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "BMWM3GTR_KIT00_REAR_LEFT_WINDOW_A",
+    "BMWM3GTR_KIT00_REAR_RIGHT_WINDOW_A",
+    "BMWM3GTR_KIT00_REAR_WINDOW_A",
+    "BMWM3GTR_KIT00_RIGHT_BRAKELIGHT_A",
+    "BMWM3GTR_KIT00_RIGHT_HEADLIGHT_A",
+    "BMWM3GTR_KIT00_RIGHT_HEADLIGHT_GLASS_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 89858,
+      "meshObjects": 18
+    },
+    {
+      "lod": 1,
+      "triangles": 15262,
+      "meshObjects": 18
+    },
+    {
+      "lod": 2,
+      "triangles": 5320,
+      "meshObjects": 18
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.6150000095367432,
+        0.7650660276412964,
+        0.2549999952316284
+      ],
+      "radius": 0.3415943682193756,
+      "width": 0.24688020907342434
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.6150000095367432,
+        -0.7650660276412964,
+        0.2549999952316284
+      ],
+      "radius": 0.3415943682193756,
+      "width": 0.24688020907342434
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.1200000047683716,
+        0.775066077709198,
+        0.2549999952316284
+      ],
+      "radius": 0.3415943682193756,
+      "width": 0.24688020907342434
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.1200000047683716,
+        -0.775066077709198,
+        0.2549999952316284
+      ],
+      "radius": 0.3415943682193756,
+      "width": 0.24688020907342434
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.7249999046325684,
+    "RIDE_HEIGHT": [
+      7.5,
+      7.5
+    ],
+    "TRACK_WIDTH": [
+      1.6080000400543213,
+      1.6030000448226929
+    ],
+    "FRONT_AXLE": 1.5,
+    "vehicle": "bmwm3gtr",
+    "record": "0xAFA210F0/0xCD88083F"
+  },
+  "sourceTextureCount": 30,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/BMW/M3 GTR/Remastered.glb"
+}

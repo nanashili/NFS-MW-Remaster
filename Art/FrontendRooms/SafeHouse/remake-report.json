@@ -1,0 +1,186 @@
+{
+  "room": "SafeHouse",
+  "sourceArchive": "/Users/tihan-nico/NFS MW Remaster/Art/FrontendRooms/Artwork/CAREER_SAFEHOUSE",
+  "sourceSha256": "37d812765c651a26562340ec3bb3d9075a98667c9c15e5aed1093821230d499f",
+  "upgradedSurfaces": [
+    "CRIB1_BRICK1",
+    "CRIB1_FLOOR",
+    "CRIB1_GIRDERNOALPHA"
+  ],
+  "beveledSourceEdges": 889,
+  "fixtures": 4,
+  "noCar": true,
+  "noSkyMesh": true,
+  "normalMethod": "Inferred from generated colour with native Cycles bump bake, not measured surface scans",
+  "initialMaterialPassTriangles": 18440,
+  "propRebuild": {
+    "counts": {
+      "tires": 16,
+      "alloy wheels": 3,
+      "drums": 8,
+      "gas cylinder": 2,
+      "extinguisher": 2,
+      "cables": 11,
+      "fans": 2,
+      "tool cabinets": 2,
+      "workbenches": 1,
+      "sofas": 2,
+      "fridges": 1,
+      "televisions": 1,
+      "fuel pumps": 1,
+      "cartons": 4,
+      "wastebaskets": 1,
+      "paper piles": 9,
+      "crates": 2,
+      "beverage trays": 3,
+      "storage bins": 2,
+      "brick piles": 1,
+      "vent grilles": 4
+    },
+    "removedSourceFaces": {
+      "CRIB1_BENCH_TEXTURE": 993,
+      "CRIB1_COUCH": 420,
+      "CRIB1_TVNOISE": 6,
+      "CRIB1_WHEEL_TREAD": 346,
+      "CRIB1_OBJECTS01_TEXTURE": 320,
+      "CRIB1_TV": 122,
+      "CRIB1_TANK": 100,
+      "CRIB1_FRIDGE": 56,
+      "CRIB1_GASPUMP": 8,
+      "CRIB1_BARREL": 108,
+      "CRIB1_CARDBOARD": 52,
+      "CRIB1_TOOLBOX": 40,
+      "CRIB1_CABLE": 22,
+      "SFX_CRIB1_FAN": 4
+    },
+    "createdMeshObjects": 1651,
+    "retainedVolumetricProps": [
+      "folded pizza boxes",
+      "draped rags"
+    ],
+    "retainedSurfaceGraphics": [
+      "graffiti",
+      "posters",
+      "banners",
+      "architectural material detail"
+    ],
+    "methods": {
+      "tires": "48 angular segments, hollow bore, modeled tread channel and 72 staggered solid tread blocks per tire, 3D open five-spoke rims on upright wheels",
+      "drums": "40 angular segments, rolled reinforcing ribs, lids, separate bung plugs",
+      "cables": "25 path samples and 8 radial segments; closed end caps",
+      "fans": "real housing, pitched blades, hub and guards"
+    },
+    "triangleBudget": 125000
+  },
+  "currentExport": {
+    "room": "SafeHouse",
+    "mesh_triangles": 183552,
+    "export_vertices": 225517,
+    "mesh_count": 17,
+    "material_count": 63,
+    "primitive_count": 126,
+    "texture_images": 60,
+    "cameras": 0,
+    "lights": 0,
+    "lightmapUV": "Blender packed TEXCOORD_1"
+  },
+  "referenceRefinement": {
+    "counts": {
+      "tires": 16,
+      "alloy wheels": 7,
+      "drums": 8,
+      "gas cylinders": 2,
+      "sofas": 2
+    },
+    "referenceImages": [
+      "tire-upright.png",
+      "tire-flat.png",
+      "drum.png",
+      "sofa.png",
+      "cylinder.png"
+    ],
+    "methods": {
+      "tires": "64 radial segments, flat crown, three physically recessed circumferential grooves aligned to the supplied user_tire_tread_Normal.png; normal UV width across tread and 26 vertical repeats around circumference; ten sculpted spokes on visible wheels",
+      "drums": "64 radial segments, narrow rolled seams, recessed lid, hex bungs, chipped black paint and red band baked to PBR maps",
+      "cylinders": "rounded shoulders, foot ring, brass valve, handwheel, oxide red chipped paint and modeled print",
+      "sofas": "gray woven fabric, puffed cushions, stitched piping, tufted backs, tapered feet and one chaise extension"
+    },
+    "nativeCyclesBakes": [
+      "drum paint",
+      "cylinder paint",
+      "cloth",
+      "lid"
+    ],
+    "suppliedNormalPreserved": true,
+    "noImageCards": true,
+    "triangles": 198743
+  },
+  "userSurfaceNormals": {
+    "suppliedFilesUnchanged": [
+      "user_couch_fabric_Normal.png",
+      "user_bricks_Normal.png",
+      "user_metal_floor_Normal.jpg"
+    ],
+    "cloth": {
+      "normalStrength": 0.24,
+      "uvScale": [
+        12,
+        12
+      ]
+    },
+    "floor": {
+      "normalStrength": 0.28,
+      "uvScale": [
+        6,
+        6
+      ],
+      "groundFaces": 270,
+      "baseColorAndMetallicUnchanged": true
+    },
+    "bricks": {
+      "reverted": true,
+      "restoredFrom": "SafeHouse-before-user-surface-normals.blend",
+      "materials": [
+        "SafeHouse | CRIB1_BRICK1",
+        "SafeHouse | CRIB1_BRICK3",
+        "SafeHouse prop | bricks"
+      ],
+      "baseColorAndNormalsRestored": true
+    },
+    "normalSpace": "tangent",
+    "colorSpace": "Non-Color",
+    "originalGeometryUnchanged": true
+  },
+  "removedPropText": {
+    "removedObjects": [
+      "Printed FLAMMABLE",
+      "Printed LIQUID",
+      "Printed FLAMMABLE.001",
+      "Printed LIQUID.001",
+      "Printed FLAMMABLE.002",
+      "Printed LIQUID.002",
+      "Printed FLAMMABLE.003",
+      "Printed LIQUID.003",
+      "Printed FLAMMABLE.004",
+      "Printed LIQUID.004",
+      "Printed FLAMMABLE.005",
+      "Printed LIQUID.005",
+      "Printed FLAMMABLE.006",
+      "Printed LIQUID.006",
+      "Printed FLAMMABLE.007",
+      "Printed LIQUID.007",
+      "Printed HELIUM",
+      "Printed 10 kg",
+      "Printed HELIUM.001",
+      "Printed 10 kg.001"
+    ],
+    "removedText": [
+      "FLAMMABLE",
+      "LIQUID",
+      "HELIUM",
+      "10 kg"
+    ],
+    "scope": "Added lettering on eight drums and two gas cylinders",
+    "originalArtworkPreserved": true
+  }
+}

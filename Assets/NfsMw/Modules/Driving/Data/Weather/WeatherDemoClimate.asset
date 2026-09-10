@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde1f61ca816a4996862b4adcadc245c, type: 3}
+  m_Name: WeatherDemoClimate
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WeatherClimateProfile
+  schemaVersion: 1
+  defaultSeed: 240905
+  initialPresetId: thunderstorm
+  fixedStepSeconds: 0.25
+  dayLengthRealSeconds: 900
+  weatherTimeScale: 1
+  weatherFollowsClockScale: 0
+  maxCatchUpSeconds: 8
+  startingTimeHours: 16
+  dawnHours: 5.5
+  sunriseHours: 6.5
+  sunsetHours: 18.5
+  duskHours: 19.5
+  daylightIntensityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sunElevationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -18
+      inSlope: 0
+      outSlope: 76
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 58
+      inSlope: 76
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  daylightColorGradient:
+    serializedVersion: 2
+    key0: {r: 0.18, g: 0.24, b: 0.42, a: 1}
+    key1: {r: 1, g: 0.42, b: 0.2, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
+    key3: {r: 1, g: 0.32, b: 0.16, a: 0}
+    key4: {r: 0.18, g: 0.24, b: 0.42, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 7864
+    ctime2: 32768
+    ctime3: 57671
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+  rainFrequency: 0.55
+  stormLikelihood: 0.12
+  dryingTendency: 0.38
+  temperatureC: 18
+  atmosphericMoisture: 0.72
+  minimumPersistenceSeconds: 150
+  maximumPersistenceSeconds: 780
+  wetnessAccumulationPerSecond: 0.09
+  wetnessDrainagePerSecond: 0.025
+  standingWaterDrainagePerSecond: 0.035
+  sunlightDryingPerSecond: 0.018
+  windDryingPerSecond: 0.002
+  surfaceWetnessThreshold: 0.4
+  lightningQuietSecondsMin: 8
+  lightningQuietSecondsMax: 36
+  maximumLightningEvents: 4
+  soundSpeedMetersPerSecond: 343
+  transitions:
+  - fromPresetId: clear
+    toPresetId: partly-cloudy
+    weight: 5
+    cooldownSeconds: 0
+  - fromPresetId: clear
+    toPresetId: cloudy
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: partly-cloudy
+    toPresetId: clear
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: partly-cloudy
+    toPresetId: cloudy
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: cloudy
+    toPresetId: partly-cloudy
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: cloudy
+    toPresetId: overcast
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: cloudy
+    toPresetId: mist
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: overcast
+    toPresetId: cloudy
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: overcast
+    toPresetId: drizzle
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: overcast
+    toPresetId: fog
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: drizzle
+    toPresetId: overcast
+    weight: 3
+    cooldownSeconds: 0
+  - fromPresetId: drizzle
+    toPresetId: light-rain
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: light-rain
+    toPresetId: drizzle
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: light-rain
+    toPresetId: rain
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: rain
+    toPresetId: light-rain
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: rain
+    toPresetId: heavy-rain
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: rain
+    toPresetId: overcast
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: heavy-rain
+    toPresetId: rain
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: heavy-rain
+    toPresetId: storm-rain
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: storm-rain
+    toPresetId: heavy-rain
+    weight: 4
+    cooldownSeconds: 0
+  - fromPresetId: storm-rain
+    toPresetId: thunderstorm
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: thunderstorm
+    toPresetId: storm-rain
+    weight: 3
+    cooldownSeconds: 0
+  - fromPresetId: thunderstorm
+    toPresetId: rain
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: thunderstorm
+    toPresetId: overcast
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: mist
+    toPresetId: cloudy
+    weight: 3
+    cooldownSeconds: 0
+  - fromPresetId: mist
+    toPresetId: fog
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: fog
+    toPresetId: mist
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: fog
+    toPresetId: overcast
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: heavy-fog
+    toPresetId: fog
+    weight: 2
+    cooldownSeconds: 0
+  - fromPresetId: windy
+    toPresetId: partly-cloudy
+    weight: 3
+    cooldownSeconds: 0
+  - fromPresetId: windy
+    toPresetId: strong-wind
+    weight: 1
+    cooldownSeconds: 0
+  - fromPresetId: strong-wind
+    toPresetId: windy
+    weight: 3
+    cooldownSeconds: 0
+  - fromPresetId: strong-wind
+    toPresetId: storm-rain
+    weight: 1
+    cooldownSeconds: 0

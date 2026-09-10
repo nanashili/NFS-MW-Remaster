@@ -1,0 +1,824 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5812e2c0de799421d922eec7424b07b7, type: 3}
+  m_Name: WarehouseShowroom
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.MostWantedShowroomDefinition
+  vehicleId: bmw_m3_frontend
+  displayName: BMW M3
+  sourcePrefab: Assets/NfsMw/Content/Vehicles/Street/BMW/M3 E42/Framework/Vehicle.prefab
+  bounds:
+    m_Center: {x: -0.00078105927, y: -0.0069987774, z: 0.03165531}
+    m_Extent: {x: 1.1416895, y: 0.8521124, z: 2.8110104}
+  parts:
+  - name: $hm!TT-0
+    mesh: {fileID: 4300000, guid: cbfd00b6f79464fda835ea5fa82b6dc7, type: 2}
+    materials:
+    - {fileID: 2100000, guid: d26967d2b20ed4f19a13ecf526096c58, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bagag-0
+    mesh: {fileID: 4300000, guid: 57cc12956a7ff452aa159854bf7a3715, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bagag-1
+    mesh: {fileID: 4300000, guid: f6704dfa6bb244f7989a2292bc585f4f, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e5fbe284a47a147dd979cddc412a7006, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bonnet_ok-0
+    mesh: {fileID: 4300000, guid: 151a3e83c51714da88bb8ff1997279ae, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: bonnet_ok-1
+    mesh: {fileID: 4300000, guid: b46de174a47d045e888aecf02dd40c68, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bonnet_ok-2
+    mesh: {fileID: 4300000, guid: c52329bd5f8ba4584a052ae50be0c9e3, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9018c61239f6e4d44a548194a2539845, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: boot_ok-0
+    mesh: {fileID: 4300000, guid: e9891156f1ff84008aa0eceee77f3aad, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 18e9954bcb99741848cc1fdaedc6adc9, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: boot_ok-1
+    mesh: {fileID: 4300000, guid: ee39b8992c90441d1ad03075b5641a31, type: 2}
+    materials:
+    - {fileID: 2100000, guid: f8a4c9d08c3a34f8f80451ddec5bb9dc, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: boot_ok-2
+    mesh: {fileID: 4300000, guid: d81a0a34cc19a48678466d546c32755b, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 3562422eb57ec4364986dc959822bffc, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: boot_ok-3
+    mesh: {fileID: 4300000, guid: 9726d6d20d6c54f6f81d4414e2ca461e, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: boot_ok-4
+    mesh: {fileID: 4300000, guid: 23a9239b233c04d4eb841559f646587a, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9018c61239f6e4d44a548194a2539845, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: boot_ok-5
+    mesh: {fileID: 4300000, guid: d4d2ae96302434e62ac22927b34c2840, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 45a619143ad4f4b798d8e5ae411431ff, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Caliper0
+    mesh: {fileID: 4300000, guid: 45cc14d9dec964346bdfcaa611a36708, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: -0.8442993, y: -0.39128923, z: 1.8119507}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Caliper1
+    mesh: {fileID: 4300000, guid: 96a7d139e14e941dd8ca79fec22aea5e, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0.89624023, y: -0.39128923, z: 1.8105469}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Caliper2
+    mesh: {fileID: 4300000, guid: 5a226a2a9e38b4e36a38219edda80829, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: -0.8442993, y: -0.39128876, z: -1.5532837}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Caliper3
+    mesh: {fileID: 4300000, guid: b47183f612d6e4d1b8f37acc865e514c, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0.89624023, y: -0.39128876, z: -1.5408936}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bump_front_ok-0
+    mesh: {fileID: 4300000, guid: 943ccdcb49b924bd6b560b74dca55d22, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9154754e56b8e4a2bb27ed1b0da79594, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bump_front_ok-1
+    mesh: {fileID: 4300000, guid: d4dc312be5f2d43d9a1523d77a25cf3f, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: bump_front_ok-2
+    mesh: {fileID: 4300000, guid: 2d281831e12624f899c7e2879b9a73b0, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bump_rear_ok-0
+    mesh: {fileID: 4300000, guid: bbe3f3be8a00a4744a3ecc2331cd1439, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9154754e56b8e4a2bb27ed1b0da79594, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: bump_rear_ok-1
+    mesh: {fileID: 4300000, guid: d4035a17d3db54164ab4aa1a988a2322, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: bump_rear_ok-2
+    mesh: {fileID: 4300000, guid: d294bc8b0cc4141df85279df15cb18d2, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-0
+    mesh: {fileID: 4300000, guid: 0fd3910215f1b4b2ebf0c5a3c0a2158a, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 2384a1eecb541434dab0b780e4489140, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-1
+    mesh: {fileID: 4300000, guid: b2f10b46f4a284554bf3093500fbefb5, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9154754e56b8e4a2bb27ed1b0da79594, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-2
+    mesh: {fileID: 4300000, guid: 20ceadf473d1b4dbca0b99a2446de7ca, type: 2}
+    materials:
+    - {fileID: 2100000, guid: f8a4c9d08c3a34f8f80451ddec5bb9dc, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-3
+    mesh: {fileID: 4300000, guid: 10da03eb7014b4cd4b5cc82deaca3723, type: 2}
+    materials:
+    - {fileID: 2100000, guid: c5015cab7318345b48691fa9ff985792, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-4
+    mesh: {fileID: 4300000, guid: 7cca848abac054f26963c0c5e7ea3676, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: chassis-5
+    mesh: {fileID: 4300000, guid: 22c26166377244a54923e7b46888d653, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-6
+    mesh: {fileID: 4300000, guid: 22ed290a3b5a14801bcc9b6be3394e09, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9018c61239f6e4d44a548194a2539845, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-7
+    mesh: {fileID: 4300000, guid: 821c6c1dedc0c44dea47dbf481cccd15, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 6245024f0b2a74dbdb65760c1344837f, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-8
+    mesh: {fileID: 4300000, guid: 5cf0d5a61f2fd43f4b8f8120c5516101, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: chassis-9
+    mesh: {fileID: 4300000, guid: 0d429f5322165434eadcecb46468cb84, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e5fbe284a47a147dd979cddc412a7006, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: dash-0
+    mesh: {fileID: 4300000, guid: 26d4afb973f4b4ef494f4d29313dcf92, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 2d174763eef274a92b02570867f64a81, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: dash-1
+    mesh: {fileID: 4300000, guid: 145e91c7ad2474c03ab73121c1edeec7, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 8bf53264cdad5496494147aee956dcea, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: dash-2
+    mesh: {fileID: 4300000, guid: 7859389e49ab241ba958052a402c841b, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 237b36d92d6e649d3ab498e396d63ef6, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: dash-3
+    mesh: {fileID: 4300000, guid: b3f73c33ad2744e96bd92191a83e7245, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 8dbaabdf89a864738a9527486525fca6, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-0
+    mesh: {fileID: 4300000, guid: e9c55765a7b04452e8e60fd2b0661577, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 2384a1eecb541434dab0b780e4489140, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-1
+    mesh: {fileID: 4300000, guid: 5499fdab2cb854b7e8cb0cc864f7e5db, type: 2}
+    materials:
+    - {fileID: 2100000, guid: c5015cab7318345b48691fa9ff985792, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-2
+    mesh: {fileID: 4300000, guid: 90b2581684fb343a18210549111d054d, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: door_lf_ok-3
+    mesh: {fileID: 4300000, guid: db28b8899bd0347b2a0aae559eedf834, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9018c61239f6e4d44a548194a2539845, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-4
+    mesh: {fileID: 4300000, guid: 19beadfff35c345c09d6342a20b07780, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 6245024f0b2a74dbdb65760c1344837f, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-5
+    mesh: {fileID: 4300000, guid: c06bcb35be7164fc3838de5656c735d9, type: 2}
+    materials:
+    - {fileID: 2100000, guid: d7543c71d0d924093a443a1d809fdef4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_lf_ok-6
+    mesh: {fileID: 4300000, guid: f2a09eb0b8cf04ab09f024ecace02104, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-0
+    mesh: {fileID: 4300000, guid: f639fba821eba4d74bc807b4a250d786, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 2384a1eecb541434dab0b780e4489140, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-1
+    mesh: {fileID: 4300000, guid: bba5e45595b8341f89f74001d4196845, type: 2}
+    materials:
+    - {fileID: 2100000, guid: c5015cab7318345b48691fa9ff985792, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-2
+    mesh: {fileID: 4300000, guid: 0e24b557d23e14058bc4c1c2fcc1f7e2, type: 2}
+    materials:
+    - {fileID: 2100000, guid: dcbc1320032804b16ba459f5dfeaead2, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 1
+  - name: door_rf_ok-3
+    mesh: {fileID: 4300000, guid: 21fa4d73435cb4854a3aa0bf8cf19f3e, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9018c61239f6e4d44a548194a2539845, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-4
+    mesh: {fileID: 4300000, guid: 982542db8613f48e98bdf60997661fd9, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 6245024f0b2a74dbdb65760c1344837f, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-5
+    mesh: {fileID: 4300000, guid: 22e4ceae2f5f0414fbc76570d70536b0, type: 2}
+    materials:
+    - {fileID: 2100000, guid: d7543c71d0d924093a443a1d809fdef4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: door_rf_ok-6
+    mesh: {fileID: 4300000, guid: cb3e086ae9da24e51815511363e45d38, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: peredfar-0
+    mesh: {fileID: 4300000, guid: 947204355ad354c92bb5ba7e1259d752, type: 2}
+    materials:
+    - {fileID: 2100000, guid: d6e5396e941104a5b81fdb58391cf3e6, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: polos-0
+    mesh: {fileID: 4300000, guid: 3557fa50d44ae460192569d72e483df9, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: radiator-0
+    mesh: {fileID: 4300000, guid: 4992ae69c85d14348a14b164b77303a7, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 093800e003c124c5b9b597369005efaa, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: radiator-1
+    mesh: {fileID: 4300000, guid: 523e8bbccb49b4d01bf9e89c3dfe4f90, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b395f059facf144ca8489e9d9214d766, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: radiator-2
+    mesh: {fileID: 4300000, guid: 8d4364a15d99b48658fcf73ea3020dc5, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 00e258bf08fe14101a6727efd551fc3c, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: radiator-3
+    mesh: {fileID: 4300000, guid: 2b2bca9174b624ab6913131b0e4ee992, type: 2}
+    materials:
+    - {fileID: 2100000, guid: f16e8b335364d478784918695f06f1b8, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: radiator-4
+    mesh: {fileID: 4300000, guid: e5e57666369384154bd15eb132ace6dd, type: 2}
+    materials:
+    - {fileID: 2100000, guid: c2647334457ca4c66bb0c2b35e304c95, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: salon-0
+    mesh: {fileID: 4300000, guid: c6511c0e382b04bf893ff576e71996a6, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 2384a1eecb541434dab0b780e4489140, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: salon-1
+    mesh: {fileID: 4300000, guid: f027e13ac9714422f86bbfae77688cec, type: 2}
+    materials:
+    - {fileID: 2100000, guid: c5015cab7318345b48691fa9ff985792, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: salon-2
+    mesh: {fileID: 4300000, guid: 042922042df744e9499a41e110f45209, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: stecla-0
+    mesh: {fileID: 4300000, guid: dbc0b75e5c5614add94476c83bfebfb4, type: 2}
+    materials:
+    - {fileID: 2100000, guid: b1da384cef8964ce2a8ce79ebf897685, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: stecla-1
+    mesh: {fileID: 4300000, guid: ef3dfb8b3324d4e418ddabb576889c7e, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 6245024f0b2a74dbdb65760c1344837f, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: stecla-2
+    mesh: {fileID: 4300000, guid: 54788083d5c3f4bbdbfcc3c40aead52c, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: windscreen_ok-0
+    mesh: {fileID: 4300000, guid: f70b0b2857b7a401397e022adaa5d37e, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 6245024f0b2a74dbdb65760c1344837f, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: windscreen_ok-1
+    mesh: {fileID: 4300000, guid: b9c7984ddd36d4fd68b8781db72fffd0, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 1e1d7ba07242c44a8a869b69fb55b0d4, type: 2}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel0-0
+    mesh: {fileID: 4300000, guid: 516368be02f9d486786e16ba713d443f, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9cac2c397a06c47578169c1d0a9c97b0, type: 2}
+    position: {x: -0.8442993, y: -0.39128923, z: 1.8119507}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel0-1
+    mesh: {fileID: 4300000, guid: 161ba82937996445790753507f26ef1d, type: 2}
+    materials:
+    - {fileID: 2100000, guid: ce98ac1efe9d242548aac69366572f8d, type: 2}
+    position: {x: -0.8442993, y: -0.39128923, z: 1.8119507}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel0-2
+    mesh: {fileID: 4300000, guid: 87400b4cd09624b8a8cac5e3c0cd9cdf, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e19808f5b205840728648f3a75acec8d, type: 2}
+    position: {x: -0.8442993, y: -0.39128923, z: 1.8119507}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel0-3
+    mesh: {fileID: 4300000, guid: 37dc543acafea443faed7c4229491a53, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 848ba4d1188714ef7bf4f45dcba44d32, type: 2}
+    position: {x: -0.8442993, y: -0.39128923, z: 1.8119507}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel1-0
+    mesh: {fileID: 4300000, guid: 45f72093377794394ab5b950f43cdc9a, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9cac2c397a06c47578169c1d0a9c97b0, type: 2}
+    position: {x: 0.89624023, y: -0.39128923, z: 1.8105469}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel1-1
+    mesh: {fileID: 4300000, guid: 25a5625ea802f4771b3409d45b9a37f3, type: 2}
+    materials:
+    - {fileID: 2100000, guid: ce98ac1efe9d242548aac69366572f8d, type: 2}
+    position: {x: 0.89624023, y: -0.39128923, z: 1.8105469}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel1-2
+    mesh: {fileID: 4300000, guid: 35b1dcb78611940ae8d7f29f8d27df5b, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e19808f5b205840728648f3a75acec8d, type: 2}
+    position: {x: 0.89624023, y: -0.39128923, z: 1.8105469}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel1-3
+    mesh: {fileID: 4300000, guid: 4c05d4448213047c199b9dd15ee263c7, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 848ba4d1188714ef7bf4f45dcba44d32, type: 2}
+    position: {x: 0.89624023, y: -0.39128923, z: 1.8105469}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel2-0
+    mesh: {fileID: 4300000, guid: 557af185e660b439099db5b4563ae7ad, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9cac2c397a06c47578169c1d0a9c97b0, type: 2}
+    position: {x: -0.8442993, y: -0.39128876, z: -1.5532837}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel2-1
+    mesh: {fileID: 4300000, guid: 2496d94830e2141a8a3ae536b2b83c90, type: 2}
+    materials:
+    - {fileID: 2100000, guid: ce98ac1efe9d242548aac69366572f8d, type: 2}
+    position: {x: -0.8442993, y: -0.39128876, z: -1.5532837}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel2-2
+    mesh: {fileID: 4300000, guid: 40a016bb28b2d4aa3bef60477387b67c, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e19808f5b205840728648f3a75acec8d, type: 2}
+    position: {x: -0.8442993, y: -0.39128876, z: -1.5532837}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel2-3
+    mesh: {fileID: 4300000, guid: d38a54f46de6e4a2f9a33a0bb304343a, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 848ba4d1188714ef7bf4f45dcba44d32, type: 2}
+    position: {x: -0.8442993, y: -0.39128876, z: -1.5532837}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel3-0
+    mesh: {fileID: 4300000, guid: fb21beca631d343b3a62342d2239041d, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 9cac2c397a06c47578169c1d0a9c97b0, type: 2}
+    position: {x: 0.89624023, y: -0.39128876, z: -1.5408936}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel3-1
+    mesh: {fileID: 4300000, guid: 4b799840af54a4a0085428847808f4e2, type: 2}
+    materials:
+    - {fileID: 2100000, guid: ce98ac1efe9d242548aac69366572f8d, type: 2}
+    position: {x: 0.89624023, y: -0.39128876, z: -1.5408936}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel3-2
+    mesh: {fileID: 4300000, guid: e5614563c2d16423182d65d1d898ebb0, type: 2}
+    materials:
+    - {fileID: 2100000, guid: e19808f5b205840728648f3a75acec8d, type: 2}
+    position: {x: 0.89624023, y: -0.39128876, z: -1.5408936}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  - name: Wheel3-3
+    mesh: {fileID: 4300000, guid: e609e9b9b95e040f3b9762de335b91c8, type: 2}
+    materials:
+    - {fileID: 2100000, guid: 848ba4d1188714ef7bf4f45dcba44d32, type: 2}
+    position: {x: 0.89624023, y: -0.39128876, z: -1.5408936}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  environmentSource: Assets/NfsMw/Content/Frontend/Models/FrontendWarehouseRemake/Warehouse.gltf
+  environmentParts:
+  - name: Warehouse
+    mesh: {fileID: 4313030536549276329, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    materials:
+    - {fileID: 8375041503421929032, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7266704215954457323, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -29065743085074635, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3591333687442771129, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 9104273632477224501, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3834369006296825476, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -2451451142470240760, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 8098182024801684857, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 5660211086557219384, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -7858729803246043157, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -715617273336219795, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 1467377289549682693, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -7079608800985594926, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7790849783509203202, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -7570299104782523235, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -8494255740163218575, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 6637304794748412652, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 8507923328470580957, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 268014986587187721, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -7137513018830354946, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -5867160709941452718, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -35388149986185435, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 5526025260499566291, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7650895646433686818, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -601110274930043602, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 8895306296591010639, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 2739658908702144169, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -1674510509693456651, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -5565114972297660671, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -25314747689472539, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 6330155973630576875, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 5312151222706152877, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -1471326193168576405, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -5676824238872496891, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7379722253565986732, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 3248800713790821592, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -8115113522323876067, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 3423891650427074432, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -4196854574235207262, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -2509604213645581412, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 3436347411943424002, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 1107757370905301501, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -7366437391219832559, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3463191998416181359, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3753245793160084155, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7817456543327350848, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 7357175676267872960, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -4875061470874647930, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3983416750890393019, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -3762807760322476494, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 218611734013966763, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 4327403466403799709, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: -6229468186628692696, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 4828118157375538537, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    - {fileID: 3847158667532859838, guid: d4d68eb712a2042b6ba8511980ba1c71, type: 3}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    scale: {x: 1, y: 1, z: 1}
+    paintable: 0
+  vehiclePosition: {x: 0, y: 0, z: 0}
+  vehicleYaw: 90
+  entranceShot:
+    page: 0
+    position: {x: -1.5, y: 3.4, z: 24}
+    target: {x: -1.2, y: 1.3, z: 0}
+    roll: -5
+    fieldOfView: 58
+  entranceSeconds: 2.8
+  transitionSeconds: 0.65
+  cameraShots:
+  - page: 29
+    position: {x: -4.6, y: 1.5, z: 5.3}
+    target: {x: 0, y: 1.4, z: 0}
+    roll: -4
+    fieldOfView: 48
+  - page: 0
+    position: {x: 4.8, y: 1.65, z: 6.1}
+    target: {x: -1.85, y: 0.38, z: 0.1}
+    roll: 8
+    fieldOfView: 40
+  - page: 1
+    position: {x: 5.9, y: 0.95, z: -0.4}
+    target: {x: -0.6, y: -0.35, z: -0.7}
+    roll: 26
+    fieldOfView: 43
+  - page: 13
+    position: {x: -4.6, y: 1.25, z: -5.5}
+    target: {x: -1.3, y: 0.85, z: 0.3}
+    roll: -20
+    fieldOfView: 39
+  - page: 14
+    position: {x: 1.9, y: 0.72, z: -2.1}
+    target: {x: 0, y: 0.3, z: -2.05}
+    roll: 0
+    fieldOfView: 56
+  - page: 17
+    position: {x: 1.9, y: 0.72, z: -2.1}
+    target: {x: 0, y: 0.3, z: -2.05}
+    roll: 0
+    fieldOfView: 56
+  - page: 18
+    position: {x: 1.9, y: 0.72, z: -2.1}
+    target: {x: 0, y: 0.3, z: -2.05}
+    roll: 0
+    fieldOfView: 56
+  - page: 20
+    position: {x: 1.9, y: 0.72, z: -2.1}
+    target: {x: 0, y: 0.3, z: -2.05}
+    roll: 0
+    fieldOfView: 56
+  - page: 15
+    position: {x: 1.7, y: 1.2, z: -4.2}
+    target: {x: 3.3, y: 1.3, z: 2.6}
+    roll: 0
+    fieldOfView: 64
+  - page: 16
+    position: {x: 1.7, y: 1.2, z: -4.2}
+    target: {x: 3.3, y: 1.3, z: 2.6}
+    roll: 0
+    fieldOfView: 64
+  - page: 19
+    position: {x: 1.7, y: 1.2, z: -4.2}
+    target: {x: 3.3, y: 1.3, z: 2.6}
+    roll: 0
+    fieldOfView: 64
+  - page: 22
+    position: {x: 1.7, y: 1.2, z: -4.2}
+    target: {x: 3.3, y: 1.3, z: 2.6}
+    roll: 0
+    fieldOfView: 64
+  - page: 23
+    position: {x: 1.7, y: 1.2, z: -4.2}
+    target: {x: 3.3, y: 1.3, z: 2.6}
+    roll: 0
+    fieldOfView: 64
+  - page: 21
+    position: {x: 0, y: 3, z: 18}
+    target: {x: 0, y: 1, z: 0}
+    roll: -5
+    fieldOfView: 58
+  - page: 2
+    position: {x: 5, y: 1.3, z: -5.5}
+    target: {x: -0.4, y: 1, z: 0}
+    roll: -11
+    fieldOfView: 51
+  - page: 3
+    position: {x: 5, y: 1.3, z: -5.5}
+    target: {x: -0.4, y: 1, z: 0}
+    roll: -11
+    fieldOfView: 51

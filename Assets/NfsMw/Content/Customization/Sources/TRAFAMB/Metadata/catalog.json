@@ -1,0 +1,335 @@
+{
+  "archive": "TRAFAMB",
+  "sourceSha256": "54cc163cffa52b4ff5b500c89daff57d89f29f3c9945133f8637f6303b31fe74",
+  "sourceSolidCount": 18,
+  "asset": "Assets/NfsMw/Content/Customization/Sources/TRAFAMB/Geometry/Parts.glb",
+  "entries": [
+    {
+      "id": "TRAFAMB_BASE",
+      "node": "TRAFAMB_BASE",
+      "category": "Other source part",
+      "variant": "Source part",
+      "archive": "TRAFAMB",
+      "kit": "",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_BASE_A",
+        "TRAFAMB_BASE_B",
+        "TRAFAMB_BASE_C"
+      ],
+      "sourceMarkers": [
+        {
+          "hash": "9db90133",
+          "matrix": [
+            -4.371138828673793e-08,
+            0.0,
+            1.0,
+            0.0,
+            -8.742277657347586e-08,
+            -1.0,
+            -3.82137093032941e-15,
+            0.0,
+            1.0,
+            -8.742277657347586e-08,
+            4.371138828673793e-08,
+            0.0,
+            2.490236520767212,
+            0.679054856300354,
+            0.566892147064209,
+            1.0
+          ]
+        },
+        {
+          "hash": "d09091c6",
+          "matrix": [
+            -4.371138828673793e-08,
+            0.0,
+            1.0,
+            0.0,
+            -8.742277657347586e-08,
+            -1.0,
+            -3.82137093032941e-15,
+            0.0,
+            1.0,
+            -8.742277657347586e-08,
+            4.371138828673793e-08,
+            0.0,
+            2.490236520767212,
+            -0.6883589029312134,
+            0.566892147064209,
+            1.0
+          ]
+        }
+      ],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0000_LOD0.002",
+          "sourceSolid": "TRAFAMB_BASE_A",
+          "triangles": 36,
+          "blenderTriangles": 36
+        },
+        {
+          "node": "PART_0000_LOD1.002",
+          "sourceSolid": "TRAFAMB_BASE_B",
+          "triangles": 14,
+          "blenderTriangles": 14
+        },
+        {
+          "node": "PART_0000_LOD2.002",
+          "sourceSolid": "TRAFAMB_BASE_C",
+          "triangles": 12,
+          "blenderTriangles": 12
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/OtherSourcePart/TRAFAMB/TRAFAMB_BASE.prefab"
+    },
+    {
+      "id": "TRAFAMB_KIT00_BODY",
+      "node": "TRAFAMB_KIT00_BODY",
+      "category": "Body kit",
+      "variant": "Source part",
+      "archive": "TRAFAMB",
+      "kit": "00",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_KIT00_BODY_A",
+        "TRAFAMB_KIT00_BODY_B",
+        "TRAFAMB_KIT00_BODY_C",
+        "TRAFAMB_KIT00_BODY_D",
+        "TRAFAMB_KIT00_BODY_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0001_LOD0.002",
+          "sourceSolid": "TRAFAMB_KIT00_BODY_A",
+          "triangles": 7188,
+          "blenderTriangles": 7188
+        },
+        {
+          "node": "PART_0001_LOD1.002",
+          "sourceSolid": "TRAFAMB_KIT00_BODY_B",
+          "triangles": 1182,
+          "blenderTriangles": 1182
+        },
+        {
+          "node": "PART_0001_LOD2.002",
+          "sourceSolid": "TRAFAMB_KIT00_BODY_C",
+          "triangles": 754,
+          "blenderTriangles": 754
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/BodyKit/TRAFAMB/TRAFAMB_KIT00_BODY.prefab"
+    },
+    {
+      "id": "TRAFAMB_KIT00_DRIVER",
+      "node": "TRAFAMB_KIT00_DRIVER",
+      "category": "Interior",
+      "variant": "Source part",
+      "archive": "TRAFAMB",
+      "kit": "00",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_KIT00_DRIVER_A",
+        "TRAFAMB_KIT00_DRIVER_B",
+        "TRAFAMB_KIT00_DRIVER_C"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0002_LOD0.002",
+          "sourceSolid": "TRAFAMB_KIT00_DRIVER_A",
+          "triangles": 12,
+          "blenderTriangles": 12
+        },
+        {
+          "node": "PART_0002_LOD1.001",
+          "sourceSolid": "TRAFAMB_KIT00_DRIVER_B",
+          "triangles": 8,
+          "blenderTriangles": 8
+        },
+        {
+          "node": "PART_0002_LOD2.001",
+          "sourceSolid": "TRAFAMB_KIT00_DRIVER_C",
+          "triangles": 12,
+          "blenderTriangles": 12
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Interior/TRAFAMB/TRAFAMB_KIT00_DRIVER.prefab"
+    },
+    {
+      "id": "TRAFAMB_KIT00_FRONT_TIRE",
+      "node": "TRAFAMB_KIT00_FRONT_TIRE",
+      "category": "Wheel and tyre",
+      "variant": "Assembly",
+      "archive": "TRAFAMB",
+      "kit": "00",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_KIT00_FRONT_TIRE_A",
+        "TRAFAMB_KIT00_FRONT_TIRE_B",
+        "TRAFAMB_KIT00_FRONT_TIRE_C",
+        "TRAFAMB_KIT00_FRONT_TIRE_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.40795546770095825,
+        "rimRadius": 0.29372793674468994,
+        "width": 0.3719642236828804,
+        "sourceCenterY": -0.06331957504153252
+      },
+      "lods": [
+        {
+          "node": "PART_0003_LOD0.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_A",
+          "triangles": 106,
+          "blenderTriangles": 106
+        },
+        {
+          "node": "PART_0003_LOD1.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_B",
+          "triangles": 64,
+          "blenderTriangles": 64
+        },
+        {
+          "node": "PART_0003_LOD2.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_C",
+          "triangles": 64,
+          "blenderTriangles": 64
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/WheelAndTyre/TRAFAMB/TRAFAMB_KIT00_FRONT_TIRE.prefab"
+    },
+    {
+      "id": "TRAFAMB_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "node": "TRAFAMB_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "category": "Tyre",
+      "variant": "Tyre only",
+      "archive": "TRAFAMB",
+      "kit": "00",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_KIT00_FRONT_TIRE_A",
+        "TRAFAMB_KIT00_FRONT_TIRE_B",
+        "TRAFAMB_KIT00_FRONT_TIRE_C",
+        "TRAFAMB_KIT00_FRONT_TIRE_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.40795546770095825,
+        "rimRadius": 0.29372793674468994,
+        "width": 0.3719642236828804,
+        "sourceCenterY": -0.06331957504153252
+      },
+      "lods": [
+        {
+          "node": "PART_0004_LOD0.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_A",
+          "triangles": 4800,
+          "blenderTriangles": 4800
+        },
+        {
+          "node": "PART_0004_LOD1.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_B",
+          "triangles": 2400,
+          "blenderTriangles": 2400
+        },
+        {
+          "node": "PART_0004_LOD2.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_TIRE_C",
+          "triangles": 1008,
+          "blenderTriangles": 1008
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Tyre/TRAFAMB/TRAFAMB_KIT00_FRONT_TIRE_TYRE_ONLY.prefab"
+    },
+    {
+      "id": "TRAFAMB_KIT00_FRONT_WINDOW",
+      "node": "TRAFAMB_KIT00_FRONT_WINDOW",
+      "category": "Glass",
+      "variant": "Source part",
+      "archive": "TRAFAMB",
+      "kit": "00",
+      "compatibility": "TRAFAMB",
+      "sourceSolids": [
+        "TRAFAMB_KIT00_FRONT_WINDOW_A",
+        "TRAFAMB_KIT00_FRONT_WINDOW_B",
+        "TRAFAMB_KIT00_FRONT_WINDOW_C"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0005_LOD0.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_WINDOW_A",
+          "triangles": 36,
+          "blenderTriangles": 36
+        },
+        {
+          "node": "PART_0005_LOD1.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_WINDOW_B",
+          "triangles": 14,
+          "blenderTriangles": 14
+        },
+        {
+          "node": "PART_0005_LOD2.001",
+          "sourceSolid": "TRAFAMB_KIT00_FRONT_WINDOW_C",
+          "triangles": 12,
+          "blenderTriangles": 12
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Glass/TRAFAMB/TRAFAMB_KIT00_FRONT_WINDOW.prefab"
+    }
+  ],
+  "blenderLayout": "Grid; each root stores assembly_position and library_grid_position",
+  "sourceVisualAttributes": {
+    "record": "6f67f7f5",
+    "tireOffsets": [
+      [
+        1.85,
+        0.75,
+        -0.03,
+        0.38
+      ],
+      [
+        1.85,
+        -0.75,
+        -0.03,
+        0.38
+      ],
+      [
+        -1.3,
+        -0.9,
+        -0.03,
+        0.4
+      ],
+      [
+        -1.3,
+        0.9,
+        -0.03,
+        0.4
+      ]
+    ],
+    "extraRearTireOffset": 0
+  },
+  "sourceChassis": {
+    "WHEEL_BASE": 4.5,
+    "RIDE_HEIGHT": [
+      8.5,
+      8.5
+    ],
+    "TRACK_WIDTH": [
+      2.3499999046325684,
+      2.3499999046325684
+    ],
+    "FRONT_AXLE": 2.5,
+    "vehicle": "trafamb",
+    "record": "0xAFA210F0/0x829FE1F6"
+  },
+  "singleSceneExport": true,
+  "layout": "content-first-v2",
+  "sourceCatalog": "Assets/NfsMw/Content/Customization/Sources/TRAFAMB/Metadata/catalog.json"
+}

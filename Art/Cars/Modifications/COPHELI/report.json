@@ -1,0 +1,158 @@
+{
+  "archive": "COPHELI",
+  "sourceSha256": "3486802ae018583980608bd6e26fb507c19c9aa07108dd22446a2c89f1c9ff0c",
+  "sourceSolidCount": 13,
+  "asset": "Assets/NfsMw/Content/Customization/Sources/COPHELI/Geometry/Parts.glb",
+  "entries": [
+    {
+      "id": "COPHELI_BASE",
+      "node": "COPHELI_BASE",
+      "category": "Other source part",
+      "variant": "Source part",
+      "archive": "COPHELI",
+      "kit": "",
+      "compatibility": "COPHELI",
+      "sourceSolids": [
+        "COPHELI_BASE_A",
+        "COPHELI_BASE_B",
+        "COPHELI_BASE_C",
+        "COPHELI_BASE_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0000_LOD0.002",
+          "sourceSolid": "COPHELI_BASE_A",
+          "triangles": 24,
+          "blenderTriangles": 24
+        },
+        {
+          "node": "PART_0000_LOD1.002",
+          "sourceSolid": "COPHELI_BASE_B",
+          "triangles": 18,
+          "blenderTriangles": 18
+        },
+        {
+          "node": "PART_0000_LOD2.002",
+          "sourceSolid": "COPHELI_BASE_C",
+          "triangles": 18,
+          "blenderTriangles": 18
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/OtherSourcePart/COPHELI/COPHELI_BASE.prefab"
+    },
+    {
+      "id": "COPHELI_KIT00_BODY",
+      "node": "COPHELI_KIT00_BODY",
+      "category": "Body kit",
+      "variant": "Source part",
+      "archive": "COPHELI",
+      "kit": "00",
+      "compatibility": "COPHELI",
+      "sourceSolids": [
+        "COPHELI_KIT00_BODY_A",
+        "COPHELI_KIT00_BODY_B",
+        "COPHELI_KIT00_BODY_C",
+        "COPHELI_KIT00_BODY_D",
+        "COPHELI_KIT00_BODY_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0001_LOD0.002",
+          "sourceSolid": "COPHELI_KIT00_BODY_A",
+          "triangles": 8086,
+          "blenderTriangles": 8086
+        },
+        {
+          "node": "PART_0001_LOD1.002",
+          "sourceSolid": "COPHELI_KIT00_BODY_B",
+          "triangles": 899,
+          "blenderTriangles": 899
+        },
+        {
+          "node": "PART_0001_LOD2.002",
+          "sourceSolid": "COPHELI_KIT00_BODY_C",
+          "triangles": 482,
+          "blenderTriangles": 482
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/BodyKit/COPHELI/COPHELI_KIT00_BODY.prefab"
+    },
+    {
+      "id": "COPHELI_KIT00_FRONT_WINDOW",
+      "node": "COPHELI_KIT00_FRONT_WINDOW",
+      "category": "Glass",
+      "variant": "Source part",
+      "archive": "COPHELI",
+      "kit": "00",
+      "compatibility": "COPHELI",
+      "sourceSolids": [
+        "COPHELI_KIT00_FRONT_WINDOW_A",
+        "COPHELI_KIT00_FRONT_WINDOW_B",
+        "COPHELI_KIT00_FRONT_WINDOW_C",
+        "COPHELI_KIT00_FRONT_WINDOW_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0002_LOD0.002",
+          "sourceSolid": "COPHELI_KIT00_FRONT_WINDOW_A",
+          "triangles": 24,
+          "blenderTriangles": 24
+        },
+        {
+          "node": "PART_0002_LOD1.001",
+          "sourceSolid": "COPHELI_KIT00_FRONT_WINDOW_B",
+          "triangles": 18,
+          "blenderTriangles": 18
+        },
+        {
+          "node": "PART_0002_LOD2.001",
+          "sourceSolid": "COPHELI_KIT00_FRONT_WINDOW_C",
+          "triangles": 18,
+          "blenderTriangles": 18
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Glass/COPHELI/COPHELI_KIT00_FRONT_WINDOW.prefab"
+    }
+  ],
+  "blenderLayout": "Grid; each root stores assembly_position and library_grid_position",
+  "sourceVisualAttributes": {
+    "record": "06465eb2",
+    "tireOffsets": [
+      [
+        1.426,
+        0.76,
+        0,
+        0
+      ],
+      [
+        1.426,
+        -0.76,
+        0,
+        0
+      ],
+      [
+        3,
+        -0.76,
+        0,
+        0
+      ],
+      [
+        5,
+        0.76,
+        0,
+        0
+      ]
+    ],
+    "extraRearTireOffset": 0
+  },
+  "sourceChassis": null,
+  "singleSceneExport": true,
+  "sourceCatalog": "Assets/NfsMw/Content/Customization/Sources/COPHELI/Metadata/catalog.json",
+  "layout": "content-first-v2"
+}

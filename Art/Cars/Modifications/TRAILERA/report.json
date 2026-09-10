@@ -1,0 +1,185 @@
+{
+  "archive": "TRAILERA",
+  "sourceSha256": "97a27094614258a58a87738e950cabaf236b9690ac600feda0f871e55e1ca9f9",
+  "sourceSolidCount": 10,
+  "asset": "Assets/NfsMw/Content/Customization/Sources/TRAILERA/Geometry/Parts.glb",
+  "entries": [
+    {
+      "id": "TRAILERA_KIT00_BODY",
+      "node": "TRAILERA_KIT00_BODY",
+      "category": "Body kit",
+      "variant": "Source part",
+      "archive": "TRAILERA",
+      "kit": "00",
+      "compatibility": "TRAILERA",
+      "sourceSolids": [
+        "TRAILERA_KIT00_BODY_A",
+        "TRAILERA_KIT00_BODY_B",
+        "TRAILERA_KIT00_BODY_C",
+        "TRAILERA_KIT00_BODY_D",
+        "TRAILERA_KIT00_BODY_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0000_LOD0.003",
+          "sourceSolid": "TRAILERA_KIT00_BODY_A",
+          "triangles": 4814,
+          "blenderTriangles": 4814
+        },
+        {
+          "node": "PART_0000_LOD1.003",
+          "sourceSolid": "TRAILERA_KIT00_BODY_B",
+          "triangles": 556,
+          "blenderTriangles": 556
+        },
+        {
+          "node": "PART_0000_LOD2.003",
+          "sourceSolid": "TRAILERA_KIT00_BODY_C",
+          "triangles": 355,
+          "blenderTriangles": 355
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/BodyKit/TRAILERA/TRAILERA_KIT00_BODY.prefab"
+    },
+    {
+      "id": "TRAILERA_KIT00_FRONT_TIRE",
+      "node": "TRAILERA_KIT00_FRONT_TIRE",
+      "category": "Wheel and tyre",
+      "variant": "Assembly",
+      "archive": "TRAILERA",
+      "kit": "00",
+      "compatibility": "TRAILERA",
+      "sourceSolids": [
+        "TRAILERA_KIT00_FRONT_TIRE_A",
+        "TRAILERA_KIT00_FRONT_TIRE_B",
+        "TRAILERA_KIT00_FRONT_TIRE_C",
+        "TRAILERA_KIT00_FRONT_TIRE_D",
+        "TRAILERA_KIT00_FRONT_TIRE_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.4893900156021118,
+        "rimRadius": 0.3523608112335205,
+        "width": 0.7470077518373728,
+        "sourceCenterY": -0.3615439413115382
+      },
+      "lods": [
+        {
+          "node": "PART_0001_LOD0.003",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_A",
+          "triangles": 192,
+          "blenderTriangles": 192
+        },
+        {
+          "node": "PART_0001_LOD1.003",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_B",
+          "triangles": 120,
+          "blenderTriangles": 120
+        },
+        {
+          "node": "PART_0001_LOD2.003",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_C",
+          "triangles": 108,
+          "blenderTriangles": 108
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/WheelAndTyre/TRAILERA/TRAILERA_KIT00_FRONT_TIRE.prefab"
+    },
+    {
+      "id": "TRAILERA_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "node": "TRAILERA_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "category": "Tyre",
+      "variant": "Tyre only",
+      "archive": "TRAILERA",
+      "kit": "00",
+      "compatibility": "TRAILERA",
+      "sourceSolids": [
+        "TRAILERA_KIT00_FRONT_TIRE_A",
+        "TRAILERA_KIT00_FRONT_TIRE_B",
+        "TRAILERA_KIT00_FRONT_TIRE_C",
+        "TRAILERA_KIT00_FRONT_TIRE_D",
+        "TRAILERA_KIT00_FRONT_TIRE_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.4893900156021118,
+        "rimRadius": 0.3523608112335205,
+        "width": 0.7470077518373728,
+        "sourceCenterY": -0.3615439413115382
+      },
+      "lods": [
+        {
+          "node": "PART_0002_LOD0.003",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_A",
+          "triangles": 4800,
+          "blenderTriangles": 4800
+        },
+        {
+          "node": "PART_0002_LOD1.002",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_B",
+          "triangles": 2400,
+          "blenderTriangles": 2400
+        },
+        {
+          "node": "PART_0002_LOD2.002",
+          "sourceSolid": "TRAILERA_KIT00_FRONT_TIRE_C",
+          "triangles": 1008,
+          "blenderTriangles": 1008
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Tyre/TRAILERA/TRAILERA_KIT00_FRONT_TIRE_TYRE_ONLY.prefab"
+    }
+  ],
+  "blenderLayout": "Grid; each root stores assembly_position and library_grid_position",
+  "sourceVisualAttributes": {
+    "record": "00d82f8a",
+    "tireOffsets": [
+      [
+        -2.6,
+        0.8,
+        0,
+        0.55
+      ],
+      [
+        -2.6,
+        -0.8,
+        0,
+        0.55
+      ],
+      [
+        -3.9,
+        -0.8,
+        0,
+        0.55
+      ],
+      [
+        -3.9,
+        0.8,
+        0,
+        0.55
+      ]
+    ],
+    "extraRearTireOffset": 0
+  },
+  "sourceChassis": {
+    "WHEEL_BASE": 1.5,
+    "RIDE_HEIGHT": [
+      22,
+      22
+    ],
+    "TRACK_WIDTH": [
+      2.799999952316284,
+      2.799999952316284
+    ],
+    "FRONT_AXLE": -2.799999952316284,
+    "vehicle": "trailera",
+    "record": "0xAFA210F0/0x00D82F8A"
+  },
+  "singleSceneExport": true,
+  "sourceTrimMaterialsApplied": true,
+  "correctedTrimSlots": 3,
+  "sourceCatalog": "Assets/NfsMw/Content/Customization/Sources/TRAILERA/Metadata/catalog.json",
+  "layout": "content-first-v2"
+}

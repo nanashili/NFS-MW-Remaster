@@ -1,0 +1,25 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"message\": \"Command executed successfully.\",\n  \"data\": {\n    \"isCompilationSuccessful\": true,\n    \"isExecutionSuccessful\": true,\n    \"executionId\": 1,\n    \"compilationLogs\": \"\",\n    \"executionLogs\": \"[Log] Playing: [True]; traffic: [0]; cops: [0]; pedestrians: [0]; hazards: [0]\\n[Log] Enabled population controllers: [0]; player session: [True]\",\n    \"localFixedCode\": \"using UnityEngine;\\r\\nusing UnityEditor;\\r\\nusing NfsMwRemaster.Driving;\\r\\n\\r\\nnamespace Unity.AI.Assistant.Agent.Dynamic.Extension.Editor\\r\\n{\\r\\n    internal class CommandScript : IRunCommand\\r\\n    {\\r\\n        public void Execute(ExecutionResult result)\\r\\n        {\\r\\n            result.Log(\\\"Playing: {0}; traffic: {1}; cops: {2}; pedestrians: {3}; hazards: {4}\\\", EditorApplication.isPlaying, UnityEngine.Object.FindObjectsByType<RoadVehicleMotor>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<VehiclePoliceUnit>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<AmbientPedestrian>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<PoliceRoadHazard>(FindObjectsSortMode.None).Length);\\r\\n            int enabled = 0;\\r\\n            foreach (var c in UnityEngine.Object.FindObjectsByType<FreeRoamTraffic>(FindObjectsSortMode.None))\\r\\n                if (c.isActiveAndEnabled)\\r\\n                    enabled++;\\r\\n            foreach (var c in UnityEngine.Object.FindObjectsByType<TrafficWorldDirector>(FindObjectsSortMode.None))\\r\\n                if (c.isActiveAndEnabled)\\r\\n                    enabled++;\\r\\n            result.Log(\\\"Enabled population controllers: {0}; player session: {1}\\\", enabled, UnityEngine.Object.FindAnyObjectByType<FreeRoamSession>() != null);\\r\\n        }\\r\\n    }\\r\\n}\",\n    \"result\": \"Command executed successfully.\"\n  }\n}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Command executed successfully.",
+      "data": {
+        "isCompilationSuccessful": true,
+        "isExecutionSuccessful": true,
+        "executionId": 1,
+        "compilationLogs": "",
+        "executionLogs": "[Log] Playing: [True]; traffic: [0]; cops: [0]; pedestrians: [0]; hazards: [0]\n[Log] Enabled population controllers: [0]; player session: [True]",
+        "localFixedCode": "using UnityEngine;\r\nusing UnityEditor;\r\nusing NfsMwRemaster.Driving;\r\n\r\nnamespace Unity.AI.Assistant.Agent.Dynamic.Extension.Editor\r\n{\r\n    internal class CommandScript : IRunCommand\r\n    {\r\n        public void Execute(ExecutionResult result)\r\n        {\r\n            result.Log(\"Playing: {0}; traffic: {1}; cops: {2}; pedestrians: {3}; hazards: {4}\", EditorApplication.isPlaying, UnityEngine.Object.FindObjectsByType<RoadVehicleMotor>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<VehiclePoliceUnit>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<AmbientPedestrian>(FindObjectsSortMode.None).Length, UnityEngine.Object.FindObjectsByType<PoliceRoadHazard>(FindObjectsSortMode.None).Length);\r\n            int enabled = 0;\r\n            foreach (var c in UnityEngine.Object.FindObjectsByType<FreeRoamTraffic>(FindObjectsSortMode.None))\r\n                if (c.isActiveAndEnabled)\r\n                    enabled++;\r\n            foreach (var c in UnityEngine.Object.FindObjectsByType<TrafficWorldDirector>(FindObjectsSortMode.None))\r\n                if (c.isActiveAndEnabled)\r\n                    enabled++;\r\n            result.Log(\"Enabled population controllers: {0}; player session: {1}\", enabled, UnityEngine.Object.FindAnyObjectByType<FreeRoamSession>() != null);\r\n        }\r\n    }\r\n}",
+        "result": "Command executed successfully."
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

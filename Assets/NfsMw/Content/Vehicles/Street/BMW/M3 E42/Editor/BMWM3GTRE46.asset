@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905403ef1fc0948c3a95b211c0674aab, type: 3}
+  m_Name: Vehicle
+  m_EditorClassIdentifier: NfsMwRemaster.Driving.Editor::NfsMwRemaster.Driving.Editor.VehicleProfileDraft
+  schema: 2
+  id: 373752a6e9a8407eab5b2b6fa3c175e5
+  catalog: {fileID: 11400000, guid: 4c3c862160c0c4656b873520b1f3e66b, type: 2}
+  modelId: bb15f430b7fc4220b76235f5cbc89037
+  variantId: a85471085bae4772865b2f8256a62f95
+  modelYear: 2005
+  localizationKey: 
+  tags:
+  - Most Wanted
+  - Player
+  - bmwm3gtre46
+  description: Current-scene BMW, assembled through the shared vehicle framework. Model scale and visual geometry preserved; wheel and caliper geometry bound to suspension. Existing handling, audio and catalogue IDs retained. Cockpit controls and wipers need an artist rig.
+  provenance: Generated from the installed PC CARS directory and resolved pvehicle/engineaudio database references. PC database inheritance and ordered script fields; recovered AEMS sample selection, sustain loops and surface references. Unity adapts telemetry, volume, GIN blending and spatialization. Base sound upgrades. Original-game time-stretch/filter DSP, random sequence and sputter mixer callbacks are not reproduced.
+  vehiclePrefab: {fileID: 9122238695026195815, guid: e8dbf29c146d8450981dc94ec2f33afb, type: 3}
+  tuning: {fileID: 11400000, guid: 0325cc43c5e8f4a709e7571e2a2e420b, type: 2}
+  runtimeDefinition: {fileID: 11400000, guid: 1fa75652dc5154f498b67eb4e6a3ffc3, type: 2}
+  physicsLabSetup: {fileID: 11400000, guid: b208e13c1d25349668283dffb5b76b9e, type: 2}
+  physicsLabExperiment: {fileID: 11400000, guid: 7135cfb1ce6e840fc99998fbca3955de, type: 2}
+  audio: {fileID: 11400000, guid: 133f3978383054746aa418faf7d9dbe2, type: 2}
+  audioAnalysis: {fileID: 0}
+  customization: {fileID: 11400000, guid: baeae4b5226b2491eaf7ac4ab3dccb45, type: 2}
+  performance: {fileID: 11400000, guid: aace80be941a14b0c9f428a0ef2dfb3b, type: 2}
+  thumbnail: {fileID: 0}
+  price: 0
+  availableInStore: 0
+  storeCatalog: {fileID: 0}
+  budget:
+    maximumLod0Triangles: 120000
+    maximumMaterialSlots: 32
+    maximumTextureDimension: 4096
+    maximumAudioMiB: 64
+    requireLods: 1
+    enforceAsErrors: 0
+  assembly:
+    bodySource: {fileID: 756068486026566912, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+    presentationSource: {fileID: 5553432543818499782, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+    mirrorSource: {fileID: 8995258712856783761, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+    excludedBodyRenderers: []
+    bodyPosition: {x: 0, y: 0, z: 0}
+    bodyEuler: {x: 0, y: 0, z: 0}
+    bodyScale: {x: 1, y: 1, z: 1}
+    colliderCenter: {x: 0, y: -0.06, z: 0.07}
+    colliderSize: {x: 1.98, y: 1.12, z: 5.16}
+    wheels:
+    - visualSource: {fileID: 4012146285930248369, guid: d9fbc4caed63846fb86e16b8faa4d7ad, type: 3}
+      suspensionAnchor: {x: -0.8442993, y: -0.07128924, z: 1.8119507}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 0
+      handbrake: 0
+    - visualSource: {fileID: 1763662334740787138, guid: d6c7321d1254d445ea8dd996e1e931c6, type: 3}
+      suspensionAnchor: {x: 0.89624023, y: -0.07128924, z: 1.8105469}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 0
+      handbrake: 0
+    - visualSource: {fileID: 6604289270860836737, guid: d1071a1a9ff6b4f5cb4ceacd5bdb905e, type: 3}
+      suspensionAnchor: {x: -0.8442993, y: -0.071288764, z: -1.5532837}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 1
+      handbrake: 1
+    - visualSource: {fileID: 1749624805514877656, guid: 69f6ba12d395743fdbb4ce9d3147d528, type: 3}
+      suspensionAnchor: {x: 0.89624023, y: -0.071288764, z: -1.5408936}
+      visualEuler: {x: 0, y: 0, z: 0}
+      visualScale: {x: 1, y: 1, z: 1}
+      driven: 1
+      handbrake: 1
+    sockets:
+    - id: paint
+      category: 5
+      stockRenderers:
+      - {fileID: 3691217886796050243, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 7703983159849257076, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 5957146053856022398, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 8654031914418333940, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 6331714961607838368, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 225057434539024135, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 3053408004172493910, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    - id: glass
+      category: 7
+      stockRenderers:
+      - {fileID: 6308981603769747039, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 5550741286496907113, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    - id: front-bumper
+      category: 0
+      stockRenderers:
+      - {fileID: 2552586461567110002, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 5957146053856022398, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 8131268590670123030, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    - id: rear-bumper
+      category: 0
+      stockRenderers:
+      - {fileID: 2934661050857792662, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 8654031914418333940, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 7741039801742948566, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    - id: hood
+      category: 3
+      stockRenderers:
+      - {fileID: 3691217886796050243, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 8143259254910534689, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      - {fileID: 1594938510675816079, guid: b99fbc7bb69cb428fa2adacbee200d3f, type: 3}
+      position: {x: 0, y: 0, z: 0}
+      euler: {x: 0, y: 0, z: 0}
+    includePlayerInput: 1
+  generatedProduct: {fileID: 0}
+  generatedFingerprint: 
+  generatedOutputHash: 

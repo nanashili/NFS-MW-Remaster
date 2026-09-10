@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa29ff44a77d478992888be60a25016, type: 3}
+  m_Name: GrayboxSprint
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.RaceRouteDefinition
+  schema: 1
+  id: 7827d1a814a7475f995a76cb9c899fe4
+  displayName: Synthetic graybox sprint
+  localizationKey: 
+  tags: 
+  network: {fileID: 11400000, guid: 4e9b4e632c01c483cb9e80d00a646bf6, type: 2}
+  policy: 0
+  laps: 1
+  timeLimit: 180
+  targetSpeedKph: 100
+  minimumWidth: 3
+  maximumGradeDegrees: 20
+  maximumTurnDegrees: 140
+  requiredSurface: {fileID: 0}
+  excludedRoadClasses: 
+  legs:
+  - id: f4b1edd9cdd34d1a86d6d711e1086a6b
+    label: Straight sector
+    paths:
+    - id: 77b88291492a4fff8902549b1c0253fa
+      label: Main
+      spans:
+      - id: 3d9ef34e975f45bd935ebc6201a0f9f2
+        branch: main
+        laneId: 95b0fe740be34b2d94164b2f0e047f59
+        startMetres: 30
+        endMetres: 270
+    gateHeight: 5
+    gateSpacing: 40
+  vehicle: {fileID: 11400000, guid: 7a6fea17b7d5e47c9b99d8836f8e5d73, type: 2}
+  racingLine: {fileID: 11400000, guid: ab5a933de659b4bf487ba746678b31fd, type: 2}
+  published: {fileID: 11400000, guid: 1123b599eed894e57bf8ec7442e60942, type: 2}
+  gridCount: 2
+  vehicleWidth: 2.5
+  vehicleLength: 5
+  vehicleHeight: 3.2
+  gridGap: 2
+  finishRunoff: 15
+  sideBySideGrid: 0
+  notes: 

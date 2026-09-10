@@ -1,0 +1,105 @@
+{
+  "car": "FORDGT",
+  "sourceSha256": "24b284dc20a8873d434c222410ac0975ce98bd5977f6e7e848de09bb4f23a26b",
+  "stockParts": [
+    "FORDGT_KIT00_BODY_A",
+    "FORDGT_KIT00_FRONT_LEFT_WINDOW_A",
+    "FORDGT_KIT00_FRONT_RIGHT_WINDOW_A",
+    "FORDGT_KIT00_FRONT_WINDOW_A",
+    "FORDGT_KIT00_HOOD_A",
+    "FORDGT_KIT00_INTERIOR_A",
+    "FORDGT_KIT00_LEFT_BRAKELIGHT_A",
+    "FORDGT_KIT00_LEFT_BRAKELIGHT_GLASS_A",
+    "FORDGT_KIT00_LEFT_HEADLIGHT_A",
+    "FORDGT_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "FORDGT_KIT00_LEFT_SIDE_MIRROR_A",
+    "FORDGT_KIT00_REAR_WINDOW_A",
+    "FORDGT_KIT00_RIGHT_BRAKELIGHT_A",
+    "FORDGT_KIT00_RIGHT_BRAKELIGHT_GLASS_A",
+    "FORDGT_KIT00_RIGHT_HEADLIGHT_A",
+    "FORDGT_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "FORDGT_KIT00_RIGHT_SIDE_MIRROR_A",
+    "FORDGT_KIT00_SPOILER_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 85491,
+      "meshObjects": 22
+    },
+    {
+      "lod": 1,
+      "triangles": 13370,
+      "meshObjects": 22
+    },
+    {
+      "lod": 2,
+      "triangles": 4667,
+      "meshObjects": 22
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.2300000190734863,
+        0.8008973002433777,
+        0.2549999952316284
+      ],
+      "radius": 0.34159626066684723,
+      "width": 0.26058215368539095
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.2300000190734863,
+        -0.8008973002433777,
+        0.2549999952316284
+      ],
+      "radius": 0.34159626066684723,
+      "width": 0.26058215368539095
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.4700000286102295,
+        0.830897331237793,
+        0.2549999952316284
+      ],
+      "radius": 0.34159626066684723,
+      "width": 0.26058215368539095
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.4700000286102295,
+        -0.830897331237793,
+        0.2549999952316284
+      ],
+      "radius": 0.34159626066684723,
+      "width": 0.26058215368539095
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.6500000953674316,
+    "RIDE_HEIGHT": [
+      6.5,
+      6.5
+    ],
+    "TRACK_WIDTH": [
+      1.465000033378601,
+      1.5219999551773071
+    ],
+    "FRONT_AXLE": 1.1799999475479126,
+    "vehicle": "fordgt",
+    "record": "0xAFA210F0/0x42C0A5EA"
+  },
+  "sourceTextureCount": 38,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Ford/GT/Remastered.glb"
+}

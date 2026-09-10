@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "concrete": {
+    "source": "exec-af37473f-a00a-4452-be8b-f9bf34e715b5.png",
+    "output": "SharedTextures/concrete_BaseColor_2K.png",
+    "prompt": "Create one seamless tileable PBR BASE COLOR texture image for a modern realistic remake of a gritty 2005 street-racing garage. Square 2048x2048 texture filling image, orthographic straight overhead view of 3 meters of smooth grey poured workshop concrete, fine dense mineral grain, very subtle hairline wear and faint tire scuffs, muted neutral cool grey medium value, understated oil staining with no large black stains. Keep the surface relatively clean, contemporary premium but used industrial garage feel. Even diffuse shadowless illumination, NO directional shadows, NO specular highlights, NO ambient occlusion, NO perspective, NO objects, NO markings, NO letters, NO seams or borders, NO tiles or slab joints. Very small physically realistic detail. Perfect seamless wrapping on all sides. Image is a material texture only, not a rendered room."
+  },
+  "safehouseWall": {
+    "source": "exec-096ea103-bb01-423a-a868-9fcdfc331ca5.png",
+    "reference": "Decoded/CAREER_SAFEHOUSE/textures-png/0xD07CC66B.png",
+    "output": "SharedTextures/safehouse_wall_BaseColor_2K.png",
+    "prompt": "Edit target: this exact 2:1 garage wall texture atlas. Rebuild it for a modern photorealistic game remake with high quality microdetail, maximum width around2048. Preserve the EXACT UV layout: top 23% of image is the horizontal courses of dark grey cinderblocks, bottom77% a flat painted grey plaster/concrete wall; preserve all horizontal division positions and brick coursing scale. Rich fine mineral grain and peeling paint flecks, restrained dirt near bottom, muted slightly green-grey dark blocks and neutral mid grey plaster. Reduce heavy baked shadows along top and base so the image is BASE COLOR for physically based material. Even diffuse flat lighting, no cast shadows, no specular, no objects, no text, no perspective, no borders. Make repeatable horizontally. Sharper fine detail than source, cleaner modern industrial condition while keeping original wall character."
+  },
+  "reusedCladding": "../FrontendCourtyard/Remake/texture-prompts.json",
+  "normalMaps": "Native Cycles tangent-space bake from shallow colour-driven bump; inferred detail.",
+  "packedMaps": "Native Cycles emit bake of authored roughness values; no runtime procedural nodes."
+}

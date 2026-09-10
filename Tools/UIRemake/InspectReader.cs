@@ -1,0 +1,2 @@
+using System; using System.Reflection;
+class InspectReader {static void Main(string[] args){var a=Assembly.LoadFrom(args[0]);foreach(var n in new[]{"Common.ChunkManager","Common.Textures.TpkManager","Common.Textures.MostWantedTpk","Common.Textures.Data.TexturePack","Common.Textures.Data.Texture"}) {var t=a.GetType(n);Console.WriteLine(n);foreach(var m in t.GetMembers(BindingFlags.Public|BindingFlags.Instance|BindingFlags.DeclaredOnly|BindingFlags.Static)) Console.WriteLine("  "+m);}}}

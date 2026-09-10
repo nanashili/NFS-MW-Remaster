@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7952e7a90b3714c0baa903da890d8c17, type: 3}
+  m_Name: NFS2015_TRAFFIC_FIDELITY
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.TrafficWorldProfile
+  profileId: NFS2015_TRAFFIC_FIDELITY
+  calibrationStatus: Uncalibrated engineering baseline. Not measured NFS 2015 density.
+  worldSeed: 2015
+  maximumLogicalAgents: 256
+  defaultPortalDemandPerHour: 30
+  demandScale: 1
+  populationInterval: 0.5
+  physicalRadius: 180
+  lodHysteresis: 60
+  promotionLookAheadSeconds: 5
+  disabledMinimumLifetime: 45
+  maximumPendingPerFlow: 32
+  minimumPortalHeadway: 3
+  startingHour: 22
+  gameHoursPerRealHour: 1
+  roadClassDemand:
+  - 0.45
+  - 1
+  - 1.25
+  - 0.5
+  - 0.2
+  vehicleWeights:
+  - 20
+  - 38
+  - 12
+  - 8
+  - 8
+  - 10
+  - 4
+  districts: []
+  drivers: {fileID: 11400000, guid: a6594f16ddd5b4f1dab54a84b939ba5d, type: 2}
+  demand: []

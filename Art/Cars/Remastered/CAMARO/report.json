@@ -1,0 +1,97 @@
+{
+  "car": "CAMARO",
+  "sourceSha256": "cbf0f71957d90eeab79eae700548c29123aa9c5c70d3cc1636eef95b1b58ecb9",
+  "stockParts": [
+    "CAMARO_KIT00_BODY_A",
+    "CAMARO_KIT00_FRONT_LEFT_WINDOW_A",
+    "CAMARO_KIT00_FRONT_RIGHT_WINDOW_A",
+    "CAMARO_KIT00_FRONT_WINDOW_A",
+    "CAMARO_KIT00_INTERIOR_A",
+    "CAMARO_KIT00_LEFT_BRAKELIGHT_A",
+    "CAMARO_KIT00_LEFT_BRAKELIGHT_GLASS_A",
+    "CAMARO_KIT00_REAR_WINDOW_A",
+    "CAMARO_KIT00_RIGHT_BRAKELIGHT_A",
+    "CAMARO_KIT00_RIGHT_BRAKELIGHT_GLASS_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 92010,
+      "meshObjects": 14
+    },
+    {
+      "lod": 1,
+      "triangles": 13786,
+      "meshObjects": 14
+    },
+    {
+      "lod": 2,
+      "triangles": 4815,
+      "meshObjects": 14
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.409999966621399,
+        0.8017972111701965,
+        0.25
+      ],
+      "radius": 0.3408229649066925,
+      "width": 0.2658618651330471
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.409999966621399,
+        -0.8017972111701965,
+        0.25
+      ],
+      "radius": 0.3408229649066925,
+      "width": 0.2658618651330471
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.340000033378601,
+        0.8017972111701965,
+        0.25
+      ],
+      "radius": 0.3408229649066925,
+      "width": 0.2658618651330471
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.340000033378601,
+        -0.8017972111701965,
+        0.25
+      ],
+      "radius": 0.3408229649066925,
+      "width": 0.2658618651330471
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.743000030517578,
+    "RIDE_HEIGHT": [
+      7,
+      7
+    ],
+    "TRACK_WIDTH": [
+      1.4989999532699585,
+      1.4989999532699585
+    ],
+    "FRONT_AXLE": 1.4199999570846558,
+    "vehicle": "camaro",
+    "record": "0xAFA210F0/0x90944519"
+  },
+  "sourceTextureCount": 29,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Chevrolet/Camaro/Remastered.glb"
+}

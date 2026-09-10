@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e933d6058796ac2c43d6da0b3040b466, type: 3}
+  m_Name: CivilianDriverPopulation
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.TrafficDriverPopulationProfile
+  distributions:
+  - weight: 20
+    correlatedVariation: 0.08
+    median:
+      speedMultiplier: 0.846
+      archetype: 0
+      followingSeconds: 2.205
+      acceleration: 1.65
+      comfortableBraking: 2.65
+      standstillGap: 2.8799999
+      jerk: 2.2
+      reactionSeconds: 0.84499997
+      emergencyBraking: 12
+      politeness: 0.73
+      intersectionGap: 6.23
+      patienceSeconds: 33
+      lateralPreference: 0
+      actuatorSeconds: 0
+  - weight: 60
+    correlatedVariation: 0.08
+    median:
+      speedMultiplier: 0.95000005
+      archetype: 1
+      followingSeconds: 1.825
+      acceleration: 2.25
+      comfortableBraking: 3.25
+      standstillGap: 2.4
+      jerk: 3
+      reactionSeconds: 0.625
+      emergencyBraking: 12
+      politeness: 0.45000002
+      intersectionGap: 5.15
+      patienceSeconds: 25
+      lateralPreference: 0
+      actuatorSeconds: 0
+  - weight: 17
+    correlatedVariation: 0.08
+    median:
+      speedMultiplier: 1.0488
+      archetype: 2
+      followingSeconds: 1.464
+      acceleration: 2.82
+      comfortableBraking: 3.82
+      standstillGap: 1.944
+      jerk: 3.76
+      reactionSeconds: 0.416
+      emergencyBraking: 12
+      politeness: 0.184
+      intersectionGap: 4.124
+      patienceSeconds: 17.4
+      lateralPreference: 0
+      actuatorSeconds: 0
+  - weight: 3
+    correlatedVariation: 0.08
+    median:
+      speedMultiplier: 1.0761
+      archetype: 3
+      followingSeconds: 1.3642501
+      acceleration: 2.9775
+      comfortableBraking: 3.9775
+      standstillGap: 1.818
+      jerk: 3.97
+      reactionSeconds: 0.35825
+      emergencyBraking: 12
+      politeness: 0.11049999
+      intersectionGap: 3.8404999
+      patienceSeconds: 15.299999
+      lateralPreference: 0
+      actuatorSeconds: 0

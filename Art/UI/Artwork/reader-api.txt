@@ -1,0 +1,88 @@
+Common.ChunkManager
+  System.Collections.Generic.List`1[Common.ChunkManager+Chunk] get_Chunks()
+  Void Read(System.String)
+  Void Read(System.IO.BinaryReader)
+  Void Reset()
+  Void .ctor(Game)
+  System.Collections.Generic.List`1[Common.ChunkManager+Chunk] Chunks
+  Common.ChunkManager+BasicResource
+  Common.ChunkManager+Chunk
+Common.Textures.TpkManager
+  Common.Textures.Data.TexturePack ReadTexturePack(System.IO.BinaryReader, UInt32)
+  Void WriteTexturePack(Common.ChunkStream, Common.Textures.Data.TexturePack)
+Common.Textures.MostWantedTpk
+  Common.Textures.Data.TexturePack ReadTexturePack(System.IO.BinaryReader, UInt32)
+  Void WriteTexturePack(Common.ChunkStream, Common.Textures.Data.TexturePack)
+  Void .ctor()
+Common.Textures.Data.TexturePack
+  System.String get_Name()
+  Void set_Name(System.String)
+  System.String get_PipelinePath()
+  Void set_PipelinePath(System.String)
+  UInt32 get_Hash()
+  Void set_Hash(UInt32)
+  UInt32 get_Version()
+  Void set_Version(UInt32)
+  UInt32 get_TpkSize()
+  Void set_TpkSize(UInt32)
+  UInt32 get_TpkOffset()
+  Void set_TpkOffset(UInt32)
+  System.String get_Offset()
+  System.String get_Size()
+  System.Collections.Generic.List`1[Common.Textures.Data.Texture] get_Textures()
+  Void set_Textures(System.Collections.Generic.List`1[Common.Textures.Data.Texture])
+  Int32 get_NumTextures()
+  Common.Textures.Data.Texture Find(UInt32)
+  Common.Textures.Data.Texture Find(System.String)
+  Void .ctor()
+  System.String Name
+  System.String PipelinePath
+  UInt32 Hash
+  UInt32 Version
+  UInt32 TpkSize
+  UInt32 TpkOffset
+  System.String Offset
+  System.String Size
+  System.Collections.Generic.List`1[Common.Textures.Data.Texture] Textures
+  Int32 NumTextures
+Common.Textures.Data.Texture
+  System.String get_Name()
+  Void set_Name(System.String)
+  UInt32 get_TexHash()
+  Void set_TexHash(UInt32)
+  UInt32 get_TypeHash()
+  Void set_TypeHash(UInt32)
+  UInt32 get_Width()
+  Void set_Width(UInt32)
+  UInt32 get_Height()
+  Void set_Height(UInt32)
+  UInt32 get_MipMapCount()
+  Void set_MipMapCount(UInt32)
+  UInt32 get_DataSize()
+  Void set_DataSize(UInt32)
+  UInt32 get_DataOffset()
+  Void set_DataOffset(UInt32)
+  Byte[] get_Data()
+  Void set_Data(Byte[])
+  UInt32 get_PitchOrLinearSize()
+  Void set_PitchOrLinearSize(UInt32)
+  Common.Textures.Data.TextureCompression get_CompressionType()
+  Void set_CompressionType(Common.Textures.Data.TextureCompression)
+  System.String get_Format()
+  System.String get_Dimensions()
+  Byte[] GenerateImage()
+  Void .ctor()
+  System.String Name
+  UInt32 TexHash
+  UInt32 TypeHash
+  UInt32 Width
+  UInt32 Height
+  UInt32 MipMapCount
+  UInt32 DataSize
+  UInt32 DataOffset
+  Byte[] Data
+  UInt32 PitchOrLinearSize
+  Common.Textures.Data.TextureCompression CompressionType
+  System.String Format
+  System.String Dimensions
+  System.Collections.Generic.Dictionary`2[System.String,System.Object] Properties

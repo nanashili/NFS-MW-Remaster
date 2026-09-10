@@ -1,0 +1,611 @@
+{
+  "resolution": 512,
+  "spacingMetres": 2,
+  "rowOrder": "Minimum Unity Z first",
+  "policy": "Highest original natural-ground triangle at each pixel centre. Eight representative original textures; original UV layout and transition textures are approximated. Unsampled pixels use grass; terrain holes remain unchanged.",
+  "groups": [
+    {
+      "name": "Grass",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/156e7175.png",
+      "tileSize": 20.07843137254902
+    },
+    {
+      "name": "Dark grass",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/8beffd79.png",
+      "tileSize": 18.962962962962962
+    },
+    {
+      "name": "Golf rough",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/0319b1a2.png",
+      "tileSize": 20.07843137254902
+    },
+    {
+      "name": "Golf fairway",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/074bc2d0.png",
+      "tileSize": 19.692307692307693
+    },
+    {
+      "name": "Rock",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/761cfb13.png",
+      "tileSize": 39.38461538461539
+    },
+    {
+      "name": "Cliff",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/761ea036.png",
+      "tileSize": 22.755555555555556
+    },
+    {
+      "name": "Sand",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/fc21a2e1.png",
+      "tileSize": 19.692307692307693
+    },
+    {
+      "name": "Dirt",
+      "texture": "Assets/NfsMw/Content/World/Models/RockportTerrainSource/Textures/c8779df9.png",
+      "tileSize": 12.641975308641975
+    }
+  ],
+  "materialMapping": [
+    {
+      "material": "TRN_CT_HILLS_FIELDS_cc82c25a",
+      "group": 0
+    },
+    {
+      "material": "TRNS_GRASSA_LD_GRASSA_0_156e7175",
+      "group": 0
+    },
+    {
+      "material": "MD_GRASSYTILE1024_9717031d",
+      "group": 0
+    },
+    {
+      "material": "TRNS_CLIFFC_LU_02_9f32044d",
+      "group": 5
+    },
+    {
+      "material": "TRNS_GRASSA_LE_GRASSA_C_10bd0efc",
+      "group": 0
+    },
+    {
+      "material": "TRNS_CLIFFC_LU_01_9f32044c",
+      "group": 5
+    },
+    {
+      "material": "TRNS_GRASSC_LD_GRASSC_0_8beffd79",
+      "group": 1
+    },
+    {
+      "material": "TRNS_CLIFFD_LE_CLIFFD_G_acead046",
+      "group": 5
+    },
+    {
+      "material": "TRNS_CLIFFD_LE_CLIFFD_G_acead047",
+      "group": 5
+    },
+    {
+      "material": "TRNS_GRASSA_LE_GRASSA_C_10bd9b5d",
+      "group": 0
+    },
+    {
+      "material": "TRNS_ALL_LF_CLIFFD_02_761ea037",
+      "group": 5
+    },
+    {
+      "material": "TRNS_ALL_LF_CLIFFD_01_761ea036",
+      "group": 5
+    },
+    {
+      "material": "TRN_CT_HILLS_e7c4c3e4",
+      "group": 4
+    },
+    {
+      "material": "TRN_CT_MOUNT1_ec7896cc",
+      "group": 4
+    },
+    {
+      "material": "TRNS_ALL_LF_CLIFFA_01_761cfb13",
+      "group": 4
+    },
+    {
+      "material": "TRNS_GCGRASS_LX_PUTTING_896e0aad",
+      "group": 3
+    },
+    {
+      "material": "TRN_STADIUMGRASS_7d096209",
+      "group": 0
+    },
+    {
+      "material": "TRNS_GRASSA_LC_PAVA_WL__5c5c9cac",
+      "group": 0
+    },
+    {
+      "material": "TRNS_GCGRASS_LD_ROUGH_0_0319b1a2",
+      "group": 2
+    },
+    {
+      "material": "TRNS_GCGRASS_LE_ROUGH_C_319706ca",
+      "group": 2
+    },
+    {
+      "material": "TRNS_GCGRASS_LD_FAREWAY_074bc2d0",
+      "group": 3
+    },
+    {
+      "material": "TRNS_GCGRASS_LD_FAREWAY_633b764c",
+      "group": 3
+    },
+    {
+      "material": "TRNS_GCGRASS_LD_ROUGH_S_c3beec68",
+      "group": 2
+    },
+    {
+      "material": "TRNS_SANDA_LD_SANDA_01_fc21a2e1",
+      "group": 6
+    },
+    {
+      "material": "TRNS_GCGRASS_LY_PATH_01_768829bf",
+      "group": 7
+    },
+    {
+      "material": "TRNS_GCGRASS_LC_GREEN_F_f257c5fb",
+      "group": 3
+    },
+    {
+      "material": "TRNS_GCGRASS_TOFF_01_1908a9dd",
+      "group": 3
+    },
+    {
+      "material": "TRN_TPARKGRASS1_5a588f65",
+      "group": 0
+    },
+    {
+      "material": "TER_CAMP_GRASS1BLND_8ee33afa",
+      "group": 0
+    },
+    {
+      "material": "TER_CAMP_GRASS1_1ea99f5a",
+      "group": 0
+    },
+    {
+      "material": "TRNS_GRASSA_LE_GRASSA_C_10bbf63a",
+      "group": 0
+    },
+    {
+      "material": "TRN_ROCKCLIFFA_KT_c0c6f7e4",
+      "group": 4
+    },
+    {
+      "material": "TRNS_SANDA_LE_SANDA_WAT_76236904",
+      "group": 6
+    },
+    {
+      "material": "TRNS_SANDA_LD_SANDA_GRA_7a676a62",
+      "group": 6
+    },
+    {
+      "material": "TRNS_GRASSB_LD_GRASSB_0_50af3777",
+      "group": 1
+    },
+    {
+      "material": "TRNS_BEACHTRANS_A_20ef6760",
+      "group": 6
+    },
+    {
+      "material": "TRNS_GRASSA_LE_GRASSA_C_10bbf63b",
+      "group": 0
+    },
+    {
+      "material": "TRNS_ALL_LF_CLIFFA_02_761cfb14",
+      "group": 4
+    },
+    {
+      "material": "TRN_CT_HILLS2_e05d4096",
+      "group": 4
+    },
+    {
+      "material": "ORG_DIRT_c8779df9",
+      "group": 7
+    },
+    {
+      "material": "TRN_DIRTREPEAT_9f9bcd66",
+      "group": 7
+    }
+  ],
+  "triangles": 213889,
+  "tiles": [
+    {
+      "name": "height_x03_z00",
+      "counts": {
+        "255": 259808,
+        "0": 2336
+      },
+      "sha256": "b55a513c3a0fe5941fcbeab6fe77ef16901ed03aaa32326ca04e1f2b726c155c"
+    },
+    {
+      "name": "height_x04_z00",
+      "counts": {
+        "255": 256045,
+        "0": 4401,
+        "4": 1698
+      },
+      "sha256": "25081db0941d089f8ba710abb7fc030108a28c37ccadd03ad8156eb804990b4b"
+    },
+    {
+      "name": "height_x02_z01",
+      "counts": {
+        "255": 103307,
+        "4": 49424,
+        "0": 61514,
+        "5": 10452,
+        "2": 20883,
+        "7": 1586,
+        "3": 10102,
+        "1": 3571,
+        "6": 1305
+      },
+      "sha256": "5fe4fc6dc4e4f63db7bff1d3e33ab4e30c52f0b2b61188fa2e083cfcd8df24f6"
+    },
+    {
+      "name": "height_x03_z01",
+      "counts": {
+        "255": 139313,
+        "0": 55839,
+        "4": 44258,
+        "5": 13454,
+        "1": 6194,
+        "2": 1726,
+        "7": 230,
+        "3": 1130
+      },
+      "sha256": "c0c3583ca725ef79be8ffa35d15d2b6938bb9842af4ad1a47e93d6f720630a3b"
+    },
+    {
+      "name": "height_x04_z01",
+      "counts": {
+        "0": 59480,
+        "4": 4698,
+        "255": 169506,
+        "5": 7581,
+        "1": 20879
+      },
+      "sha256": "9057fbdbe4276a66056583706060451fafcebf58fd76e2fa49bbe7b2bb07df8a"
+    },
+    {
+      "name": "height_x05_z01",
+      "counts": {
+        "255": 248786,
+        "1": 11203,
+        "5": 1779,
+        "0": 376
+      },
+      "sha256": "e0e5d389d03783bc4dff3029a01816754fc34ac216db7267002aaa5f667187e8"
+    },
+    {
+      "name": "height_x00_z02",
+      "counts": {
+        "255": 239139,
+        "4": 22109,
+        "0": 896
+      },
+      "sha256": "642cad59468883000e4fc770f8ea5032d21af7a81ebdf4d2c9866c48d42b7b76"
+    },
+    {
+      "name": "height_x01_z02",
+      "counts": {
+        "255": 178923,
+        "4": 61796,
+        "5": 72,
+        "0": 21353
+      },
+      "sha256": "d3f88289c7e338aa518e973f96764deca04a5adcb1fd2c660251135787566967"
+    },
+    {
+      "name": "height_x02_z02",
+      "counts": {
+        "255": 123921,
+        "4": 36504,
+        "0": 47808,
+        "5": 14774,
+        "2": 14174,
+        "7": 1377,
+        "3": 7101,
+        "6": 881,
+        "1": 15604
+      },
+      "sha256": "2d8fe1abdd1d4ab82fb87ae95f44f9c6f8ba823c365483806efd7ae89b1f91ae"
+    },
+    {
+      "name": "height_x03_z02",
+      "counts": {
+        "1": 38806,
+        "5": 13895,
+        "2": 7934,
+        "3": 4122,
+        "7": 646,
+        "255": 157939,
+        "0": 38411,
+        "6": 391
+      },
+      "sha256": "2d7b032552f9713338d47f8f080492fe4a3e3fb280131841ea460b663b878f9b"
+    },
+    {
+      "name": "height_x04_z02",
+      "counts": {
+        "0": 127167,
+        "255": 122701,
+        "5": 3049,
+        "1": 9087,
+        "6": 140
+      },
+      "sha256": "5f62798259e28f015c17ebf5d59bd542895dff4456e499c85cf742ecf7233069"
+    },
+    {
+      "name": "height_x05_z02",
+      "counts": {
+        "1": 28130,
+        "5": 4382,
+        "255": 207335,
+        "0": 21301,
+        "4": 996
+      },
+      "sha256": "025976b99f6807e41dc1af61cf61d07d3745995cea69b4c7bdfed98e20d6a79f"
+    },
+    {
+      "name": "height_x06_z02",
+      "counts": {
+        "255": 261928,
+        "4": 216
+      },
+      "sha256": "d435ddf524ba801a6c93130453e1ae5bdbf2324ce03ff01a61eea6fb5ff9a31e"
+    },
+    {
+      "name": "height_x00_z03",
+      "counts": {
+        "255": 237184,
+        "4": 23963,
+        "0": 997
+      },
+      "sha256": "f950dc43ebea9cddf87096bbb79d653fd2f2bdacdebdd8b342a4f274f228d25c"
+    },
+    {
+      "name": "height_x01_z03",
+      "counts": {
+        "4": 67652,
+        "255": 140240,
+        "0": 42785,
+        "5": 11467
+      },
+      "sha256": "c9fabff8ac5a32d6cd600143fc26fd13613239f4daf31c66c2f4329d9421855b"
+    },
+    {
+      "name": "height_x02_z03",
+      "counts": {
+        "4": 24590,
+        "0": 73410,
+        "255": 151428,
+        "5": 9696,
+        "1": 3020
+      },
+      "sha256": "d13660e1ebbd89d60fcd1b6d3f8c1b5acca6bb1de61d7201107d941a372fd30b"
+    },
+    {
+      "name": "height_x03_z03",
+      "counts": {
+        "5": 2190,
+        "1": 5354,
+        "255": 199265,
+        "0": 55335
+      },
+      "sha256": "789baa2cc2cfc84b8252479bbb4ea24cef3993b420880d23670e3020f6657c50"
+    },
+    {
+      "name": "height_x04_z03",
+      "counts": {
+        "0": 71599,
+        "255": 178005,
+        "5": 379,
+        "4": 12161
+      },
+      "sha256": "1db4fc7b4dbc8ff7a37d9a2143195176562474f70902ce52c90669d2029d6971"
+    },
+    {
+      "name": "height_x05_z03",
+      "counts": {
+        "255": 131497,
+        "0": 88773,
+        "4": 20997,
+        "5": 20877
+      },
+      "sha256": "6fa0d6a802308d8d500495b68976648cb3354698975df29b9a53923c9ce03acb"
+    },
+    {
+      "name": "height_x06_z03",
+      "counts": {
+        "255": 220134,
+        "4": 15609,
+        "0": 21554,
+        "5": 4847
+      },
+      "sha256": "ce966a988f09cad44e7d30e69d5448f0b0c5b182269996521d83315972cc2943"
+    },
+    {
+      "name": "height_x00_z04",
+      "counts": {
+        "255": 214279,
+        "0": 15882,
+        "4": 11185,
+        "6": 13454,
+        "1": 7344
+      },
+      "sha256": "468ee5908c7b11ab1558de5db84c3919b21515f86c24de9cf4d6ac7ba2e6b8a8"
+    },
+    {
+      "name": "height_x01_z04",
+      "counts": {
+        "255": 152287,
+        "0": 76294,
+        "5": 25757,
+        "4": 7806
+      },
+      "sha256": "5386527871c58cf35b1f3d273a6596c0578ddc8afc6e6bc057c7c0c976b8c553"
+    },
+    {
+      "name": "height_x02_z04",
+      "counts": {
+        "5": 91706,
+        "0": 33097,
+        "255": 107017,
+        "4": 30109,
+        "7": 215
+      },
+      "sha256": "f19db9abbd2979c87178d0c405af5247f98c99904c96cfda8748f7e7281cad01"
+    },
+    {
+      "name": "height_x03_z04",
+      "counts": {
+        "255": 183155,
+        "0": 56578,
+        "4": 16079,
+        "5": 6332
+      },
+      "sha256": "0c00940257214293eeae072b7a54f6bb2cfb1c144b2030aa1671598f8635e1a0"
+    },
+    {
+      "name": "height_x04_z04",
+      "counts": {
+        "255": 202452,
+        "4": 14446,
+        "0": 28363,
+        "5": 16883
+      },
+      "sha256": "3ce90548afc2c8ea4d8a48b8deb8bef4e86a3bdf3df798ddc02452852ac8b5b8"
+    },
+    {
+      "name": "height_x05_z04",
+      "counts": {
+        "4": 8943,
+        "5": 2,
+        "0": 2027,
+        "255": 251172
+      },
+      "sha256": "1476cee999277d629e0883ebcfc9d9c17f0f478dd96edd8306679db7ec047f86"
+    },
+    {
+      "name": "height_x00_z05",
+      "counts": {
+        "255": 183000,
+        "6": 8341,
+        "0": 56023,
+        "4": 13923,
+        "1": 857
+      },
+      "sha256": "4b2f956bd4b037babc351640b7d603871cb653bbd725ee3023fb9399e3381a55"
+    },
+    {
+      "name": "height_x01_z05",
+      "counts": {
+        "255": 201958,
+        "4": 16220,
+        "0": 36351,
+        "6": 7141,
+        "1": 474
+      },
+      "sha256": "d4017946bd4cd857287991e534e20705360fc5cc0b918d422998ddf80ecd936f"
+    },
+    {
+      "name": "height_x02_z05",
+      "counts": {
+        "255": 172505,
+        "0": 79429,
+        "4": 9031,
+        "5": 930,
+        "7": 249
+      },
+      "sha256": "cad04fa1f3f69648908970901e908561e97b7b1c040cbc2b22da8dc8f3e88d4b"
+    },
+    {
+      "name": "height_x03_z05",
+      "counts": {
+        "0": 24420,
+        "255": 237724
+      },
+      "sha256": "bdf0ab22022f58118c29d1503ae9c8bd81b315b87a7ad19b72e6938f467cfa1a"
+    },
+    {
+      "name": "height_x04_z05",
+      "counts": {
+        "255": 227061,
+        "0": 35083
+      },
+      "sha256": "4753e02fb04e03b9b4a577b6cce61f3249b64e16e9819697b2984d9a2dd981a2"
+    },
+    {
+      "name": "height_x05_z05",
+      "counts": {
+        "255": 261866,
+        "0": 278
+      },
+      "sha256": "ad7f2c959909cc93631e0ab2ce26202fdb40b31764d51e7881e588b5bdf88cd1"
+    },
+    {
+      "name": "height_x00_z06",
+      "counts": {
+        "255": 258757,
+        "4": 2100,
+        "0": 149,
+        "6": 1138
+      },
+      "sha256": "654b747b5b63267afb60f3f96a7548d9d73b492da1ab1ceee78dcd948b677018"
+    },
+    {
+      "name": "height_x01_z06",
+      "counts": {
+        "255": 223641,
+        "4": 9297,
+        "0": 29206
+      },
+      "sha256": "b907c9de10afff9e599ef51882ba4fd8145bd4f9761e156777e67b859850542e"
+    },
+    {
+      "name": "height_x02_z06",
+      "counts": {
+        "255": 223755,
+        "0": 38389
+      },
+      "sha256": "ab77aa28e72747abc1e5e7413bab122c52dbdf0b17097a892d4fa9b8193f8678"
+    },
+    {
+      "name": "height_x03_z06",
+      "counts": {
+        "255": 257747,
+        "0": 4397
+      },
+      "sha256": "349da424f668e192c7bca32677a62d746588560830ca49b91a5fd7b050b0cc0b"
+    },
+    {
+      "name": "height_x04_z06",
+      "counts": {
+        "255": 228940,
+        "0": 30306,
+        "3": 2898
+      },
+      "sha256": "6aeb223a280159720868e7cb0834281f3d44cde7359fef1192572d2411b20229"
+    },
+    {
+      "name": "height_x05_z06",
+      "counts": {
+        "0": 35008,
+        "255": 227136
+      },
+      "sha256": "af8fc5a13ac7c6bcd001ed1448f26c449bed1b8352a99a749d123c0831d44b6f"
+    },
+    {
+      "name": "height_x04_z07",
+      "counts": {
+        "255": 262144
+      },
+      "sha256": "3b874d3ba46c638fc3094f8e92fb744ca974893873f8885f54e23760f9b6311b"
+    }
+  ],
+  "tilingPolicy": "UV-area-derived texture period snapped to an integer number of repeats per 1024m tile for continuous boundary phase."
+}

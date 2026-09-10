@@ -1,0 +1,872 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be91d4903326b43c6bd1de75802a2f40, type: 3}
+  m_Name: AdaptiveMusicFixture
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensoryMusicProfile
+  profileId: music.editor.fixture
+  schemaVersion: 2
+  sourceRevision: d43d1eada47613c6a553712eacd2fea3
+  bpm: 120
+  beatsPerBar: 4
+  bars: 8
+  stems: []
+  escapedStinger: {fileID: 8300000, guid: e4207c1751ca24dfb91c4b16140834b9, type: 3}
+  arrestedStinger: {fileID: 8300000, guid: 9a3ee8f564c60449084600f71067a0e7, type: 3}
+  finePaidStinger: {fileID: 8300000, guid: 10de6c74926be47a2ade72cdb20f7ecf, type: 3}
+  cues:
+  - stableId: fixture.frontend
+    displayName: Frontend
+    context: 1
+    defaultSectionId: frontend
+    priority: 500
+    defaultIntensity: 0.12
+  - stableId: fixture.free-roam
+    displayName: Free roam
+    context: 2
+    defaultSectionId: free-roam
+    priority: 400
+    defaultIntensity: 0.08
+  - stableId: fixture.race
+    displayName: Race
+    context: 4
+    defaultSectionId: race
+    priority: 600
+    defaultIntensity: 0.55
+  - stableId: fixture.pursuit
+    displayName: Pursuit
+    context: 8
+    defaultSectionId: pursuit
+    priority: 800
+    defaultIntensity: 0.8
+  - stableId: fixture.cooldown
+    displayName: Cooldown
+    context: 16
+    defaultSectionId: cooldown
+    priority: 700
+    defaultIntensity: 0.38
+  - stableId: fixture.escape
+    displayName: Escape
+    context: 32
+    defaultSectionId: escape
+    priority: 1000
+    defaultIntensity: 0.45
+  - stableId: fixture.results
+    displayName: Results
+    context: 128
+    defaultSectionId: results
+    priority: 1000
+    defaultIntensity: 0.18
+  - stableId: fixture.failure
+    displayName: Failure
+    context: 64
+    defaultSectionId: results
+    priority: 1000
+    defaultIntensity: 0.24
+  sections:
+  - stableId: frontend
+    displayName: Frontend
+    kind: 0
+    eligibleContexts: 1
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: frontend.stem.0
+      displayName: frontend base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: free-roam
+    displayName: Free roam
+    kind: 1
+    eligibleContexts: 2
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: free-roam.stem.0
+      displayName: free-roam base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: free-roam.stem.1
+      displayName: free-roam rhythm
+      role: 1
+      clip: {fileID: 8300000, guid: fa4ac169870d64ad3877fb137c9699c0, type: 3}
+      gain: 0.48
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.8
+          inSlope: 0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: race
+    displayName: Race
+    kind: 2
+    eligibleContexts: 4
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: race.stem.0
+      displayName: race base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: race.stem.1
+      displayName: race rhythm
+      role: 1
+      clip: {fileID: 8300000, guid: fa4ac169870d64ad3877fb137c9699c0, type: 3}
+      gain: 0.48
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.8
+          inSlope: 0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: race.stem.2
+      displayName: race tension
+      role: 4
+      clip: {fileID: 8300000, guid: ef2d485f9297a4e3e875cfe9670e0127, type: 3}
+      gain: 0.34
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.35
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.9
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: pursuit
+    displayName: Pursuit
+    kind: 2
+    eligibleContexts: 8
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: pursuit.stem.0
+      displayName: pursuit base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: pursuit.stem.1
+      displayName: pursuit rhythm
+      role: 1
+      clip: {fileID: 8300000, guid: fa4ac169870d64ad3877fb137c9699c0, type: 3}
+      gain: 0.48
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.8
+          inSlope: 0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: pursuit.stem.2
+      displayName: pursuit tension
+      role: 4
+      clip: {fileID: 8300000, guid: ef2d485f9297a4e3e875cfe9670e0127, type: 3}
+      gain: 0.34
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.35
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.9
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: cooldown
+    displayName: Cooldown
+    kind: 3
+    eligibleContexts: 16
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: cooldown.stem.0
+      displayName: cooldown base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+    - stableId: cooldown.stem.1
+      displayName: cooldown rhythm
+      role: 1
+      clip: {fileID: 8300000, guid: fa4ac169870d64ad3877fb137c9699c0, type: 3}
+      gain: 0.48
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0.8
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.8
+          inSlope: 0.8
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 0
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: escape
+    displayName: Escape
+    kind: 4
+    eligibleContexts: 32
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: escape.stem.0
+      displayName: escape base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: results
+    displayName: Results
+    kind: 5
+    eligibleContexts: 192
+    bpm: 120
+    beatsPerBar: 4
+    bars: 8
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: fixture-a-minor
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 0
+    markers:
+    - stableId: bar-1
+      displayName: Bar 1
+      beat: 0
+      transitionPoint: 1
+    - stableId: bar-5
+      displayName: Bar 5
+      beat: 16
+      transitionPoint: 1
+    stems:
+    - stableId: results.stem.0
+      displayName: results base
+      role: 0
+      clip: {fileID: 8300000, guid: 29e09669702db4617931ccfd1a6309a7, type: 3}
+      gain: 0.64
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0.75
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  transitions:
+  - stableId: transition.frontend
+    displayName: "Any \u2192 frontend"
+    fromSectionId: '*'
+    toSectionId: frontend
+    eligibleContexts: 1
+    priority: 10
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.free-roam
+    displayName: "Any \u2192 free-roam"
+    fromSectionId: '*'
+    toSectionId: free-roam
+    eligibleContexts: 2
+    priority: 10
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.race
+    displayName: "Any \u2192 race"
+    fromSectionId: '*'
+    toSectionId: race
+    eligibleContexts: 4
+    priority: 10
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.pursuit
+    displayName: "Any \u2192 pursuit"
+    fromSectionId: '*'
+    toSectionId: pursuit
+    eligibleContexts: 8
+    priority: 20
+    quantization: 4
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: bar-5
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.cooldown
+    displayName: "Any \u2192 cooldown"
+    fromSectionId: '*'
+    toSectionId: cooldown
+    eligibleContexts: 16
+    priority: 10
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.escape
+    displayName: "Any \u2192 escape"
+    fromSectionId: '*'
+    toSectionId: escape
+    eligibleContexts: 32
+    priority: 30
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  - stableId: transition.results
+    displayName: "Any \u2192 results"
+    fromSectionId: '*'
+    toSectionId: results
+    eligibleContexts: 192
+    priority: 30
+    quantization: 2
+    minimumDwellSeconds: 0.4
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 0
+    allowHarmonicMismatch: 0
+  stingers:
+  - stableId: outcome.escaped
+    displayName: Escaped
+    clip: {fileID: 8300000, guid: e4207c1751ca24dfb91c4b16140834b9, type: 3}
+    eligibleContexts: 32
+    priority: 220
+    quantization: 2
+    cooldownSeconds: 1
+    repetitionSuppressionSeconds: 8
+    maxQueueAgeSeconds: 5
+    gain: 0.8
+    interruptible: 1
+    requiredSectionId: 
+  - stableId: outcome.arrested
+    displayName: Arrested
+    clip: {fileID: 8300000, guid: 9a3ee8f564c60449084600f71067a0e7, type: 3}
+    eligibleContexts: 64
+    priority: 220
+    quantization: 2
+    cooldownSeconds: 1
+    repetitionSuppressionSeconds: 8
+    maxQueueAgeSeconds: 5
+    gain: 0.8
+    interruptible: 1
+    requiredSectionId: 
+  - stableId: outcome.paid-fine
+    displayName: Fine paid
+    clip: {fileID: 8300000, guid: 10de6c74926be47a2ade72cdb20f7ecf, type: 3}
+    eligibleContexts: 192
+    priority: 220
+    quantization: 2
+    cooldownSeconds: 1
+    repetitionSuppressionSeconds: 8
+    maxQueueAgeSeconds: 5
+    gain: 0.8
+    interruptible: 1
+    requiredSectionId: 
+  intensity:
+    pursuitThreshold: 0.2
+    highIntensityThreshold: 0.65
+    hysteresis: 0.06
+    minimumDwellSeconds: 0.8
+    intensity:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  playback:
+    persistAcrossScenes: 1
+    keepTransportOnFrontendNavigation: 1
+    pauseMode: 0
+    scheduleLookaheadSeconds: 0.2
+    crossfadeSeconds: 0.45
+    minimumDwellSeconds: 0.4
+    maxConcurrentStems: 4
+    restartAtSectionBoundaryAfterDeviceChange: 1

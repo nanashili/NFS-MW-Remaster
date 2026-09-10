@@ -1,0 +1,181 @@
+{
+  "archive": "TRAFCAMPER",
+  "sourceSha256": "4e70d8c446200ae3094ef759200f423b85bed3b45620dbb5056aca423ad9c979",
+  "sourceSolidCount": 9,
+  "asset": "Assets/NfsMw/Content/Customization/Sources/TRAFCAMPER/Geometry/Parts.glb",
+  "entries": [
+    {
+      "id": "TRAFCAMPER_KIT00_BODY",
+      "node": "TRAFCAMPER_KIT00_BODY",
+      "category": "Body kit",
+      "variant": "Source part",
+      "archive": "TRAFCAMPER",
+      "kit": "00",
+      "compatibility": "TRAFCAMPER",
+      "sourceSolids": [
+        "TRAFCAMPER_KIT00_BODY_A",
+        "TRAFCAMPER_KIT00_BODY_B",
+        "TRAFCAMPER_KIT00_BODY_C",
+        "TRAFCAMPER_KIT00_BODY_D",
+        "TRAFCAMPER_KIT00_BODY_E"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": null,
+      "lods": [
+        {
+          "node": "PART_0000_LOD0.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_BODY_A",
+          "triangles": 2420,
+          "blenderTriangles": 2420
+        },
+        {
+          "node": "PART_0000_LOD1.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_BODY_B",
+          "triangles": 331,
+          "blenderTriangles": 331
+        },
+        {
+          "node": "PART_0000_LOD2.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_BODY_C",
+          "triangles": 200,
+          "blenderTriangles": 200
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/BodyKit/TRAFCAMPER/TRAFCAMPER_KIT00_BODY.prefab"
+    },
+    {
+      "id": "TRAFCAMPER_KIT00_FRONT_TIRE",
+      "node": "TRAFCAMPER_KIT00_FRONT_TIRE",
+      "category": "Wheel and tyre",
+      "variant": "Assembly",
+      "archive": "TRAFCAMPER",
+      "kit": "00",
+      "compatibility": "TRAFCAMPER",
+      "sourceSolids": [
+        "TRAFCAMPER_KIT00_FRONT_TIRE_A",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_B",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_C",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.391825407743454,
+        "rimRadius": 0.28211429357528683,
+        "width": 0.2515997290611267,
+        "sourceCenterY": 0.03295181691646576
+      },
+      "lods": [
+        {
+          "node": "PART_0001_LOD0.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_A",
+          "triangles": 96,
+          "blenderTriangles": 96
+        },
+        {
+          "node": "PART_0001_LOD1.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_B",
+          "triangles": 68,
+          "blenderTriangles": 68
+        },
+        {
+          "node": "PART_0001_LOD2.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_C",
+          "triangles": 68,
+          "blenderTriangles": 68
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/WheelAndTyre/TRAFCAMPER/TRAFCAMPER_KIT00_FRONT_TIRE.prefab"
+    },
+    {
+      "id": "TRAFCAMPER_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "node": "TRAFCAMPER_KIT00_FRONT_TIRE_TYRE_ONLY",
+      "category": "Tyre",
+      "variant": "Tyre only",
+      "archive": "TRAFCAMPER",
+      "kit": "00",
+      "compatibility": "TRAFCAMPER",
+      "sourceSolids": [
+        "TRAFCAMPER_KIT00_FRONT_TIRE_A",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_B",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_C",
+        "TRAFCAMPER_KIT00_FRONT_TIRE_D"
+      ],
+      "sourceMarkers": [],
+      "wheelDimensions": {
+        "outerRadius": 0.391825407743454,
+        "rimRadius": 0.28211429357528683,
+        "width": 0.2515997290611267,
+        "sourceCenterY": 0.03295181691646576
+      },
+      "lods": [
+        {
+          "node": "PART_0002_LOD0.002",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_A",
+          "triangles": 4800,
+          "blenderTriangles": 4800
+        },
+        {
+          "node": "PART_0002_LOD1.001",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_B",
+          "triangles": 2400,
+          "blenderTriangles": 2400
+        },
+        {
+          "node": "PART_0002_LOD2.001",
+          "sourceSolid": "TRAFCAMPER_KIT00_FRONT_TIRE_C",
+          "triangles": 1008,
+          "blenderTriangles": 1008
+        }
+      ],
+      "prefab": "Assets/NfsMw/Content/Customization/Parts/Tyre/TRAFCAMPER/TRAFCAMPER_KIT00_FRONT_TIRE_TYRE_ONLY.prefab"
+    }
+  ],
+  "blenderLayout": "Grid; each root stores assembly_position and library_grid_position",
+  "sourceVisualAttributes": {
+    "record": "68451621",
+    "tireOffsets": [
+      [
+        -1.15,
+        1.1,
+        0,
+        0.35
+      ],
+      [
+        -1.15,
+        -1.1,
+        0,
+        0.35
+      ],
+      [
+        -1.15,
+        -1.1,
+        0,
+        0.35
+      ],
+      [
+        -1.15,
+        1.1,
+        0,
+        0.35
+      ]
+    ],
+    "extraRearTireOffset": 0
+  },
+  "sourceChassis": {
+    "WHEEL_BASE": 3,
+    "RIDE_HEIGHT": [
+      12.5,
+      12.5
+    ],
+    "TRACK_WIDTH": [
+      1.600000023841858,
+      1.600000023841858
+    ],
+    "FRONT_AXLE": 1.5,
+    "vehicle": "trafcamper",
+    "record": "0xAFA210F0/0x99A631DD"
+  },
+  "singleSceneExport": true,
+  "layout": "content-first-v2",
+  "sourceCatalog": "Assets/NfsMw/Content/Customization/Sources/TRAFCAMPER/Metadata/catalog.json"
+}

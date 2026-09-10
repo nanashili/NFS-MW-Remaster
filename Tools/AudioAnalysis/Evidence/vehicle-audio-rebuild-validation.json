@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "date": "2026-09-08",
+  "unity": "6000.6.0f1",
+  "platform": "macOS Apple Silicon Editor",
+  "component": "VehicleAudio",
+  "retainedScriptGuid": "93bd998b4329c409a9c76ccd0ba11004",
+  "stockProfilesRendered": 93,
+  "localProfileBytesMatchValidationCopy": true,
+  "editorDistinctPassed": 136,
+  "editorSkipped": 0,
+  "editorRuns": [
+    { "file": "VehicleAudio-regression.xml", "passed": 135, "failed": 1, "startUtc": "2026-09-08T14:02:20Z", "endUtc": "2026-09-08T14:03:21Z" },
+    { "file": "VehicleAudio-dsp-library-final.xml", "passed": 15, "failed": 0, "startUtc": "2026-09-08T14:07:27Z", "endUtc": "2026-09-08T14:07:37Z" }
+  ],
+  "correction": "The offline library test incorrectly expected a Unity voice pool without Play Mode Awake. Offline rendering now uses a null world; actual single-voice ownership remains verified by the separate Play Mode library test. The final run passes all DSP tests and the corrected all-profile test.",
+  "playMode": { "file": "VehicleAudio-play-final.xml", "passed": 12, "failed": 0, "skipped": 0, "startUtc": "2026-09-08T14:06:13Z", "endUtc": "2026-09-08T14:06:15Z" },
+  "allocationProbe": "Unity ProfilerRecorder GC.Alloc on the rendering thread, warmed callbacks, with a retained 4096-byte positive control. GC.GetAllocatedBytesForCurrentThread is not used as evidence.",
+  "verified": ["93 complete mixed outputs are finite and nonzero", "all complete mixed callbacks remain within full scale", "zero observed warmed callback allocation events", "independent authored PCM frequency and duration controls", "GIN tempo changes grain cadence independently of pitch", "callback partition invariance at 44100 and 48000 Hz", "loop bounds", "single live spatial voice per car", "enable disable and failed rebuild cleanup", "manual playback without driving telemetry", "invalid telemetry rejection", "finished continuous graph reactivation", "live serialized mix reference", "WeatherDemo component GUID migration and profile preservation"],
+  "limits": ["Original executable listening parity is unverified", "Audible quality and device latency were not measured", "Extreme time stretching can alter timbre", "Player builds and other platforms were not run", "Layers share one spatial output position per car"],
+  "reports": "Library/BlackBoxAudio/Reports/vehicle-audio-rebuild-2026-09-08"
+}

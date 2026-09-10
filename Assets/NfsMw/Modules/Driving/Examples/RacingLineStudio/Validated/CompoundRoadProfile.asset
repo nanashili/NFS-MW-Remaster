@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394d7a88d46554437bb5a2be8fb10033, type: 3}
+  m_Name: CompoundRoadProfile
+  m_EditorClassIdentifier: NfsMwRemaster.Driving.Roads.Authoring::NfsMwRemaster.Driving.RoadProfile
+  roadClass: 0
+  speedLimit: 30
+  textureMetres: 5
+  lateralOffset: 0
+  bands:
+  - id:
+      value: c3f8e5e40ef642db82d5dbed59096bd4
+    label: Synthetic 14 m one-way test corridor
+    kind: 0
+    direction: 1
+    width: 14
+    height: 0
+    crossfall: 0
+    material: {fileID: 2100000, guid: 75ba3dcc7b2fe42ec9246d588123b2e8, type: 2}
+    surface: {fileID: 11400000, guid: f351931091ea54f9f96b51f863160eed, type: 2}
+    collision: 1
+    shape:
+    - fraction: 0
+      height: 0
+    - fraction: 1
+      height: 0

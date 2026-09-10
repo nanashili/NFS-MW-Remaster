@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0,4202651">
+  <test-suite type="TestSuite" id="1000" name="NFS MW Remaster" fullname="NFS MW Remaster" runstate="Runnable" testcasecount="868" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.420265" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1899" name="NfsMwRemaster.Driving.Tests.dll" fullname="/private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/black-box-validation.BUEUdz/Library/ScriptAssemblies/NfsMwRemaster.Driving.Tests.dll" runstate="Runnable" testcasecount="717" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.413538" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="42264" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1900" name="NfsMwRemaster" fullname="NfsMwRemaster" runstate="Runnable" testcasecount="717" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.412580" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1901" name="Driving" fullname="NfsMwRemaster.Driving" runstate="Runnable" testcasecount="717" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.411701" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1902" name="Tests" fullname="NfsMwRemaster.Driving.Tests" runstate="Runnable" testcasecount="717" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.410979" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1172" name="BmwVehicleIntegrationTests" fullname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests" classname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.385133" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1175" name="ActualBmwPrefabLaunchesSteersAndAppliesPartsWithoutChangingFactory" fullname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests.ActualBmwPrefabLaunchesSteersAndAppliesPartsWithoutChangingFactory" methodname="ActualBmwPrefabLaunchesSteersAndAppliesPartsWithoutChangingFactory" classname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests" runstate="Runnable" seed="1818750659" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:04Z" duration="0.168189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[BMW six-second speed: 57,36791 km/h; steering=7,234551
+]]></output>
+              </test-case>
+              <test-case id="1173" name="BmwProfileHasPortableGeometryAndSharedConfiguration" fullname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests.BmwProfileHasPortableGeometryAndSharedConfiguration" methodname="BmwProfileHasPortableGeometryAndSharedConfiguration" classname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests" runstate="Runnable" seed="575195130" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:04Z" duration="0.018161" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1174" name="WeatherSceneRetainsExistingVehicleAndCareerComponents" fullname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests.WeatherSceneRetainsExistingVehicleAndCareerComponents" methodname="WeatherSceneRetainsExistingVehicleAndCareerComponents" classname="NfsMwRemaster.Driving.Tests.BmwVehicleIntegrationTests" runstate="Runnable" seed="1440773494" result="Passed" start-time="2026-09-08 17:38:04Z" end-time="2026-09-08 17:38:05Z" duration="0.190108" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/tihan-nico/Library/Application Support/DefaultCompany/NFS MW Remaster/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

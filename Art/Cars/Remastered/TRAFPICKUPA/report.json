@@ -1,0 +1,90 @@
+{
+  "car": "TRAFPICKUPA",
+  "sourceSha256": "4c3340978480e2b1b86bc56a4a8a5bcfe89cd5e5100e74004a2c3f6b9ced2c8c",
+  "stockParts": [
+    "TRAFPICKUPA_KIT00_BODY_A",
+    "TRAFPICKUPA_KIT00_FRONT_WINDOW_A"
+  ],
+  "authoredWheelFace": true,
+  "pipelineSha256": "ec9309098f226c8416cc4e300c4c01a398579a1596714e599a420208a30cf59e",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 56472,
+      "meshObjects": 6
+    },
+    {
+      "lod": 1,
+      "triangles": 1894,
+      "meshObjects": 6
+    },
+    {
+      "lod": 2,
+      "triangles": 659,
+      "meshObjects": 6
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.6699999570846558,
+        0.8559239506721497,
+        0.22499999403953552
+      ],
+      "radius": 0.3563642203807831,
+      "width": 0.23011115938425064
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.6699999570846558,
+        -0.8559239506721497,
+        0.22499999403953552
+      ],
+      "radius": 0.3563642203807831,
+      "width": 0.23011115938425064
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.25,
+        0.8759239315986633,
+        0.22499999403953552
+      ],
+      "radius": 0.3563642203807831,
+      "width": 0.23011115938425064
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.25,
+        -0.8759239315986633,
+        0.22499999403953552
+      ],
+      "radius": 0.3563642203807831,
+      "width": 0.23011115938425064
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 3,
+    "RIDE_HEIGHT": [
+      12.5,
+      12.5
+    ],
+    "TRACK_WIDTH": [
+      1.600000023841858,
+      1.600000023841858
+    ],
+    "FRONT_AXLE": 1.5,
+    "vehicle": "trafpickupa",
+    "record": "0xAFA210F0/0x99A631DD"
+  },
+  "sourceTextureCount": 10,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Traffic/TRAFPICKUPA/Remastered.glb"
+}

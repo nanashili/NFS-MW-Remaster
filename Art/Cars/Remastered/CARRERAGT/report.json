@@ -1,0 +1,103 @@
+{
+  "car": "CARRERAGT",
+  "sourceSha256": "01efe5f4dbbcc05b9d13270b0a1b695aa2236c771a904212cf030c242cb9bdef",
+  "stockParts": [
+    "CARRERAGT_KIT00_BODY_A",
+    "CARRERAGT_KIT00_FRONT_LEFT_WINDOW_A",
+    "CARRERAGT_KIT00_FRONT_RIGHT_WINDOW_A",
+    "CARRERAGT_KIT00_FRONT_WINDOW_A",
+    "CARRERAGT_KIT00_HOOD_A",
+    "CARRERAGT_KIT00_INTERIOR_A",
+    "CARRERAGT_KIT00_LEFT_BRAKELIGHT_A",
+    "CARRERAGT_KIT00_LEFT_HEADLIGHT_A",
+    "CARRERAGT_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "CARRERAGT_KIT00_LEFT_SIDE_MIRROR_A",
+    "CARRERAGT_KIT00_REAR_WINDOW_A",
+    "CARRERAGT_KIT00_RIGHT_BRAKELIGHT_A",
+    "CARRERAGT_KIT00_RIGHT_HEADLIGHT_A",
+    "CARRERAGT_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "CARRERAGT_KIT00_RIGHT_SIDE_MIRROR_A",
+    "CARRERAGT_KIT00_SPOILER_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 83218,
+      "meshObjects": 20
+    },
+    {
+      "lod": 1,
+      "triangles": 12876,
+      "meshObjects": 20
+    },
+    {
+      "lod": 2,
+      "triangles": 4489,
+      "meshObjects": 20
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.2050000429153442,
+        0.7859371900558472,
+        0.23999999463558197
+      ],
+      "radius": 0.34748275578022003,
+      "width": 0.2963004997000098
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.2050000429153442,
+        -0.7859371900558472,
+        0.23999999463558197
+      ],
+      "radius": 0.34748275578022003,
+      "width": 0.2963004997000098
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.4800000190734863,
+        0.8259372115135193,
+        0.25999999046325684
+      ],
+      "radius": 0.34748275578022003,
+      "width": 0.2963004997000098
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.4800000190734863,
+        -0.8259372115135193,
+        0.25999999046325684
+      ],
+      "radius": 0.34748275578022003,
+      "width": 0.2963004997000098
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.700000047683716,
+    "RIDE_HEIGHT": [
+      8,
+      8
+    ],
+    "TRACK_WIDTH": [
+      1.6119999885559082,
+      1.5870000123977661
+    ],
+    "FRONT_AXLE": 1.2999999523162842,
+    "vehicle": "carreragt",
+    "record": "0xAFA210F0/0x67063DD4"
+  },
+  "sourceTextureCount": 33,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Porsche/Carrera GT/Remastered.glb"
+}

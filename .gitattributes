@@ -167,5 +167,17 @@ Packages/packages-lock.json linguist-generated
 # Spine export file for Unity
 *.skel.bytes            lfs
 
+# Project model payloads, source textures, and terrain data.
+*.glb                   lfs
+*.bin                   lfs
+*.dds                   lfs
+*.f32                   lfs
+*.coverage              lfs
+*.multilevel            lfs
+
+# Unity TerrainData is binary despite the .asset extension.
+Assets/**/TerrainData/*.asset        lfs
+Assets/**/OpeningTerrainData/*.asset lfs
+
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary

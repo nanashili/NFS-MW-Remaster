@@ -1,0 +1,1912 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &235239631289345809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508529917142952588}
+  - component: {fileID: 8233266274040652219}
+  m_Layer: 0
+  m_Name: Test Drag 03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &508529917142952588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235239631289345809}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8233266274040652219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235239631289345809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_02
+  displayName: Test Drag 03
+  kind: 2
+  checkpoints:
+  - {x: 0, y: 0, z: -90}
+  - {x: 0, y: 0, z: -60}
+  laps: 1
+  timeLimit: 180
+  reward: 1200
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &563876727305691673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4398243913802561002}
+  - component: {fileID: 8692052674886357117}
+  m_Layer: 0
+  m_Name: Test Speedtrap 04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4398243913802561002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563876727305691673}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8692052674886357117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563876727305691673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_03
+  displayName: Test Speedtrap 04
+  kind: 3
+  checkpoints:
+  - {x: 60, y: 0, z: -90}
+  - {x: 60, y: 0, z: -60}
+  laps: 1
+  timeLimit: 180
+  reward: 1300
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &572134164104368908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6190927420156392264}
+  - component: {fileID: 1067367857716459916}
+  m_Layer: 0
+  m_Name: Test Sprint 05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6190927420156392264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572134164104368908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067367857716459916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572134164104368908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_04
+  displayName: Test Sprint 05
+  kind: 0
+  checkpoints:
+  - {x: 120, y: 0, z: -90}
+  - {x: 120, y: 0, z: -60}
+  laps: 1
+  timeLimit: 180
+  reward: 1400
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &691366109563540050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2715351019274611777}
+  - component: {fileID: 6360579262329675195}
+  m_Layer: 0
+  m_Name: Test Pursuit 01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2715351019274611777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691366109563540050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6360579262329675195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691366109563540050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_00
+  displayName: Test Pursuit 01
+  kind: 4
+  checkpoints:
+  - {x: -120, y: 0, z: 30}
+  - {x: -120, y: 0, z: 60}
+  laps: 1
+  timeLimit: 180
+  reward: 1000
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &706497026193400665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092467255636265271}
+  - component: {fileID: 3063437820172816405}
+  m_Layer: 0
+  m_Name: Test Location 08 - PerformanceShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092467255636265271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706497026193400665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3063437820172816405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706497026193400665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_07
+  displayName: Test PerformanceShop 08
+  kind: 3
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &879381515818606877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8821604197160180767}
+  - component: {fileID: 7299480956488438716}
+  m_Layer: 0
+  m_Name: Test Location 06 - CarShow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8821604197160180767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879381515818606877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7299480956488438716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879381515818606877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_05
+  displayName: Test CarShow 06
+  kind: 4
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &897351498213228333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2377185464575801670}
+  - component: {fileID: 7050508330932806777}
+  m_Layer: 0
+  m_Name: Test Location 05 - Safehouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2377185464575801670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897351498213228333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7050508330932806777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897351498213228333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_04
+  displayName: Test Safehouse 05
+  kind: 0
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &1329783545916554162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6999345361395375878}
+  - component: {fileID: 1640401187723855665}
+  m_Layer: 0
+  m_Name: Test Location 02 - BodyShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6999345361395375878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329783545916554162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640401187723855665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329783545916554162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_01
+  displayName: Test BodyShop 02
+  kind: 2
+  storefront: {fileID: 11400000, guid: 402cb9251702a45ac87817f87578a6b4, type: 2}
+  radius: 12
+--- !u!1 &1720997771264986191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5059433474482676040}
+  - component: {fileID: 7319505654478826517}
+  m_Layer: 0
+  m_Name: Test Location 03 - Garage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5059433474482676040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720997771264986191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7319505654478826517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720997771264986191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_02
+  displayName: Test Garage 03
+  kind: 1
+  storefront: {fileID: 11400000, guid: 402cb9251702a45ac87817f87578a6b4, type: 2}
+  radius: 12
+--- !u!1 &1815704528867056960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849060766473868221}
+  - component: {fileID: 7285307692508645121}
+  - component: {fileID: 1398437484766937616}
+  - component: {fileID: 130973588659113724}
+  m_Layer: 0
+  m_Name: Test World - no traffic or driving geometry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849060766473868221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815704528867056960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7302727956185606619}
+  - {fileID: 6999345361395375878}
+  - {fileID: 5059433474482676040}
+  - {fileID: 208817661952972291}
+  - {fileID: 2377185464575801670}
+  - {fileID: 8821604197160180767}
+  - {fileID: 4307760386752097481}
+  - {fileID: 1092467255636265271}
+  - {fileID: 6499533116687772868}
+  - {fileID: 3124021632724036686}
+  - {fileID: 4462520295209315853}
+  - {fileID: 508529917142952588}
+  - {fileID: 4398243913802561002}
+  - {fileID: 6190927420156392264}
+  - {fileID: 9018042522210731093}
+  - {fileID: 1263109866249587867}
+  - {fileID: 7747129190250375423}
+  - {fileID: 6943579562540768995}
+  - {fileID: 2237357563465883351}
+  - {fileID: 2715351019274611777}
+  - {fileID: 4917131372681410647}
+  - {fileID: 3965528468184299227}
+  - {fileID: 3192306258425329120}
+  - {fileID: 2628513360497471877}
+  - {fileID: 704255962549181547}
+  - {fileID: 810227098990959241}
+  m_Father: {fileID: 316217280948573862}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7285307692508645121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815704528867056960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec131107ae2ad433a9dcc11a07a81aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.RoadNetwork
+  nodes:
+  - position: {x: -120, y: 0, z: -120}
+    exits: 0100000005000000i
+  - position: {x: -60, y: 0, z: -120}
+    exits: 000000000200000006000000i
+  - position: {x: 0, y: 0, z: -120}
+    exits: 010000000300000007000000i
+  - position: {x: 60, y: 0, z: -120}
+    exits: 020000000400000008000000i
+  - position: {x: 120, y: 0, z: -120}
+    exits: 0300000009000000i
+  - position: {x: -120, y: 0, z: -60}
+    exits: 06000000000000000a000000i
+  - position: {x: -60, y: 0, z: -60}
+    exits: 0500000007000000010000000b000000i
+  - position: {x: 0, y: 0, z: -60}
+    exits: 0600000008000000020000000c000000i
+  - position: {x: 60, y: 0, z: -60}
+    exits: 0700000009000000030000000d000000i
+  - position: {x: 120, y: 0, z: -60}
+    exits: 08000000040000000e000000i
+  - position: {x: -120, y: 0, z: 0}
+    exits: 0b000000050000000f000000i
+  - position: {x: -60, y: 0, z: 0}
+    exits: 0a0000000c0000000600000010000000i
+  - position: {x: 0, y: 0, z: 0}
+    exits: 0b0000000d0000000700000011000000i
+  - position: {x: 60, y: 0, z: 0}
+    exits: 0c0000000e0000000800000012000000i
+  - position: {x: 120, y: 0, z: 0}
+    exits: 0d0000000900000013000000i
+  - position: {x: -120, y: 0, z: 60}
+    exits: 100000000a00000014000000i
+  - position: {x: -60, y: 0, z: 60}
+    exits: 0f000000110000000b00000015000000i
+  - position: {x: 0, y: 0, z: 60}
+    exits: 10000000120000000c00000016000000i
+  - position: {x: 60, y: 0, z: 60}
+    exits: 11000000130000000d00000017000000i
+  - position: {x: 120, y: 0, z: 60}
+    exits: 120000000e00000018000000i
+  - position: {x: -120, y: 0, z: 120}
+    exits: 150000000f000000i
+  - position: {x: -60, y: 0, z: 120}
+    exits: 140000001600000010000000i
+  - position: {x: 0, y: 0, z: 120}
+    exits: 150000001700000011000000i
+  - position: {x: 60, y: 0, z: 120}
+    exits: 160000001800000012000000i
+  - position: {x: 120, y: 0, z: 120}
+    exits: 1700000013000000i
+  lanesPerDirection: 1
+  bakedLanes: []
+  source: 0
+  publication: {fileID: 0}
+--- !u!114 &1398437484766937616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815704528867056960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 053491fb9dfef4c44a88a828fccf5e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensoryAudioWorld
+  voiceLimit: 28
+  occlusionRays: 2
+  listener: {fileID: 0}
+  listenerVehicle: {fileID: 0}
+  mix: {fileID: 0}
+  preferences:
+    master: 0.8
+    vehicle: 1
+    effects: 1
+    music: 0.7
+    police: 1
+    cameraMotion: 0.65
+    haptics: 0.6
+    flashes: 1
+    subtitles: 1
+--- !u!114 &130973588659113724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815704528867056960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e1a5b8f773d4a41a1d81d2bdf13e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.AdaptiveMusic
+  world: {fileID: 1398437484766937616}
+  profile: {fileID: 11400000, guid: 62d911b4398434e39a27bd3a6deb99ae, type: 2}
+  pursuit: {fileID: 0}
+--- !u!1 &2359152003419745658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7302727956185606619}
+  - component: {fileID: 4365931426589088405}
+  m_Layer: 0
+  m_Name: Test Location 01 - Safehouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7302727956185606619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359152003419745658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4365931426589088405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2359152003419745658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_00
+  displayName: Test Safehouse 01
+  kind: 0
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &2871908680742847406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810227098990959241}
+  - component: {fileID: 678305400005883162}
+  m_Layer: 0
+  m_Name: Test Pursuit 07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810227098990959241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871908680742847406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60, y: 0, z: 60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678305400005883162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871908680742847406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_06
+  displayName: Test Pursuit 07
+  kind: 4
+  checkpoints:
+  - {x: -60, y: 0, z: 90}
+  - {x: -60, y: 0, z: 120}
+  laps: 1
+  timeLimit: 180
+  reward: 1600
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &2906818278603668375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7747129190250375423}
+  - component: {fileID: 5014648336088335153}
+  m_Layer: 0
+  m_Name: Test Speedtrap 08
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7747129190250375423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906818278603668375}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5014648336088335153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906818278603668375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_07
+  displayName: Test Speedtrap 08
+  kind: 3
+  checkpoints:
+  - {x: 0, y: 0, z: -30}
+  - {x: 0, y: 0, z: 0}
+  laps: 1
+  timeLimit: 180
+  reward: 1700
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &3081790480009655570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3965528468184299227}
+  - component: {fileID: 2547268326656596240}
+  m_Layer: 0
+  m_Name: Test Pursuit 03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3965528468184299227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081790480009655570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2547268326656596240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081790480009655570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_02
+  displayName: Test Pursuit 03
+  kind: 4
+  checkpoints:
+  - {x: 0, y: 0, z: 30}
+  - {x: 0, y: 0, z: 60}
+  laps: 1
+  timeLimit: 180
+  reward: 1200
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &3116751991700999436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3124021632724036686}
+  - component: {fileID: 2675520307567615502}
+  m_Layer: 0
+  m_Name: Test Sprint 01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3124021632724036686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116751991700999436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2675520307567615502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116751991700999436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_00
+  displayName: Test Sprint 01
+  kind: 0
+  checkpoints:
+  - {x: -120, y: 0, z: -90}
+  - {x: -120, y: 0, z: -60}
+  laps: 1
+  timeLimit: 180
+  reward: 1000
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &3190306745779810895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4462520295209315853}
+  - component: {fileID: 4309684614782562542}
+  m_Layer: 0
+  m_Name: Test Circuit 02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4462520295209315853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190306745779810895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60, y: 0, z: -120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4309684614782562542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190306745779810895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_01
+  displayName: Test Circuit 02
+  kind: 1
+  checkpoints:
+  - {x: -60, y: 0, z: -90}
+  - {x: -60, y: 0, z: -60}
+  laps: 2
+  timeLimit: 180
+  reward: 1100
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &3513783725309848368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6499533116687772868}
+  - component: {fileID: 3015886920554682060}
+  m_Layer: 0
+  m_Name: Test Location 09 - PoliceStation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6499533116687772868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513783725309848368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: 120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3015886920554682060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513783725309848368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_08
+  displayName: Test PoliceStation 09
+  kind: 5
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &3591280435250357524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208817661952972291}
+  - component: {fileID: 2633957100757824327}
+  m_Layer: 0
+  m_Name: Test Location 04 - PoliceStation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &208817661952972291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3591280435250357524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2633957100757824327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3591280435250357524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_03
+  displayName: Test PoliceStation 04
+  kind: 5
+  storefront: {fileID: 0}
+  radius: 12
+--- !u!1 &3844175827692142914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2237357563465883351}
+  - component: {fileID: 7692351330331444492}
+  m_Layer: 0
+  m_Name: Test Circuit 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2237357563465883351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844175827692142914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: -60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7692351330331444492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844175827692142914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_09
+  displayName: Test Circuit 10
+  kind: 1
+  checkpoints:
+  - {x: 120, y: 0, z: -30}
+  - {x: 120, y: 0, z: 0}
+  laps: 2
+  timeLimit: 180
+  reward: 1900
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &4312603804392672475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6943579562540768995}
+  - component: {fileID: 4493684756334469502}
+  m_Layer: 0
+  m_Name: Test Sprint 09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6943579562540768995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4312603804392672475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60, y: 0, z: -60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4493684756334469502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4312603804392672475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_08
+  displayName: Test Sprint 09
+  kind: 0
+  checkpoints:
+  - {x: 60, y: 0, z: -30}
+  - {x: 60, y: 0, z: 0}
+  laps: 1
+  timeLimit: 180
+  reward: 1800
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &4739147775107572710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 316217280948573862}
+  m_Layer: 0
+  m_Name: Fixture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &316217280948573862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739147775107572710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6535926875984009611}
+  - {fileID: 1849060766473868221}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5651120982927953158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704255962549181547}
+  - component: {fileID: 2806126581381886439}
+  m_Layer: 0
+  m_Name: Test Pursuit 06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704255962549181547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5651120982927953158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: 60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2806126581381886439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5651120982927953158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_05
+  displayName: Test Pursuit 06
+  kind: 4
+  checkpoints:
+  - {x: -120, y: 0, z: 90}
+  - {x: -120, y: 0, z: 120}
+  laps: 1
+  timeLimit: 180
+  reward: 1500
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &5948607840944092602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9018042522210731093}
+  - component: {fileID: 5662500281146129612}
+  m_Layer: 0
+  m_Name: Test Circuit 06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9018042522210731093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948607840944092602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: -60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5662500281146129612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948607840944092602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_05
+  displayName: Test Circuit 06
+  kind: 1
+  checkpoints:
+  - {x: -120, y: 0, z: -30}
+  - {x: -120, y: 0, z: 0}
+  laps: 2
+  timeLimit: 180
+  reward: 1500
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &7225038760670386852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2628513360497471877}
+  - component: {fileID: 6062375272302770410}
+  m_Layer: 0
+  m_Name: Test Pursuit 05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2628513360497471877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225038760670386852}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6062375272302770410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7225038760670386852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_04
+  displayName: Test Pursuit 05
+  kind: 4
+  checkpoints:
+  - {x: 120, y: 0, z: 30}
+  - {x: 120, y: 0, z: 60}
+  laps: 1
+  timeLimit: 180
+  reward: 1400
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &7623037472295331709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6535926875984009611}
+  - component: {fileID: 5964295688796878398}
+  - component: {fileID: 5934511795509099528}
+  - component: {fileID: 7451503852871669203}
+  - component: {fileID: 5653047869961786348}
+  - component: {fileID: 316935320625203180}
+  - component: {fileID: 7010965214458317505}
+  - component: {fileID: 3454580562902191117}
+  - component: {fileID: 4407213732214024815}
+  - component: {fileID: 6563208724737944964}
+  - component: {fileID: 2408172099247753683}
+  - component: {fileID: 1680009386148010753}
+  - component: {fileID: 5000167962032609002}
+  - component: {fileID: 7620200006173628706}
+  - component: {fileID: 5853170716584273482}
+  - component: {fileID: 3571234205698337804}
+  - component: {fileID: 4971757856549539470}
+  m_Layer: 0
+  m_Name: Test Player Services
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6535926875984009611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 316217280948573862}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &5964295688796878398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  serializedVersion: 5
+  m_Mass: 1450
+  m_LinearDamping: 0.02
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: -0.34, z: 0.05}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &5934511795509099528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47f36af9418643bd8da4393df7ab8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehiclePowertrain
+--- !u!114 &7451503852871669203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0728259e87b894eeda13177aaf2555d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleAssists
+--- !u!114 &5653047869961786348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ca595e68514d00898458ebfe7fdce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleModuleHost
+  autoDiscoverModules: 1
+  moduleComponents: []
+--- !u!114 &316935320625203180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d731bad1d60834fa19a4c6502eac41cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleController
+  stockTuning: {fileID: 11400000, guid: b5325a991398145efa957816d53bf8b0, type: 2}
+  inputSourceComponent: {fileID: 0}
+  powertrain: {fileID: 5934511795509099528}
+  assists: {fileID: 7451503852871669203}
+  nitrous: {fileID: 0}
+  wheels: []
+  cameraRig: {fileID: 0}
+  moduleHost: {fileID: 5653047869961786348}
+  useBuiltInAero: 1
+--- !u!114 &7010965214458317505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3a1e9c5b6f4280a4c8e2b1f9d73564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleStoreWallet
+  balance: 100000
+--- !u!114 &3454580562902191117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37c9e1f5a6b72c4e0f2a3b5d8c06149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleBountySystem
+  rules: {fileID: 0}
+  startingHeatLevel: 0
+--- !u!114 &4407213732214024815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2e8c1d7f4b4390b6d9e3a1c8f72564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleStoreOwnership
+  ownedProductIds: []
+--- !u!114 &6563208724737944964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7e1a9d5b4f6280a8d2e6c1f9b73544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleStoreGarage
+  ownedVehicleIds: []
+--- !u!114 &2408172099247753683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbbe5d6c1254d75acc6f19acff338a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleCustomizationSystem
+  catalog: {fileID: 11400000, guid: 9c9e127d5597947aab7c456d2b2928d2, type: 2}
+  installedCustomizations: []
+  visualAdapterComponent: {fileID: 1680009386148010753}
+--- !u!114 &1680009386148010753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3f5f9f0b8840d4a3d52407b75e61ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleCustomizationVisualAdapter
+  slots: []
+--- !u!114 &5000167962032609002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1e5c9b3d4f4680b6e8c2a1f9d73540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleCustomizationStoreAdapter
+--- !u!114 &7620200006173628706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7b4c9a2d5f4386b0c8e6a1f9d73254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleStoreSystem
+  catalog: {fileID: 11400000, guid: 31158cd64619f443d9f4c8b62d63d9aa, type: 2}
+  defaultStore: {fileID: 11400000, guid: 402cb9251702a45ac87817f87578a6b4, type: 2}
+  currentVehicleComponent: {fileID: 316935320625203180}
+  walletComponent: {fileID: 7010965214458317505}
+  ownershipComponent: {fileID: 4407213732214024815}
+  garageComponent: {fileID: 6563208724737944964}
+  autoDiscoverAdapters: 0
+  adapterComponents:
+  - {fileID: 5000167962032609002}
+--- !u!114 &5853170716584273482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6800cb806c14360adf0c7dee7352e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.MostWantedFrontendTestStorage
+--- !u!114 &3571234205698337804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48d0f2a6b7c83d5f1a3b4c6e9d17250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.CareerProfileSystem
+  missionRewardCatalog: {fileID: 0}
+  profileId: frontend_test
+  playerName: Frontend Tester
+  activeVehicleId: frontend_test_vehicle
+  storageComponent: {fileID: 5853170716584273482}
+  autoDiscoverStorage: 0
+  autoDiscoverParticipants: 0
+  participantComponents:
+  - {fileID: 7010965214458317505}
+  - {fileID: 3454580562902191117}
+  - {fileID: 4407213732214024815}
+  - {fileID: 6563208724737944964}
+  - {fileID: 2408172099247753683}
+  - {fileID: 4971757856549539470}
+  loadOnAwake: 0
+  saveOnApplicationPause: 0
+  saveOnApplicationQuit: 0
+--- !u!114 &4971757856549539470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623037472295331709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2c4cad64fe148f180916dc7452d7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamSession
+  vehicle: {fileID: 316935320625203180}
+  roads: {fileID: 7285307692508645121}
+  pursuit: {fileID: 0}
+  locations:
+  - {fileID: 4365931426589088405}
+  - {fileID: 1640401187723855665}
+  - {fileID: 7319505654478826517}
+  - {fileID: 2633957100757824327}
+  - {fileID: 7050508330932806777}
+  - {fileID: 7299480956488438716}
+  - {fileID: 3165931708488225221}
+  - {fileID: 3063437820172816405}
+  - {fileID: 3015886920554682060}
+  events:
+  - {fileID: 2675520307567615502}
+  - {fileID: 4309684614782562542}
+  - {fileID: 8233266274040652219}
+  - {fileID: 8692052674886357117}
+  - {fileID: 1067367857716459916}
+  - {fileID: 5662500281146129612}
+  - {fileID: 6759784984955290254}
+  - {fileID: 5014648336088335153}
+  - {fileID: 4493684756334469502}
+  - {fileID: 7692351330331444492}
+  - {fileID: 6360579262329675195}
+  - {fileID: 3233950715048331865}
+  - {fileID: 2547268326656596240}
+  - {fileID: 8334097448184226768}
+  - {fileID: 6062375272302770410}
+  - {fileID: 2806126581381886439}
+  - {fileID: 678305400005883162}
+  resumeSavedProfile: 0
+--- !u!1 &7999259651713870428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263109866249587867}
+  - component: {fileID: 6759784984955290254}
+  m_Layer: 0
+  m_Name: Test Drag 07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263109866249587867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999259651713870428}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60, y: 0, z: -60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6759784984955290254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999259651713870428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_race_06
+  displayName: Test Drag 07
+  kind: 2
+  checkpoints:
+  - {x: -60, y: 0, z: -30}
+  - {x: -60, y: 0, z: 0}
+  laps: 1
+  timeLimit: 180
+  reward: 1600
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &8059536119365907366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4307760386752097481}
+  - component: {fileID: 3165931708488225221}
+  m_Layer: 0
+  m_Name: Test Location 07 - BodyShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4307760386752097481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059536119365907366}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120, y: 0, z: 120}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3165931708488225221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059536119365907366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871504fa5a13f4f199c5ed6938bd6fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.WorldLocation
+  locationId: frontend_test_location_06
+  displayName: Test BodyShop 07
+  kind: 2
+  storefront: {fileID: 11400000, guid: 402cb9251702a45ac87817f87578a6b4, type: 2}
+  radius: 12
+--- !u!1 &8727170023115880243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3192306258425329120}
+  - component: {fileID: 8334097448184226768}
+  m_Layer: 0
+  m_Name: Test Pursuit 04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3192306258425329120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727170023115880243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8334097448184226768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727170023115880243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_03
+  displayName: Test Pursuit 04
+  kind: 4
+  checkpoints:
+  - {x: 60, y: 0, z: 30}
+  - {x: 60, y: 0, z: 60}
+  laps: 1
+  timeLimit: 180
+  reward: 1300
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}
+--- !u!1 &8896643151020927812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4917131372681410647}
+  - component: {fileID: 3233950715048331865}
+  m_Layer: 0
+  m_Name: Test Pursuit 02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4917131372681410647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896643151020927812}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1849060766473868221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3233950715048331865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896643151020927812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cb74d59f2394cb6a3ee86dbea4eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.FreeRoamEventDefinition
+  eventId: frontend_test_pursuit_01
+  displayName: Test Pursuit 02
+  kind: 4
+  checkpoints:
+  - {x: -60, y: 0, z: 30}
+  - {x: -60, y: 0, z: 60}
+  laps: 1
+  timeLimit: 180
+  reward: 1100
+  targetSpeedKph: 100
+  routePublication: {fileID: 0}

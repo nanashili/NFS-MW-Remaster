@@ -1,0 +1,105 @@
+{
+  "car": "BMWM3",
+  "sourceSha256": "82140ddfea4dab7cf306fa8fa50bb92a8336463fd555b19527a3db9a8453c4c2",
+  "stockParts": [
+    "BMWM3_KIT00_BODY_A",
+    "BMWM3_KIT00_FRONT_LEFT_WINDOW_A",
+    "BMWM3_KIT00_FRONT_RIGHT_WINDOW_A",
+    "BMWM3_KIT00_FRONT_WINDOW_A",
+    "BMWM3_KIT00_HOOD_A",
+    "BMWM3_KIT00_INTERIOR_A",
+    "BMWM3_KIT00_LEFT_BRAKELIGHT_A",
+    "BMWM3_KIT00_LEFT_HEADLIGHT_A",
+    "BMWM3_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "BMWM3_KIT00_LEFT_SIDE_MIRROR_A",
+    "BMWM3_KIT00_REAR_LEFT_WINDOW_A",
+    "BMWM3_KIT00_REAR_RIGHT_WINDOW_A",
+    "BMWM3_KIT00_REAR_WINDOW_A",
+    "BMWM3_KIT00_RIGHT_BRAKELIGHT_A",
+    "BMWM3_KIT00_RIGHT_HEADLIGHT_A",
+    "BMWM3_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "BMWM3_KIT00_RIGHT_SIDE_MIRROR_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 83666,
+      "meshObjects": 21
+    },
+    {
+      "lod": 1,
+      "triangles": 13787,
+      "meshObjects": 21
+    },
+    {
+      "lod": 2,
+      "triangles": 4803,
+      "meshObjects": 21
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.600000023841858,
+        0.7959880232810974,
+        0.27000001072883606
+      ],
+      "radius": 0.34159426391124725,
+      "width": 0.24503608793020248
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.600000023841858,
+        -0.7959880232810974,
+        0.27000001072883606
+      ],
+      "radius": 0.34159426391124725,
+      "width": 0.24503608793020248
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.1299999952316284,
+        0.7959880232810974,
+        0.27000001072883606
+      ],
+      "radius": 0.34159426391124725,
+      "width": 0.24503608793020248
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.1299999952316284,
+        -0.7959880232810974,
+        0.27000001072883606
+      ],
+      "radius": 0.34159426391124725,
+      "width": 0.24503608793020248
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.7300000190734863,
+    "RIDE_HEIGHT": [
+      6,
+      6
+    ],
+    "TRACK_WIDTH": [
+      1.6080000400543213,
+      1.6030000448226929
+    ],
+    "FRONT_AXLE": 1.4299999475479126,
+    "vehicle": "bmwm3gtre46",
+    "record": "0xAFA210F0/0x4E085FB3",
+    "assemblyFallback": "BMWM3GTRE46; no BMWM3 pvehicle record"
+  },
+  "sourceTextureCount": 31,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/BMW/M3/Remastered.glb"
+}

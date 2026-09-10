@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394df6ef4b31484ab100e8272275d635, type: 3}
+  m_Name: Definition
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleDefinition
+  vehicleId: bmwm3gtre46
+  variantId: scene-stock
+  manufacturer: BMW
+  model: M3 E42
+  year: 2005
+  factoryTuning: {fileID: 11400000, guid: 0325cc43c5e8f4a709e7571e2a2e420b, type: 2}
+  prefab: {fileID: 2427861724812833360, guid: e8dbf29c146d8450981dc94ec2f33afb, type: 3}
+  performanceCatalog: {fileID: 11400000, guid: aace80be941a14b0c9f428a0ef2dfb3b, type: 2}
+  customizationCatalog: {fileID: 11400000, guid: baeae4b5226b2491eaf7ac4ab3dccb45, type: 2}
+  capabilities: 239
+  supportedSlots:
+  - paint
+  - glass
+  - front-bumper
+  - rear-bumper
+  - hood
+  - wheels
+  tuningLimits: []
+  referenceEvidence: Most Wanted reference mode enabled by scene migration. See Tools/DrivingMechanics/SCENE_MIGRATION.md and its hash/provenance manifest. Authored fitment retained; anonymous cars retain authored statistics. Original-game fidelity is not established.

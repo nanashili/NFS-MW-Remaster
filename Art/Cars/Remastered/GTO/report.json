@@ -1,0 +1,107 @@
+{
+  "car": "GTO",
+  "sourceSha256": "11d112e20c6b83fc9a894e7559fdd3c7123b3a0bcff390601779f6bfe1ab7c76",
+  "stockParts": [
+    "GTO_KIT00_BODY_A",
+    "GTO_KIT00_FRONT_LEFT_WINDOW_A",
+    "GTO_KIT00_FRONT_RIGHT_WINDOW_A",
+    "GTO_KIT00_FRONT_WINDOW_A",
+    "GTO_KIT00_HOOD_A",
+    "GTO_KIT00_INTERIOR_A",
+    "GTO_KIT00_LEFT_BRAKELIGHT_A",
+    "GTO_KIT00_LEFT_BRAKELIGHT_GLASS_A",
+    "GTO_KIT00_LEFT_HEADLIGHT_A",
+    "GTO_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "GTO_KIT00_LEFT_SIDE_MIRROR_A",
+    "GTO_KIT00_REAR_LEFT_WINDOW_A",
+    "GTO_KIT00_REAR_RIGHT_WINDOW_A",
+    "GTO_KIT00_REAR_WINDOW_A",
+    "GTO_KIT00_RIGHT_BRAKELIGHT_A",
+    "GTO_KIT00_RIGHT_BRAKELIGHT_GLASS_A",
+    "GTO_KIT00_RIGHT_HEADLIGHT_A",
+    "GTO_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "GTO_KIT00_RIGHT_SIDE_MIRROR_A",
+    "GTO_KIT00_SPOILER_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 84998,
+      "meshObjects": 24
+    },
+    {
+      "lod": 1,
+      "triangles": 13772,
+      "meshObjects": 24
+    },
+    {
+      "lod": 2,
+      "triangles": 4801,
+      "meshObjects": 24
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.4450000524520874,
+        0.7690737247467041,
+        0.23000000417232513
+      ],
+      "radius": 0.34080496430397034,
+      "width": 0.2643919661641121
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.4450000524520874,
+        -0.7690737247467041,
+        0.23000000417232513
+      ],
+      "radius": 0.34080496430397034,
+      "width": 0.2643919661641121
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.3350000381469727,
+        0.7790737152099609,
+        0.23000000417232513
+      ],
+      "radius": 0.34080496430397034,
+      "width": 0.2643919661641121
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.3350000381469727,
+        -0.7790737152099609,
+        0.23000000417232513
+      ],
+      "radius": 0.34080496430397034,
+      "width": 0.2643919661641121
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.799999952316284,
+    "RIDE_HEIGHT": [
+      9,
+      9
+    ],
+    "TRACK_WIDTH": [
+      1.559000015258789,
+      1.5770000219345093
+    ],
+    "FRONT_AXLE": 1.350000023841858,
+    "vehicle": "gto",
+    "record": "0xAFA210F0/0xAA483DC6"
+  },
+  "sourceTextureCount": 38,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Pontiac/GTO/Remastered.glb"
+}

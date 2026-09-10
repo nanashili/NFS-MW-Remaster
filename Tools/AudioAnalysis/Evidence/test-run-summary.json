@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "unity": "6000.6.0f1",
+  "runDateUtc": "2026-09-08",
+  "editMode": {
+    "total": 104,
+    "passed": 104,
+    "failed": 0,
+    "skipped": 0,
+    "startUtc": "2026-09-08T08:20:20Z",
+    "endUtc": "2026-09-08T08:20:51Z",
+    "filter": "BlackBox;SensoryFeedbackTests;VehicleProfileStudioTests",
+    "xml": "Library/BlackBoxAudio/Reports/validation-2026-09-08/BlackBox.xml",
+    "sha256": "b004842b62d7ee7a4ef4ad20d8982078cdbfcffc4c04490dc018f5e165438201"
+  },
+  "playMode": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "startUtc": "2026-09-08T08:21:01Z",
+    "endUtc": "2026-09-08T08:21:01Z",
+    "filter": "NativeAudioWorldPlayTests",
+    "xml": "Library/BlackBoxAudio/Reports/validation-2026-09-08/BlackBoxPlay.xml",
+    "sha256": "19759f6583a33ebca6dff42be345856dd8a9c6de29ac6f4ace74ba8a9e646748"
+  },
+  "parserSourceSha256": "74c53ee5aadf9c5994d09a41f2a7a6728ed63fe8887529fb40a80a1c7e6c3077",
+  "notes": "Isolated current-workspace copy with graphics enabled. Four workflow steps plus two technical views exercised at narrow and wide sizes with active-view assertions. Includes nonlinear GIN drafts, raw-recording export and actual Unity-package generation without a vehicle. Supplied private sources were not redistributed; XML remains in ignored local reports. No listening or original interactive parity claim. Audition transport verifies actual frame progress, pause/resume position, completion cleanup and replay. Scene attachment preserves sound settings and telemetry/world connections, supports Undo/Redo, survives saving/reopening, and rejects missing connections or changed target profiles before writing. A separate graphical WeatherDemo copy check matched the M3 source model and clicked Prepare/Apply; its presenter produced nonzero PCM and retained all components and connections. No test mapping was applied to the working scene or source session."
+}

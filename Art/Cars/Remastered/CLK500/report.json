@@ -1,0 +1,105 @@
+{
+  "car": "CLK500",
+  "sourceSha256": "c1e7ee477f1de0b69cf9de0c6f1e4d32316f775711f79f341bbd4a183b0833b7",
+  "stockParts": [
+    "CLK500_KIT00_BODY_A",
+    "CLK500_KIT00_FRONT_LEFT_WINDOW_A",
+    "CLK500_KIT00_FRONT_RIGHT_WINDOW_A",
+    "CLK500_KIT00_FRONT_WINDOW_A",
+    "CLK500_KIT00_HOOD_A",
+    "CLK500_KIT00_INTERIOR_A",
+    "CLK500_KIT00_LEFT_BRAKELIGHT_A",
+    "CLK500_KIT00_LEFT_HEADLIGHT_A",
+    "CLK500_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "CLK500_KIT00_LEFT_SIDE_MIRROR_A",
+    "CLK500_KIT00_REAR_LEFT_WINDOW_A",
+    "CLK500_KIT00_REAR_RIGHT_WINDOW_A",
+    "CLK500_KIT00_REAR_WINDOW_A",
+    "CLK500_KIT00_RIGHT_BRAKELIGHT_A",
+    "CLK500_KIT00_RIGHT_HEADLIGHT_A",
+    "CLK500_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "CLK500_KIT00_RIGHT_SIDE_MIRROR_A",
+    "CLK500_KIT00_SPOILER_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 80777,
+      "meshObjects": 22
+    },
+    {
+      "lod": 1,
+      "triangles": 12262,
+      "meshObjects": 22
+    },
+    {
+      "lod": 2,
+      "triangles": 4275,
+      "meshObjects": 22
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.5800000429153442,
+        0.7380126118659973,
+        0.25
+      ],
+      "radius": 0.34036335349082947,
+      "width": 0.24835113156586885
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.5800000429153442,
+        -0.7380126118659973,
+        0.25
+      ],
+      "radius": 0.34036335349082947,
+      "width": 0.24835113156586885
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.149999976158142,
+        0.7380126118659973,
+        0.25
+      ],
+      "radius": 0.34036335349082947,
+      "width": 0.24835113156586885
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.149999976158142,
+        -0.7380126118659973,
+        0.25
+      ],
+      "radius": 0.34036335349082947,
+      "width": 0.24835113156586885
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.6500000953674316,
+    "RIDE_HEIGHT": [
+      8,
+      8
+    ],
+    "TRACK_WIDTH": [
+      1.4950000047683716,
+      1.4739999771118164
+    ],
+    "FRONT_AXLE": 1.4500000476837158,
+    "vehicle": "clk500",
+    "record": "0xAFA210F0/0x8277AF2F"
+  },
+  "sourceTextureCount": 36,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Mercedes-Benz/CLK 500/Remastered.glb"
+}

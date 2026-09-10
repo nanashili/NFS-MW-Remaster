@@ -1,0 +1,106 @@
+{
+  "car": "IS300",
+  "sourceSha256": "6bb14211a8c363fece6b597d146a4c193b1e69f253f3f987f6282bf702b68177",
+  "stockParts": [
+    "IS300_KIT00_BODY_A",
+    "IS300_KIT00_FRONT_LEFT_WINDOW_A",
+    "IS300_KIT00_FRONT_RIGHT_WINDOW_A",
+    "IS300_KIT00_FRONT_WINDOW_A",
+    "IS300_KIT00_HOOD_A",
+    "IS300_KIT00_INTERIOR_A",
+    "IS300_KIT00_LEFT_BRAKELIGHT_A",
+    "IS300_KIT00_LEFT_BRAKELIGHT_GLASS_A",
+    "IS300_KIT00_LEFT_HEADLIGHT_A",
+    "IS300_KIT00_LEFT_HEADLIGHT_GLASS_A",
+    "IS300_KIT00_LEFT_SIDE_MIRROR_A",
+    "IS300_KIT00_REAR_LEFT_WINDOW_A",
+    "IS300_KIT00_REAR_RIGHT_WINDOW_A",
+    "IS300_KIT00_REAR_WINDOW_A",
+    "IS300_KIT00_RIGHT_BRAKELIGHT_A",
+    "IS300_KIT00_RIGHT_BRAKELIGHT_GLASS_A",
+    "IS300_KIT00_RIGHT_HEADLIGHT_A",
+    "IS300_KIT00_RIGHT_HEADLIGHT_GLASS_A",
+    "IS300_KIT00_RIGHT_SIDE_MIRROR_A"
+  ],
+  "pipelineSha256": "29ace5b72de03fa2448f0c7a2922f22d9b3d8b151aa8a4f3e9b9daa842bd38c3",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 81095,
+      "meshObjects": 23
+    },
+    {
+      "lod": 1,
+      "triangles": 12762,
+      "meshObjects": 23
+    },
+    {
+      "lod": 2,
+      "triangles": 4450,
+      "meshObjects": 23
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.011",
+      "position": [
+        1.5099999904632568,
+        0.7217347025871277,
+        0.23999999463558197
+      ],
+      "radius": 0.32522961497306824,
+      "width": 0.2536672428250313
+    },
+    {
+      "name": "FrontRightWheel.011",
+      "position": [
+        1.5099999904632568,
+        -0.7217347025871277,
+        0.23999999463558197
+      ],
+      "radius": 0.32522961497306824,
+      "width": 0.2536672428250313
+    },
+    {
+      "name": "RearLeftWheel.011",
+      "position": [
+        -1.25,
+        0.7317346930503845,
+        0.23999999463558197
+      ],
+      "radius": 0.32522961497306824,
+      "width": 0.2536672428250313
+    },
+    {
+      "name": "RearRightWheel.011",
+      "position": [
+        -1.25,
+        -0.7317346930503845,
+        0.23999999463558197
+      ],
+      "radius": 0.32522961497306824,
+      "width": 0.2536672428250313
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.7699999809265137,
+    "RIDE_HEIGHT": [
+      8,
+      8
+    ],
+    "TRACK_WIDTH": [
+      1.534000039100647,
+      1.5440000295639038
+    ],
+    "FRONT_AXLE": 1.5,
+    "vehicle": "is300",
+    "record": "0xAFA210F0/0x5BFF2FB0"
+  },
+  "sourceTextureCount": 38,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Street/Lexus/IS 300/Remastered.glb"
+}

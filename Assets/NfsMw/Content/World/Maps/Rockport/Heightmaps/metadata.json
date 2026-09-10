@@ -1,0 +1,392 @@
+{
+  "coordinateSystem": "Unity world X,Y,Z; original game -> (-X,Z,-Y)",
+  "width": 7169,
+  "height": 8193,
+  "originX": -5120,
+  "originZ": -6144,
+  "sampleSpacing": 1,
+  "tileSize": 1024,
+  "tileResolution": 1025,
+  "minHeight": -31,
+  "heightRange": 489,
+  "sourceBounds": [
+    [
+      -4916.8291015625,
+      -29.323158264160156,
+      -5270.22607421875
+    ],
+    [
+      1466.333984375,
+      456.48101806640625,
+      1029.9068603515625
+    ]
+  ],
+  "stats": {
+    "triangles": 475208,
+    "verticalOrDegenerate": 6990,
+    "samples": 58735617,
+    "coveredSamples": 14242401,
+    "naturalSamples": 9681587,
+    "roadOnlySamples": 4560814,
+    "multiLevelSamples": 545417,
+    "heightMin": -29.0087,
+    "heightMax": 456.168
+  },
+  "quantizationMaxErrorMetres": 0.0037308308537422753,
+  "rowOrder": "RAW row zero is minimum Unity Z; PNG row zero is maximum Unity Z. Little-endian unsigned 16-bit RAW.",
+  "heightPolicy": "Highest natural-ground intersection; if absent, lowest road-surface intersection. No gap filling. Multi-level conflicts flagged above 0.5 m. Original meshes remain the exact geometry reference.",
+  "tiles": [
+    {
+      "name": "height_x03_z00",
+      "xIndex": 3,
+      "zIndex": 0,
+      "originX": -2048,
+      "originZ": -6144,
+      "validSamples": 9479,
+      "rawSha256": "13f01131d8078a76e1951a73fb8131d9a13087dc41097218ceead67fb1e10aa5"
+    },
+    {
+      "name": "height_x04_z00",
+      "xIndex": 4,
+      "zIndex": 0,
+      "originX": -1024,
+      "originZ": -6144,
+      "validSamples": 24538,
+      "rawSha256": "59ce72beed84f51d1e6cfea57a7cd59fc69255d6cd93698e108beb202d2cf334"
+    },
+    {
+      "name": "height_x02_z01",
+      "xIndex": 2,
+      "zIndex": 1,
+      "originX": -3072,
+      "originZ": -5120,
+      "validSamples": 670661,
+      "rawSha256": "62802913bfaee6aca2ac0a012cc4f77dd8842f48a0ff2899e83cd3cbf6468148"
+    },
+    {
+      "name": "height_x03_z01",
+      "xIndex": 3,
+      "zIndex": 1,
+      "originX": -2048,
+      "originZ": -5120,
+      "validSamples": 524712,
+      "rawSha256": "6d64447a3336962cd018e772861d454287ded09080635c487b12b6740f4a4bf5"
+    },
+    {
+      "name": "height_x04_z01",
+      "xIndex": 4,
+      "zIndex": 1,
+      "originX": -1024,
+      "originZ": -5120,
+      "validSamples": 452056,
+      "rawSha256": "573a6d5cdda3862fcbf1e9543018f04c4a43d88c5f4afaeb32b02c677cb8434d"
+    },
+    {
+      "name": "height_x05_z01",
+      "xIndex": 5,
+      "zIndex": 1,
+      "originX": 0,
+      "originZ": -5120,
+      "validSamples": 66061,
+      "rawSha256": "d4e059673d3298bd004359a0f929bb726ef86660b10389849f0926def67ba662"
+    },
+    {
+      "name": "height_x00_z02",
+      "xIndex": 0,
+      "zIndex": 2,
+      "originX": -5120,
+      "originZ": -4096,
+      "validSamples": 100951,
+      "rawSha256": "c047a52fb61c2a8c755a7c27008eba28d587186b43e9f513d07a6555a3471058"
+    },
+    {
+      "name": "height_x01_z02",
+      "xIndex": 1,
+      "zIndex": 2,
+      "originX": -4096,
+      "originZ": -4096,
+      "validSamples": 438286,
+      "rawSha256": "6a3b259383d543a0a2ce04e35174f79f9d35f284b6aaada4b8756701bc811c7b"
+    },
+    {
+      "name": "height_x02_z02",
+      "xIndex": 2,
+      "zIndex": 2,
+      "originX": -3072,
+      "originZ": -4096,
+      "validSamples": 636444,
+      "rawSha256": "b5c84ec7d8b9067871e1d0abe5a6d5aa5afff7d6857503a46bcdb801eeeeeff8"
+    },
+    {
+      "name": "height_x03_z02",
+      "xIndex": 3,
+      "zIndex": 2,
+      "originX": -2048,
+      "originZ": -4096,
+      "validSamples": 504767,
+      "rawSha256": "19226f1d03adba11df0508817df9c81274f534a2c80853a189e91301c0b526d0"
+    },
+    {
+      "name": "height_x04_z02",
+      "xIndex": 4,
+      "zIndex": 2,
+      "originX": -1024,
+      "originZ": -4096,
+      "validSamples": 719294,
+      "rawSha256": "2516609d155a5c59c691806eb91e106e1db92bf0a958ba15a714fa9b38f10454"
+    },
+    {
+      "name": "height_x05_z02",
+      "xIndex": 5,
+      "zIndex": 2,
+      "originX": 0,
+      "originZ": -4096,
+      "validSamples": 319784,
+      "rawSha256": "4ff01f18234a86cf8ef2a683c06917372d2acb39f8aaa6b534a49aa551073a9b"
+    },
+    {
+      "name": "height_x06_z02",
+      "xIndex": 6,
+      "zIndex": 2,
+      "originX": 1024,
+      "originZ": -4096,
+      "validSamples": 908,
+      "rawSha256": "2369c8b14c7c37f55f4052ccc6df7d6a391e3223f983cf759ba504f4b9d58194"
+    },
+    {
+      "name": "height_x00_z03",
+      "xIndex": 0,
+      "zIndex": 3,
+      "originX": -5120,
+      "originZ": -3072,
+      "validSamples": 137545,
+      "rawSha256": "d042bec32340337a7b9e8a6487c3b9c3e02dcb54f66296e4dc88a2010b129154"
+    },
+    {
+      "name": "height_x01_z03",
+      "xIndex": 1,
+      "zIndex": 3,
+      "originX": -4096,
+      "originZ": -3072,
+      "validSamples": 588530,
+      "rawSha256": "420fad23e44eed13745cf0a7a139d1c7514169ff66e372bf2cab3af0329c0130"
+    },
+    {
+      "name": "height_x02_z03",
+      "xIndex": 2,
+      "zIndex": 3,
+      "originX": -3072,
+      "originZ": -3072,
+      "validSamples": 601014,
+      "rawSha256": "d891491606bbff7824e1a91ed4211e4b65ecb6b983db7fd26e2e421749b38bce"
+    },
+    {
+      "name": "height_x03_z03",
+      "xIndex": 3,
+      "zIndex": 3,
+      "originX": -2048,
+      "originZ": -3072,
+      "validSamples": 467579,
+      "rawSha256": "251dc9d55fbec0229e64e8af32449c47d56a5cf77ace2e97bd0b15d57ce583c1"
+    },
+    {
+      "name": "height_x04_z03",
+      "xIndex": 4,
+      "zIndex": 3,
+      "originX": -1024,
+      "originZ": -3072,
+      "validSamples": 534659,
+      "rawSha256": "2561d20de2a8fdecd22b8d6bac64a40c968dd5f8f4a4fe1bc5d0d8ae62f7858d"
+    },
+    {
+      "name": "height_x05_z03",
+      "xIndex": 5,
+      "zIndex": 3,
+      "originX": 0,
+      "originZ": -3072,
+      "validSamples": 609655,
+      "rawSha256": "dc273b5ae46af8623454e887650b8509dded79696f4722882070b3b23dfe739e"
+    },
+    {
+      "name": "height_x06_z03",
+      "xIndex": 6,
+      "zIndex": 3,
+      "originX": 1024,
+      "originZ": -3072,
+      "validSamples": 180894,
+      "rawSha256": "2177f8468952068ed36a35b2d37c443d70729d7d33ba5e4b165e68ebd83f45d1"
+    },
+    {
+      "name": "height_x00_z04",
+      "xIndex": 0,
+      "zIndex": 4,
+      "originX": -5120,
+      "originZ": -2048,
+      "validSamples": 271256,
+      "rawSha256": "583c698f6cc9d768966f2602319abc7a433834626e66d9c3335aa78ee8e80692"
+    },
+    {
+      "name": "height_x01_z04",
+      "xIndex": 1,
+      "zIndex": 4,
+      "originX": -4096,
+      "originZ": -2048,
+      "validSamples": 652306,
+      "rawSha256": "18a6677b7846c577b329cbe924838f699657df505c534e1fb3ad4c2248b730b9"
+    },
+    {
+      "name": "height_x02_z04",
+      "xIndex": 2,
+      "zIndex": 4,
+      "originX": -3072,
+      "originZ": -2048,
+      "validSamples": 797464,
+      "rawSha256": "4690b1c0817349b3f403b3bc042e9dfe6185566791544437248ec66b1926e2bc"
+    },
+    {
+      "name": "height_x03_z04",
+      "xIndex": 3,
+      "zIndex": 4,
+      "originX": -2048,
+      "originZ": -2048,
+      "validSamples": 492514,
+      "rawSha256": "71d7e24506a63f7e8d21fd18a757e69d6ac7aab64f11a59577b35dc6220900da"
+    },
+    {
+      "name": "height_x04_z04",
+      "xIndex": 4,
+      "zIndex": 4,
+      "originX": -1024,
+      "originZ": -2048,
+      "validSamples": 263332,
+      "rawSha256": "a5d43fb7b98e3ed6e569f0b8746a192e9a542a0a0e4211b74203e8e77f9cf8e7"
+    },
+    {
+      "name": "height_x05_z04",
+      "xIndex": 5,
+      "zIndex": 4,
+      "originX": 0,
+      "originZ": -2048,
+      "validSamples": 44072,
+      "rawSha256": "99c10827b15177776bf1ef10ed3a44ff149fc97e4d81c768cf963ae715508470"
+    },
+    {
+      "name": "height_x00_z05",
+      "xIndex": 0,
+      "zIndex": 5,
+      "originX": -5120,
+      "originZ": -1024,
+      "validSamples": 561931,
+      "rawSha256": "531078790627dd238392cebfe6bfe0f3677994dee8c96e0d60eaa29dfce2f891"
+    },
+    {
+      "name": "height_x01_z05",
+      "xIndex": 1,
+      "zIndex": 5,
+      "originX": -4096,
+      "originZ": -1024,
+      "validSamples": 575014,
+      "rawSha256": "7d0b4a63068c6d77635e1c096cafe339ee7b142a98755db6f8203b1c109a89e8"
+    },
+    {
+      "name": "height_x02_z05",
+      "xIndex": 2,
+      "zIndex": 5,
+      "originX": -3072,
+      "originZ": -1024,
+      "validSamples": 675669,
+      "rawSha256": "e35b34ab3ff93e24bb6555bc349593c9c782ec364046721534d6cbdebecdbe9d"
+    },
+    {
+      "name": "height_x03_z05",
+      "xIndex": 3,
+      "zIndex": 5,
+      "originX": -2048,
+      "originZ": -1024,
+      "validSamples": 425577,
+      "rawSha256": "d7f7a6ac44c87d791af15abbd196b58560eb1576961ab8c52594d7c815231153"
+    },
+    {
+      "name": "height_x04_z05",
+      "xIndex": 4,
+      "zIndex": 5,
+      "originX": -1024,
+      "originZ": -1024,
+      "validSamples": 338514,
+      "rawSha256": "9f984ec1160bc30f82a8866f86202f3102e02ff0fbf936250beb57e807245f17"
+    },
+    {
+      "name": "height_x05_z05",
+      "xIndex": 5,
+      "zIndex": 5,
+      "originX": 0,
+      "originZ": -1024,
+      "validSamples": 47208,
+      "rawSha256": "b868842496e0af9d88ff76c6f6c1096373fa2174c2029a6bb94fb49418213924"
+    },
+    {
+      "name": "height_x00_z06",
+      "xIndex": 0,
+      "zIndex": 6,
+      "originX": -5120,
+      "originZ": 0,
+      "validSamples": 19985,
+      "rawSha256": "cc6e228a5cde066bfe96f7f89a05f7d0e835cec1778fbd47c2083fbfb90c9b20"
+    },
+    {
+      "name": "height_x01_z06",
+      "xIndex": 1,
+      "zIndex": 6,
+      "originX": -4096,
+      "originZ": 0,
+      "validSamples": 301061,
+      "rawSha256": "a3b112f01060b734bf5c7ddd7b53ba69bc21ef983234f860d18f672b0afa6060"
+    },
+    {
+      "name": "height_x02_z06",
+      "xIndex": 2,
+      "zIndex": 6,
+      "originX": -3072,
+      "originZ": 0,
+      "validSamples": 313244,
+      "rawSha256": "4f64c8f4c912cdfa758536b2f31d3cab2bac6b98efbe2b8c149650a0ddcc9e69"
+    },
+    {
+      "name": "height_x03_z06",
+      "xIndex": 3,
+      "zIndex": 6,
+      "originX": -2048,
+      "originZ": 0,
+      "validSamples": 305229,
+      "rawSha256": "0ff6c06013e1e352196b8cfc5826e0b48a90614aaa6979d3d55a138ff94b6246"
+    },
+    {
+      "name": "height_x04_z06",
+      "xIndex": 4,
+      "zIndex": 6,
+      "originX": -1024,
+      "originZ": 0,
+      "validSamples": 339714,
+      "rawSha256": "461be0903180cc9bcd9685ce0b1032f336e6bfb9cafef38430563d06f14def42"
+    },
+    {
+      "name": "height_x05_z06",
+      "xIndex": 5,
+      "zIndex": 6,
+      "originX": 0,
+      "originZ": 0,
+      "validSamples": 259876,
+      "rawSha256": "44a09b09567b2a64aa2bedd2bc9be3d54a1ad99768aad7e86bad77b750af5bff"
+    },
+    {
+      "name": "height_x04_z07",
+      "xIndex": 4,
+      "zIndex": 7,
+      "originX": -1024,
+      "originZ": 1024,
+      "validSamples": 242,
+      "rawSha256": "d5d0d0e1fc57bda9e68d480fbb99ca409d419229039c833cdc0aba40338e6ebc"
+    }
+  ],
+  "unityTerrainHolesPolicy": "Keep only cells with four natural-ground samples. Road-only and unobserved cells are holes; original road meshes remain the driving surfaces. Full surface elevations remain available in RAW/PNG."
+}

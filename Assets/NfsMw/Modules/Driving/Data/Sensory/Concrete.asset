@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425feaa77b5094feab880fe07052dd35, type: 3}
+  m_Name: Concrete
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensorySurfaceProfile
+  surface: 2
+  grip: 1
+  rollingResistance: 1
+  cameraRoughness: 0.18
+  rolling: {fileID: 8300000, guid: 6faa6623f24cb4a35a04b9cd3d22cd81, type: 3}
+  tireSlip: {fileID: 8300000, guid: 59e4d40ae745d42f0a19df17c18e5cc3, type: 3}
+  impact: {fileID: 8300000, guid: 8a0e6d05f63b14ebb9a5a4e1bd1526bb, type: 3}
+  scrape: {fileID: 8300000, guid: 022013efe1f694bf49f9f92109766246, type: 3}
+  destruction: {fileID: 8300000, guid: 2f85b72ef76e54058ad321c99e27f599, type: 3}
+  impactEffect: {fileID: 2377622373621600035, guid: f4a5d7439928d4def86e5bb4de4f8460, type: 3}
+  contactEffect: {fileID: 196051298787225477, guid: e328337738124430489157c84756883d, type: 3}
+  leavesSkid: 1
+  skidColor: {r: 0.035, g: 0.035, b: 0.035, a: 0.6}
+  particleIntensity: 1

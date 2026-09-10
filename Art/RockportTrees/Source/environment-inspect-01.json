@@ -1,0 +1,25 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"message\": \"Command executed successfully.\",\n  \"data\": {\n    \"isCompilationSuccessful\": true,\n    \"isExecutionSuccessful\": true,\n    \"executionId\": 1,\n    \"compilationLogs\": \"\",\n    \"executionLogs\": \"[Log] Rockport Buildings - Original Game Layout children=5632\\n[Log] Rockport Roads - Paved and Unpaved Routes children=11764\\n[Log] Rockport Original Ground - Exact Source Meshes children=3334\\n[Log] Rockport Generated Terrain - 1m Heightmap children=39\\n[Log] Rockport Trees - Terrain Openings children=31\\n[Log] Rockport Breakable Trees children=0\\n[Log] Rockport Breakable Trees Transform DestructionWorld\\n[Log] Types NfsMwRemaster.Driving.OceanBuoyantBody, NfsMwRemaster.Driving.Rendering.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\n    \"localFixedCode\": \"using UnityEngine;\\r\\nusing UnityEngine.SceneManagement;\\r\\nusing UnityEditor;\\r\\nusing NfsMwRemaster.Driving;\\r\\n\\r\\nnamespace Unity.AI.Assistant.Agent.Dynamic.Extension.Editor\\r\\n{\\r\\n    internal class CommandScript : IRunCommand\\r\\n    {\\r\\n        public void Execute(ExecutionResult result)\\r\\n        {\\r\\n            foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects())\\r\\n            {\\r\\n                result.Log(root.name + \\\" children=\\\" + root.transform.childCount);\\r\\n                if (root.name != \\\"Rockport Breakable Trees\\\")\\r\\n                    continue;\\r\\n                foreach (var t in root.GetComponentsInChildren<Transform>(true))\\r\\n                {\\r\\n                    string line = t.name;\\r\\n                    foreach (var c in t.GetComponents<Component>())\\r\\n                        line += \\\" \\\" + (c ? c.GetType().Name : \\\"MISSING\\\");\\r\\n                    result.Log(line);\\r\\n                }\\r\\n            }\\r\\n\\r\\n            result.Log(\\\"Types \\\" + typeof(OceanBuoyantBody).AssemblyQualifiedName);\\r\\n        }\\r\\n    }\\r\\n}\",\n    \"result\": \"Command executed successfully.\"\n  }\n}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Command executed successfully.",
+      "data": {
+        "isCompilationSuccessful": true,
+        "isExecutionSuccessful": true,
+        "executionId": 1,
+        "compilationLogs": "",
+        "executionLogs": "[Log] Rockport Buildings - Original Game Layout children=5632\n[Log] Rockport Roads - Paved and Unpaved Routes children=11764\n[Log] Rockport Original Ground - Exact Source Meshes children=3334\n[Log] Rockport Generated Terrain - 1m Heightmap children=39\n[Log] Rockport Trees - Terrain Openings children=31\n[Log] Rockport Breakable Trees children=0\n[Log] Rockport Breakable Trees Transform DestructionWorld\n[Log] Types NfsMwRemaster.Driving.OceanBuoyantBody, NfsMwRemaster.Driving.Rendering.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "localFixedCode": "using UnityEngine;\r\nusing UnityEngine.SceneManagement;\r\nusing UnityEditor;\r\nusing NfsMwRemaster.Driving;\r\n\r\nnamespace Unity.AI.Assistant.Agent.Dynamic.Extension.Editor\r\n{\r\n    internal class CommandScript : IRunCommand\r\n    {\r\n        public void Execute(ExecutionResult result)\r\n        {\r\n            foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects())\r\n            {\r\n                result.Log(root.name + \" children=\" + root.transform.childCount);\r\n                if (root.name != \"Rockport Breakable Trees\")\r\n                    continue;\r\n                foreach (var t in root.GetComponentsInChildren<Transform>(true))\r\n                {\r\n                    string line = t.name;\r\n                    foreach (var c in t.GetComponents<Component>())\r\n                        line += \" \" + (c ? c.GetType().Name : \"MISSING\");\r\n                    result.Log(line);\r\n                }\r\n            }\r\n\r\n            result.Log(\"Types \" + typeof(OceanBuoyantBody).AssemblyQualifiedName);\r\n        }\r\n    }\r\n}",
+        "result": "Command executed successfully."
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425feaa77b5094feab880fe07052dd35, type: 3}
+  m_Name: AsphaltWet
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensorySurfaceProfile
+  surface: 1
+  grip: 0.8
+  rollingResistance: 1
+  rolling: {fileID: 8300000, guid: 1bb7c8556c161455f89f3d08d7d9a8e0, type: 3}
+  tireSlip: {fileID: 8300000, guid: ff0dd986b8ccf4043963c5510dc8f1e0, type: 3}
+  impact: {fileID: 8300000, guid: 8a0719e0bb6ed4624a46c51befc79d6f, type: 3}
+  scrape: {fileID: 8300000, guid: d5db1fbfef47d46fb8fb9b3ca02c1ec6, type: 3}
+  destruction: {fileID: 8300000, guid: d5d4bee5113914fa5bb34f05fbb46ab4, type: 3}
+  impactEffect: {fileID: 0}
+  contactEffect: {fileID: 8641934371744474586, guid: 38ccf57c46eff471b8347d57b03ec3f8, type: 3}
+  leavesSkid: 0
+  skidColor: {r: 0.035, g: 0.035, b: 0.035, a: 0.6}
+  particleIntensity: 1

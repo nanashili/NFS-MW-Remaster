@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fef57c0f9b54c5bbf3fe7da7d38cc15, type: 3}
+  m_Name: Garage
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.AudioZoneProfile
+  schema: 1
+  stableId: audio.demo.profile.garage
+  displayName: Demo Garage
+  category: 6
+  blendMode: 1
+  priority: 20
+  blendDistance: 5
+  hysteresis: 0.75
+  blendCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gainDb: 0
+  lowPassHz: 7000
+  highPassHz: 20
+  reverbWet: 0.35
+  reverbDecay: 1.6
+  reverbPreset: 21
+  affectPlayer: 1
+  affectOtherVehicles: 1
+  affectTires: 1
+  affectImpacts: 1
+  affectEnvironment: 1
+  affectSirens: 0
+  affectRadio: 0
+  affectMusic: 0
+  affectUi: 0
+  ambience:
+  - id: garage-air
+    clip: {fileID: 8300000, guid: 301bb9d7a5ed14058a8723b59964da39, type: 3}
+    category: 4
+    gain: 0.22
+    pitch: 0.6
+    priority: 214
+    loop: 1
+    localPosition: {x: 0, y: 0, z: 0}
+    maxDistance: 50
+    startDelay: 0
+    cooldown: 0
+  sourceOverrides: []
+  fallbackProfileId: 
+  backendNotes: 

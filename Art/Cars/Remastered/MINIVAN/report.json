@@ -1,0 +1,92 @@
+{
+  "car": "MINIVAN",
+  "sourceSha256": "71478bd664a8a90b2ded7fb2d8cfcb13e6cc0bfe3a7c1691ae21a2724d5e7799",
+  "stockParts": [
+    "MINIVAN_KIT00_BODY_A",
+    "MINIVAN_KIT00_FRONT_WINDOW_A"
+  ],
+  "authoredWheelFace": true,
+  "extraRearTireOffset": 0,
+  "sourcePivotPositionsApplied": true,
+  "pipelineSha256": "0e98e6f8c6551154c778454290f57e9d8ca2ba6b408c52cea46d26f5fe2b6a6b",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 56942,
+      "meshObjects": 6
+    },
+    {
+      "lod": 1,
+      "triangles": 1988,
+      "meshObjects": 6
+    },
+    {
+      "lod": 2,
+      "triangles": 692,
+      "meshObjects": 6
+    }
+  ],
+  "wheelAssembly": [
+    {
+      "name": "FrontLeftWheel.017",
+      "position": [
+        1.5,
+        0.8057472705841064,
+        0.1615000069141388
+      ],
+      "radius": 0.3150457739830017,
+      "width": 0.2608320936560631
+    },
+    {
+      "name": "FrontRightWheel.017",
+      "position": [
+        1.5,
+        -0.8057472705841064,
+        0.1615000069141388
+      ],
+      "radius": 0.3150457739830017,
+      "width": 0.2608320936560631
+    },
+    {
+      "name": "RearLeftWheel.017",
+      "position": [
+        -1.4600000381469727,
+        0.785747230052948,
+        0.1915000081062317
+      ],
+      "radius": 0.3150457739830017,
+      "width": 0.2608320936560631
+    },
+    {
+      "name": "RearRightWheel.017",
+      "position": [
+        -1.4600000381469727,
+        -0.785747230052948,
+        0.1915000081062317
+      ],
+      "radius": 0.3150457739830017,
+      "width": 0.2608320936560631
+    }
+  ],
+  "chassis": {
+    "WHEEL_BASE": 2.880000114440918,
+    "RIDE_HEIGHT": [
+      6.849999904632568,
+      6.849999904632568
+    ],
+    "TRACK_WIDTH": [
+      1.5240000486373901,
+      1.5240000486373901
+    ],
+    "FRONT_AXLE": 1.590000033378601,
+    "vehicle": "cs_cts_traf_minivan",
+    "record": "0xAFA210F0/0xDF186520"
+  },
+  "sourceTextureCount": 10,
+  "limitations": [
+    "Source-derived exterior and interior, not a ground-up scan or Forza-equivalent asset.",
+    "Original ecar offsets and radius; authored resting pose uses chassis ride height converted from centimetres.",
+    "Authored PBR values replace legacy game shaders; dynamic vinyl composites are not recovered."
+  ],
+  "asset": "Assets/NfsMw/Content/Vehicles/Traffic/MINIVAN/Remastered.glb"
+}

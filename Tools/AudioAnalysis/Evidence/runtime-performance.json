@@ -1,0 +1,56 @@
+{
+    "unity": "6000.6.0f1",
+    "cpu": "Apple M1 Pro",
+    "operatingSystem": "Mac OS X 27.0.0",
+    "utc": "2026-09-08T08:20:31.5526210Z",
+    "scope": "Unity Edit Mode, synchronous production callback kernel. Callback timing excludes main-thread snapshot compilation and trace draining. Does not measure device latency, audible quality, GUI responsiveness or game capture parity.",
+    "allocationMethod": "Unity ProfilerRecorder GC.Alloc event counts, current thread, no frame summation; positive control retains a 4096-byte array. Marker duration is not allocation size. GC.GetAllocatedBytesForCurrentThread is a diagnostic control only.",
+    "processorCount": 10,
+    "callbacks": [
+        {
+            "vehicles": 1,
+            "callbacks": 120,
+            "blockFrames": 257,
+            "tracing": false,
+            "elapsedMilliseconds": 4.6699,
+            "maximumCallbackMilliseconds": 0.0452,
+            "allocationEvents": 0,
+            "dropped": 0
+        },
+        {
+            "vehicles": 1,
+            "callbacks": 120,
+            "blockFrames": 257,
+            "tracing": true,
+            "elapsedMilliseconds": 4.9449,
+            "maximumCallbackMilliseconds": 0.0802,
+            "allocationEvents": 0,
+            "dropped": 0
+        },
+        {
+            "vehicles": 16,
+            "callbacks": 1920,
+            "blockFrames": 257,
+            "tracing": true,
+            "elapsedMilliseconds": 82.571,
+            "maximumCallbackMilliseconds": 6.3827,
+            "allocationEvents": 0,
+            "dropped": 0
+        },
+        {
+            "vehicles": 16,
+            "callbacks": 1920,
+            "blockFrames": 1024,
+            "tracing": true,
+            "elapsedMilliseconds": 302.3751,
+            "maximumCallbackMilliseconds": 0.2245,
+            "allocationEvents": 0,
+            "dropped": 0
+        }
+    ],
+    "analysisMilliseconds": 32.3729,
+    "allocationPositiveControlEvents": 1,
+    "gcCounterPositiveControlBytes": 0,
+    "analysisAllocationEvents": 1182,
+    "analysisRetainedScalarBytes": 1581876
+}

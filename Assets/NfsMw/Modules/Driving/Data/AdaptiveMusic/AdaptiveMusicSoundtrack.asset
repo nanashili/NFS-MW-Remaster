@@ -1,0 +1,1381 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be91d4903326b43c6bd1de75802a2f40, type: 3}
+  m_Name: AdaptiveMusicSoundtrack
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensoryMusicProfile
+  profileId: music.project.soundtrack
+  schemaVersion: 2
+  sourceRevision: cf60e563bb6c8972b49d69a2a16503cc
+  bpm: 120
+  beatsPerBar: 4
+  bars: 8
+  stems: []
+  escapedStinger: {fileID: 0}
+  arrestedStinger: {fileID: 0}
+  finePaidStinger: {fileID: 0}
+  cues:
+  - stableId: cue.soundtrack.frontend
+    displayName: frontend soundtrack
+    context: 1
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 500
+    defaultIntensity: 0.12
+  - stableId: cue.soundtrack.free-roam
+    displayName: free-roam soundtrack
+    context: 2
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 400
+    defaultIntensity: 0.2
+  - stableId: cue.soundtrack.race
+    displayName: race soundtrack
+    context: 4
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 600
+    defaultIntensity: 0.55
+  - stableId: cue.soundtrack.pursuit
+    displayName: pursuit soundtrack
+    context: 8
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 800
+    defaultIntensity: 0.8
+  - stableId: cue.soundtrack.cooldown
+    displayName: cooldown soundtrack
+    context: 16
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 700
+    defaultIntensity: 0.35
+  - stableId: cue.soundtrack.escape
+    displayName: escape soundtrack
+    context: 32
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 900
+    defaultIntensity: 0.65
+  - stableId: cue.soundtrack.results
+    displayName: results soundtrack
+    context: 128
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 1000
+    defaultIntensity: 0.2
+  - stableId: cue.soundtrack.failure
+    displayName: failure soundtrack
+    context: 64
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 1000
+    defaultIntensity: 0.2
+  - stableId: cue.soundtrack.pause
+    displayName: pause soundtrack
+    context: 256
+    defaultSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    priority: 950
+    defaultIntensity: 0.12
+  sections:
+  - stableId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    displayName: '01. Styles of Beyond - Nine Thou (Superstars Remix) [Roaming]'
+    album: Megadef
+    kind: 1
+    eligibleContexts: 511
+    bpm: 120
+    beatsPerBar: 4
+    bars: 122
+    loopStartBeat: 0
+    loopEndBeat: 486.12268
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3.full-mix
+      displayName: 01. Styles of Beyond - Nine Thou (Superstars Remix) full mix
+      role: 0
+      clip: {fileID: 8300000, guid: ed68f3e38f5ff4bb3afe0f9f82b1d21c, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.03--rock--heltah-skeltah----i-am-rock.71f54de4
+    displayName: '03. Rock (Heltah Skeltah) - I Am Rock [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 116
+    loopStartBeat: 0
+    loopEndBeat: 461.65332
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.03--rock--heltah-skeltah----i-am-rock.71f54de4.full-mix
+      displayName: 03. Rock (Heltah Skeltah) - I Am Rock full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 71f54de4685cc4948b6b947c857a0bff, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.04--suni-clay---in-a-hood-near-you.04c0c103
+    displayName: '04. Suni Clay - In A Hood Near You [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 136
+    loopStartBeat: 0
+    loopEndBeat: 542.82666
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.04--suni-clay---in-a-hood-near-you.04c0c103.full-mix
+      displayName: 04. Suni Clay - In A Hood Near You full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 04c0c103e29f64491b01f68fa2e33888, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.07--hush---fired-up.be318ae3
+    displayName: '07. Hush - Fired Up [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 104
+    loopStartBeat: 0
+    loopEndBeat: 412.57797
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.07--hush---fired-up.be318ae3.full-mix
+      displayName: 07. Hush - Fired Up full mix
+      role: 0
+      clip: {fileID: 8300000, guid: be318ae38fabd42888aca4bacff0059c, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.08--dj-spooky-and-dave-lombardo-feat--chuck-d---b-side-wins-a.75d58dc0
+    displayName: '08. DJ Spooky and Dave Lombardo feat. Chuck D - B-Side Wins Again feat. Chuck D [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 170
+    loopStartBeat: 0
+    loopEndBeat: 679.17334
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.08--dj-spooky-and-dave-lombardo-feat--chuck-d---b-side-wins-a.75d58dc0.full-mix
+      displayName: 08. DJ Spooky and Dave Lombardo feat. Chuck D - B-Side Wins Again feat. Chuck D full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 75d58dc09564746c88e0b317c4591029, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.09--celldweller---shapeshifter--feat--styles-of-beyond.52842b70
+    displayName: '09. Celldweller - Shapeshifter (feat. Styles of Beyond) [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 109
+    loopStartBeat: 0
+    loopEndBeat: 434.45276
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.09--celldweller---shapeshifter--feat--styles-of-beyond.52842b70.full-mix
+      displayName: 09. Celldweller - Shapeshifter (feat. Styles of Beyond) full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 52842b706ecfa44169ce5190450556b7, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.11--ils---feed-the-addiction.e43ea0e5
+    displayName: '11. Ils - Feed The Addiction [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 140
+    loopStartBeat: 0
+    loopEndBeat: 556.56
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.11--ils---feed-the-addiction.e43ea0e5.full-mix
+      displayName: 11. Ils - Feed The Addiction full mix
+      role: 0
+      clip: {fileID: 8300000, guid: e43ea0e593fcf46cc83ca6060ded1d8f, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.12--celldweller---one-good-reason.36ac30e7
+    displayName: '12. Celldweller - One Good Reason [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 119
+    loopStartBeat: 0
+    loopEndBeat: 473.41333
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.12--celldweller---one-good-reason.36ac30e7.full-mix
+      displayName: 12. Celldweller - One Good Reason full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 36ac30e7a4ca74897a0eab2b781e8e28, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.13--hyper---we-control.e1d188bc
+    displayName: '13. Hyper - We Control [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 101
+    loopStartBeat: 0
+    loopEndBeat: 402.72
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.13--hyper---we-control.e1d188bc.full-mix
+      displayName: 13. Hyper - We Control full mix
+      role: 0
+      clip: {fileID: 8300000, guid: e1d188bcb582d4c1192039c0a1dd716b, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.14--static-x---skinnyman.9a3a9c6c
+    displayName: '14. Static-X - Skinnyman [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 111
+    loopStartBeat: 0
+    loopEndBeat: 440.26666
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.14--static-x---skinnyman.9a3a9c6c.full-mix
+      displayName: 14. Static-X - Skinnyman full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 9a3a9c6cc820a436caea6e754a0de402, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.15--dieselboy---kaos---barrier-break.fe4ec31a
+    displayName: '15. Dieselboy & Kaos - Barrier Break [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 218
+    loopStartBeat: 0
+    loopEndBeat: 871.84
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.15--dieselboy---kaos---barrier-break.fe4ec31a.full-mix
+      displayName: 15. Dieselboy & Kaos - Barrier Break full mix
+      role: 0
+      clip: {fileID: 8300000, guid: fe4ec31a0d53f4dcaaf20196ed6c42c5, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.16--disturbed---decadence.8d626885
+    displayName: '16. Disturbed - Decadence [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 104
+    loopStartBeat: 0
+    loopEndBeat: 412.76495
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.16--disturbed---decadence.8d626885.full-mix
+      displayName: 16. Disturbed - Decadence full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 8d626885bede447eabd55cb7554295cf, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.17--the-prodigy---you-ll-be-under-my-wheels.5684e86f
+    displayName: '17. The Prodigy - You''ll Be Under My Wheels [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 119
+    loopStartBeat: 0
+    loopEndBeat: 473.94666
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.17--the-prodigy---you-ll-be-under-my-wheels.5684e86f.full-mix
+      displayName: 17. The Prodigy - You'll Be Under My Wheels full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 5684e86f4ade34941b72f9d44dafce5b, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.19--stratus---you-must-follow--evol-intent-vip.56f6a868
+    displayName: '19. Stratus - You Must Follow (Evol Intent VIP) [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 171
+    loopStartBeat: 0
+    loopEndBeat: 681.92
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.19--stratus---you-must-follow--evol-intent-vip.56f6a868.full-mix
+      displayName: 19. Stratus - You Must Follow (Evol Intent VIP) full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 56f6a868d331241138804e63dff1c14d, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.20--mastodon---blood-and-thunder.41e2cb21
+    displayName: '20. Mastodon - Blood And Thunder [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 115
+    loopStartBeat: 0
+    loopEndBeat: 457.17334
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.20--mastodon---blood-and-thunder.41e2cb21.full-mix
+      displayName: 20. Mastodon - Blood And Thunder full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 41e2cb215d84b445ebe3b8264e59a873, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.21--evol-intent--mayhem---thinktank---broken-sword.24056565
+    displayName: '21. Evol Intent, Mayhem & Thinktank - Broken Sword [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 179
+    loopStartBeat: 0
+    loopEndBeat: 715.38666
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.21--evol-intent--mayhem---thinktank---broken-sword.24056565.full-mix
+      displayName: 21. Evol Intent, Mayhem & Thinktank - Broken Sword full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 240565650dd944eb4974dbde5c607f85, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.22--bullet-for-my-valentine---hand-of-blood.6e19dd87
+    displayName: '22. Bullet For My Valentine - Hand Of Blood [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 109
+    loopStartBeat: 0
+    loopEndBeat: 434.85333
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.22--bullet-for-my-valentine---hand-of-blood.6e19dd87.full-mix
+      displayName: 22. Bullet For My Valentine - Hand Of Blood full mix
+      role: 0
+      clip: {fileID: 8300000, guid: 6e19dd87859cb4558ae145e4787565ce, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  - stableId: soundtrack.24--avenged-sevenfold---blinded-in-chains.c3c9fc04
+    displayName: '24. Avenged Sevenfold - Blinded In Chains [Roaming]'
+    kind: 1
+    eligibleContexts: 6
+    bpm: 120
+    beatsPerBar: 4
+    bars: 198
+    loopStartBeat: 0
+    loopEndBeat: 788.93335
+    harmonicFamily: supplied-full-mix
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 0
+    allowFreeTimeTransition: 1
+    allowHarmonicMismatch: 1
+    fallbackSectionId: 
+    fullMix: 1
+    markers:
+    - stableId: song-start
+      displayName: Song start
+      beat: 0
+      transitionPoint: 1
+    stems:
+    - stableId: soundtrack.24--avenged-sevenfold---blinded-in-chains.c3c9fc04.full-mix
+      displayName: 24. Avenged Sevenfold - Blinded In Chains full mix
+      role: 0
+      clip: {fileID: 8300000, guid: c3c9fc0400ff74a3bad40fec9a8bb7f8, type: 3}
+      gain: 0.85
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 1
+      allowPhaseCompensation: 0
+      loadPolicy: 2
+  transitions:
+  - stableId: transition.soundtrack.soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    displayName: "Song end \u2192 01. Styles of Beyond - Nine Thou (Superstars Remix) [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.01--styles-of-beyond---nine-thou--superstars-remix.ed68f3e3
+    eligibleContexts: 511
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.03--rock--heltah-skeltah----i-am-rock.71f54de4
+    displayName: "Song end \u2192 03. Rock (Heltah Skeltah) - I Am Rock [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.03--rock--heltah-skeltah----i-am-rock.71f54de4
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.04--suni-clay---in-a-hood-near-you.04c0c103
+    displayName: "Song end \u2192 04. Suni Clay - In A Hood Near You [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.04--suni-clay---in-a-hood-near-you.04c0c103
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.07--hush---fired-up.be318ae3
+    displayName: "Song end \u2192 07. Hush - Fired Up [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.07--hush---fired-up.be318ae3
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.08--dj-spooky-and-dave-lombardo-feat--chuck-d---b-side-wins-a.75d58dc0
+    displayName: "Song end \u2192 08. DJ Spooky and Dave Lombardo feat. Chuck D - B-Side Wins Again feat. Chuck D [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.08--dj-spooky-and-dave-lombardo-feat--chuck-d---b-side-wins-a.75d58dc0
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.09--celldweller---shapeshifter--feat--styles-of-beyond.52842b70
+    displayName: "Song end \u2192 09. Celldweller - Shapeshifter (feat. Styles of Beyond) [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.09--celldweller---shapeshifter--feat--styles-of-beyond.52842b70
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.11--ils---feed-the-addiction.e43ea0e5
+    displayName: "Song end \u2192 11. Ils - Feed The Addiction [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.11--ils---feed-the-addiction.e43ea0e5
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.12--celldweller---one-good-reason.36ac30e7
+    displayName: "Song end \u2192 12. Celldweller - One Good Reason [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.12--celldweller---one-good-reason.36ac30e7
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.13--hyper---we-control.e1d188bc
+    displayName: "Song end \u2192 13. Hyper - We Control [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.13--hyper---we-control.e1d188bc
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.14--static-x---skinnyman.9a3a9c6c
+    displayName: "Song end \u2192 14. Static-X - Skinnyman [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.14--static-x---skinnyman.9a3a9c6c
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.15--dieselboy---kaos---barrier-break.fe4ec31a
+    displayName: "Song end \u2192 15. Dieselboy & Kaos - Barrier Break [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.15--dieselboy---kaos---barrier-break.fe4ec31a
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.16--disturbed---decadence.8d626885
+    displayName: "Song end \u2192 16. Disturbed - Decadence [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.16--disturbed---decadence.8d626885
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.17--the-prodigy---you-ll-be-under-my-wheels.5684e86f
+    displayName: "Song end \u2192 17. The Prodigy - You'll Be Under My Wheels [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.17--the-prodigy---you-ll-be-under-my-wheels.5684e86f
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.19--stratus---you-must-follow--evol-intent-vip.56f6a868
+    displayName: "Song end \u2192 19. Stratus - You Must Follow (Evol Intent VIP) [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.19--stratus---you-must-follow--evol-intent-vip.56f6a868
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.20--mastodon---blood-and-thunder.41e2cb21
+    displayName: "Song end \u2192 20. Mastodon - Blood And Thunder [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.20--mastodon---blood-and-thunder.41e2cb21
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.21--evol-intent--mayhem---thinktank---broken-sword.24056565
+    displayName: "Song end \u2192 21. Evol Intent, Mayhem & Thinktank - Broken Sword [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.21--evol-intent--mayhem---thinktank---broken-sword.24056565
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.22--bullet-for-my-valentine---hand-of-blood.6e19dd87
+    displayName: "Song end \u2192 22. Bullet For My Valentine - Hand Of Blood [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.22--bullet-for-my-valentine---hand-of-blood.6e19dd87
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  - stableId: transition.soundtrack.soundtrack.24--avenged-sevenfold---blinded-in-chains.c3c9fc04
+    displayName: "Song end \u2192 24. Avenged Sevenfold - Blinded In Chains [Roaming]"
+    fromSectionId: '*'
+    toSectionId: soundtrack.24--avenged-sevenfold---blinded-in-chains.c3c9fc04
+    eligibleContexts: 6
+    priority: 10
+    quantization: 3
+    minimumDwellSeconds: 0.25
+    cooldownSeconds: 0
+    requiredMarker: 
+    bridgeSectionId: 
+    allowTempoChange: 1
+    allowHarmonicMismatch: 1
+  stingers: []
+  intensity:
+    pursuitThreshold: 0.2
+    highIntensityThreshold: 0.65
+    hysteresis: 0.06
+    minimumDwellSeconds: 1
+    intensity:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  playback:
+    persistAcrossScenes: 1
+    keepTransportOnFrontendNavigation: 1
+    pauseMode: 0
+    scheduleLookaheadSeconds: 0.35
+    crossfadeSeconds: 1.25
+    minimumDwellSeconds: 0.5
+    maxConcurrentStems: 2
+    restartAtSectionBoundaryAfterDeviceChange: 1

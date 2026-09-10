@@ -1,0 +1,44 @@
+{
+  "verifiedSourceArchives": 57,
+  "verifiedPngs": 1119,
+  "verifiedHuffCacheRecords": 75,
+  "nativeDdsComparison": [
+    {
+      "name": "8000_LINES_00",
+      "matches": false,
+      "ddsPayloadStartsWithCompressionHeader": true
+    },
+    {
+      "name": "9000_LINES_00",
+      "matches": false,
+      "ddsPayloadStartsWithCompressionHeader": false
+    },
+    {
+      "name": "TURBO_LINES_00",
+      "matches": false,
+      "ddsPayloadStartsWithCompressionHeader": false
+    },
+    {
+      "name": "10000_LINES_00",
+      "matches": false,
+      "ddsPayloadStartsWithCompressionHeader": false
+    },
+    {
+      "name": "7000_LINES_00",
+      "matches": false,
+      "ddsPayloadStartsWithCompressionHeader": false
+    }
+  ],
+  "knownNonChunkArchives": [
+    "GLOBAL/FE_ATTRIB.bin",
+    "GLOBAL/GlobalMemoryFile.bin",
+    "GLOBAL/InGameMemoryFile.bin",
+    "GLOBAL/PermanentMemoryFile.bin",
+    "GLOBAL/attributes.bin",
+    "GLOBAL/gameplay.bin",
+    "GLOBAL/gameplay.lzc"
+  ],
+  "historicalOriginalsVerified": 708,
+  "nativeDdsComparisonNote": "Legacy AssetDumper writes incorrect streamed payloads in this gauge archive; its DDS outputs are diagnostic only and are not used for recovered PNGs.",
+  "status": "PASS"
+}

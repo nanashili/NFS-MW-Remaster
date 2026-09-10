@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa16c7bdf03b4e6c96b6f3d40fbcfe7, type: 3}
+  m_Name: VehicleAudio
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleSensoryProfile
+  vehicleIdentity: elise
+  engineAudioSchema: 1
+  engineAudioId: 20acf0d6723b28588357c89ca45e7e537f0917a3b93c1ffe6ae8b673589fe7bd
+  engineAudioRevision: 1
+  engineLayers: []
+  mostWantedAudio:
+    schema: 1
+    carId: 61
+    acceleration:
+      id: acceleration
+      sourceStartFrame: 0
+      sourceEndFrame: 171987
+      sampleRate: 32000
+      channels: 1
+      rpmAnchors:
+      - rpm: 1486.5
+        sourceFrame: 480
+      - rpm: 1634.092
+        sourceFrame: 4379
+      - rpm: 1781.684
+        sourceFrame: 7948
+      - rpm: 1929.276
+        sourceFrame: 11844
+      - rpm: 2076.868
+        sourceFrame: 15068
+      - rpm: 2224.46
+        sourceFrame: 18521
+      - rpm: 2372.052
+        sourceFrame: 22137
+      - rpm: 2519.644
+        sourceFrame: 25912
+      - rpm: 2667.2358
+        sourceFrame: 29258
+      - rpm: 2814.828
+        sourceFrame: 32578
+      - rpm: 2962.42
+        sourceFrame: 36467
+      - rpm: 3110.012
+        sourceFrame: 39891
+      - rpm: 3257.6038
+        sourceFrame: 43062
+      - rpm: 3405.1958
+        sourceFrame: 46778
+      - rpm: 3552.7878
+        sourceFrame: 49858
+      - rpm: 3700.38
+        sourceFrame: 53661
+      - rpm: 3847.972
+        sourceFrame: 57518
+      - rpm: 3995.564
+        sourceFrame: 60954
+      - rpm: 4143.156
+        sourceFrame: 64646
+      - rpm: 4290.748
+        sourceFrame: 68240
+      - rpm: 4438.34
+        sourceFrame: 71469
+      - rpm: 4585.9316
+        sourceFrame: 74634
+      - rpm: 4733.524
+        sourceFrame: 77866
+      - rpm: 4881.1157
+        sourceFrame: 81029
+      - rpm: 5028.7075
+        sourceFrame: 84006
+      - rpm: 5176.3
+        sourceFrame: 87131
+      - rpm: 5323.8916
+        sourceFrame: 90099
+      - rpm: 5471.484
+        sourceFrame: 93087
+      - rpm: 5619.0757
+        sourceFrame: 96191
+      - rpm: 5766.6675
+        sourceFrame: 99092
+      - rpm: 5914.26
+        sourceFrame: 102162
+      - rpm: 6061.8516
+        sourceFrame: 105289
+      - rpm: 6209.444
+        sourceFrame: 108690
+      - rpm: 6357.036
+        sourceFrame: 111840
+      - rpm: 6504.628
+        sourceFrame: 114796
+      - rpm: 6652.2197
+        sourceFrame: 118686
+      - rpm: 6799.812
+        sourceFrame: 122581
+      - rpm: 6947.404
+        sourceFrame: 126497
+      - rpm: 7094.9956
+        sourceFrame: 129760
+      - rpm: 7242.5874
+        sourceFrame: 132854
+      - rpm: 7390.1797
+        sourceFrame: 135901
+      - rpm: 7537.7715
+        sourceFrame: 138924
+      - rpm: 7685.3633
+        sourceFrame: 143108
+      - rpm: 7832.9556
+        sourceFrame: 147233
+      - rpm: 7980.548
+        sourceFrame: 151144
+      - rpm: 8128.1396
+        sourceFrame: 154561
+      - rpm: 8275.731
+        sourceFrame: 158130
+      - rpm: 8423.323
+        sourceFrame: 160936
+      - rpm: 8570.915
+        sourceFrame: 164208
+      - rpm: 8718.508
+        sourceFrame: 167650
+      - rpm: 8866.1
+        sourceFrame: 171073
+      sourceClip: {fileID: 8300000, guid: 7e5ffea5d8f1c020f302ef2373219f2c, type: 3}
+      sourceHash: 9e9ac83b0c4cbcd70fdd0755a68597e75ddf1a3bffb5dd279d38cd6a3f66fc73
+      recordingId: gin:payload
+      provenance: Recovered GIN frequency-to-sample table
+      evidence: 'GinsuDataFrequencyToSample: uniform frequency segments into preserved table A sample coordinates, including descending mappings. Unity grain rendering and load blend are adapted.'
+      minimumLoad: 0
+      maximumLoad: 1
+      gain: 1
+      schemaVersion: 1
+    deceleration:
+      id: deceleration
+      sourceStartFrame: 0
+      sourceEndFrame: 52485
+      sampleRate: 32000
+      channels: 1
+      rpmAnchors:
+      - rpm: 4404.5
+        sourceFrame: 51124
+      - rpm: 4485.35
+        sourceFrame: 50300
+      - rpm: 4566.2
+        sourceFrame: 49102
+      - rpm: 4647.05
+        sourceFrame: 47571
+      - rpm: 4727.9
+        sourceFrame: 46217
+      - rpm: 4808.75
+        sourceFrame: 44805
+      - rpm: 4889.6
+        sourceFrame: 43130
+      - rpm: 4970.45
+        sourceFrame: 41145
+      - rpm: 5051.3
+        sourceFrame: 39913
+      - rpm: 5132.15
+        sourceFrame: 39078
+      - rpm: 5213
+        sourceFrame: 38316
+      - rpm: 5293.85
+        sourceFrame: 37324
+      - rpm: 5374.7
+        sourceFrame: 36311
+      - rpm: 5455.55
+        sourceFrame: 35241
+      - rpm: 5536.4
+        sourceFrame: 34195
+      - rpm: 5617.25
+        sourceFrame: 33199
+      - rpm: 5698.1
+        sourceFrame: 32260
+      - rpm: 5778.95
+        sourceFrame: 31330
+      - rpm: 5859.8003
+        sourceFrame: 30288
+      - rpm: 5940.65
+        sourceFrame: 29325
+      - rpm: 6021.5
+        sourceFrame: 28347
+      - rpm: 6102.35
+        sourceFrame: 27309
+      - rpm: 6183.2
+        sourceFrame: 26282
+      - rpm: 6264.05
+        sourceFrame: 25358
+      - rpm: 6344.9
+        sourceFrame: 24411
+      - rpm: 6425.75
+        sourceFrame: 23439
+      - rpm: 6506.6
+        sourceFrame: 22636
+      - rpm: 6587.45
+        sourceFrame: 22003
+      - rpm: 6668.3
+        sourceFrame: 21475
+      - rpm: 6749.15
+        sourceFrame: 20552
+      - rpm: 6830
+        sourceFrame: 18944
+      - rpm: 6910.85
+        sourceFrame: 17373
+      - rpm: 6991.6997
+        sourceFrame: 16170
+      - rpm: 7072.5503
+        sourceFrame: 14950
+      - rpm: 7153.4
+        sourceFrame: 14032
+      - rpm: 7234.25
+        sourceFrame: 13172
+      - rpm: 7315.1
+        sourceFrame: 12466
+      - rpm: 7395.95
+        sourceFrame: 11643
+      - rpm: 7476.8
+        sourceFrame: 10631
+      - rpm: 7557.65
+        sourceFrame: 9408
+      - rpm: 7638.5
+        sourceFrame: 8535
+      - rpm: 7719.35
+        sourceFrame: 7935
+      - rpm: 7800.1997
+        sourceFrame: 7531
+      - rpm: 7881.0503
+        sourceFrame: 7186
+      - rpm: 7961.9
+        sourceFrame: 6856
+      - rpm: 8042.75
+        sourceFrame: 6470
+      - rpm: 8123.6
+        sourceFrame: 5982
+      - rpm: 8204.45
+        sourceFrame: 5687
+      - rpm: 8285.3
+        sourceFrame: 5321
+      - rpm: 8366.15
+        sourceFrame: 4668
+      - rpm: 8447
+        sourceFrame: 480
+      sourceClip: {fileID: 8300000, guid: f9555e1aeaf3d172c943bf20636ca192, type: 3}
+      sourceHash: 7787b8856df74f86d39758215f2b8057a884e276fa9cccf19155bffd8bb8a96f
+      recordingId: gin:payload
+      provenance: Recovered GIN frequency-to-sample table
+      evidence: 'GinsuDataFrequencyToSample: uniform frequency segments into preserved table A sample coordinates, including descending mappings. Unity grain rendering and load blend are adapted.'
+      minimumLoad: 0
+      maximumLoad: 1
+      gain: 1
+      schemaVersion: 1
+    surfaces:
+    - surface: 0
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 1
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 2
+      roadLoop: 1
+      enter: 0
+      exit: 1
+      skid: 0
+    - surface: 3
+      roadLoop: 0
+      enter: -1
+      exit: -1
+      skid: 1
+    - surface: 4
+      roadLoop: 0
+      enter: -1
+      exit: -1
+      skid: 1
+    - surface: 5
+      roadLoop: 0
+      enter: -1
+      exit: -1
+      skid: 1
+    - surface: 6
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 7
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 8
+      roadLoop: 3
+      enter: 0
+      exit: -1
+      skid: 0
+    - surface: 9
+      roadLoop: 1
+      enter: 1
+      exit: 0
+      skid: 0
+    - surface: 10
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 11
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    - surface: 12
+      roadLoop: 5
+      enter: -1
+      exit: -1
+      skid: 0
+    idleRpm: 1080
+    maximumRpm: 8866
+    masterGain: 0.76906645
+    engine: {fileID: 11400000, guid: 252dc8dbf8fe854767c7e92b52a5a37a, type: 2}
+    sweeteners: {fileID: 11400000, guid: b41a6873bcb121c211908630d8a10a9b, type: 2}
+    transmission: {fileID: 11400000, guid: 10bc4168d00d3317f15074ca3cc9b7dc, type: 2}
+    whine: {fileID: 11400000, guid: 7a51e3b4b71c06a1856daab1dfa65c43, type: 2}
+    shifts: {fileID: 11400000, guid: 4eda23666109f153adc99f6bd772d0cd, type: 2}
+    skids: {fileID: 11400000, guid: 2e02d8887e07cf49162495977e6117e6, type: 2}
+    road: {fileID: 11400000, guid: ee6cde57874a3cabc03eb8a0c76d60ae, type: 2}
+    wind: {fileID: 11400000, guid: cfc6248f8313e626e9cabe53378021e0, type: 2}
+    nitrous: {fileID: 11400000, guid: 518e465aff45d6fc93d3d178227f6334, type: 2}
+    evidence: PC database inheritance and ordered script fields; recovered AEMS sample selection, sustain loops and surface references. Unity adapts telemetry, volume, GIN blending and spatialization. Base sound upgrades. Original-game time-stretch/filter DSP, random sequence and sputter mixer callbacks are not reproduced.
+    fingerprint: 20acf0d6723b28588357c89ca45e7e537f0917a3b93c1ffe6ae8b673589fe7bd
+  startup: {fileID: 0}
+  shiftUp: {fileID: 0}
+  shiftDown: {fileID: 0}
+  limiter: {fileID: 0}
+  overrun: {fileID: 0}
+  nitrous: {fileID: 0}
+  wind: {fileID: 0}
+  trafficRoadNoise: {fileID: 0}
+  surfaces: []
+  nitrousEffect: {fileID: 0}
+  exhaustPorts:
+  - {x: 0, y: 0.35, z: -1.8}
+  impactMaterials: {fileID: 0}
+  windGain:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 90
+      value: 0.65
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  roadGain:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 60
+      value: 0.55
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  highSpeedEngineGain:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -0.3
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.7
+      inSlope: -0.3
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

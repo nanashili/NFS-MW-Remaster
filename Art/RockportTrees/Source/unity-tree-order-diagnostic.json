@@ -1,0 +1,13 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": false,\n  \"error\": \"UNEXPECTED_ERROR: Command was executed partially, but reported warnings or errors:\\n[Error] System.IO.IOException: Wrong tree prototype at height_x02_z01 index 68: actual Tree_0516_XT_EVRGRN_TREELINEL_1B_00_DEINST1_G6, expected Tree_0169_XT_EVRGRN_TREELINEL_1B_00, actual normalized position (0.612803, 0.589896, 0.628485), expected world -2283.142333984375,262.359619140625,-4482.36962890625\\n  at Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.CommandScript.Execute (Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.ExecutionResult result) [0x002aa] in <daaa9c5abe1d420e851f7bf8b75a91e1>:0 \\n  at Unity.AI.Assistant.Editor.RunCommand.AgentRunCommand.Execute (Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.ExecutionResult& executionResult, System.String title) [0x00019] in ./Library/PackageCache/com.unity.ai.assistant@8d1e3e89e3a7/Editor/Assistant/RunCommand/AgentRunCommand.cs:56 \\nConsider reverting changes that may have happened if you retry.\"\n}"
+      }
+    ],
+    "isError": true
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

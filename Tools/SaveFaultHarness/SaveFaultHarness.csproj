@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <UnityProject Condition="'$(UnityProject)' == ''">../..</UnityProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NfsMwRemaster.Driving"><HintPath>$(UnityProject)/Library/ScriptAssemblies/NfsMwRemaster.Driving.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(NewtonsoftAssembly)</HintPath></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(UnityCoreAssembly)</HintPath></Reference>
+  </ItemGroup>
+</Project>

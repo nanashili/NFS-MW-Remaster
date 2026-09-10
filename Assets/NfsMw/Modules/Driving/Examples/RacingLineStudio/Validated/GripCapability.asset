@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e010b2ad6c6431db850e4d51c53d14, type: 3}
+  m_Name: GripCapability
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.RacingCapabilityProfile
+  schema: 1
+  evidence: "Measured shared-physics straight fixture, dry grip 1; 6000.6.0f1; 2026-09-05T17:25:43.9788630Z; dt=0.02; samples=690; full throttle/service brake, non-shift positive samples, lower quartile x0.7. Coverage 0..29 m/s. Lateral limit 3 m/s\xB2 remains a conservative assumption, NOT a measured tire envelope. Recalibrate after tune/rig changes. Rollout validation remains mandatory."
+  vehicleFingerprint: 5213479e94e04c1bb76968b5060fdd4aed7694e768263877cb1e29133481fa87
+  longitudinalMeasured: 1
+  lateralMeasured: 0
+  points:
+  - speed: 0
+    acceleration: 3.3038974
+    braking: 5.5745516
+    lateralAcceleration: 3
+  - speed: 9.666667
+    acceleration: 3.5525346
+    braking: 6.3238096
+    lateralAcceleration: 3
+  - speed: 19.333334
+    acceleration: 2.4218178
+    braking: 6.905365
+    lateralAcceleration: 3
+  - speed: 29
+    acceleration: 1.2989616
+    braking: 7.5585175
+    lateralAcceleration: 3

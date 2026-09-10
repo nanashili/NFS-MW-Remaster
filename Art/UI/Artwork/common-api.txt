@@ -1,0 +1,145 @@
+Common.BinaryUtil
+  System.Windows.Media.Imaging.BitmapImage ToBitmapImage(System.Drawing.Bitmap)
+    bitmap System.Drawing.Bitmap
+  Single GetPackedFloat(Byte*, Int32)
+    buf System.Byte*
+    pos System.Int32
+  Single UnpackFloat(Single)
+    f System.Single
+  Byte[] Reverse(Byte[])
+    b System.Byte[]
+  UInt16 ReadUInt16BE(System.IO.BinaryReader)
+    binRdr System.IO.BinaryReader
+  Int16 ReadInt16BE(System.IO.BinaryReader)
+    binRdr System.IO.BinaryReader
+  UInt32 ReadUInt32BE(System.IO.BinaryReader)
+    binRdr System.IO.BinaryReader
+  Int32 ReadInt32BE(System.IO.BinaryReader)
+    binRdr System.IO.BinaryReader
+  Byte[] ReadBytesRequired(System.IO.BinaryReader, Int32)
+    binRdr System.IO.BinaryReader
+    byteCount System.Int32
+  Byte[] ReadBytes(System.IO.BinaryReader, UInt32)
+    binRdr System.IO.BinaryReader
+    byteCount System.UInt32
+  System.String FullPrecisionFloat(Single)
+    f System.Single
+  Int64 PaddingAlign(Int64, Int32)
+    num System.Int64
+    alignTo System.Int32
+  UInt32 AutoAlign(System.IO.BinaryReader, Int32)
+    br System.IO.BinaryReader
+    alignTo System.Int32
+  System.String ReadNullTerminatedString(System.IO.BinaryReader)
+    stream System.IO.BinaryReader
+  T ReadStruct[T](System.IO.BinaryReader)
+    reader System.IO.BinaryReader
+  T GetStruct[T](System.IO.BinaryReader)
+    reader System.IO.BinaryReader
+  Void PutStruct[T](System.IO.BinaryWriter, T)
+    reader System.IO.BinaryWriter
+    value T
+  Void WriteStruct[T](System.IO.BinaryWriter, T)
+    writer System.IO.BinaryWriter
+    instance T
+  Byte[] MarshalStruct[T](T)
+    instance T
+  Int64 GetFileLength(System.String)
+    file System.String
+  UInt32 FindChunk(System.IO.BinaryReader, UInt32, Int64 ByRef)
+    reader System.IO.BinaryReader
+    chunkId System.UInt32
+    offset System.Int64&
+  System.String HexDump(Byte[], Int32)
+    bytes System.Byte[]
+    bytesPerLine System.Int32
+Common.ChunkManager
+Common.RealFile
+Common.FixedLenString
+Common.RealChunk
+Common.ChunkStream
+Common.Compression
+  Void Decompress(Byte[], Byte[])
+    inData System.Byte[]
+    outData System.Byte[]
+Common.GameDetector
+  Game DetectGame(System.String)
+    directory System.String
+Common.Hasher
+  UInt32 BinHash(System.String)
+    k System.String
+  UInt64 VltHash64(System.String, UInt64)
+    k System.String
+    init System.UInt64
+  UInt32 VltHash(System.String, UInt32)
+    k System.String
+    init System.UInt32
+Common.MessageUtil
+  Void SetAppName(System.String)
+    appName System.String
+  System.Windows.Forms.DialogResult ShowInfo(System.String)
+    message System.String
+  System.Windows.Forms.DialogResult ShowError(System.String)
+    message System.String
+Common.Textures.CarbonTpk
+Common.Textures.DelegateTpk
+Common.Textures.MostWantedTpk
+Common.Textures.TpkManager
+Common.Textures.WorldTpk
+Common.Textures.Data.PixelFormat
+Common.Textures.Data.DDSCaps
+Common.Textures.Data.DDSHeader
+Common.Textures.Data.DDSImage
+  Common.Textures.Data.DDSImage op_Implicit(System.Drawing.Bitmap)
+    value System.Drawing.Bitmap
+  System.Drawing.Bitmap op_Explicit(Common.Textures.Data.DDSImage)
+    value Common.Textures.Data.DDSImage
+Common.Textures.Data.InvalidFileHeaderException
+Common.Textures.Data.NotADDSImageException
+Common.Textures.Data.UnknownFileFormatException
+Common.Textures.Data.TextureCompression
+Common.Textures.Data.Texture
+Common.Textures.Data.TexturePack
+Common.TrackStream.GameBundleManager
+Common.TrackStream.CarbonManager
+Common.TrackStream.UndercoverManager
+Common.TrackStream.ProStreetManager
+Common.TrackStream.World15Manager
+Common.TrackStream.MostWantedManager
+Common.TrackStream.Data.StreamSection
+Common.TrackStream.Data.WorldStreamSection
+Common.TrackStream.Data.LocationBundle
+Common.TrackStream.Data.Vector3
+Common.Geometry.CarbonSolids
+Common.Geometry.MostWantedSolids
+Common.Geometry.ProStreetSolids
+Common.Geometry.SolidListManager
+Common.Geometry.UndercoverSolids
+Common.Geometry.World15Solids
+Common.Geometry.Data.SimpleMatrix
+Common.Geometry.Data.SimpleVector3
+Common.Geometry.Data.SimpleVector4
+Common.Geometry.Data.VertexBuffer
+Common.Geometry.Data.SolidMeshFace
+Common.Geometry.Data.SolidObjectMaterial
+Common.Geometry.Data.MostWantedMaterial
+Common.Geometry.Data.CarbonMaterial
+Common.Geometry.Data.ProStreetMaterial
+Common.Geometry.Data.World15Material
+Common.Geometry.Data.SolidMeshVertex
+Common.Geometry.Data.SolidMeshDescriptor
+Common.Geometry.Data.MostWantedObject
+Common.Geometry.Data.CarbonObject
+Common.Geometry.Data.ProStreetObject
+Common.Geometry.Data.UndercoverObject
+Common.Geometry.Data.World15Object
+Common.Geometry.Data.SolidObject
+Common.Geometry.Data.SolidList
+Common.Entity.Data.CollisionPack
+Common.Entity.Collision.CollisionManager
+Common.Entity.Collision.World15Collision
+Common.ChunkManager+BasicResource
+Common.ChunkManager+Chunk
+Common.Compression+CompressBlockHead
+Common.Compression+SimpleCompressionHeader
+Common.GameDetector+Game

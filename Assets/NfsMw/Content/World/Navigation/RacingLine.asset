@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292b1d83bf05d4471a3903522b0b696a, type: 3}
+  m_Name: RacingLine
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.RacingLineSource
+  schema: 2
+  id: e22e2c5c76384e439189c3adb4ee8429
+  route: {fileID: 0}
+  vehicle: {fileID: 0}
+  capability: {fileID: 0}
+  planner:
+    spacing: 2
+    iterations: 60
+    refinementStrength: 0.08
+    clearance: 0.3
+    maximumSpeed: 30
+    entrySpeed: 0
+    exitSpeed: 8
+    gripSafety: 0.7
+    brakingDelay: 0.25
+    maximumVerticalAcceleration: 3
+    maximumSamples: 2048
+    seed: 2005
+  verification:
+    trials: 5
+    maximumSeconds: 180
+    entrySpeedPerturbation: 1
+    entryOffsetPerturbation: 0.25
+    gripPerturbation: 0.05
+    reactionDelayPerturbation: 0.05
+    maximumLateralError: 1.5
+    maximumSpeedError: 5
+    maximumAirborneSeconds: 0.2
+    maximumSaturationFraction: 0.15
+    maximumSlipDegrees: 65
+  hints: []
+  exclusions: []
+  published: {fileID: 0}
+  referenceNotes: 
+  referenceCaptures: []

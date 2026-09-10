@@ -1,0 +1,115 @@
+{
+  "schema": "stock-library-validation/2",
+  "unity": "6000.6.0f1",
+  "vehicleRecords": 93,
+  "uniqueModelsNotClaimed": true,
+  "categories": {
+    "player": 42,
+    "police": 13,
+    "traffic": 27,
+    "challenge": 11
+  },
+  "aemsBanks": 699,
+  "wavRecordings": 4359,
+  "editor": {
+    "initialPassed": 118,
+    "initialFailed": 1,
+    "initialFailure": "New test incorrectly required both GIN regions to cover identical RPM range",
+    "correctedLibraryTestsPassed": 3,
+    "distinctChecksPassed": 119,
+    "skipped": 0
+  },
+  "playMode": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "porscheReference": {
+    "passed": true,
+    "parserSourceSha256": "bac7d2b9319704ac8afeea84af1afc7ad6a4a6b5fd8be1134592cd36914dc69a",
+    "sourceSha256": "ecb4a06f41b721d691439013107b942f0234fa12b0e8bcd0abcb9fcb3b612aa8",
+    "recordings": [
+      {
+        "id": "bnk:1",
+        "frames": 23819,
+        "referenceFrames": 23819,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:2",
+        "frames": 26461,
+        "referenceFrames": 26461,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:3",
+        "frames": 24920,
+        "referenceFrames": 24920,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:4",
+        "frames": 16536,
+        "referenceFrames": 16536,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:5",
+        "frames": 24693,
+        "referenceFrames": 24693,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:6",
+        "frames": 16760,
+        "referenceFrames": 16760,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:7",
+        "frames": 35609,
+        "referenceFrames": 35609,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      },
+      {
+        "id": "bnk:8",
+        "frames": 7529,
+        "referenceFrames": 7529,
+        "maxAbsolutePcmError": 0,
+        "status": "match"
+      }
+    ]
+  },
+  "carFolders": 76,
+  "layout": "Assets/NfsMw/Content/Vehicles/Street/<brand>/<model>/Sound",
+  "initialExport": {
+    "aemsBanks": 88,
+    "wavRecordings": 808
+  },
+  "relocation": {
+    "profileGuidsPreserved": 93,
+    "draftGuidsPreserved": 93,
+    "draftIdentitiesPreserved": 93,
+    "originalM3FilesUnchanged": true,
+    "allCarAudioReferencesResolve": true,
+    "editor": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "playMode": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "waveBytesPreserved": true,
+    "uniqueWaveHashesCompared": 543
+  }
+}

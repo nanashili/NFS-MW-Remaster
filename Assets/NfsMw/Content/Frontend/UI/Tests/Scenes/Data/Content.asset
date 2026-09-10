@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096aa654baa3b4f21a1d026019093c1c, type: 3}
+  m_Name: Content
+  soundtrack: {fileID: 11400000, guid: 73535dad953014168a7a51adc122474a, type: 2}
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.MostWantedFrontendContent
+  rivals:
+  - id: frontend_test_rival
+    displayName: Test Rival
+    fullName: Frontend Test Fixture
+    carName: BMW renderer-only test preview
+    strength: UI layout and navigation testing
+    portraitTexture: RIVAL_01
+    backgroundTexture: RIVAL_01_BG
+    rank: 1
+    biography: This is authored test metadata using locally recovered rival artwork. The map, events, wallet and paint prices belong only to this UI fixture. Race wins, milestones and bounty begin at zero; no production career progress is imported or invented. Use F6/F7 to compare pages. Stop Play Mode to discard the in-memory test profile.
+    challengeEventIds:
+    - frontend_test_race_00
+    - frontend_test_race_01
+  credits: 'NFS MW Remaster
+
+    Frontend Test Scenes
+
+
+    Production frontend with isolated, in-memory test services.
+
+    Authored test map, event markers, rival metadata and paint swatches.
+
+
+    Original game and recovered artwork
+
+    Electronic Arts / EA Black Box
+
+
+    Local recovery provenance: Tools/FrontendAssets.
+
+    Preview meshes reference the existing BMW framework prefab without running its gameplay components.
+
+
+    LAN and online authentication remain unavailable; these scenes do not emulate either service.'

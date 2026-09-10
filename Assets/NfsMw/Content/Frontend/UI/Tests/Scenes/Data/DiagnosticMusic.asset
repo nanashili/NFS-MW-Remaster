@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be91d4903326b43c6bd1de75802a2f40, type: 3}
+  m_Name: DiagnosticMusic
+  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.SensoryMusicProfile
+  profileId: frontend.test.diagnostic-music
+  schemaVersion: 2
+  sourceRevision: authored-two-second-test-tones
+  bpm: 120
+  beatsPerBar: 4
+  bars: 8
+  stems: []
+  escapedStinger: {fileID: 0}
+  arrestedStinger: {fileID: 0}
+  finePaidStinger: {fileID: 0}
+  cues: []
+  sections:
+  - stableId: frontend.test.tone.0
+    displayName: UI Test Tone 1
+    kind: 6
+    eligibleContexts: -1
+    bpm: 120
+    beatsPerBar: 4
+    bars: 1
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: default
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 1
+    markers: []
+    stems:
+    - stableId: tone
+      displayName: Quiet diagnostic tone
+      role: 0
+      clip: {fileID: 8300000, guid: 3119e653e56b244d2b174cc391b567f6, type: 3}
+      gain: 0.5
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: frontend.test.tone.1
+    displayName: UI Test Tone 2
+    kind: 6
+    eligibleContexts: -1
+    bpm: 120
+    beatsPerBar: 4
+    bars: 1
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: default
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 1
+    markers: []
+    stems:
+    - stableId: tone
+      displayName: Quiet diagnostic tone
+      role: 0
+      clip: {fileID: 8300000, guid: af5c40a78004540aeb2cf90c32cb12e3, type: 3}
+      gain: 0.5
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  - stableId: frontend.test.tone.2
+    displayName: UI Test Tone 3
+    kind: 6
+    eligibleContexts: -1
+    bpm: 120
+    beatsPerBar: 4
+    bars: 1
+    loopStartBeat: 0
+    loopEndBeat: 0
+    harmonicFamily: default
+    entryMarker: 
+    exitMarker: 
+    gridEnabled: 1
+    allowFreeTimeTransition: 0
+    allowHarmonicMismatch: 0
+    fallbackSectionId: 
+    fullMix: 1
+    markers: []
+    stems:
+    - stableId: tone
+      displayName: Quiet diagnostic tone
+      role: 0
+      clip: {fileID: 8300000, guid: 5b751e96bc78840718b1b99658d0b8cb, type: 3}
+      gain: 0.5
+      intensityGain:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      entryOffsetBeats: 0
+      alwaysOn: 1
+      critical: 0
+      allowPhaseCompensation: 0
+      loadPolicy: 0
+  transitions: []
+  stingers: []
+  intensity:
+    pursuitThreshold: 0.2
+    highIntensityThreshold: 0.65
+    hysteresis: 0.06
+    minimumDwellSeconds: 0.8
+    intensity:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  playback:
+    persistAcrossScenes: 1
+    keepTransportOnFrontendNavigation: 1
+    pauseMode: 0
+    scheduleLookaheadSeconds: 0.2
+    crossfadeSeconds: 0.35
+    minimumDwellSeconds: 0.4
+    maxConcurrentStems: 4
+    restartAtSectionBoundaryAfterDeviceChange: 1
