@@ -444,7 +444,6 @@ namespace NfsMwRemaster.Driving.Editor
 
             PlayerVehicleInput input = vehicleObject.AddComponent<PlayerVehicleInput>();
             VehiclePowertrain powertrain = vehicleObject.AddComponent<VehiclePowertrain>();
-            VehicleAssists assists = vehicleObject.AddComponent<VehicleAssists>();
             vehicleObject.AddComponent<VehicleNitrous>();
             vehicleObject.AddComponent<VehicleModuleHost>();
             VehiclePerformanceSystem performance =
@@ -468,7 +467,6 @@ namespace NfsMwRemaster.Driving.Editor
             controller.SetInputSource(input);
             controller.Wheels = wheels;
             powertrain.Configure(tuning, wheels);
-            assists.Configure(body, tuning, wheels);
             if (vehicleVisualPrefab != null)
             {
                 AttachImportedVehicleVisual(vehicleObject, vehicleVisualPrefab);

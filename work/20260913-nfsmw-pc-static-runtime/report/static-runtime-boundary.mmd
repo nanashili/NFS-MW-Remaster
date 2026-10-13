@@ -1,0 +1,14 @@
+flowchart LR
+  sample["Exact PC 1.3 SPEED.EXE"] --> identity["Hash, PE, imports, 48 anchors"]
+  identity --> static["Static recovery"]
+  static --> source["C++ body, layout, constants, vtables"]
+  source --> build["Historical compiler build"]
+  build --> diff{"objdiff result"}
+  diff -- "100%" --> exact["Byte-exact source"]
+  diff -- "near" --> semantic["Semantic reconstruction"]
+  semantic --> static
+  exact --> behavior{"Behavioral claim?"}
+  behavior -- "no" --> done["Static proof is sufficient"]
+  behavior -- "yes" --> runtime["Focused runtime profile"]
+  runtime --> observed["Returns, branches, timing, lifetimes, hardware state"]
+

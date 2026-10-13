@@ -19,7 +19,7 @@ namespace NfsMwRemaster.Driving.Tests
         {
             source = Own(ScriptableObject.CreateInstance<RacingLineSource>());
             source.vehicle = Own(ScriptableObject.CreateInstance<RacingVehicleSetup>());
-            source.vehicle.tuning = Own(VehicleTuning.CreateStreetRacer()); source.vehicle.tuning.handling.brakeToDrift = false;
+            source.vehicle.tuning = Own(VehicleTuning.CreateStreetRacer());
             source.capability = Own(ScriptableObject.CreateInstance<RacingCapabilityProfile>());
             source.route = Own(ScriptableObject.CreateInstance<RacingLineRoute>());
             source.planner.maximumSpeed = 10; source.verification.trials = 1;
@@ -95,7 +95,7 @@ namespace NfsMwRemaster.Driving.Tests
         }
         [Test] public void NonFiniteSharedTuningIsRejectedBeforeSimulation()
         {
-            source.vehicle.tuning.handling.yawGain = float.NaN;
+            source.vehicle.tuning.mostWanted.torqueTableMaximumRpm = float.NaN;
             Assert.That(() => RacingLineSnapshot.Capture(source), Throws.ArgumentException.With.Message.Contains("LINE_TUNING"));
         }
         [Test] public void InsideOutsidePairKeepsDistinctEntryFootprints()
@@ -158,7 +158,7 @@ namespace NfsMwRemaster.Driving.Tests
         [Test] public void MeasuredCapabilityIsTuneSpecific()
         {
             source.capability.longitudinalMeasured = true; source.capability.vehicleFingerprint = RacingLineSnapshot.VehicleFingerprintOf(source.vehicle);
-            Assert.DoesNotThrow(() => RacingLineSnapshot.Capture(source)); source.vehicle.tuning.handling.driftBias += 0.1f;
+            Assert.DoesNotThrow(() => RacingLineSnapshot.Capture(source)); source.vehicle.tuning.tires.lateralGrip += 0.1f;
             Assert.That(() => RacingLineSnapshot.Capture(source), Throws.ArgumentException.With.Message.Contains("STALE"));
         }
         [Test] public void CancellationProducesNoResultAndNeverChangesPublishedReference()

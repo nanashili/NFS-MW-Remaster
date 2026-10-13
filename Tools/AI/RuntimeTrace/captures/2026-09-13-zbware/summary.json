@@ -1,0 +1,5667 @@
+{
+  "action_transitions": {},
+  "boolean_results": {},
+  "config_integrity": {
+    "embedded_sha256": "35e400ed446ff43c40d17c66e73e79bac78bf2a7ddee35c534751ed4afc97c7c",
+    "matches": null,
+    "provided_sha256": null,
+    "resolved_manifest_is_authoritative": true
+  },
+  "event_count": 3313,
+  "event_kind_counts": {
+    "entry": 3313
+  },
+  "header": {
+    "activation_state": "active",
+    "activation_state_code": 4,
+    "argument_labels_source": "matching local catalogue",
+    "capture_id": "82661b67c100a33ab958d1c7ea503c56",
+    "catalogue_matches_local": true,
+    "catalogue_sha256": "f4a3b185e80f1b65d4ec3bd51676585f42f83b524e6f70212eb5fb40e2ce0526",
+    "checkpoint_interval": 4096,
+    "config_name": "NFSMWAITrace.ini",
+    "config_sha256": "35e400ed446ff43c40d17c66e73e79bac78bf2a7ddee35c534751ed4afc97c7c",
+    "enabled_hook_count": 16,
+    "file_layout": {
+      "complete_record_count": 3313,
+      "size_bytes": 3425280,
+      "truncated_tail_bytes": 0
+    },
+    "flag_names": [
+      "entry_only",
+      "fxsave",
+      "profile_preset",
+      "ordered_fifo"
+    ],
+    "flags": 15,
+    "flush_interval_ms": 1000,
+    "header_core_sha256": "4b70c57b733a8fecc89dc0ce0a79231b4e86bc301d2df22b7cf450f4eb67d637",
+    "header_size": 32768,
+    "hook_count": 64,
+    "image_base": "0x00400000",
+    "image_size": 6786638,
+    "manifest": [
+      {
+        "address": "0x004081e0",
+        "address_value": 4227552,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_OnTaskSimulate",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 1,
+        "instruction_lengths": [
+          1,
+          2,
+          3
+        ],
+        "name": "AIVehicle::OnTaskSimulate",
+        "profile_mask": "0x00000003",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000081e0",
+        "rva_value": 33248,
+        "static": false,
+        "stolen": "568bf18b464c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004082d0",
+        "address_value": 4227792,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000007",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "task_handle",
+            "type": "handle"
+          },
+          {
+            "index": 1,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_OnTask",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 2,
+        "instruction_lengths": [
+          4,
+          1
+        ],
+        "name": "AIVehicle::OnTask",
+        "profile_mask": "0x00000002",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x000082d0",
+        "rva_value": 33488,
+        "static": false,
+        "stolen": "8b44240456",
+        "this_adjust": -8
+      },
+      {
+        "address": "0x0042b070",
+        "address_value": 4370544,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIGoal_ChooseAction",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 3,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIGoal::ChooseAction",
+        "profile_mask": "0x00000003",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "goal_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002b070",
+        "rva_value": 176240,
+        "static": false,
+        "stolen": "83ec085355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00419fc0",
+        "address_value": 4300736,
+        "arg_count": 5,
+        "arg_type_bits": "0x00000102",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "check_pos_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "check_lane",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "lane",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "node",
+            "type": "integer"
+          },
+          {
+            "index": 4,
+            "name": "check_dist",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AISpawnManager_CheckSpawnPosition",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 4,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AISpawnManager::CheckSpawnPosition",
+        "profile_mask": "0x00000002",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "manager_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "check_position",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00019fc0",
+        "rva_value": 106432,
+        "static": false,
+        "stolen": "83ec145657",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042fa40",
+        "address_value": 4389440,
+        "arg_count": 3,
+        "arg_type_bits": "0x0000002a",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "segment_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "lane_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 2,
+            "name": "time_step_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AISpawnManager_GetSpawnLocation",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 5,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "AISpawnManager::GetSpawnLocation",
+        "profile_mask": "0x00000002",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "segment_out",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 1,
+            "label": "lane_out",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg1",
+            "source_code": 17
+          },
+          {
+            "index": 2,
+            "label": "time_step_out",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg2",
+            "source_code": 18
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x0002fa40",
+        "rva_value": 195136,
+        "static": false,
+        "stolen": "64a100000000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00430e60",
+        "address_value": 4394592,
+        "arg_count": 2,
+        "arg_type_bits": "0x0000000a",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "pursuit_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "vehicle_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AICopManager_SpawnPursuitIVehicle",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 6,
+        "instruction_lengths": [
+          2,
+          5
+        ],
+        "name": "AICopManager::SpawnPursuitIVehicle",
+        "profile_mask": "0x00000011",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_manager",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "vehicle_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg1",
+            "source_code": 17
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00030e60",
+        "rva_value": 200288,
+        "static": false,
+        "stolen": "6aff68c6848600",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00443300",
+        "address_value": 4469504,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIPursuit_UpdateFormation",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 7,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "AIPursuit::UpdateFormation",
+        "profile_mask": "0x00000010",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pursuit_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "pursuit_200",
+            "length": 72,
+            "offset": 512,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00043300",
+        "rva_value": 275200,
+        "static": false,
+        "stolen": "64a100000000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00439a10",
+        "address_value": 4430352,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AITrafficManager_SpawnTraffic",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 8,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AITrafficManager::SpawnTraffic",
+        "profile_mask": "0x00000009",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "traffic_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "traffic_2c0",
+            "length": 256,
+            "offset": 704,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00039a10",
+        "rva_value": 236048,
+        "static": false,
+        "stolen": "83ec205355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00443ba0",
+        "address_value": 4471712,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000007",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "task_handle",
+            "type": "handle"
+          },
+          {
+            "index": 1,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIPursuit_OnTask",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 9,
+        "instruction_lengths": [
+          4,
+          3
+        ],
+        "name": "AIPursuit::OnTask",
+        "profile_mask": "0x00000011",
+        "recovery": "existing",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pursuit_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "pursuit_200",
+            "length": 72,
+            "offset": 512,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00043ba0",
+        "rva_value": 277408,
+        "static": false,
+        "stolen": "8b44240483ec44",
+        "this_adjust": -8
+      },
+      {
+        "address": "0x004292a0",
+        "address_value": 4362912,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 10,
+        "instruction_lengths": [
+          3,
+          1,
+          2
+        ],
+        "name": "AIVehicle::Update",
+        "profile_mask": "0x00000003",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000292a0",
+        "rva_value": 168608,
+        "static": false,
+        "stolen": "83ec10568bf1",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042aa80",
+        "address_value": 4369024,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicleRacecar_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 11,
+        "instruction_lengths": [
+          1,
+          1,
+          2,
+          3
+        ],
+        "name": "AIVehicleRacecar::Update",
+        "profile_mask": "0x00000005",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002aa80",
+        "rva_value": 174720,
+        "static": false,
+        "stolen": "53568bf18b464c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00428720",
+        "address_value": 4359968,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIActionRace_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 12,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIActionRace::Update",
+        "profile_mask": "0x00000004",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "action_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00028720",
+        "rva_value": 165664,
+        "static": false,
+        "stolen": "83ec745355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00408430",
+        "address_value": 4228144,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_OnGasBrake",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 13,
+        "instruction_lengths": [
+          3,
+          1,
+          2
+        ],
+        "name": "AIVehicle::OnGasBrake",
+        "profile_mask": "0x00000004",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00008430",
+        "rva_value": 33840,
+        "static": false,
+        "stolen": "83ec0c568bf1",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00408690",
+        "address_value": 4228752,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_OnDriving",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 14,
+        "instruction_lengths": [
+          1,
+          1,
+          4
+        ],
+        "name": "AIVehicle::OnDriving",
+        "profile_mask": "0x00000004",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00008690",
+        "rva_value": 34448,
+        "static": false,
+        "stolen": "56578b7c240c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00415290",
+        "address_value": 4280976,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicle_OnSteering",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 15,
+        "instruction_lengths": [
+          3,
+          1,
+          2
+        ],
+        "name": "AIVehicle::OnSteering",
+        "profile_mask": "0x00000004",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00015290",
+        "rva_value": 86672,
+        "static": false,
+        "stolen": "83ec28568bf1",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042a0b0",
+        "address_value": 4366512,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehiclePid_OnGasBrake",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 16,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIVehiclePid::OnGasBrake",
+        "profile_mask": "0x00000004",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pid_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002a0b0",
+        "rva_value": 172208,
+        "static": false,
+        "stolen": "83ec0c5557",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042a390",
+        "address_value": 4367248,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehiclePid_OnSteering",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 17,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIVehiclePid::OnSteering",
+        "profile_mask": "0x00000004",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pid_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002a390",
+        "rva_value": 172944,
+        "static": false,
+        "stolen": "83ec445556",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00439cd0",
+        "address_value": 4431056,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000007",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "task_handle",
+            "type": "handle"
+          },
+          {
+            "index": 1,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AITrafficManager_OnTask",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 18,
+        "instruction_lengths": [
+          4,
+          3
+        ],
+        "name": "AITrafficManager::OnTask",
+        "profile_mask": "0x00000009",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "traffic_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "traffic_2c0",
+            "length": 256,
+            "offset": 704,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00039cd0",
+        "rva_value": 236752,
+        "static": false,
+        "stolen": "8b4424043b4154",
+        "this_adjust": -8
+      },
+      {
+        "address": "0x00439bb0",
+        "address_value": 4430768,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AITrafficManager_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 19,
+        "instruction_lengths": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "name": "AITrafficManager::Update",
+        "profile_mask": "0x00000008",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "traffic_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "traffic_2c0",
+            "length": 256,
+            "offset": 704,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00039bb0",
+        "rva_value": 236464,
+        "static": false,
+        "stolen": "515355568bf1",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00426230",
+        "address_value": 4350512,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AITrafficManager_NextSpawn",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 20,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AITrafficManager::NextSpawn",
+        "profile_mask": "0x00000008",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "traffic_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "traffic_2c0",
+            "length": 256,
+            "offset": 704,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00026230",
+        "rva_value": 156208,
+        "static": false,
+        "stolen": "83ec245355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00426380",
+        "address_value": 4350848,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "vehicle_type",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "allow_reuse",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_AITrafficManager_GetAvailableVehicle",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 21,
+        "instruction_lengths": [
+          3,
+          1,
+          4
+        ],
+        "name": "AITrafficManager::GetAvailableTrafficVehicle",
+        "profile_mask": "0x00000008",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "traffic_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "traffic_2c0",
+            "length": 256,
+            "offset": 704,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 3,
+        "rva": "0x00026380",
+        "rva_value": 156544,
+        "static": false,
+        "stolen": "83ec48538b5c2450",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00410b00",
+        "address_value": 4262656,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000006",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "vehicle_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AITrafficManager_ValidateVehicle",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 22,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "AITrafficManager::ValidateVehicle",
+        "profile_mask": "0x00000008",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "traffic_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "vehicle_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00010b00",
+        "rva_value": 68352,
+        "static": false,
+        "stolen": "64a100000000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00423190",
+        "address_value": 4338064,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicleTraffic_StartDriving",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 23,
+        "instruction_lengths": [
+          3,
+          1,
+          2
+        ],
+        "name": "AIVehicleTraffic::StartDriving",
+        "profile_mask": "0x00000008",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00023190",
+        "rva_value": 143760,
+        "static": false,
+        "stolen": "83ec10568bf1",
+        "this_adjust": -1852
+      },
+      {
+        "address": "0x00411cf0",
+        "address_value": 4267248,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIActionTraffic_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 24,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIActionTraffic::Update",
+        "profile_mask": "0x00000008",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "action_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00011cf0",
+        "rva_value": 72944,
+        "static": false,
+        "stolen": "83ec2c5355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0043a810",
+        "address_value": 4433936,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIAvoidable_UpdateAll",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 1,
+        "id": 25,
+        "instruction_lengths": [
+          3,
+          5
+        ],
+        "name": "AIAvoidable::UpdateAllAvoidables",
+        "profile_mask": "0x00000008",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "avoid_global",
+            "length": 16,
+            "offset": 9492288,
+            "phase_mask": 1,
+            "source": "absolute",
+            "source_code": 32
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0003a810",
+        "rva_value": 239632,
+        "static": true,
+        "stolen": "83ec18a140d79000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0043ef00",
+        "address_value": 4452096,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000007",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "task_handle",
+            "type": "handle"
+          },
+          {
+            "index": 1,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AICopManager_OnTask",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 26,
+        "instruction_lengths": [
+          4,
+          1
+        ],
+        "name": "AICopManager::OnTask",
+        "profile_mask": "0x00000011",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "cop_100",
+            "length": 48,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x0003ef00",
+        "rva_value": 257792,
+        "static": false,
+        "stolen": "8b44240457",
+        "this_adjust": -8
+      },
+      {
+        "address": "0x00439ee0",
+        "address_value": 4431584,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AICopManager_UpdateRoadBlocks",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 27,
+        "instruction_lengths": [
+          2,
+          5
+        ],
+        "name": "AICopManager::UpdateRoadBlocks",
+        "profile_mask": "0x00000010",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "cop_100",
+            "length": 48,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00039ee0",
+        "rva_value": 237280,
+        "static": false,
+        "stolen": "6aff68888d8600",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004194b0",
+        "address_value": 4297904,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AIPursuit_RequestRoadBlock",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 28,
+        "instruction_lengths": [
+          1,
+          1,
+          2,
+          6
+        ],
+        "name": "AIPursuit::RequestRoadBlock",
+        "profile_mask": "0x00000010",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pursuit_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "pursuit_200",
+            "length": 72,
+            "offset": 512,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x000194b0",
+        "rva_value": 103600,
+        "static": false,
+        "stolen": "51568bf18a86e8000000",
+        "this_adjust": -72
+      },
+      {
+        "address": "0x0043dd30",
+        "address_value": 4447536,
+        "arg_count": 4,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "arg0",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "arg1",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "arg2",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "arg3",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_AICopManager_CreateRoadBlock",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 29,
+        "instruction_lengths": [
+          2,
+          5
+        ],
+        "name": "AICopManager::CreateRoadBlock",
+        "profile_mask": "0x00000010",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "cop_100",
+            "length": 48,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 3,
+        "rva": "0x0003dd30",
+        "rva_value": 253232,
+        "static": false,
+        "stolen": "6aff6816958600",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0043db80",
+        "address_value": 4447104,
+        "arg_count": 4,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "param0",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "param1",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "param2",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "param3",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_AIRoadBlock_Construct",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 1,
+        "id": 30,
+        "instruction_lengths": [
+          2,
+          5
+        ],
+        "name": "AIRoadBlock::Construct",
+        "profile_mask": "0x00000010",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 3,
+        "rva": "0x0003db80",
+        "rva_value": 252800,
+        "static": true,
+        "stolen": "6aff68f2948600",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00423430",
+        "address_value": 4338736,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AIVehiclePursuit_StartRoadBlock",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 31,
+        "instruction_lengths": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "name": "AIVehiclePursuit::StartRoadBlock",
+        "profile_mask": "0x00000010",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00023430",
+        "rva_value": 144432,
+        "static": false,
+        "stolen": "5156578bf9",
+        "this_adjust": -1804
+      },
+      {
+        "address": "0x0042ac90",
+        "address_value": 4369552,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehiclePursuit_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 32,
+        "instruction_lengths": [
+          1,
+          1,
+          4
+        ],
+        "name": "AIVehiclePursuit::Update",
+        "profile_mask": "0x00000010",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "object_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "object_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "object_800",
+            "length": 256,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002ac90",
+        "rva_value": 175248,
+        "static": false,
+        "stolen": "56578b7c240c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004198e0",
+        "address_value": 4298976,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AIPursuit_BailPursuit",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 33,
+        "instruction_lengths": [
+          3,
+          2
+        ],
+        "name": "AIPursuit::BailPursuit",
+        "profile_mask": "0x00000010",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pursuit_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_100",
+            "length": 256,
+            "offset": 256,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "pursuit_200",
+            "length": 72,
+            "offset": 512,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000198e0",
+        "rva_value": 104672,
+        "static": false,
+        "stolen": "8d41b8f7d8",
+        "this_adjust": -72
+      },
+      {
+        "address": "0x00411070",
+        "address_value": 4264048,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "pursuit_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AICopManager_PursuitIsEvaded",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 34,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "AICopManager::PursuitIsEvaded",
+        "profile_mask": "0x00000010",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x00011070",
+        "rva_value": 69744,
+        "static": false,
+        "stolen": "64a100000000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004269a0",
+        "address_value": 4352416,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "pursuit_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AICopManager_SpawnHelicopter",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 35,
+        "instruction_lengths": [
+          2,
+          5
+        ],
+        "name": "AICopManager::SpawnPursuitHelicopter",
+        "profile_mask": "0x00000030",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "cop_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "pursuit_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x000269a0",
+        "rva_value": 158112,
+        "static": false,
+        "stolen": "6aff68bb808600",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042adb0",
+        "address_value": 4369840,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicleHelicopter_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 36,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIVehicleHelicopter::Update",
+        "profile_mask": "0x00000021",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "heli_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "heli_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "heli_800",
+            "length": 192,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002adb0",
+        "rva_value": 175536,
+        "static": false,
+        "stolen": "83ec3c5355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004170d0",
+        "address_value": 4288720,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "target_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AIVehicleHelicopter_CanSeeTarget",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 37,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "AIVehicleHelicopter::CanSeeTarget",
+        "profile_mask": "0x00000020",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "heli_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "heli_800",
+            "length": 192,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "target_arg",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x000170d0",
+        "rva_value": 94416,
+        "static": false,
+        "stolen": "81eca0000000",
+        "this_adjust": -1804
+      },
+      {
+        "address": "0x004277e0",
+        "address_value": 4356064,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIActionHeliPursuit_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 38,
+        "instruction_lengths": [
+          4,
+          1
+        ],
+        "name": "AIActionHeliPursuit::Update",
+        "profile_mask": "0x00000020",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "action_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000277e0",
+        "rva_value": 161760,
+        "static": false,
+        "stolen": "d944240456",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004279f0",
+        "address_value": 4356592,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIActionHeliExit_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 39,
+        "instruction_lengths": [
+          4,
+          3
+        ],
+        "name": "AIActionHeliExit::Update",
+        "profile_mask": "0x00000020",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "action_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000279f0",
+        "rva_value": 162288,
+        "static": false,
+        "stolen": "d944240483ec24",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00417a20",
+        "address_value": 4291104,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_AIVehicleHelicopter_OnDriving",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 40,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "AIVehicleHelicopter::OnDriving",
+        "profile_mask": "0x00000020",
+        "recovery": "partial",
+        "regions": [
+          {
+            "index": 0,
+            "label": "heli_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "heli_700",
+            "length": 256,
+            "offset": 1792,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "heli_800",
+            "length": 192,
+            "offset": 2048,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00017a20",
+        "rva_value": 96800,
+        "static": false,
+        "stolen": "83ec685355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004237f0",
+        "address_value": 4339696,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AITarget_TrackAll",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 1,
+        "id": 41,
+        "instruction_lengths": [
+          5
+        ],
+        "name": "AITarget::TrackAll",
+        "profile_mask": "0x00000041",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_global",
+            "length": 16,
+            "offset": 9492600,
+            "phase_mask": 1,
+            "source": "absolute",
+            "source_code": 32
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000237f0",
+        "rva_value": 145392,
+        "static": true,
+        "stolen": "a178d89000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004180f0",
+        "address_value": 4292848,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AITarget_TrackInternal",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 42,
+        "instruction_lengths": [
+          1,
+          2,
+          3
+        ],
+        "name": "AITarget::TrackInternal",
+        "profile_mask": "0x00000040",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000180f0",
+        "rva_value": 98544,
+        "static": false,
+        "stolen": "568bf18a462c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00423860",
+        "address_value": 4339808,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "simable_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AITarget_AquireSimable",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 43,
+        "instruction_lengths": [
+          1,
+          2,
+          3
+        ],
+        "name": "AITarget::Aquire(ISimable*)",
+        "profile_mask": "0x00000040",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "simable_arg",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00023860",
+        "rva_value": 145504,
+        "static": false,
+        "stolen": "568bf18b461c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004238b0",
+        "address_value": 4339888,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "position_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AITarget_AquireVector",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 44,
+        "instruction_lengths": [
+          1,
+          2,
+          5
+        ],
+        "name": "AITarget::Aquire(vector)",
+        "profile_mask": "0x00000040",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "position_arg",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": {
+          "kind": "call_rel32",
+          "offset": 3,
+          "target": "0x00409e60"
+        },
+        "return_kind": 1,
+        "rva": "0x000238b0",
+        "rva_value": 145584,
+        "static": false,
+        "stolen": "568bf1e8a865feff",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00423900",
+        "address_value": 4339968,
+        "arg_count": 2,
+        "arg_type_bits": "0x0000000a",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "position_ptr",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "direction_ptr",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_AITarget_AquireVectors",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 45,
+        "instruction_lengths": [
+          1,
+          2,
+          5
+        ],
+        "name": "AITarget::Aquire(vector,vector)",
+        "profile_mask": "0x00000040",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "position_arg",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 2,
+            "label": "direction_arg",
+            "length": 16,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg1",
+            "source_code": 17
+          }
+        ],
+        "relocation": {
+          "kind": "call_rel32",
+          "offset": 3,
+          "target": "0x00409e60"
+        },
+        "return_kind": 1,
+        "rva": "0x00023900",
+        "rva_value": 145664,
+        "static": false,
+        "stolen": "568bf1e85865feff",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00409e60",
+        "address_value": 4234848,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_AITarget_Clear",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 46,
+        "instruction_lengths": [
+          1,
+          2,
+          3
+        ],
+        "name": "AITarget::Clear",
+        "profile_mask": "0x00000040",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "target_000",
+            "length": 64,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00009e60",
+        "rva_value": 40544,
+        "static": false,
+        "stolen": "5633c088412c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042c390",
+        "address_value": 4375440,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "dT",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_Gps_Update",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 47,
+        "instruction_lengths": [
+          6
+        ],
+        "name": "Gps::Update",
+        "profile_mask": "0x00000041",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "gps_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "gps_300",
+            "length": 160,
+            "offset": 768,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002c390",
+        "rva_value": 181136,
+        "static": false,
+        "stolen": "64a100000000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0042c6c0",
+        "address_value": 4376256,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "mode",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "arg1",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_Gps_Engage",
+        "divisor": 0,
+        "enabled": false,
+        "flags": 0,
+        "id": 48,
+        "instruction_lengths": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "name": "Gps::Engage",
+        "profile_mask": "0x00000040",
+        "recovery": "near",
+        "regions": [
+          {
+            "index": 0,
+            "label": "gps_000",
+            "length": 256,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "gps_300",
+            "length": 160,
+            "offset": 768,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0002c6c0",
+        "rva_value": 181952,
+        "static": false,
+        "stolen": "5355568bf1",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045cc70",
+        "address_value": 4574320,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000008",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "terminal_channel",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "text",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_bReleasePutString",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 49,
+        "instruction_lengths": [
+          5
+        ],
+        "name": "bReleasePutString",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "text",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg1",
+            "source_code": 17
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0005cc70",
+        "rva_value": 380016,
+        "static": true,
+        "stolen": "a130e69000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045cd70",
+        "address_value": 4574576,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000002",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "command_line",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_bLaunchWindows",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 50,
+        "instruction_lengths": [
+          3,
+          4
+        ],
+        "name": "bLaunchWindows",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "command_line",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg0",
+            "source_code": 16
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 4,
+        "rva": "0x0005cd70",
+        "rva_value": 380272,
+        "static": true,
+        "stolen": "83ec548b542458",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045cdd0",
+        "address_value": 4574672,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000001",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "min_wraparound_time",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_bInitTicker",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 51,
+        "instruction_lengths": [
+          3,
+          3
+        ],
+        "name": "bInitTicker",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x0005cdd0",
+        "rva_value": 380368,
+        "static": true,
+        "stolen": "83ec088d0424",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045ce40",
+        "address_value": 4574784,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_bGetTicker",
+        "divisor": 4096,
+        "enabled": true,
+        "flags": 1,
+        "id": 52,
+        "instruction_lengths": [
+          3,
+          3
+        ],
+        "name": "bGetTicker",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 4,
+        "rva": "0x0005ce40",
+        "rva_value": 380480,
+        "static": true,
+        "stolen": "83ec088d0424",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045ce70",
+        "address_value": 4574832,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "start_ticks",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "end_ticks",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_bGetTickerDifference",
+        "divisor": 1024,
+        "enabled": true,
+        "flags": 1,
+        "id": 53,
+        "instruction_lengths": [
+          1,
+          6
+        ],
+        "name": "bGetTickerDifference",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 0,
+        "rva": "0x0005ce70",
+        "rva_value": 380528,
+        "static": true,
+        "stolen": "51d90568098900",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x0045cf30",
+        "address_value": 4575024,
+        "arg_count": 2,
+        "arg_type_bits": "0x00000004",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "start_ticks",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "duration",
+            "type": "float"
+          }
+        ],
+        "config_key": "sample_bHasTickerExpired",
+        "divisor": 256,
+        "enabled": true,
+        "flags": 1,
+        "id": 54,
+        "instruction_lengths": [
+          3,
+          3
+        ],
+        "name": "bHasTickerExpired",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 2,
+        "rva": "0x0005cf30",
+        "rva_value": 380720,
+        "static": true,
+        "stolen": "83ec088d0424",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00463f00",
+        "address_value": 4603648,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_MemoryPool_TraceNewPool",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 0,
+        "id": 55,
+        "instruction_lengths": [
+          3,
+          2
+        ],
+        "name": "MemoryPool::TraceNewPool",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00063f00",
+        "rva_value": 409344,
+        "static": false,
+        "stolen": "83ec2433c0",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00464510",
+        "address_value": 4605200,
+        "arg_count": 3,
+        "arg_type_bits": "0x00000022",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "memory",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "size",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "debug_name",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_MemoryPool_AddFreeMemory",
+        "divisor": 8,
+        "enabled": true,
+        "flags": 0,
+        "id": 56,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "MemoryPool::AddFreeMemory",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00064510",
+        "rva_value": 410896,
+        "static": false,
+        "stolen": "83ec0c5356",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00464d80",
+        "address_value": 4607360,
+        "arg_count": 3,
+        "arg_type_bits": "0x00000022",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "memory",
+            "type": "pointer"
+          },
+          {
+            "index": 1,
+            "name": "memory_size",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "debug_name",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_MemoryPool_Init",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 0,
+        "id": 57,
+        "instruction_lengths": [
+          1,
+          4
+        ],
+        "name": "MemoryPool::Init",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00064d80",
+        "rva_value": 413056,
+        "static": false,
+        "stolen": "538b5c240c",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00464e10",
+        "address_value": 4607504,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_MemoryPool_Close",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 0,
+        "id": 58,
+        "instruction_lengths": [
+          1,
+          2,
+          3
+        ],
+        "name": "MemoryPool::Close",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00064e10",
+        "rva_value": 413200,
+        "static": false,
+        "stolen": "538bd98b4324",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00464e60",
+        "address_value": 4607584,
+        "arg_count": 6,
+        "arg_type_bits": "0x00000800",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "size",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "alignment",
+            "type": "integer"
+          },
+          {
+            "index": 2,
+            "name": "alignment_offset",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "start_from_top",
+            "type": "integer"
+          },
+          {
+            "index": 4,
+            "name": "use_best_fit",
+            "type": "integer"
+          },
+          {
+            "index": 5,
+            "name": "new_size",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_MemoryPool_AllocateMemory",
+        "divisor": 256,
+        "enabled": true,
+        "flags": 0,
+        "id": 59,
+        "instruction_lengths": [
+          3,
+          1,
+          1
+        ],
+        "name": "MemoryPool::AllocateMemory",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 3,
+        "rva": "0x00064e60",
+        "rva_value": 413280,
+        "static": false,
+        "stolen": "83ec105355",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00465110",
+        "address_value": 4608272,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "verify_free_pattern",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_MemoryPool_VerifyIntegrity",
+        "divisor": 16,
+        "enabled": true,
+        "flags": 0,
+        "id": 60,
+        "instruction_lengths": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "name": "MemoryPool::VerifyPoolIntegrity",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "pool_000",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "normalized_this",
+            "source_code": 1
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00065110",
+        "rva_value": 413968,
+        "static": false,
+        "stolen": "5153558be9",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00465240",
+        "address_value": 4608576,
+        "arg_count": 4,
+        "arg_type_bits": "0x00000088",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "pool_num",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "memory",
+            "type": "pointer"
+          },
+          {
+            "index": 2,
+            "name": "memory_size",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "debug_name",
+            "type": "pointer"
+          }
+        ],
+        "config_key": "sample_bInitMemoryPool",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 61,
+        "instruction_lengths": [
+          4,
+          4
+        ],
+        "name": "bInitMemoryPool",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00065240",
+        "rva_value": 414272,
+        "static": true,
+        "stolen": "8b4424048b542410",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x00465280",
+        "address_value": 4608640,
+        "arg_count": 1,
+        "arg_type_bits": "0x00000000",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "pool_num",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_bCloseMemoryPool",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 62,
+        "instruction_lengths": [
+          1,
+          4
+        ],
+        "name": "bCloseMemoryPool",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x00065280",
+        "rva_value": 414336,
+        "static": true,
+        "stolen": "568b742408",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004652a0",
+        "address_value": 4608672,
+        "arg_count": 0,
+        "arg_type_bits": "0x00000000",
+        "arguments": [],
+        "config_key": "sample_bMemoryInit",
+        "divisor": 1,
+        "enabled": true,
+        "flags": 1,
+        "id": 63,
+        "instruction_lengths": [
+          5
+        ],
+        "name": "bMemoryInit",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 1,
+        "rva": "0x000652a0",
+        "rva_value": 414368,
+        "static": true,
+        "stolen": "a188e69000",
+        "this_adjust": 0
+      },
+      {
+        "address": "0x004653d0",
+        "address_value": 4608976,
+        "arg_count": 4,
+        "arg_type_bits": "0x00000008",
+        "arguments": [
+          {
+            "index": 0,
+            "name": "size",
+            "type": "integer"
+          },
+          {
+            "index": 1,
+            "name": "debug_text",
+            "type": "pointer"
+          },
+          {
+            "index": 2,
+            "name": "debug_line",
+            "type": "integer"
+          },
+          {
+            "index": 3,
+            "name": "allocation_params",
+            "type": "integer"
+          }
+        ],
+        "config_key": "sample_bWareMalloc",
+        "divisor": 256,
+        "enabled": true,
+        "flags": 1,
+        "id": 64,
+        "instruction_lengths": [
+          3,
+          1,
+          4
+        ],
+        "name": "bWareMalloc",
+        "profile_mask": "0x00000080",
+        "recovery": "exact",
+        "regions": [
+          {
+            "index": 0,
+            "label": "debug_text",
+            "length": 128,
+            "offset": 0,
+            "phase_mask": 1,
+            "source": "arg1",
+            "source_code": 17
+          },
+          {
+            "index": 1,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          },
+          {
+            "index": 2,
+            "label": "",
+            "length": 0,
+            "offset": 0,
+            "phase_mask": 0,
+            "source": "none",
+            "source_code": 0
+          }
+        ],
+        "relocation": null,
+        "return_kind": 3,
+        "rva": "0x000653d0",
+        "rva_value": 414672,
+        "static": true,
+        "stolen": "83ec08538b5c241c",
+        "this_adjust": 0
+      }
+    ],
+    "manifest_entry_size": 320,
+    "manifest_sha256": "efbbe045d06d15c9ecfd0584b8ecb4a8e60d1ade563e544f4c482787ff3b700f",
+    "max_data_records": 100000,
+    "preferred_base": "0x00400000",
+    "process_id": 224,
+    "profile_id": 8,
+    "profile_name": "zbware",
+    "qpc_frequency": 10000000,
+    "queue_capacity": 2048,
+    "read_call_budget": 12,
+    "record_size": 1024,
+    "region_bytes": 256,
+    "region_count": 3,
+    "schema_version": 4,
+    "started_filetime_utc": 134338044534508800,
+    "started_qpc": 2226667200739,
+    "target_name": "speed.exe PC 1.3",
+    "target_sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+    "tracer_version": "0.4.0"
+  },
+  "hook_phase_counts": {
+    "MemoryPool::AddFreeMemory [entry]": 2654,
+    "MemoryPool::AllocateMemory [entry]": 83,
+    "MemoryPool::Close [entry]": 1,
+    "MemoryPool::Init [entry]": 8,
+    "MemoryPool::VerifyPoolIntegrity [entry]": 1,
+    "bCloseMemoryPool [entry]": 1,
+    "bGetTicker [entry]": 201,
+    "bGetTickerDifference [entry]": 269,
+    "bInitMemoryPool [entry]": 6,
+    "bInitTicker [entry]": 2,
+    "bMemoryInit [entry]": 2,
+    "bWareMalloc [entry]": 85
+  },
+  "hook_reachability": {
+    "AIActionHeliExit::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 39,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIActionHeliPursuit::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 38,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIActionRace::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 12,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIActionTraffic::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 24,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIAvoidable::UpdateAllAvoidables": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 25,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::CreateRoadBlock": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 29,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::OnTask": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 26,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::PursuitIsEvaded": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 34,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::SpawnPursuitHelicopter": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 35,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::SpawnPursuitIVehicle": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 6,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AICopManager::UpdateRoadBlocks": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 27,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIGoal::ChooseAction": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 3,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIPursuit::BailPursuit": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 33,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIPursuit::OnTask": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 9,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIPursuit::RequestRoadBlock": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 28,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIPursuit::UpdateFormation": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 7,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIRoadBlock::Construct": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 30,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AISpawnManager::CheckSpawnPosition": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 4,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AISpawnManager::GetSpawnLocation": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 5,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::Aquire(ISimable*)": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 43,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::Aquire(vector)": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 44,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::Aquire(vector,vector)": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 45,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::Clear": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 46,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::TrackAll": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 41,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITarget::TrackInternal": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 42,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::GetAvailableTrafficVehicle": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 21,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::NextSpawn": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 20,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::OnTask": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 18,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::SpawnTraffic": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 8,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 19,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AITrafficManager::ValidateVehicle": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 22,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::OnDriving": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 14,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::OnGasBrake": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 13,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::OnSteering": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 15,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::OnTask": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 2,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::OnTaskSimulate": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 1,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicle::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 10,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicleHelicopter::CanSeeTarget": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 37,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicleHelicopter::OnDriving": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 40,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicleHelicopter::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 36,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehiclePid::OnGasBrake": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 16,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehiclePid::OnSteering": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 17,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehiclePursuit::StartRoadBlock": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 31,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehiclePursuit::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 32,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicleRacecar::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 11,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "AIVehicleTraffic::StartDriving": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 23,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "Gps::Engage": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 48,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "Gps::Update": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": false,
+      "hook_id": 47,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 0,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::AddFreeMemory": {
+      "call_index_max": 21225,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 56,
+      "index_tracking_complete": true,
+      "observed_samples": 2654,
+      "qpc_first": 2226667828004,
+      "qpc_last": 2232552770385,
+      "reached": true,
+      "sample_divisor": 8,
+      "sample_index_max": 2654,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228,
+        352
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::AllocateMemory": {
+      "call_index_max": 20993,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 59,
+      "index_tracking_complete": true,
+      "observed_samples": 83,
+      "qpc_first": 2226667829119,
+      "qpc_last": 2232480918436,
+      "reached": true,
+      "sample_divisor": 256,
+      "sample_index_max": 83,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::Close": {
+      "call_index_max": 1,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 58,
+      "index_tracking_complete": true,
+      "observed_samples": 1,
+      "qpc_first": 2226700667826,
+      "qpc_last": 2226700667826,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 1,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::Init": {
+      "call_index_max": 8,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 57,
+      "index_tracking_complete": true,
+      "observed_samples": 8,
+      "qpc_first": 2226667826644,
+      "qpc_last": 2226699474704,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 8,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::TraceNewPool": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 55,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 1,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "MemoryPool::VerifyPoolIntegrity": {
+      "call_index_max": 1,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 60,
+      "index_tracking_complete": true,
+      "observed_samples": 1,
+      "qpc_first": 2228110291213,
+      "qpc_last": 2228110291213,
+      "reached": true,
+      "sample_divisor": 16,
+      "sample_index_max": 1,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bCloseMemoryPool": {
+      "call_index_max": 1,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 62,
+      "index_tracking_complete": true,
+      "observed_samples": 1,
+      "qpc_first": 2226700666827,
+      "qpc_last": 2226700666827,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 1,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bGetTicker": {
+      "call_index_max": 819201,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 52,
+      "index_tracking_complete": true,
+      "observed_samples": 201,
+      "qpc_first": 2226667969232,
+      "qpc_last": 2232480784487,
+      "reached": true,
+      "sample_divisor": 4096,
+      "sample_index_max": 201,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bGetTickerDifference": {
+      "call_index_max": 274433,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 53,
+      "index_tracking_complete": true,
+      "observed_samples": 269,
+      "qpc_first": 2226695384208,
+      "qpc_last": 2232484114474,
+      "reached": true,
+      "sample_divisor": 1024,
+      "sample_index_max": 269,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bHasTickerExpired": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 54,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 256,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bInitMemoryPool": {
+      "call_index_max": 6,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 61,
+      "index_tracking_complete": true,
+      "observed_samples": 6,
+      "qpc_first": 2226691715636,
+      "qpc_last": 2226699474197,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 6,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bInitTicker": {
+      "call_index_max": 2,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 51,
+      "index_tracking_complete": true,
+      "observed_samples": 2,
+      "qpc_first": 2226667968105,
+      "qpc_last": 2226667971179,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 2,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bLaunchWindows": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 50,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 1,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bMemoryInit": {
+      "call_index_max": 2,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 63,
+      "index_tracking_complete": true,
+      "observed_samples": 2,
+      "qpc_first": 2226667825412,
+      "qpc_last": 2226667971605,
+      "reached": true,
+      "sample_divisor": 1,
+      "sample_index_max": 2,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bReleasePutString": {
+      "call_index_max": null,
+      "call_index_min": null,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 49,
+      "index_tracking_complete": true,
+      "observed_samples": 0,
+      "qpc_first": null,
+      "qpc_last": null,
+      "reached": false,
+      "sample_divisor": 1,
+      "sample_index_max": null,
+      "sample_index_min": null,
+      "thread_ids": [],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": null,
+      "unobserved_sample_slots_within_observed_span": 0
+    },
+    "bWareMalloc": {
+      "call_index_max": 21505,
+      "call_index_min": 1,
+      "duplicate_call_index_count": 0,
+      "duplicate_call_index_count_lower_bound": 0,
+      "duplicate_sample_index_count": 0,
+      "duplicate_sample_index_count_lower_bound": 0,
+      "enabled": true,
+      "hook_id": 64,
+      "index_tracking_complete": true,
+      "observed_samples": 85,
+      "qpc_first": 2226667822266,
+      "qpc_last": 2232300752442,
+      "reached": true,
+      "sample_divisor": 256,
+      "sample_index_max": 85,
+      "sample_index_min": 1,
+      "thread_ids": [
+        228
+      ],
+      "thread_ids_truncated": false,
+      "unobserved_sample_slots_before_first": 0,
+      "unobserved_sample_slots_within_observed_span": 0
+    }
+  },
+  "instrumented_duration_ms": {},
+  "integrity": {
+    "complete_closed_capture": false,
+    "complete_record_count_matches_decode": true,
+    "contiguous": true,
+    "counter_equations": {
+      "admitted_equals_enqueued_plus_queue_losses": true,
+      "limit_terminal_reaches_max_data_records": null,
+      "terminal_written_prefix_equals_prior_records": null,
+      "written_entries_equal_enqueued": true
+    },
+    "counter_monotonicity_failures": {},
+    "duplicate_sequence_count": 0,
+    "duplicate_sequence_count_lower_bound": 0,
+    "final_counters": {
+      "admitted_records": 3313,
+      "budget_rejections": 0,
+      "enqueued_records": 3313,
+      "queue_full_losses": 0,
+      "queue_high_water": 19,
+      "read_budget_exceeded": 0,
+      "read_faults": 0,
+      "write_failures": 0,
+      "written_records": 3312
+    },
+    "index_tracking_complete": true,
+    "lossless_admitted_capture": false,
+    "missing_sequence_count": 0,
+    "no_reported_write_failures": true,
+    "on_disk_contiguous": true,
+    "on_disk_strictly_increasing": true,
+    "queue_high_water_within_capacity": true,
+    "sequence_max": 3313,
+    "sequence_min": 1,
+    "sequence_position_mismatch_count": 0,
+    "starts_at_one": true,
+    "structurally_complete_closed_capture": false,
+    "terminal_count": 0,
+    "terminal_is_last": false,
+    "terminal_reason": null,
+    "truncated_tail_bytes": 0
+  },
+  "qpc_span_seconds": 588.4948119,
+  "region_coverage": {
+    "MemoryPool::AddFreeMemory::pool_000": {
+      "captured_bytes": 339712,
+      "complete_events": 2654,
+      "events": 2654,
+      "partial_events": 0,
+      "unresolved_events": 0
+    },
+    "MemoryPool::AllocateMemory::pool_000": {
+      "captured_bytes": 10624,
+      "complete_events": 83,
+      "events": 83,
+      "partial_events": 0,
+      "unresolved_events": 0
+    },
+    "MemoryPool::Close::pool_000": {
+      "captured_bytes": 128,
+      "complete_events": 1,
+      "events": 1,
+      "partial_events": 0,
+      "unresolved_events": 0
+    },
+    "MemoryPool::Init::pool_000": {
+      "captured_bytes": 1024,
+      "complete_events": 8,
+      "events": 8,
+      "partial_events": 0,
+      "unresolved_events": 0
+    },
+    "MemoryPool::VerifyPoolIntegrity::pool_000": {
+      "captured_bytes": 128,
+      "complete_events": 1,
+      "events": 1,
+      "partial_events": 0,
+      "unresolved_events": 0
+    },
+    "bWareMalloc::debug_text": {
+      "captured_bytes": 0,
+      "complete_events": 0,
+      "events": 85,
+      "partial_events": 85,
+      "unresolved_events": 85
+    }
+  },
+  "sampling_bounds": {},
+  "thread_ids": [
+    228,
+    352
+  ],
+  "thread_ids_truncated": false
+}

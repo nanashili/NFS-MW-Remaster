@@ -7,6 +7,26 @@ namespace NfsMwRemaster.Driving.Tests
     public sealed class VehiclePerformanceTests
     {
         [Test]
+        public void PartsAndTuningAdjustmentsReachSourceCoefficients()
+        {
+            var tuning = VehicleTuning.CreateStreetRacer();
+            try
+            {
+                tuning.mostWanted.dragCoefficient = .4f;
+                tuning.mostWanted.springStiffness = new Vector2(30000f, 45000f);
+                new VehiclePerformanceModifier { dragMultiplier = .5f, frontBrakeBiasDelta = .1f }.ApplyTo(tuning);
+                Assert.That(tuning.mostWanted.dragCoefficient, Is.EqualTo(.2f));
+                Assert.That(tuning.mostWanted.brakeTorque.x / (tuning.mostWanted.brakeTorque.x + tuning.mostWanted.brakeTorque.y),
+                    Is.EqualTo(.74f).Within(.00001f));
+                Assert.That(VehiclePhysicsLabTuningOverrides.Write(tuning, VehiclePhysicsLabTuningParameter.SuspensionSpringRate, 60000f), Is.True);
+                Assert.That(tuning.mostWanted.springStiffness, Is.EqualTo(new Vector2(60000f, 90000f)));
+                Assert.That(VehiclePhysicsLabTuningOverrides.Write(tuning, VehiclePhysicsLabTuningParameter.ServiceBrakeTorque, 8000f), Is.True);
+                Assert.That(tuning.mostWanted.brakeTorque.x + tuning.mostWanted.brakeTorque.y, Is.EqualTo(2000f).Within(.001f));
+            }
+            finally { UnityEngine.Object.DestroyImmediate(tuning); }
+        }
+
+        [Test]
         public void InstallAllowsOnePartPerCategoryAndRejectsDowngrade()
         {
             VehiclePerformanceBuild build = new VehiclePerformanceBuild();

@@ -1,0 +1,11 @@
+flowchart LR
+    source[Existing local zBWare reconstruction]
+    isolate[Clean branch from upstream main]
+    verify[Compile zBWare and run build check]
+    fork[nanashili fork]
+    push[feature/zbware-reconstruction-pr]
+    pr[Draft PR #138 to dbalatoni13/nfsmw main]
+    followup[Runtime and maintainer review follow-up]
+
+    source --> isolate --> verify --> fork --> push --> pr
+    pr -. pending .-> followup

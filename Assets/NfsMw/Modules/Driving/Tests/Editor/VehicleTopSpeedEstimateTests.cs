@@ -17,9 +17,9 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(VehicleTopSpeedEstimator.Estimate(tuning).estimatedKph, Is.EqualTo(first).Within(.01f));
         }
 
-        [Test] public void GovernorClampsEstimateAndGearingCeilingIsReported()
+        [Test] public void SourceLimiterReducesEstimateAndGearingCeilingIsReported()
         {
-            tuning.speedGovernor = true; tuning.chassis.maxSpeedKph = 140f;
+            tuning.mostWanted.speedLimiterMph = new[] { 130f / MostWantedVehicleMath.ReferenceMphToKph, 10f / MostWantedVehicleMath.ReferenceMphToKph };
             var result = VehicleTopSpeedEstimator.Estimate(tuning);
             Assert.That(result.estimatedKph, Is.LessThanOrEqualTo(140.01f));
             Assert.That(result.gearingCeilingKph, Is.GreaterThan(0f));
@@ -32,7 +32,7 @@ namespace NfsMwRemaster.Driving.Tests
             tuning.engine.maxTorqueNewtonMeters *= 1.35f;
             float power = VehicleTopSpeedEstimator.Estimate(tuning).estimatedKph;
             tuning.engine.maxTorqueNewtonMeters /= 1.35f;
-            tuning.aero.dragCoefficient *= 2f;
+            tuning.mostWanted.dragCoefficient *= 2f;
             float drag = VehicleTopSpeedEstimator.Estimate(tuning).estimatedKph;
             Assert.That(power, Is.GreaterThan(baseline));
             Assert.That(drag, Is.LessThan(baseline));
@@ -48,10 +48,10 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(result.gearingCeilingKph, Is.EqualTo(expected).Within(.001f));
         }
 
-        [Test] public void ClutchEngagementReducesAvailableTopSpeed()
+        [Test] public void SourceGearEfficiencyReducesAvailableTopSpeed()
         {
             float engaged = VehicleTopSpeedEstimator.Estimate(tuning).estimatedKph;
-            tuning.engine.clutchEngagement = 0f;
+            System.Array.Fill(tuning.mostWanted.gearEfficiency, 0f);
             Assert.That(VehicleTopSpeedEstimator.Estimate(tuning).estimatedKph, Is.LessThan(engaged));
         }
 

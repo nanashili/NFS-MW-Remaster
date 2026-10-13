@@ -1,0 +1,718 @@
+{
+  "interpretation_boundary": {
+    "event_kind": "sampled function-entry observations",
+    "does_not_prove": [
+      "function return values",
+      "successful spawns",
+      "exact state transitions between samples",
+      "unique lifetime instances when allocator addresses are reused"
+    ]
+  },
+  "capture_identity": {
+    "capture_id": "3b4641467dd7270d42f3e20009bfa363",
+    "target_name": "speed.exe PC 1.3",
+    "target_sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+    "catalogue_sha256": "dffdc6c6a3ad9fd18e8ce72a95afdd258e4b839cbe1dba4b068438dbc7539c51",
+    "catalogue_matches_local": true,
+    "schema_version": 3,
+    "activation_state": "closed",
+    "flags": [
+      "entry_only",
+      "fxsave",
+      "profile_preset",
+      "ordered_fifo"
+    ],
+    "record_types": {
+      "event": 100025,
+      "header": 1
+    },
+    "event_kinds": {
+      "checkpoint": 24,
+      "entry": 100000,
+      "terminal": 1
+    }
+  },
+  "hook_census": [
+    {
+      "hook": "AIGoal::ChooseAction",
+      "entry_samples": 62633,
+      "first_seconds_after_trace_start": 29.155616,
+      "last_seconds_after_trace_start": 1415.292921,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 349,
+      "max_call_index": 62633
+    },
+    {
+      "hook": "AIVehicle::OnTaskSimulate",
+      "entry_samples": 15992,
+      "first_seconds_after_trace_start": 29.429357,
+      "last_seconds_after_trace_start": 1415.252139,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 129,
+      "max_call_index": 2046849
+    },
+    {
+      "hook": "AITrafficManager::SpawnTraffic",
+      "entry_samples": 12167,
+      "first_seconds_after_trace_start": 29.610132,
+      "last_seconds_after_trace_start": 1387.090941,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 12167
+    },
+    {
+      "hook": "AICopManager::OnTask",
+      "entry_samples": 3385,
+      "first_seconds_after_trace_start": 29.444474,
+      "last_seconds_after_trace_start": 1415.207758,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 54145
+    },
+    {
+      "hook": "AIPursuit::OnTask",
+      "entry_samples": 1930,
+      "first_seconds_after_trace_start": 122.804251,
+      "last_seconds_after_trace_start": 1414.847338,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 30865
+    },
+    {
+      "hook": "AITarget::TrackAll",
+      "entry_samples": 1693,
+      "first_seconds_after_trace_start": 29.429047,
+      "last_seconds_after_trace_start": 1415.202626,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 0,
+      "max_call_index": 108289
+    },
+    {
+      "hook": "AIVehicle::Update",
+      "entry_samples": 1011,
+      "first_seconds_after_trace_start": 29.44171,
+      "last_seconds_after_trace_start": 1414.220132,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 103,
+      "max_call_index": 129281
+    },
+    {
+      "hook": "AITrafficManager::OnTask",
+      "entry_samples": 432,
+      "first_seconds_after_trace_start": 29.609821,
+      "last_seconds_after_trace_start": 1415.067262,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 13793
+    },
+    {
+      "hook": "Gps::Update",
+      "entry_samples": 432,
+      "first_seconds_after_trace_start": 29.532282,
+      "last_seconds_after_trace_start": 1414.979809,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 27585
+    },
+    {
+      "hook": "AICopManager::SpawnPursuitIVehicle",
+      "entry_samples": 284,
+      "first_seconds_after_trace_start": 180.341201,
+      "last_seconds_after_trace_start": 1349.286764,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 284
+    },
+    {
+      "hook": "AIVehicleHelicopter::Update",
+      "entry_samples": 36,
+      "first_seconds_after_trace_start": 728.997912,
+      "last_seconds_after_trace_start": 1320.508981,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 2,
+      "max_call_index": 2241
+    },
+    {
+      "hook": "AIVehicleRacecar::Update",
+      "entry_samples": 5,
+      "first_seconds_after_trace_start": 980.636326,
+      "last_seconds_after_trace_start": 1283.664092,
+      "thread_ids": [
+        224
+      ],
+      "unique_object_addresses": 1,
+      "max_call_index": 513
+    }
+  ],
+  "task_field_validation": {
+    "AICopManager::OnTask": {
+      "field_offsets": {
+        "simulate_task": "0x80"
+      },
+      "observations": [
+        {
+          "argument": 15,
+          "field_values": {
+            "simulate_task": 15
+          },
+          "matching_fields": [
+            "simulate_task"
+          ],
+          "entry_samples": 3385
+        }
+      ],
+      "missing_argument_samples": 0
+    },
+    "AITrafficManager::OnTask": {
+      "field_offsets": {
+        "task": "0x5c"
+      },
+      "observations": [
+        {
+          "argument": 16,
+          "field_values": {
+            "task": 16
+          },
+          "matching_fields": [
+            "task"
+          ],
+          "entry_samples": 432
+        }
+      ],
+      "missing_argument_samples": 0
+    },
+    "AIPursuit::OnTask": {
+      "field_offsets": {
+        "simulate_task": "0x54",
+        "busted_timer_task": "0x58"
+      },
+      "observations": [
+        {
+          "argument": 169,
+          "field_values": {
+            "simulate_task": 169,
+            "busted_timer_task": 170
+          },
+          "matching_fields": [
+            "simulate_task"
+          ],
+          "entry_samples": 386
+        },
+        {
+          "argument": 170,
+          "field_values": {
+            "simulate_task": 169,
+            "busted_timer_task": 170
+          },
+          "matching_fields": [
+            "busted_timer_task"
+          ],
+          "entry_samples": 1544
+        }
+      ],
+      "missing_argument_samples": 0
+    }
+  },
+  "pursuit_spawn_entries": {
+    "entry_samples": 284,
+    "pursuit_pointers": [
+      {
+        "value": "0x021635f8",
+        "count": 284
+      }
+    ],
+    "vehicle_pointers": [
+      {
+        "value": "0x0211f98c",
+        "count": 96
+      },
+      {
+        "value": "0x021679bc",
+        "count": 42
+      },
+      {
+        "value": "0x021613dc",
+        "count": 33
+      },
+      {
+        "value": "0x0218731c",
+        "count": 25
+      },
+      {
+        "value": "0x0211bcdc",
+        "count": 16
+      },
+      {
+        "value": "0x0216465c",
+        "count": 15
+      },
+      {
+        "value": "0x02191a9c",
+        "count": 8
+      },
+      {
+        "value": "0x0211886c",
+        "count": 6
+      },
+      {
+        "value": "0x021531ac",
+        "count": 6
+      },
+      {
+        "value": "0x0215c0ac",
+        "count": 6
+      },
+      {
+        "value": "0x021547bc",
+        "count": 5
+      },
+      {
+        "value": "0x0216a4bc",
+        "count": 5
+      },
+      {
+        "value": "0x0212932c",
+        "count": 4
+      },
+      {
+        "value": "0x0215e64c",
+        "count": 4
+      },
+      {
+        "value": "0x02155dfc",
+        "count": 3
+      },
+      {
+        "value": "0x0215737c",
+        "count": 3
+      },
+      {
+        "value": "0x0215a8ac",
+        "count": 3
+      },
+      {
+        "value": "0x0212359c",
+        "count": 2
+      },
+      {
+        "value": "0x02158f8c",
+        "count": 2
+      }
+    ]
+  },
+  "goal_vtable_mapping": [
+    {
+      "vtable": "0x00892bf0",
+      "name": "AIGoalTraffic",
+      "constructor_va": "0x0043b670",
+      "confidence": "high",
+      "basis": "named retail symbol plus exact-matched constructor"
+    },
+    {
+      "vtable": "0x00892c14",
+      "name": "AIGoalPatrol",
+      "constructor_va": "0x0043b730",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892b30",
+      "name": "AIGoalPursuit",
+      "constructor_va": "0x0043b800",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892c64",
+      "name": "AIGoalStopShort",
+      "constructor_va": "0x0043b8c0",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892c88",
+      "name": "AIGoalRam",
+      "constructor_va": "0x0043b9b0",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892cd8",
+      "name": "AIGoalHeadOnRam",
+      "constructor_va": "0x0043bd10",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892b40",
+      "name": "AIGoalStaticRoadBlock",
+      "constructor_va": "0x0043be50",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892d00",
+      "name": "AIGoalFleePursuit",
+      "constructor_va": "0x0043bed0",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892d10",
+      "name": "AIGoalHeliPursuit",
+      "constructor_va": "0x0043bfc0",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892d20",
+      "name": "AIGoalHeliExit",
+      "constructor_va": "0x0043c090",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    },
+    {
+      "vtable": "0x00892d30",
+      "name": "AIGoalRacer",
+      "constructor_va": "0x0043c160",
+      "confidence": "high",
+      "basis": "retail constructor vtable assignment and action-string relocations"
+    }
+  ],
+  "goal_choose_action_census": [
+    {
+      "name": "AIGoalPursuit",
+      "entry_samples": 28935,
+      "unique_object_addresses": 66,
+      "first_seconds_after_trace_start": 122.77857,
+      "last_seconds_after_trace_start": 1411.854423
+    },
+    {
+      "name": "AIGoalTraffic",
+      "entry_samples": 16226,
+      "unique_object_addresses": 275,
+      "first_seconds_after_trace_start": 34.776026,
+      "last_seconds_after_trace_start": 1415.065753
+    },
+    {
+      "name": "AIGoalStaticRoadBlock",
+      "entry_samples": 8412,
+      "unique_object_addresses": 44,
+      "first_seconds_after_trace_start": 520.788755,
+      "last_seconds_after_trace_start": 1386.980287
+    },
+    {
+      "name": "AIGoalFleePursuit",
+      "entry_samples": 2706,
+      "unique_object_addresses": 28,
+      "first_seconds_after_trace_start": 301.147192,
+      "last_seconds_after_trace_start": 1415.292921
+    },
+    {
+      "name": "AIGoalHeliPursuit",
+      "entry_samples": 2079,
+      "unique_object_addresses": 2,
+      "first_seconds_after_trace_start": 728.939019,
+      "last_seconds_after_trace_start": 1326.283819
+    },
+    {
+      "name": "AIGoalHeadOnRam",
+      "entry_samples": 1886,
+      "unique_object_addresses": 14,
+      "first_seconds_after_trace_start": 588.053803,
+      "last_seconds_after_trace_start": 1411.859064
+    },
+    {
+      "name": "AIGoalRam",
+      "entry_samples": 1361,
+      "unique_object_addresses": 18,
+      "first_seconds_after_trace_start": 207.090219,
+      "last_seconds_after_trace_start": 1415.288883
+    },
+    {
+      "name": "AIGoalRacer",
+      "entry_samples": 567,
+      "unique_object_addresses": 1,
+      "first_seconds_after_trace_start": 29.155616,
+      "last_seconds_after_trace_start": 1285.316987
+    },
+    {
+      "name": "AIGoalPatrol",
+      "entry_samples": 265,
+      "unique_object_addresses": 1,
+      "first_seconds_after_trace_start": 103.163645,
+      "last_seconds_after_trace_start": 122.775205
+    },
+    {
+      "name": "AIGoalHeliExit",
+      "entry_samples": 196,
+      "unique_object_addresses": 1,
+      "first_seconds_after_trace_start": 821.634169,
+      "last_seconds_after_trace_start": 840.344831
+    }
+  ],
+  "vehicle_vtable_mapping": [
+    {
+      "vtable": "0x00891cf8",
+      "name": "AIVehicleTraffic",
+      "confidence": "high",
+      "basis": "named retail symbol table entry"
+    },
+    {
+      "vtable": "0x008920d8",
+      "name": "AIVehicleHelicopter",
+      "confidence": "high",
+      "basis": "named retail symbol table entry"
+    },
+    {
+      "vtable": "0x00892560",
+      "name": "AIVehicleCopCar",
+      "confidence": "high",
+      "basis": "named retail symbol table entry"
+    },
+    {
+      "vtable": "0x00892ad0",
+      "name": "AIVehicleHuman",
+      "confidence": "high",
+      "basis": "named retail symbol table entry"
+    },
+    {
+      "vtable": "0x00892e28",
+      "name": "AIVehicleEmpty",
+      "confidence": "high",
+      "basis": "named retail symbol table entry"
+    }
+  ],
+  "vehicle_simulation_census": [
+    {
+      "name": "AIVehicleTraffic",
+      "entry_samples": 9789,
+      "unique_object_addresses": 65,
+      "first_seconds_after_trace_start": 33.694559,
+      "last_seconds_after_trace_start": 1415.252139
+    },
+    {
+      "name": "AIVehicleCopCar",
+      "entry_samples": 4434,
+      "unique_object_addresses": 53,
+      "first_seconds_after_trace_start": 102.710475,
+      "last_seconds_after_trace_start": 1415.118546
+    },
+    {
+      "name": "AIVehicleEmpty",
+      "entry_samples": 755,
+      "unique_object_addresses": 10,
+      "first_seconds_after_trace_start": 273.654735,
+      "last_seconds_after_trace_start": 1268.354672
+    },
+    {
+      "name": "AIVehicleHuman",
+      "entry_samples": 740,
+      "unique_object_addresses": 1,
+      "first_seconds_after_trace_start": 29.429357,
+      "last_seconds_after_trace_start": 1287.086339
+    },
+    {
+      "name": "AIVehicleHelicopter",
+      "entry_samples": 274,
+      "unique_object_addresses": 2,
+      "first_seconds_after_trace_start": 720.672747,
+      "last_seconds_after_trace_start": 1349.15059
+    }
+  ],
+  "helicopter_fuel_entry_samples": {
+    "retail_object_offset": "0x7d8",
+    "objects": [
+      {
+        "object_pointer": "0x04b85400",
+        "entry_samples": 17,
+        "first_fuel_seconds": 87.262253,
+        "last_fuel_seconds": 34.597824,
+        "minimum_fuel_seconds": 34.597824,
+        "maximum_fuel_seconds": 87.262253,
+        "nonincreasing_steps": 16,
+        "increasing_steps": 0,
+        "samples": [
+          {
+            "seconds_after_trace_start": 1189.434958,
+            "fuel_seconds": 87.262253
+          },
+          {
+            "seconds_after_trace_start": 1195.295579,
+            "fuel_seconds": 82.995651
+          },
+          {
+            "seconds_after_trace_start": 1202.054907,
+            "fuel_seconds": 78.72905
+          },
+          {
+            "seconds_after_trace_start": 1208.312264,
+            "fuel_seconds": 74.462448
+          },
+          {
+            "seconds_after_trace_start": 1215.320126,
+            "fuel_seconds": 72.462303
+          },
+          {
+            "seconds_after_trace_start": 1222.213463,
+            "fuel_seconds": 69.270638
+          },
+          {
+            "seconds_after_trace_start": 1229.488246,
+            "fuel_seconds": 66.393936
+          },
+          {
+            "seconds_after_trace_start": 1236.498685,
+            "fuel_seconds": 64.043823
+          },
+          {
+            "seconds_after_trace_start": 1250.440995,
+            "fuel_seconds": 61.177177
+          },
+          {
+            "seconds_after_trace_start": 1259.803626,
+            "fuel_seconds": 56.910576
+          },
+          {
+            "seconds_after_trace_start": 1267.558174,
+            "fuel_seconds": 53.833954
+          },
+          {
+            "seconds_after_trace_start": 1278.719395,
+            "fuel_seconds": 51.917301
+          },
+          {
+            "seconds_after_trace_start": 1287.795754,
+            "fuel_seconds": 48.259853
+          },
+          {
+            "seconds_after_trace_start": 1296.149503,
+            "fuel_seconds": 44.120743
+          },
+          {
+            "seconds_after_trace_start": 1303.153843,
+            "fuel_seconds": 39.854141
+          },
+          {
+            "seconds_after_trace_start": 1309.314663,
+            "fuel_seconds": 35.920864
+          },
+          {
+            "seconds_after_trace_start": 1320.508981,
+            "fuel_seconds": 34.597824
+          }
+        ]
+      },
+      {
+        "object_pointer": "0x04b936e0",
+        "entry_samples": 19,
+        "first_fuel_seconds": 60.0,
+        "last_fuel_seconds": 0.0,
+        "minimum_fuel_seconds": 0.0,
+        "maximum_fuel_seconds": 60.0,
+        "nonincreasing_steps": 18,
+        "increasing_steps": 0,
+        "samples": [
+          {
+            "seconds_after_trace_start": 728.997912,
+            "fuel_seconds": 60.0
+          },
+          {
+            "seconds_after_trace_start": 735.997397,
+            "fuel_seconds": 55.733398
+          },
+          {
+            "seconds_after_trace_start": 742.543737,
+            "fuel_seconds": 51.466797
+          },
+          {
+            "seconds_after_trace_start": 748.554125,
+            "fuel_seconds": 47.200195
+          },
+          {
+            "seconds_after_trace_start": 754.145012,
+            "fuel_seconds": 42.933594
+          },
+          {
+            "seconds_after_trace_start": 760.213942,
+            "fuel_seconds": 38.666992
+          },
+          {
+            "seconds_after_trace_start": 766.600557,
+            "fuel_seconds": 34.400391
+          },
+          {
+            "seconds_after_trace_start": 772.628163,
+            "fuel_seconds": 30.133736
+          },
+          {
+            "seconds_after_trace_start": 778.308619,
+            "fuel_seconds": 25.933681
+          },
+          {
+            "seconds_after_trace_start": 784.035098,
+            "fuel_seconds": 24.180357
+          },
+          {
+            "seconds_after_trace_start": 789.843037,
+            "fuel_seconds": 22.612036
+          },
+          {
+            "seconds_after_trace_start": 795.949216,
+            "fuel_seconds": 18.346979
+          },
+          {
+            "seconds_after_trace_start": 800.389318,
+            "fuel_seconds": 14.080283
+          },
+          {
+            "seconds_after_trace_start": 806.654318,
+            "fuel_seconds": 9.813621
+          },
+          {
+            "seconds_after_trace_start": 813.62698,
+            "fuel_seconds": 5.546958
+          },
+          {
+            "seconds_after_trace_start": 819.863733,
+            "fuel_seconds": 1.280294
+          },
+          {
+            "seconds_after_trace_start": 825.85809,
+            "fuel_seconds": 0.0
+          },
+          {
+            "seconds_after_trace_start": 831.219684,
+            "fuel_seconds": 0.0
+          },
+          {
+            "seconds_after_trace_start": 838.086071,
+            "fuel_seconds": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

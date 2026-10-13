@@ -96,9 +96,47 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 var engine = selected["engine"]; var transmission = selected["transmission"];
                 var tires = selected["tires"]; var chassis = selected["chassis"]; var brakes = selected["brakes"];
                 var nos = selected["nos"]; var induction = selected["induction"];
-                tuning.simulationModel = VehicleSimulationModel.MostWantedReference;
                 tuning.mostWanted = new MostWantedDrivingSettings();
                 var e = tuning.engine; var m = tuning.mostWanted;
+
+                // Preserve every source chassis/tyre/brake/transmission input in the
+                // tuning object as well as applying the fields used by the adapter.
+                // Source chassis lengths are inches, spring/shock rates are lb/in,
+                // section widths are millimetres and brake torque is ft-lb.
+                const float inch = 0.0254f, lbIn = MostWantedVehicleMath.PoundsPerInchToNewtonsPerMeter;
+                Vector2 PairSI(MostWantedHandlingRecord r, string n) => context.Pair(r, n, "mostWanted." + n, "Source axle pair converted to SI where applicable");
+                float ScalarSI(MostWantedHandlingRecord r, string n) => context.Scalar(r, n, "mostWanted." + n, "Source scalar converted to SI where applicable");
+                m.shockDigression = PairSI(chassis, "SHOCK_DIGRESSION");
+                m.springProgression = PairSI(chassis, "SPRING_PROGRESSION");
+                m.travel = PairSI(chassis, "TRAVEL") * inch;
+                m.rideHeight = PairSI(chassis, "RIDE_HEIGHT") * inch;
+                m.trackWidth = PairSI(chassis, "TRACK_WIDTH");
+                m.shockExtensionStiffness = PairSI(chassis, "SHOCK_EXT_STIFFNESS") * lbIn;
+                m.shockStiffness = PairSI(chassis, "SHOCK_STIFFNESS") * lbIn;
+                m.springStiffness = PairSI(chassis, "SPRING_STIFFNESS") * lbIn;
+                m.shockValving = PairSI(chassis, "SHOCK_VALVING") * inch;
+                m.swaybarStiffness = PairSI(chassis, "SWAYBAR_STIFFNESS") * lbIn;
+                m.rollCenter = ScalarSI(chassis, "ROLL_CENTER") * inch;
+                m.wheelBase = ScalarSI(chassis, "WHEEL_BASE");
+                m.shockBlowout = ScalarSI(chassis, "SHOCK_BLOWOUT");
+                m.aeroCenterOfGravity = ScalarSI(chassis, "AERO_CG");
+                m.renderMotion = ScalarSI(chassis, "RENDER_MOTION");
+                m.frontAxle = ScalarSI(chassis, "FRONT_AXLE");
+                m.aeroCoefficient = ScalarSI(chassis, "AERO_COEFFICIENT");
+                m.frontWeightBias = ScalarSI(chassis, "FRONT_WEIGHT_BIAS");
+                m.dragCoefficient = ScalarSI(chassis, "DRAG_COEFFICIENT");
+                m.yawControl = context.Vector4(tires, "YAW_CONTROL", "mostWanted.yawControl", "Source four-wheel yaw control values");
+                m.gripScale = PairSI(tires, "GRIP_SCALE"); m.dynamicGrip = PairSI(tires, "DYNAMIC_GRIP"); m.staticGrip = PairSI(tires, "STATIC_GRIP");
+                m.rimSizeInches = PairSI(tires, "RIM_SIZE"); m.sectionWidth = PairSI(tires, "SECTION_WIDTH"); m.aspectRatio = PairSI(tires, "ASPECT_RATIO");
+                m.steering = ScalarSI(tires, "STEERING"); m.yawSpeed = ScalarSI(tires, "YAW_SPEED");
+                m.brakeLock = PairSI(brakes, "BRAKE_LOCK");
+                m.brakeTorque = PairSI(brakes, "BRAKES") * MostWantedVehicleMath.FootPoundsToNewtonMeters;
+                m.handbrake = ScalarSI(brakes, "EBRAKE") * MostWantedVehicleMath.FootPoundsToNewtonMeters;
+                m.differential = context.Vector3(transmission, "DIFFERENTIAL", "mostWanted.differential", "Source three differential coefficients");
+                m.torqueConverter = ScalarSI(transmission, "TORQUE_CONVERTER"); m.clutchSlip = ScalarSI(transmission, "CLUTCH_SLIP"); m.optimalShift = ScalarSI(transmission, "OPTIMAL_SHIFT");
+                m.speedLimiterMph = context.Floats(engine, "SPEED_LIMITER", "mostWanted.speedLimiterMph", "Source MPH values retained for audit");
+                m.inductionPsi = ScalarSI(induction, "PSI");
+                m.nitrousFlowRate = ScalarSI(nos, "FLOW_RATE");
 
                 tuning.chassis.mass = context.Scalar(vehicleRecord, "MASS", "chassis.mass", "Source mass, kg");
                 e.idleRpm = context.Scalar(engine, "IDLE", "engine.idleRpm", "RPM");
@@ -141,7 +179,7 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 if (frontRadius < .05f || rearRadius < .05f) throw new InvalidDataException("Tyre geometry produces an invalid radius.");
                 tuning.tires.wheelRadius = frontRadius; tuning.tires.wheelWidth = widths.x * .001f; m.rearWheelRadiusScale = rearRadius / frontRadius;
                 m.steeringCoefficient = context.Scalar(tires, "STEERING", "mostWanted.steeringCoefficient", "Multiplier on recovered degree range and steering rate");
-                tuning.controls.maxSteerAngle = MostWantedSteeringModel.AbsoluteMaximumDegrees;
+                tuning.controls.maxSteerAngle = MostWantedChassis.AbsoluteMaximumDegrees;
 
                 Vector2 springs = context.Pair(chassis, "SPRING_STIFFNESS", "tires.springRate / mostWanted.rearSpringScale", "Source lb/in × 175.1268; linear spring retained in the Unity contact adapter");
                 Vector2 dampers = context.Pair(chassis, "SHOCK_STIFFNESS", "tires.damperRate / mostWanted.rearDamperScale", "Source conversion × 175.1268; compression damping");
@@ -169,7 +207,6 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 m.linearDownforceCoefficient = context.Scalar(chassis, "AERO_COEFFICIENT", "mostWanted.linearDownforceCoefficient", "Multiply source by 2000; force scales with speed, orientation and ground contact") * 2000f;
                 tuning.aero.downforceBalance = context.Scalar(chassis, "AERO_CG", "aero.downforceBalance", "Percentage of distance from rear to front axle") * .01f;
                 tuning.aero.downforceCoefficient = 0f; tuning.chassis.rollingResistance = 0f;
-                tuning.speedGovernor = false;
 
                 m.inductionSpoolRpmFraction = context.Scalar(induction, "SPOOL", "mostWanted.inductionSpoolRpmFraction", "Normalized IDLE..RED_LINE spool threshold");
                 m.inductionLowBoost = context.Scalar(induction, "LOW_BOOST", "mostWanted.inductionLowBoost", "Dimensionless torque boost fraction");
@@ -189,15 +226,12 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 m.nitrousRechargeMinimumKph = context.Scalar(nos, "RECHARGE_MIN_SPEED", "mostWanted.nitrousRechargeMinimumKph", "Reference mph × 0.44703001 × 3.6") * MostWantedVehicleMath.ReferenceMphToKph;
                 m.nitrousRechargeMaximumKph = context.Scalar(nos, "RECHARGE_MAX_SPEED", "mostWanted.nitrousRechargeMaximumKph", "Reference mph × 0.44703001 × 3.6") * MostWantedVehicleMath.ReferenceMphToKph;
 
-                tuning.assists.stabilityControl = tuning.assists.countersteering = tuning.assists.tractionControl = tuning.assists.abs = false;
-                tuning.handling.brakeToDrift = false; tuning.handling.driftBias = 0f;
                 report.retainedAdaptations.AddRange(new[] {
                     "Baseline rig, center of mass, inertia tensor, suspension rest length/travel and wheel mass are retained; source body/axle coordinates need model-space alignment.",
                     "Longitudinal and lateral tyre forces use the shared Unity combined-slip solver. Source STATIC_GRIP, DYNAMIC_GRIP, GRIP_SCALE, nitrous-to-traction coupling, yaw/drift/burnout logic and protected PC lateral amplitude are not reproduced or silently treated as Unity friction coefficients.",
                     "Unity clutch/RPM transient, rev limiter, throttle/brake smoothing, collision solver, differential and shift control remain adaptations. Recovered torque-crossover shift selection corrects the public reconstruction's ambiguous induction arguments.",
                     "Suspension has mapped linear stiffness and compression/rebound damping, but not original progressive springs, digressive valving, sway bars, bottom-out impulses or dynamic center of gravity.",
                     "Source steering tables/history and simplified Ackermann are active. The second remap follows source constants; active PC selection remains unverified. Countersteer uses mean Unity rear slip, not the original selected-wheel feedback. Speedbreaker, steering-wheel-device variants, collision/wall steering and AI catch-up cheats are not implemented.",
-                    "Legacy brake-to-drift, yaw assist, ABS and traction-control overlays are disabled to avoid presenting those authored systems as recovered mechanics.",
                     "Chosen reference slots are explicit data selections, not proof of active garage upgrades. Upgrade interpolation/Junkman behavior is not applied." });
                 foreach (var record in selected.Values)
                     foreach (var field in record.fields)
@@ -269,6 +303,18 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 var front = components.SingleOrDefault(item => item.name == "Front"); var rear = components.SingleOrDefault(item => item.name == "Rear");
                 if (front == null || rear == null || !front.finite || !rear.finite) throw new InvalidDataException(name + " has invalid axle values.");
                 return new Vector2((float)front.numericValue, (float)rear.numericValue);
+            }
+            public Vector3 Vector3(MostWantedHandlingRecord record, string name, string target, string treatment)
+            {
+                float[] values = Floats(record, name, target, treatment);
+                if (values.Length != 3) throw new InvalidDataException(record.className + "." + name + " must contain three values.");
+                return new Vector3(values[0], values[1], values[2]);
+            }
+            public Vector4 Vector4(MostWantedHandlingRecord record, string name, string target, string treatment)
+            {
+                float[] values = Floats(record, name, target, treatment);
+                if (values.Length != 4) throw new InvalidDataException(record.className + "." + name + " must contain four values.");
+                return new Vector4(values[0], values[1], values[2], values[3]);
             }
         }
     }

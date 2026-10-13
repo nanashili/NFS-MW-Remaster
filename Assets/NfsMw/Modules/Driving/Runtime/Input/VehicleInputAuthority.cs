@@ -10,7 +10,7 @@ namespace NfsMwRemaster.Driving
 
     /// <summary>Single owner for player, AI, replay and cutscene vehicle intent.</summary>
     [DisallowMultipleComponent]
-    public sealed class VehicleInputAuthority : MonoBehaviour, IVehicleInputSource, IVehicleDiscreteInputSource
+    public sealed class VehicleInputAuthority : MonoBehaviour, IVehicleInputSource, IVehicleDiscreteInputSource, IVehicleInputControlPolicy
     {
         [SerializeField, Tooltip("Optional initial driver. Handover requires releasing its ownership before acquiring another source.")]
         private MonoBehaviour defaultSource;
@@ -18,6 +18,8 @@ namespace NfsMwRemaster.Driving
         private object owner;
         private VehicleInputState current;
         public object Owner => owner;
+        public bool ApplyPlayerControls => source != null
+            && (source is not IVehicleInputControlPolicy policy || policy.ApplyPlayerControls);
         public void ConfigureDefault(MonoBehaviour input)
         {
             if (input != null && input is not IVehicleInputSource) throw new ArgumentException("Default driver must implement IVehicleInputSource.");

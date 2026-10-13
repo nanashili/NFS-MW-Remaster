@@ -222,7 +222,7 @@ namespace NfsMwRemaster.Driving
             tuning.engine.maxTorqueNewtonMeters *= Positive(engineTorqueMultiplier);
             float redlineScale = Positive(engineRedlineMultiplier);
             tuning.engine.redlineRpm *= redlineScale;
-            if (tuning.UsesMostWantedReference) tuning.mostWanted.torqueTableMaximumRpm *= redlineScale;
+            tuning.mostWanted.torqueTableMaximumRpm *= redlineScale;
             tuning.engine.shiftUpRpm *= redlineScale;
             tuning.engine.shiftDownRpm *= redlineScale;
             tuning.engine.engineInertia *= Positive(engineInertiaMultiplier);
@@ -243,33 +243,50 @@ namespace NfsMwRemaster.Driving
             }
 
             tuning.engine.nitrousTorque *= Positive(nitrousTorqueMultiplier);
-            if (tuning.UsesMostWantedReference) tuning.mostWanted.nitrousTorqueBoost *= Positive(nitrousTorqueMultiplier);
+            tuning.mostWanted.nitrousTorqueBoost *= Positive(nitrousTorqueMultiplier);
             tuning.engine.nitrousFuelSeconds *= Positive(nitrousFuelMultiplier);
 
             tuning.tires.longitudinalGrip *= Positive(tireLongitudinalGripMultiplier);
             tuning.tires.lateralGrip *= Positive(tireLateralGripMultiplier);
-            tuning.tires.peakLongitudinalSlip *= Positive(tirePeakSlipMultiplier);
-            tuning.tires.peakLateralSlipRadians *= Positive(tirePeakSlipMultiplier);
-            tuning.tires.rollingResistance *= Positive(tireRollingResistanceMultiplier);
+            float driveGripScale = Positive(tireLongitudinalGripMultiplier);
+            float lateralGripScale = Positive(tireLateralGripMultiplier);
+            tuning.mostWanted.gripScale = Scale(tuning.mostWanted.gripScale, lateralGripScale);
+            tuning.mostWanted.dynamicGrip = Scale(tuning.mostWanted.dynamicGrip, driveGripScale);
+            tuning.mostWanted.staticGrip = Scale(tuning.mostWanted.staticGrip, Positive(tirePeakSlipMultiplier));
 
             tuning.controls.serviceBrakeTorque *= Positive(brakeTorqueMultiplier);
             tuning.controls.handbrakeTorque *= Positive(brakeTorqueMultiplier);
+            tuning.mostWanted.brakeTorque *= Positive(brakeTorqueMultiplier);
+            tuning.mostWanted.handbrake *= Positive(brakeTorqueMultiplier);
             tuning.controls.frontBrakeBias = Mathf.Clamp01(
                 tuning.controls.frontBrakeBias + frontBrakeBiasDelta);
+            if (frontBrakeBiasDelta != 0f)
+            {
+                float total = tuning.mostWanted.brakeTorque.x + tuning.mostWanted.brakeTorque.y;
+                tuning.mostWanted.brakeTorque = new Vector2(total * tuning.controls.frontBrakeBias,
+                    total * (1f - tuning.controls.frontBrakeBias));
+            }
 
             tuning.tires.springRate *= Positive(suspensionSpringMultiplier);
             tuning.tires.damperRate *= Positive(suspensionDamperMultiplier);
             tuning.tires.suspensionTravel *= Positive(suspensionTravelMultiplier);
+            tuning.mostWanted.springStiffness = Scale(tuning.mostWanted.springStiffness, Positive(suspensionSpringMultiplier));
+            tuning.mostWanted.shockStiffness = Scale(tuning.mostWanted.shockStiffness, Positive(suspensionDamperMultiplier));
+            tuning.mostWanted.shockExtensionStiffness = Scale(tuning.mostWanted.shockExtensionStiffness, Positive(suspensionDamperMultiplier));
+            tuning.mostWanted.travel = Scale(tuning.mostWanted.travel, Positive(suspensionTravelMultiplier));
 
             tuning.aero.dragCoefficient *= Positive(dragMultiplier);
+            tuning.mostWanted.dragCoefficient *= Positive(dragMultiplier);
             tuning.aero.downforceCoefficient *= Positive(downforceMultiplier);
-            if (tuning.UsesMostWantedReference) tuning.mostWanted.linearDownforceCoefficient *= Positive(downforceMultiplier);
+            tuning.mostWanted.linearDownforceCoefficient *= Positive(downforceMultiplier);
         }
 
         private static float Positive(float value)
         {
             return Mathf.Max(0.1f, value);
         }
+
+        private static Vector2 Scale(Vector2 value, float scale) => value * scale;
     }
 
     /// <summary>

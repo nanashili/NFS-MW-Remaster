@@ -66,7 +66,9 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
             MostWantedHandlingReport capture, bool importBmwSource, bool npc)
         {
             if (baseline == null) throw new ArgumentNullException(nameof(baseline));
-            RacingLineSnapshot.ValidateTuning(baseline);
+            // Legacy assets can have empty source tables. Validate the resolved
+            // candidate after replacing them, rather than rejecting the input
+            // that this migration exists to upgrade.
             string donorName = !importBmwSource && baseline.driveLayout == VehicleDriveLayout.Fwd ? "gti" : "bmwm3gtre46";
             var donor = capture?.vehicles?.SingleOrDefault(vehicle => vehicle.name == donorName)
                 ?? throw new InvalidDataException("The preserved capture has no " + donorName + " record.");
@@ -74,14 +76,7 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 MostWantedDrivingImporter.FirstReferences(donor), baseline);
             try
             {
-                if (baseline.UsesMostWantedReference)
-                {
-                    Object.DestroyImmediate(result.Tuning);
-                    result.Tuning = baseline.CreateRuntimeCopy();
-                    result.Report.mapped.Clear();
-                    result.Report.fidelity = "Already-enabled reference profile retained without recalibration.";
-                }
-                else if (importBmwSource)
+                if (importBmwSource)
                 {
                     var tuning = result.Tuning;
                     // Mesh radius is model-space fitment, not permission to resize a user's car.
@@ -98,7 +93,6 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 {
                     var sourceTuning = result.Tuning;
                     var adapted = baseline.CreateRuntimeCopy();
-                    adapted.simulationModel = VehicleSimulationModel.MostWantedReference;
                     adapted.mostWanted = JsonUtility.FromJson<MostWantedDrivingSettings>(JsonUtility.ToJson(sourceTuning.mostWanted));
                     var m = adapted.mostWanted;
                     var engine = adapted.engine;
@@ -120,11 +114,7 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                     // control law. Do not stack gamepad input histories or new shift targets on it.
                     m.useSteeringTables = !npc;
                     m.torqueBasedShifting = !npc;
-                    if (!npc) adapted.controls.maxSteerAngle = MostWantedSteeringModel.AbsoluteMaximumDegrees;
-                    adapted.assists.stabilityControl = adapted.assists.countersteering = false;
-                    adapted.assists.abs = adapted.assists.tractionControl = false;
-                    adapted.handling.brakeToDrift = false;
-                    adapted.handling.driftBias = 0f;
+                    if (!npc) adapted.controls.maxSteerAngle = MostWantedChassis.AbsoluteMaximumDegrees;
                     Object.DestroyImmediate(sourceTuning);
                     result.Tuning = adapted;
                     result.Report.mapped.RemoveAll(mapping => mapping.field != "TORQUE" && mapping.field != "ENGINE_BRAKING");
@@ -177,9 +167,9 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                     bool sourceBmw = path == StreetTuningPath || path == "Assets/NfsMw/Content/Vehicles/Street/BMW/M3 E42/Framework/Factory.asset";
                     bool npc = path.StartsWith("Assets/NfsMw/Modules/Driving/Data/Traffic/", StringComparison.Ordinal) || path.EndsWith("PoliceVehicleTuning.asset", StringComparison.Ordinal);
                     var item = new ProfileResult { path = path, guid = AssetDatabase.AssetPathToGUID(path), name = tuning.name,
-                        policy = sourceBmw ? "BMW source scalars; authored fitment" : npc ? "Authored NPC reference adaptation" : "Authored vehicle reference adaptation", alreadyEnabled = tuning.UsesMostWantedReference };
+                        policy = sourceBmw ? "BMW source scalars; authored fitment" : npc ? "Authored NPC source adaptation" : "Source handling adaptation", alreadyEnabled = false };
                     report.profiles.Add(item);
-                    if (item.alreadyEnabled) { RacingLineSnapshot.ValidateTuning(tuning); continue; }
+                if (item.alreadyEnabled) { RacingLineSnapshot.ValidateTuning(tuning); continue; }
                     Backup(path, output, changes);
                     using (var candidate = CreateCandidate(tuning, capture, sourceBmw, npc))
                     {
@@ -196,7 +186,7 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                 {
                     string path = AssetDatabase.GUIDToAssetPath(guid);
                     var definition = AssetDatabase.LoadAssetAtPath<VehicleDefinition>(path);
-                    if (definition.factoryTuning == null || !definition.factoryTuning.UsesMostWantedReference) continue;
+                    if (definition.factoryTuning == null) continue;
                     string evidence = "Most Wanted reference mode enabled by scene migration. See Tools/DrivingMechanics/SCENE_MIGRATION.md and its hash/provenance manifest. Authored fitment retained; anonymous cars retain authored statistics. Original-game fidelity is not established.";
                     if (definition.referenceEvidence == evidence) continue;
                     Backup(path, output, changes);
@@ -262,7 +252,7 @@ namespace NfsMwRemaster.Driving.Editor.DrivingMechanics
                     string block = Block(original, id);
                     if (!block.Contains(TuningGuid)) throw new InvalidDataException("Inline tuning object identity mismatch in " + path);
                     var item = new ProfileResult { path = path, localId = checked((long)id), name = tuning.name,
-                        policy = "Scene-embedded BMW reference scalars; authored fitment", alreadyEnabled = tuning.UsesMostWantedReference };
+                        policy = "Scene-embedded BMW source scalars; authored fitment", alreadyEnabled = false };
                     report.profiles.Add(item);
                     if (item.alreadyEnabled) continue;
                     blocks.Add(id, block);

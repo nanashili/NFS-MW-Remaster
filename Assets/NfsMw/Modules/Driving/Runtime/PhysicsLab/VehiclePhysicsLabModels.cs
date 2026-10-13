@@ -747,29 +747,29 @@ namespace NfsMwRemaster.Driving
                 case VehiclePhysicsLabTuningParameter.ShiftDuration: return tuning.engine.shiftDuration;
                 case VehiclePhysicsLabTuningParameter.NitrousTorque: return tuning.engine.nitrousTorque;
                 case VehiclePhysicsLabTuningParameter.NitrousFuelSeconds: return tuning.engine.nitrousFuelSeconds;
-                case VehiclePhysicsLabTuningParameter.LongitudinalGrip: return tuning.tires.longitudinalGrip;
-                case VehiclePhysicsLabTuningParameter.LateralGrip: return tuning.tires.lateralGrip;
-                case VehiclePhysicsLabTuningParameter.PeakSlip: return tuning.tires.peakLongitudinalSlip;
-                case VehiclePhysicsLabTuningParameter.RollingResistance: return tuning.tires.rollingResistance;
+                case VehiclePhysicsLabTuningParameter.LongitudinalGrip: return tuning.mostWanted.dynamicGrip.x;
+                case VehiclePhysicsLabTuningParameter.LateralGrip: return tuning.mostWanted.gripScale.x;
+                case VehiclePhysicsLabTuningParameter.PeakSlip: return tuning.mostWanted.staticGrip.x;
+                case VehiclePhysicsLabTuningParameter.RollingResistance: return 0f;
                 case VehiclePhysicsLabTuningParameter.ServiceBrakeTorque: return tuning.controls.serviceBrakeTorque;
                 case VehiclePhysicsLabTuningParameter.FrontBrakeBias: return tuning.controls.frontBrakeBias;
-                case VehiclePhysicsLabTuningParameter.SuspensionSpringRate: return tuning.tires.springRate;
-                case VehiclePhysicsLabTuningParameter.SuspensionDamperRate: return tuning.tires.damperRate;
-                case VehiclePhysicsLabTuningParameter.SuspensionTravel: return tuning.tires.suspensionTravel;
-                case VehiclePhysicsLabTuningParameter.DragCoefficient: return tuning.aero.dragCoefficient;
-                case VehiclePhysicsLabTuningParameter.DownforceCoefficient: return tuning.aero.downforceCoefficient;
+                case VehiclePhysicsLabTuningParameter.SuspensionSpringRate: return tuning.mostWanted.springStiffness.x;
+                case VehiclePhysicsLabTuningParameter.SuspensionDamperRate: return tuning.mostWanted.shockStiffness.x;
+                case VehiclePhysicsLabTuningParameter.SuspensionTravel: return tuning.mostWanted.travel.x;
+                case VehiclePhysicsLabTuningParameter.DragCoefficient: return tuning.mostWanted.dragCoefficient;
+                case VehiclePhysicsLabTuningParameter.DownforceCoefficient: return tuning.mostWanted.aeroCoefficient;
                 case VehiclePhysicsLabTuningParameter.MaxSteerAngle: return tuning.controls.maxSteerAngle;
                 case VehiclePhysicsLabTuningParameter.SteeringResponse: return tuning.controls.steeringResponse;
                 case VehiclePhysicsLabTuningParameter.ThrottleResponse: return tuning.controls.throttleResponse;
                 case VehiclePhysicsLabTuningParameter.BrakeResponse: return tuning.controls.brakeResponse;
                 case VehiclePhysicsLabTuningParameter.HighSpeedSteerScale: return tuning.controls.highSpeedSteerScale;
-                case VehiclePhysicsLabTuningParameter.DriftBias: return tuning.handling.driftBias;
-                case VehiclePhysicsLabTuningParameter.DriftYawGain: return tuning.handling.yawGain;
-                case VehiclePhysicsLabTuningParameter.DriftMaximumYawTorque: return tuning.handling.maximumYawTorque;
-                case VehiclePhysicsLabTuningParameter.StabilityStrength: return tuning.assists.stabilityStrength;
+                case VehiclePhysicsLabTuningParameter.DriftBias:
+                case VehiclePhysicsLabTuningParameter.DriftYawGain:
+                case VehiclePhysicsLabTuningParameter.DriftMaximumYawTorque:
+                case VehiclePhysicsLabTuningParameter.StabilityStrength: return 0f;
                 case VehiclePhysicsLabTuningParameter.WheelRadius: return tuning.tires.wheelRadius;
                 case VehiclePhysicsLabTuningParameter.WheelLateralOffset: return tuning.tires.wheelLateralOffset;
-                case VehiclePhysicsLabTuningParameter.SuspensionRestLength: return tuning.tires.suspensionRestLength;
+                case VehiclePhysicsLabTuningParameter.SuspensionRestLength: return tuning.mostWanted.rideHeight.x;
                 default: throw new ArgumentOutOfRangeException(nameof(parameter), parameter, null);
             }
         }
@@ -825,34 +825,37 @@ namespace NfsMwRemaster.Driving
                 case VehiclePhysicsLabTuningParameter.EngineInertia: return Assign(value, 0.01f, 100f, v => tuning.engine.engineInertia = v);
                 case VehiclePhysicsLabTuningParameter.FinalDrive: return Assign(value, 0.1f, 20f, v => tuning.engine.finalDrive = v);
                 case VehiclePhysicsLabTuningParameter.ShiftDuration: return Assign(value, 0f, 5f, v => tuning.engine.shiftDuration = v);
-                case VehiclePhysicsLabTuningParameter.NitrousTorque: return Assign(value, 0f, 10000f, v => tuning.engine.nitrousTorque = v);
+                case VehiclePhysicsLabTuningParameter.NitrousTorque: return Assign(value, 0f, 10000f, v => { tuning.engine.nitrousTorque = v; tuning.mostWanted.nitrousTorqueBoost = v / Mathf.Max(1f, tuning.engine.maxTorqueNewtonMeters); });
                 case VehiclePhysicsLabTuningParameter.NitrousFuelSeconds: return Assign(value, 0f, 120f, v => tuning.engine.nitrousFuelSeconds = v);
-                case VehiclePhysicsLabTuningParameter.LongitudinalGrip: return Assign(value, 0f, 10f, v => tuning.tires.longitudinalGrip = v);
-                case VehiclePhysicsLabTuningParameter.LateralGrip: return Assign(value, 0f, 10f, v => tuning.tires.lateralGrip = v);
-                case VehiclePhysicsLabTuningParameter.PeakSlip: return Assign(value, 0.001f, 2f, v => { tuning.tires.peakLongitudinalSlip = v; tuning.tires.peakLateralSlipRadians = v; });
-                case VehiclePhysicsLabTuningParameter.RollingResistance: return Assign(value, 0f, 1f, v => tuning.tires.rollingResistance = v);
-                case VehiclePhysicsLabTuningParameter.ServiceBrakeTorque: return Assign(value, 0f, 100000f, v => { tuning.controls.serviceBrakeTorque = v; tuning.controls.handbrakeTorque = v; });
-                case VehiclePhysicsLabTuningParameter.FrontBrakeBias: return Assign(value, 0f, 1f, v => tuning.controls.frontBrakeBias = v);
-                case VehiclePhysicsLabTuningParameter.SuspensionSpringRate: return Assign(value, 0f, 1000000f, v => tuning.tires.springRate = v);
-                case VehiclePhysicsLabTuningParameter.SuspensionDamperRate: return Assign(value, 0f, 100000f, v => tuning.tires.damperRate = v);
-                case VehiclePhysicsLabTuningParameter.SuspensionTravel: return Assign(value, 0f, 5f, v => tuning.tires.suspensionTravel = v);
-                case VehiclePhysicsLabTuningParameter.DragCoefficient: return Assign(value, 0f, 10f, v => tuning.aero.dragCoefficient = v);
-                case VehiclePhysicsLabTuningParameter.DownforceCoefficient: return Assign(value, 0f, 100f, v => tuning.aero.downforceCoefficient = v);
+                case VehiclePhysicsLabTuningParameter.LongitudinalGrip: return Assign(value, 0f, 10f, v => { tuning.tires.longitudinalGrip = v; tuning.mostWanted.dynamicGrip = WithFront(tuning.mostWanted.dynamicGrip, v); });
+                case VehiclePhysicsLabTuningParameter.LateralGrip: return Assign(value, 0f, 10f, v => { tuning.tires.lateralGrip = v; tuning.mostWanted.gripScale = WithFront(tuning.mostWanted.gripScale, v); });
+                case VehiclePhysicsLabTuningParameter.PeakSlip: return Assign(value, 0.001f, 2f, v => { tuning.mostWanted.staticGrip = new Vector2(v, v); });
+                case VehiclePhysicsLabTuningParameter.RollingResistance: return false;
+                case VehiclePhysicsLabTuningParameter.ServiceBrakeTorque: return Assign(value, 0f, 100000f, v => { tuning.controls.serviceBrakeTorque = v; tuning.mostWanted.brakeTorque = new Vector2(v * tuning.controls.frontBrakeBias, v * (1f - tuning.controls.frontBrakeBias)) / 4f; });
+                case VehiclePhysicsLabTuningParameter.FrontBrakeBias: return Assign(value, 0f, 1f, v => { tuning.controls.frontBrakeBias = v; float total = tuning.mostWanted.brakeTorque.x + tuning.mostWanted.brakeTorque.y; tuning.mostWanted.brakeTorque = new Vector2(total * v, total * (1f - v)); });
+                case VehiclePhysicsLabTuningParameter.SuspensionSpringRate: return Assign(value, 0f, 1000000f, v => { tuning.tires.springRate = v; tuning.mostWanted.springStiffness = WithFront(tuning.mostWanted.springStiffness, v); });
+                case VehiclePhysicsLabTuningParameter.SuspensionDamperRate: return Assign(value, 0f, 100000f, v => { tuning.tires.damperRate = v; float scale = tuning.mostWanted.shockStiffness.x > 0f ? v / tuning.mostWanted.shockStiffness.x : 1f; tuning.mostWanted.shockExtensionStiffness *= scale; tuning.mostWanted.shockStiffness = WithFront(tuning.mostWanted.shockStiffness, v); });
+                case VehiclePhysicsLabTuningParameter.SuspensionTravel: return Assign(value, 0f, 5f, v => { tuning.tires.suspensionTravel = v; tuning.mostWanted.travel = WithFront(tuning.mostWanted.travel, v); });
+                case VehiclePhysicsLabTuningParameter.DragCoefficient: return Assign(value, 0f, 10f, v => { tuning.aero.dragCoefficient = v; tuning.mostWanted.dragCoefficient = v; });
+                case VehiclePhysicsLabTuningParameter.DownforceCoefficient: return Assign(value, 0f, 100f, v => { tuning.aero.downforceCoefficient = v; tuning.mostWanted.aeroCoefficient = v; tuning.mostWanted.linearDownforceCoefficient = v * 2000f; });
                 case VehiclePhysicsLabTuningParameter.MaxSteerAngle: return Assign(value, 1f, 60f, v => tuning.controls.maxSteerAngle = v);
                 case VehiclePhysicsLabTuningParameter.SteeringResponse: return Assign(value, 0.1f, 60f, v => tuning.controls.steeringResponse = v);
                 case VehiclePhysicsLabTuningParameter.ThrottleResponse: return Assign(value, 0.1f, 60f, v => tuning.controls.throttleResponse = v);
                 case VehiclePhysicsLabTuningParameter.BrakeResponse: return Assign(value, 0.1f, 60f, v => tuning.controls.brakeResponse = v);
                 case VehiclePhysicsLabTuningParameter.HighSpeedSteerScale: return Assign(value, 0.1f, 1f, v => tuning.controls.highSpeedSteerScale = v);
-                case VehiclePhysicsLabTuningParameter.DriftBias: return Assign(value, 0f, 1f, v => tuning.handling.driftBias = v);
-                case VehiclePhysicsLabTuningParameter.DriftYawGain: return Assign(value, 0f, 100000f, v => tuning.handling.yawGain = v);
-                case VehiclePhysicsLabTuningParameter.DriftMaximumYawTorque: return Assign(value, 0f, 100000f, v => tuning.handling.maximumYawTorque = v);
-                case VehiclePhysicsLabTuningParameter.StabilityStrength: return Assign(value, 0f, 1f, v => tuning.assists.stabilityStrength = v);
+                case VehiclePhysicsLabTuningParameter.DriftBias:
+                case VehiclePhysicsLabTuningParameter.DriftYawGain:
+                case VehiclePhysicsLabTuningParameter.DriftMaximumYawTorque:
+                case VehiclePhysicsLabTuningParameter.StabilityStrength: return false;
                 case VehiclePhysicsLabTuningParameter.WheelRadius: return Assign(value, 0.05f, 5f, v => tuning.tires.wheelRadius = v);
-                case VehiclePhysicsLabTuningParameter.WheelLateralOffset: return Assign(value, 0f, 5f, v => tuning.tires.wheelLateralOffset = v);
-                case VehiclePhysicsLabTuningParameter.SuspensionRestLength: return Assign(value, 0.05f, 5f, v => tuning.tires.suspensionRestLength = v);
+                case VehiclePhysicsLabTuningParameter.WheelLateralOffset: return Assign(value, 0f, 5f, v => { tuning.mostWanted.trackWidth += Vector2.one * (2f * (v - tuning.tires.wheelLateralOffset)); tuning.tires.wheelLateralOffset = v; });
+                case VehiclePhysicsLabTuningParameter.SuspensionRestLength: return Assign(value, 0.05f, 5f, v => { tuning.tires.suspensionRestLength = v; tuning.mostWanted.rideHeight = WithFront(tuning.mostWanted.rideHeight, v); });
                 default: throw new ArgumentOutOfRangeException(nameof(parameter), parameter, null);
             }
         }
+
+        private static Vector2 WithFront(Vector2 pair, float front)
+            => new Vector2(front, pair.x > 0f ? pair.y * front / pair.x : front);
 
         private static bool Assign(float value, float minimum, float maximum, Action<float> assign)
         {

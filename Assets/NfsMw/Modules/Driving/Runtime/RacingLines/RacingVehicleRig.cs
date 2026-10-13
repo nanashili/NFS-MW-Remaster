@@ -11,7 +11,6 @@ namespace NfsMwRemaster.Driving
         public VehicleController Vehicle { get; private set; }
         public RacingSimulationInput Input { get; private set; }
         public BoxCollider Chassis { get; private set; }
-        public VehicleAssists Assists { get; private set; }
         public Rigidbody Body => Vehicle.Body;
         private RacingTuningLease tuning;
 
@@ -62,7 +61,7 @@ namespace NfsMwRemaster.Driving
                 Input = Root.AddComponent<RacingSimulationInput>();
                 Vehicle.SetManualSimulation(manual);
                 Vehicle.ConfigureForRuntime(tuning.Value, Input, Root.GetComponentsInChildren<VehicleWheel>(true));
-                Chassis = Root.GetComponentInChildren<BoxCollider>(); Assists = Root.GetComponent<VehicleAssists>();
+                Chassis = Root.GetComponentInChildren<BoxCollider>();
                 Body.interpolation = RigidbodyInterpolation.None;
                 Root.SetActive(true);
             }
@@ -72,7 +71,7 @@ namespace NfsMwRemaster.Driving
         public static void ValidatePrefab(VehicleController prefab, Vector3 dimensions)
         {
             if (!prefab.HasLocalPhysicsBindings)
-                throw new ArgumentException("LINE_PREFAB_BINDINGS: powertrain, assists, nitrous and module-host references must belong to the fixture chassis.");
+                throw new ArgumentException("LINE_PREFAB_BINDINGS: powertrain, nitrous and module-host references must belong to the fixture chassis.");
             var host = prefab.GetComponent<VehicleModuleHost>();
             var body = prefab.GetComponent<Rigidbody>();
             if (!prefab.enabled || body == null || body.isKinematic || !body.useGravity || !body.automaticInertiaTensor || body.constraints != RigidbodyConstraints.None)
@@ -87,7 +86,7 @@ namespace NfsMwRemaster.Driving
                 if (component == null) throw new ArgumentException("LINE_PREFAB: missing script.");
                 var t = component.GetType();
                 if (t != typeof(Transform) && t != typeof(Rigidbody) && t != typeof(BoxCollider) && t != typeof(VehicleController)
-                    && t != typeof(VehiclePowertrain) && t != typeof(VehicleAssists) && t != typeof(VehicleModuleHost)
+                    && t != typeof(VehiclePowertrain) && t != typeof(VehicleModuleHost)
                     && t != typeof(VehicleWheel) && t != typeof(VehicleNitrous) && t != typeof(MeshFilter) && t != typeof(MeshRenderer))
                     throw new ArgumentException("LINE_PREFAB_SCRIPT: unsupported component " + t.Name + ". Supply a physics-only prefab, not a player/career root.");
             }

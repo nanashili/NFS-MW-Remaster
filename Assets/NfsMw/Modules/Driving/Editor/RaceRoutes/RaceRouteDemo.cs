@@ -26,7 +26,7 @@ namespace NfsMwRemaster.Driving.Editor
         {
             const string folder="Assets/NfsMw/Modules/Driving/Examples/RaceRoutes";
             void Save(UnityEngine.Object asset,string file)=>AssetDatabase.CreateAsset(asset,AssetDatabase.GenerateUniqueAssetPath(folder+"/"+file+".asset"));
-            var setup=ScriptableObject.CreateInstance<RacingVehicleSetup>();setup.tuning=VehicleTuning.CreateStreetRacer();setup.tuning.handling.brakeToDrift=false;
+            var setup=ScriptableObject.CreateInstance<RacingVehicleSetup>();setup.tuning=VehicleTuning.CreateStreetRacer();
             Save(setup.tuning,"SprintTune");Save(setup,"SprintVehicle");source.vehicle=setup;
             var line=ScriptableObject.CreateInstance<RacingLineSource>();line.vehicle=setup;
             line.route=RaceRouteCommands.ExportLineRoute(source,null,folder+"/SprintLineRoute.asset");

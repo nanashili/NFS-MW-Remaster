@@ -2,10 +2,16 @@ using UnityEngine;
 
 namespace NfsMwRemaster.Driving
 {
-    public sealed class FreeRoamVehicleInput : MonoBehaviour, IVehicleInputSource
+    public sealed class FreeRoamVehicleInput : MonoBehaviour, IVehicleInputSource, IVehicleDiscreteInputSource, IVehicleInputControlPolicy
     {
         [SerializeField] private PlayerVehicleInput player;
         [SerializeField] private FreeRoamSession session;
+        public bool ApplyPlayerControls => session != null && session.CanDrive && player != null;
+        public VehicleInputState ConsumeDiscreteActions()
+        {
+            var actions = player != null ? player.ConsumeDiscreteActions() : VehicleInputState.Neutral;
+            return ApplyPlayerControls ? actions : VehicleInputState.Neutral;
+        }
         public VehicleInputState Current => session != null && session.CanDrive && player != null
             ? player.Current : new VehicleInputState { Brake = 1, Handbrake = true };
         public bool ConsumeResetRequest() { if (player != null) player.ConsumeResetRequest(); return false; }

@@ -5,8 +5,9 @@ namespace NfsMwRemaster.Driving
 {
     [DefaultExecutionOrder(-110)]
     [RequireComponent(typeof(VehicleController))]
-    public sealed class RacingLineInput : MonoBehaviour, IVehicleInputSource
+    public sealed class RacingLineInput : MonoBehaviour, IVehicleInputSource, IVehicleInputControlPolicy
     {
+        public bool ApplyPlayerControls => false;
         public RacingLineSource source;
         [Range(0, 1)] public float pacing = 1;
         private VehicleController vehicle;

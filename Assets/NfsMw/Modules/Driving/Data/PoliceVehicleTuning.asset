@@ -92,10 +92,6 @@ MonoBehaviour:
     longitudinalGrip: 1.16
     lateralGrip: 1.22
     handbrakeRearGrip: 0.3
-    peakLongitudinalSlip: 0.105
-    peakLateralSlipRadians: 0.115
-    postPeakGrip: 0.78
-    rollingResistance: 0.014
   controls:
     maxSteerAngle: 31
     highSpeedSteerScale: 0.38
@@ -108,24 +104,6 @@ MonoBehaviour:
     serviceBrakeTorque: 5200
     handbrakeTorque: 6200
     frontBrakeBias: 0.64
-  assists:
-    tractionControl: 0
-    tractionSlipLimit: 0.16
-    abs: 0
-    absSlipLimit: 0.19
-    stabilityControl: 0
-    stabilityStrength: 0.42
-    driftYawStrength: 0.35
-    driftSpeedKph: 25
-    countersteering: 0
-    countersteeringStrength: 0
-  handling:
-    brakeToDrift: 0
-    driftBias: 0
-    minimumSpeedKph: 30
-    retriggerSeconds: 0.7
-    maximumYawTorque: 2400
-    yawGain: 1800
   aero:
     airDensity: 1.225
     dragCoefficient: 0.32
@@ -138,9 +116,42 @@ MonoBehaviour:
   awdFrontTorqueBias: 0.5
   differentialPreload: 0
   differentialLockStrength: 0
-  speedGovernor: 0
-  simulationModel: 1
   mostWanted:
+    shockDigression: {x: 0.2, y: 0.2}
+    springProgression: {x: 7.5, y: 7.5}
+    travel: {x: 0.2032, y: 0.2032}
+    rideHeight: {x: 0.1524, y: 0.1524}
+    trackWidth: {x: 1.608, y: 1.603}
+    shockExtensionStiffness: {x: 13134.51, y: 13484.764}
+    shockStiffness: {x: 10507.608, y: 8756.34}
+    springStiffness: {x: 113832.42, y: 105076.08}
+    shockValving: {x: 0.508, y: 0.508}
+    swaybarStiffness: {x: 35025.36, y: 35025.36}
+    rollCenter: 0.2286
+    wheelBase: 2.73
+    shockBlowout: 5
+    aeroCenterOfGravity: 47.75
+    renderMotion: 1
+    frontAxle: 1.43
+    aeroCoefficient: 0.3
+    frontWeightBias: 54
+    dragCoefficient: 0.32
+    yawControl: {x: 0.3, y: 0.65, z: 1, w: 1.2}
+    gripScale: {x: 1.175, y: 1.225}
+    dynamicGrip: {x: 2, y: 2}
+    staticGrip: {x: 2.2, y: 2.3}
+    rimSizeInches: {x: 19, y: 19}
+    sectionWidth: {x: 255, y: 255}
+    aspectRatio: {x: 40, y: 40}
+    steering: 0.9
+    yawSpeed: 0.25
+    brakeLock: {x: 1, y: 3}
+    brakeTorque: {x: 644.005, y: 813.48004}
+    handbrake: 1254.115
+    differential: {x: 0.8, y: 0.8, z: 0}
+    torqueConverter: 0.3
+    clutchSlip: 0.8
+    optimalShift: 500
     torqueTableMaximumRpm: 8018.182
     normalizedTorque:
     - 0.36402568
@@ -156,6 +167,7 @@ MonoBehaviour:
     - 0.7
     - 0.8
     - 0.9
+    speedLimiterMph: []
     gearEfficiency:
     - 0.88
     - 0.88
@@ -170,16 +182,18 @@ MonoBehaviour:
     inductionHighBoost: 0
     inductionVacuum: 0
     inductionSpoolDownSeconds: 1
+    inductionPsi: 0
     nitrousTorqueBoost: 0.46341464
     nitrousDisengageSeconds: 2
     nitrousRechargeMinimumKph: 80.4654
     nitrousRechargeMaximumKph: 160.9308
     nitrousRechargeMinimumSeconds: 50
     nitrousRechargeMaximumSeconds: 30
+    nitrousFlowRate: 3
     steeringCoefficient: 0.9
     steeringTuning: 0
     useSteeringTables: 0
-    linearDownforceCoefficient: 23.611113
+    linearDownforceCoefficient: 0
     rearWheelRadiusScale: 1
     rearSpringScale: 1
     rearDamperScale: 1

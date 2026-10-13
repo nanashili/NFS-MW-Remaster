@@ -107,7 +107,7 @@ namespace NfsMwRemaster.Driving.Tests
                     resolved = setup.CreateEffectiveTuning();
                     var estimate = VehicleTopSpeedEstimator.Estimate(resolved);
                     var result = new TopSpeedEvidence { vehicleId = id, configuredTargetKph = resolved.chassis.maxSpeedKph,
-                        governor = resolved.speedGovernor, engineeringEstimateKph = estimate.estimatedKph, gearingCeilingKph = estimate.gearingCeilingKph,
+                        governor = resolved.mostWanted.speedLimiterMph.Length >= 2, engineeringEstimateKph = estimate.estimatedKph, gearingCeilingKph = estimate.gearingCeilingKph,
                         observedPeakKph = samples.Max(s => s.speedKph), finalTenSecondsMeanKph = tail.Average(s => s.speedKph), finalTenSecondsRangeKph = range,
                         steadyFullThrottle = tail.Last().time - tail.First().time >= 9.8f && range <= 1f
                             && tail.All(s => s.finalInput.Throttle >= .99f && s.finalInput.Brake == 0 && !s.nitrousActive && s.groundedWheels == 4),

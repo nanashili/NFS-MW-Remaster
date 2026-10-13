@@ -5,8 +5,9 @@ namespace NfsMwRemaster.Driving
     // Scene-compatible adapter: decisions belong to TrafficSimulation; tires and contacts belong to VehicleController.
     [DefaultExecutionOrder(-100)]
     [RequireComponent(typeof(Rigidbody))]
-    public sealed class RoadVehicleMotor : MonoBehaviour, IVehicleInputSource
+    public sealed class RoadVehicleMotor : MonoBehaviour, IVehicleInputSource, IVehicleInputControlPolicy
     {
+        public bool ApplyPlayerControls => false;
         [SerializeField] private RoadNetwork network;
         [SerializeField] private TrafficVehicleProfile vehicleProfile;
         [SerializeField] private int driverSeed = 7919;

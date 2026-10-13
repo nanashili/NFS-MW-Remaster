@@ -13838,7 +13838,6 @@ GameObject:
   - component: {fileID: 1685628255}
   - component: {fileID: 1685628254}
   - component: {fileID: 1685628253}
-  - component: {fileID: 1685628252}
   - component: {fileID: 1685628251}
   - component: {fileID: 1685628250}
   - component: {fileID: 1685628249}
@@ -14123,7 +14122,6 @@ MonoBehaviour:
   stockTuning: {fileID: 11400000, guid: 0325cc43c5e8f4a709e7571e2a2e420b, type: 2}
   inputSourceComponent: {fileID: 1685628260}
   powertrain: {fileID: 1685628253}
-  assists: {fileID: 1685628252}
   nitrous: {fileID: 1685628251}
   wheels:
   - {fileID: 901347336}
@@ -14201,18 +14199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbe19c55d25a4f7393158279b746fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleNitrous
---- !u!114 &1685628252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685628231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0728259e87b894eeda13177aaf2555d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: NfsMwRemaster.Driving::NfsMwRemaster.Driving.VehicleAssists
 --- !u!114 &1685628253
 MonoBehaviour:
   m_ObjectHideFlags: 0

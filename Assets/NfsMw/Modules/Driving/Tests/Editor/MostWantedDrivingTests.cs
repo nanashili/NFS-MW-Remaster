@@ -21,7 +21,6 @@ namespace NfsMwRemaster.Driving.Tests
         private VehicleTuning Reference()
         {
             var tuning = Own(VehicleTuning.CreateStreetRacer());
-            tuning.simulationModel = VehicleSimulationModel.MostWantedReference;
             tuning.driveLayout = VehicleDriveLayout.Rwd;
             tuning.engine.idleRpm = 800; tuning.engine.redlineRpm = 8500;
             tuning.engine.maxTorqueNewtonMeters = 467f * 1.3558f;
@@ -58,27 +57,6 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(MostWantedVehicleMath.Torque(tuning, 8500), Is.EqualTo(expected).Within(.002f));
             Assert.That(MostWantedVehicleMath.Torque(tuning, 9500), Is.EqualTo(expected).Within(.002f));
             Assert.That(MostWantedVehicleMath.Torque(tuning, 0), Is.EqualTo(170f * 1.3558f).Within(.002f));
-        }
-
-        [Test]
-        public void ReferenceDoesNotMultiplyLegacyEnvelopeOrAnimationCurve()
-        {
-            var tuning = Reference(); tuning.engine.torqueCurve = AnimationCurve.Constant(0, 1, 0);
-            Assert.That(VehicleMath.EvaluateEngineTorque(tuning, 5150), Is.EqualTo(467f * 1.3558f).Within(.001f));
-            tuning.simulationModel = VehicleSimulationModel.Authored;
-            Assert.That(VehicleMath.EvaluateEngineTorque(tuning, 5150), Is.EqualTo(0));
-        }
-
-        [Test]
-        public void AuthoredTorqueOverloadPreservesPreviousTwoCurveCalculation()
-        {
-            var tuning = Own(VehicleTuning.CreateStreetRacer()); var e = tuning.engine;
-            foreach (float rpm in new[] { 900f, 2000f, 4200f, 6000f, 7200f })
-            {
-                float expected = VehicleMath.EvaluateEngineTorque(rpm, e.idleRpm, e.redlineRpm, e.peakTorqueRpm, e.maxTorqueNewtonMeters)
-                    * e.torqueCurve.Evaluate(Mathf.InverseLerp(e.idleRpm, e.redlineRpm, rpm));
-                Assert.That(VehicleMath.EvaluateEngineTorque(tuning, rpm), Is.EqualTo(expected));
-            }
         }
 
         [Test]
@@ -178,41 +156,45 @@ namespace NfsMwRemaster.Driving.Tests
         [Test]
         public void SteeringUsesMetersPerSecondAndReverseUsesLowSpeedEnd()
         {
-            Assert.That(MostWantedSteeringModel.BaseRangeDegrees(0), Is.EqualTo(40f));
-            Assert.That(MostWantedSteeringModel.BaseRangeDegrees(160f / 9f), Is.EqualTo(20f).Within(.00001f));
-            Assert.That(MostWantedSteeringModel.BaseRangeDegrees(-20f), Is.EqualTo(40f));
-            Assert.That(MostWantedSteeringModel.BaseRangeDegrees(160f), Is.EqualTo(2.9f));
-            Assert.That(MostWantedSteeringModel.BaseRangeDegrees(100f / 3.6f), Is.GreaterThan(MostWantedSteeringModel.BaseRangeDegrees(100f)));
+            Assert.That(MostWantedChassis.BaseRangeDegrees(0), Is.EqualTo(40f));
+            Assert.That(MostWantedChassis.BaseRangeDegrees(160f / 9f), Is.EqualTo(20f).Within(.00001f));
+            Assert.That(MostWantedChassis.BaseRangeDegrees(-20f), Is.EqualTo(40f));
+            Assert.That(MostWantedChassis.BaseRangeDegrees(160f), Is.EqualTo(2.9f));
+            Assert.That(MostWantedChassis.BaseRangeDegrees(100f / 3.6f), Is.GreaterThan(MostWantedChassis.BaseRangeDegrees(100f)));
         }
 
         [Test]
         public void SteeringIsSymmetricRateLimitedAndResettable()
         {
             var settings = Reference().mostWanted;
-            var right = new MostWantedSteeringModel(); var left = new MostWantedSteeringModel();
-            float initial = right.Step(settings, new VehicleInputState { Steering = 1, Throttle = 1 }, 0, 0, .02f);
+            var right = new MostWantedChassis(); var left = new MostWantedChassis();
+            var frame = new MostWantedChassis.Frame(new VehicleInputState { Steering = 1, Throttle = 1 }, .02f, 0f, 0f, 0f, 4);
+            float initial = right.Step(frame, Reference(), 0, 0).SteeringDegrees;
             Assert.That(initial, Is.GreaterThan(0).And.LessThan(40f));
             right.Reset();
             for (int i = 0; i < 100; i++)
             {
-                float a = right.Step(settings, new VehicleInputState { Steering = .8f, Throttle = 1 }, 40f, 0, .02f);
-                float b = left.Step(settings, new VehicleInputState { Steering = -.8f, Throttle = 1 }, 40f, 0, .02f);
+                var fr = new MostWantedChassis.Frame(new VehicleInputState { Steering = .8f, Throttle = 1 }, .02f, 40f, 0f, 0f, 4);
+                var fl = new MostWantedChassis.Frame(new VehicleInputState { Steering = -.8f, Throttle = 1 }, .02f, 40f, 0f, 0f, 4);
+                float a = right.Step(fr, Reference()).SteeringDegrees;
+                float b = left.Step(fl, Reference()).SteeringDegrees;
                 Assert.That(a, Is.EqualTo(-b).Within(.00001f));
                 Assert.That(Mathf.Abs(a), Is.LessThanOrEqualTo(45));
             }
             right.Reset();
-            Assert.That(right.Step(settings, new VehicleInputState { Steering = 1, Throttle = 1 }, 0, 0, .02f), Is.EqualTo(initial));
+            Assert.That(right.Step(frame, Reference()).SteeringDegrees, Is.EqualTo(initial));
         }
 
         [Test]
         public void HeldPartialSteeringDoesNotRetriggerFullInputSpeedEveryTick()
         {
             var settings = Reference().mostWanted;
-            var steering = new MostWantedSteeringModel();
+            var steering = new MostWantedChassis();
             var input = new VehicleInputState { Steering = .4f, Throttle = 1f };
             const float dt = .005f;
-            float first = steering.Step(settings, input, 0f, 0f, dt);
-            float second = steering.Step(settings, input, 0f, 0f, dt);
+            var frame = new MostWantedChassis.Frame(input, dt, 0f, 0f, 0f, 4);
+            float first = steering.Step(frame, Reference()).SteeringDegrees;
+            float second = steering.Step(frame, Reference()).SteeringDegrees;
             float firstDelta = Mathf.Abs(first);
             float secondDelta = Mathf.Abs(second - first);
             Assert.That(firstDelta, Is.GreaterThan(0f));
@@ -245,39 +227,33 @@ namespace NfsMwRemaster.Driving.Tests
             var tuning = Reference(); tuning.transmissionMode = VehicleTransmissionMode.Manual;
             var engine = Own(new GameObject("Reference engine test")).AddComponent<VehiclePowertrain>();
             engine.Configure(tuning, Array.Empty<VehicleWheel>());
-            Assert.That(engine.Simulate(float.NaN, 0, 1, false, false).WheelTorque, Is.EqualTo(0));
+            Assert.That(engine.Simulate(float.NaN, 0, 1, false).WheelTorque, Is.EqualTo(0));
             engine.SetIgnition(false);
-            Assert.That(engine.Simulate(.02f, 0, 1, false, true).WheelTorque, Is.EqualTo(0));
+            Assert.That(engine.Simulate(.02f, 0, 1, true).WheelTorque, Is.EqualTo(0));
             engine.SetIgnition(true); engine.SetManualRequests(false, false, true);
-            var result = engine.Simulate(.02f, 0, .5f, false, true);
+            var result = engine.Simulate(.02f, 0, .5f, true);
             Assert.That(result.Gear, Is.EqualTo(0)); Assert.That(result.WheelTorque, Is.EqualTo(0));
             Assert.That(result.EngineRpm, Is.GreaterThan(tuning.engine.idleRpm));
         }
 
         [Test]
-        public void AutomaticDirectionChangeWaitsForDrivenWheelSpinAndDoesNotPowerOldGear()
+        public void SourceDirectionChangeUsesVehicleSpeedEvenWhenDrivenWheelsSpinOpposite()
         {
             var tuning = Reference();
             tuning.transmissionMode = VehicleTransmissionMode.Automatic;
             var wheel = Own(new GameObject("Reference direction wheel")).AddComponent<VehicleWheel>();
             wheel.Setup(VehicleAxle.Rear, false, true, true, null);
+            wheel.Configure(wheel.gameObject.AddComponent<Rigidbody>(), tuning);
             var engine = Own(new GameObject("Reference direction engine")).AddComponent<VehiclePowertrain>();
             engine.Configure(tuning, new[] { wheel });
 
             wheel.SetInitialForwardSpeed(10f);
-            var blockedReverse = engine.Simulate(.02f, 0f, 1f, true, false);
-            Assert.That(blockedReverse.Gear, Is.EqualTo(1));
-            Assert.That(blockedReverse.EngineTorque, Is.LessThanOrEqualTo(0f),
-                "A pending reverse request must not keep driving first gear while the wheel is still spinning forward.");
-
-            wheel.SetInitialForwardSpeed(0f);
-            Assert.That(engine.Simulate(.02f, 0f, 1f, true, false).Gear, Is.EqualTo(-1));
+            var input = engine.ApplyDriverPedals(new VehicleInputState { Brake = 1f }, 0f);
+            Assert.That(engine.Simulate(.02f, 0f, input.Throttle, false).Gear, Is.EqualTo(-1));
 
             wheel.SetInitialForwardSpeed(-10f);
-            var blockedForward = engine.Simulate(.02f, 0f, 1f, false, false);
-            Assert.That(blockedForward.Gear, Is.EqualTo(-1));
-            Assert.That(blockedForward.EngineTorque, Is.LessThanOrEqualTo(0f),
-                "A pending forward request must not power reverse while the wheel is still spinning backward.");
+            input = engine.ApplyDriverPedals(new VehicleInputState { Throttle = 1f }, 0f);
+            Assert.That(engine.Simulate(.02f, 0f, input.Throttle, false).Gear, Is.EqualTo(1));
         }
 
         private T Own<T>(T value) where T : Object { owned.Add(value); return value; }

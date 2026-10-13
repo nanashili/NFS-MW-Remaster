@@ -203,15 +203,10 @@ namespace NfsMwRemaster.Driving
         public static void ValidateTuning(VehicleTuning tuning)
         {
             if (tuning == null || tuning.chassis == null || tuning.engine == null || tuning.tires == null || tuning.controls == null
-                || tuning.assists == null || tuning.handling == null || tuning.aero == null)
+                || tuning.mostWanted == null || tuning.aero == null)
                 throw new ArgumentException("LINE_TUNING: every shared tuning section must exist.");
             // Data-only settings have primitive fields; validate all floats, including newly added settings, before physics sees them.
-            if (!Enum.IsDefined(typeof(VehicleSimulationModel), tuning.simulationModel))
-                throw new ArgumentException("LINE_TUNING: unknown vehicle simulation model.");
-            if (tuning.UsesMostWantedReference && tuning.mostWanted == null)
-                throw new ArgumentException("MW_TUNING: reference settings are missing.");
-            var sections = new List<object> { tuning.chassis, tuning.engine, tuning.tires, tuning.controls, tuning.assists, tuning.handling, tuning.aero };
-            if (tuning.UsesMostWantedReference) sections.Add(tuning.mostWanted);
+            var sections = new List<object> { tuning.chassis, tuning.engine, tuning.tires, tuning.controls, tuning.aero, tuning.mostWanted };
             foreach (var section in sections)
                 foreach (var field in section.GetType().GetFields())
                 {
@@ -231,7 +226,7 @@ namespace NfsMwRemaster.Driving
                 || tuning.tires.suspensionRestLength < 0.05f || tuning.tires.wheelMass <= 0 || tuning.tires.springRate <= 0
                 || tuning.controls.maxSteerAngle <= 0 || tuning.controls.serviceBrakeTorque <= 0)
                 throw new ArgumentException("LINE_TUNING: invalid mass, gears, wheel, suspension or control dimensions.");
-            if (tuning.UsesMostWantedReference) tuning.mostWanted.Validate(tuning);
+            tuning.mostWanted.Validate(tuning);
         }
         public static void ValidateVerification(RacingVerificationSettings v)
         {

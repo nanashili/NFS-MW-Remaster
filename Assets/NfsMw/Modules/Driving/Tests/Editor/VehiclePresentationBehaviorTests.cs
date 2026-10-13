@@ -9,6 +9,7 @@ namespace NfsMwRemaster.Driving.Tests
         public void BrakeStateEnablesLampAndEmissiveOutput()
         {
             GameObject root = new GameObject("presentation");
+            var tuning = VehicleTuning.CreateStreetRacer();
             try
             {
                 GameObject lampObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
@@ -47,13 +48,14 @@ namespace NfsMwRemaster.Driving.Tests
                 Assert.That(light.enabled, Is.False);
                 Assert.That(block.GetColor("_EmissiveColor").maxColorComponent, Is.EqualTo(0));
             }
-            finally { Object.DestroyImmediate(root); }
+            finally { Object.DestroyImmediate(root); Object.DestroyImmediate(tuning); }
         }
 
         [Test]
         public void SteeringUsesAuthoredNeutralAndAxis()
         {
             GameObject root = new GameObject("presentation");
+            var tuning = VehicleTuning.CreateStreetRacer();
             try
             {
                 Transform wheel = new GameObject("steering").transform; wheel.SetParent(root.transform, false);
@@ -63,10 +65,10 @@ namespace NfsMwRemaster.Driving.Tests
                 var module = root.AddComponent<VehiclePresentationModule>();
                 var body = root.AddComponent<Rigidbody>();
                 var wheelObject = new GameObject("road-wheel"); wheelObject.transform.SetParent(root.transform, false);
-                var roadWheel = wheelObject.AddComponent<VehicleWheel>(); roadWheel.Setup(VehicleAxle.Front, true, false, false, null); roadWheel.Configure(body, null);
+                var roadWheel = wheelObject.AddComponent<VehicleWheel>(); roadWheel.Setup(VehicleAxle.Front, true, false, false, null); roadWheel.Configure(body, tuning);
                 var context = new VehicleModuleContext(null, body, null, new[] { roadWheel });
                 module.Initialize(context);
-                roadWheel.Simulate(.02f, new VehicleWheelCommand { SteerAngle = 28f });
+                roadWheel.Simulate(.02f, 28f, 0f);
                 module.Present(context, .02f);
                 float firstFrameAngle = 28f * (1f - Mathf.Exp(-.02f * 14f));
                 Quaternion firstFrame = bindings.steeringNeutral * Quaternion.AngleAxis(-firstFrameAngle, Vector3.up);
@@ -76,25 +78,26 @@ namespace NfsMwRemaster.Driving.Tests
                 Quaternion settled = bindings.steeringNeutral * Quaternion.AngleAxis(-28f, Vector3.up);
                 Assert.That(Quaternion.Angle(wheel.localRotation, settled), Is.LessThan(.01f));
             }
-            finally { Object.DestroyImmediate(root); }
+            finally { Object.DestroyImmediate(root); Object.DestroyImmediate(tuning); }
         }
 
         [Test]
         public void CaliperFollowsSteeringAndSuspensionWithoutWheelSpin()
         {
             GameObject root = new GameObject("presentation");
+            var tuning = VehicleTuning.CreateStreetRacer();
             try
             {
                 var body = root.AddComponent<Rigidbody>();
                 var wheelObject = new GameObject("wheel"); wheelObject.transform.SetParent(root.transform, false);
                 wheelObject.transform.rotation = Quaternion.Euler(0f, 30f, 0f);
-                var wheel = wheelObject.AddComponent<VehicleWheel>(); wheel.Setup(VehicleAxle.Front, true, false, false, null); wheel.Configure(body, null);
+                var wheel = wheelObject.AddComponent<VehicleWheel>(); wheel.Setup(VehicleAxle.Front, true, false, false, null); wheel.Configure(body, tuning);
                 var caliper = new GameObject("caliper").transform; caliper.SetParent(root.transform, false);
                 var bindings = root.AddComponent<VehiclePresentationBindings>();
                 bindings.wheels[0] = new VehicleWheelPresentationBinding { wheel = wheelObject.transform, caliper = caliper };
                 var module = root.AddComponent<VehiclePresentationModule>();
                 var context = new VehicleModuleContext(null, body, null, new[] { wheel }); module.Initialize(context);
-                wheel.Simulate(.02f, new VehicleWheelCommand { SteerAngle = 25f });
+                wheel.Simulate(.02f, 25f, 0f);
                 module.Present(context, .02f);
                 Vector3 expectedPosition = wheel.transform.position - wheel.transform.up * wheel.SuspensionLength;
                 Quaternion firstRotation = caliper.rotation;
@@ -102,7 +105,7 @@ namespace NfsMwRemaster.Driving.Tests
                 module.Present(context, .02f);
                 Assert.That(Quaternion.Angle(caliper.rotation, firstRotation), Is.LessThan(.01f));
             }
-            finally { Object.DestroyImmediate(root); }
+            finally { Object.DestroyImmediate(root); Object.DestroyImmediate(tuning); }
         }
     }
 }

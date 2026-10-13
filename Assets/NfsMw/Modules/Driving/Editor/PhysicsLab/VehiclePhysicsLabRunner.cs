@@ -391,6 +391,7 @@ namespace NfsMwRemaster.Driving.Editor
 
             VehicleInputState input = warming ? new VehicleInputState { Brake = 1f, Handbrake = true } : BuildInput(elapsed - definition.warmupSeconds);
             rig.Input.Current = input.Clamped();
+            rig.Input.ApplyPlayerControls = !warming;
             if (collisions != null) collisions.CurrentTime = elapsed;
 
             rig.Vehicle.StepSimulation(definition.fixedStep);

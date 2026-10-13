@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="189" result="Failed(Child)" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 22:00:24Z" end-time="2026-09-10 22:00:41Z" duration="16,9705809">
+  <test-suite type="TestSuite" id="1000" name="NFS MW Remaster" fullname="NFS MW Remaster" runstate="Runnable" testcasecount="1142" result="Failed" site="Child" start-time="2026-09-10 22:00:24Z" end-time="2026-09-10 22:00:41Z" duration="16.970581" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="2222" name="NfsMwRemaster.Driving.Tests.dll" fullname="/private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Library/ScriptAssemblies/NfsMwRemaster.Driving.Tests.dll" runstate="Runnable" testcasecount="890" result="Failed" site="Child" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:41Z" duration="16.922937" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0">
+      <properties>
+        <property name="_PID" value="24367" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="2223" name="NfsMwRemaster" fullname="NfsMwRemaster" runstate="Runnable" testcasecount="890" result="Failed" site="Child" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:41Z" duration="16.920332" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="2224" name="Driving" fullname="NfsMwRemaster.Driving" runstate="Runnable" testcasecount="890" result="Failed" site="Child" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:41Z" duration="16.918117" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="2225" name="Tests" fullname="NfsMwRemaster.Driving.Tests" runstate="Runnable" testcasecount="890" result="Failed" site="Child" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:41Z" duration="16.915652" total="189" passed="183" failed="5" inconclusive="0" skipped="1" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1523" name="MostWantedChassisTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" classname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.022011" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1525" name="AckermannKeepsInsideWheelAtRequestedAngle" fullname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests.AckermannKeepsInsideWheelAtRequestedAngle" methodname="AckermannKeepsInsideWheelAtRequestedAngle" classname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" runstate="Runnable" seed="285348046" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.011087" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1527" name="ChassisGripAndTractionUseSourceSpeedTables" fullname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests.ChassisGripAndTractionUseSourceSpeedTables" methodname="ChassisGripAndTractionUseSourceSpeedTables" classname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" runstate="Runnable" seed="1227684442" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.000394" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1524" name="SteeringRangeUsesRecoveredSpeedTable" fullname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests.SteeringRangeUsesRecoveredSpeedTable" methodname="SteeringRangeUsesRecoveredSpeedTable" classname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" runstate="Runnable" seed="506040079" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.000114" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1526" name="YawFrictionBoostIsCappedAtSourceBonus" fullname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests.YawFrictionBoostIsCappedAtSourceBonus" methodname="YawFrictionBoostIsCappedAtSourceBonus" classname="NfsMwRemaster.Driving.Tests.MostWantedChassisTests" runstate="Runnable" seed="2081054381" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.000117" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1528" name="MostWantedDrivingImporterTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="67" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:31Z" duration="6.244659" total="67" passed="67" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="Category" value="DrivingMechanicsOffline" />
+              </properties>
+              <test-case id="1544" name="AsymmetricTireFixtureDoesNotDiscardTheRearAxle" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.AsymmetricTireFixtureDoesNotDiscardTheRearAxle" methodname="AsymmetricTireFixtureDoesNotDiscardTheRearAxle" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="599989995" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.081112" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1534" name="BmwTorqueUsesIdleToMaximumDomainAndClampsAtRedline" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.BmwTorqueUsesIdleToMaximumDomainAndClampsAtRedline" methodname="BmwTorqueUsesIdleToMaximumDomainAndClampsAtRedline" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1416769705" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.085645" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1548" name="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.223195" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1545" name="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;bmwm3gtre46&quot;,475.0f,600.0f,925.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;bmwm3gtre46&quot;,475.0f,600.0f,925.0f)" methodname="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1990358" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.069007" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1546" name="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;gti&quot;,300.0f,400.0f,375.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;gti&quot;,300.0f,400.0f,375.0f)" methodname="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1674329956" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.083665" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1547" name="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;punto&quot;,325.0f,450.0f,350.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals(&quot;punto&quot;,325.0f,450.0f,350.0f)" methodname="BrakeMappingUsesPerWheelAxleCapacitiesNotFourWheelTotals" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2008879707" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.069206" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1529" name="CapturedSnapshotRetainsThreeVerifiedFilesAndExplicitUnsupportedFields" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.CapturedSnapshotRetainsThreeVerifiedFilesAndExplicitUnsupportedFields" methodname="CapturedSnapshotRetainsThreeVerifiedFilesAndExplicitUnsupportedFields" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="142983277" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.109637" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1588" name="ChoicesMustBePresentAndActuallyLinkedByTheSelectedVehicle" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ChoicesMustBePresentAndActuallyLinkedByTheSelectedVehicle" methodname="ChoicesMustBePresentAndActuallyLinkedByTheSelectedVehicle" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1271245053" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:25Z" duration="0.070468" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1539" name="DistinctEfficiencySentinelsDetectOffByTwoIndexing" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.DistinctEfficiencySentinelsDetectOffByTwoIndexing" methodname="DistinctEfficiencySentinelsDetectOffByTwoIndexing" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1266100829" result="Passed" start-time="2026-09-10 22:00:25Z" end-time="2026-09-10 22:00:26Z" duration="0.084355" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1533" name="ExplicitSlotZeroChoicesMapEveryCapturedCar" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ExplicitSlotZeroChoicesMapEveryCapturedCar" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.226489" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1530" name="ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;bmwm3gtre46&quot;,Rwd,1300.0f,8500.0f,9500.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;bmwm3gtre46&quot;,Rwd,1300.0f,8500.0f,9500.0f)" methodname="ExplicitSlotZeroChoicesMapEveryCapturedCar" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="261324226" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.072513" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1531" name="ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;gti&quot;,Fwd,1328.0f,7000.0f,8000.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;gti&quot;,Fwd,1328.0f,7000.0f,8000.0f)" methodname="ExplicitSlotZeroChoicesMapEveryCapturedCar" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1842255690" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.083672" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1532" name="ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;punto&quot;,Fwd,1100.0f,6500.0f,7500.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ExplicitSlotZeroChoicesMapEveryCapturedCar(&quot;punto&quot;,Fwd,1100.0f,6500.0f,7500.0f)" methodname="ExplicitSlotZeroChoicesMapEveryCapturedCar" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="993102177" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.069217" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1538" name="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.GearMappingStripsReverseNeutralAndRetainsUnusedEvidence" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.239247" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1535" name="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;bmwm3gtre46&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;bmwm3gtre46&quot;)" methodname="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="685321912" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.084248" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1536" name="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;gti&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;gti&quot;)" methodname="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1925732788" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.068923" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1537" name="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;punto&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.GearMappingStripsReverseNeutralAndRetainsUnusedEvidence(&quot;punto&quot;)" methodname="GearMappingStripsReverseNeutralAndRetainsUnusedEvidence" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="59291494" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.084735" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1556" name="InductionComesFromTheExplicitLinkedRecord" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.InductionComesFromTheExplicitLinkedRecord" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.225057" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1553" name="InductionComesFromTheExplicitLinkedRecord(&quot;bmwm3gtre46&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.InductionComesFromTheExplicitLinkedRecord(&quot;bmwm3gtre46&quot;,False)" methodname="InductionComesFromTheExplicitLinkedRecord" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1896048097" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.070765" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1554" name="InductionComesFromTheExplicitLinkedRecord(&quot;gti&quot;,True)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.InductionComesFromTheExplicitLinkedRecord(&quot;gti&quot;,True)" methodname="InductionComesFromTheExplicitLinkedRecord" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="693118532" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.084640" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1555" name="InductionComesFromTheExplicitLinkedRecord(&quot;punto&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.InductionComesFromTheExplicitLinkedRecord(&quot;punto&quot;,False)" methodname="InductionComesFromTheExplicitLinkedRecord" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="664295658" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.068251" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1557" name="MappedFieldsRetainSourceHashesOffsetsAndInheritedOwnership" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MappedFieldsRetainSourceHashesOffsetsAndInheritedOwnership" methodname="MappedFieldsRetainSourceHashesOffsetsAndInheritedOwnership" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1189229829" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.111704" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1587" name="MissingRearAxleIsRejectedRatherThanCopiedFromFront" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRearAxleIsRejectedRatherThanCopiedFromFront" methodname="MissingRearAxleIsRejectedRatherThanCopiedFromFront" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="84781448" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.068337" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1580" name="MissingRequiredFieldsNeverReceiveGuessedDefaults" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:27Z" duration="0.694205" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1571" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;TORQUE&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;TORQUE&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1935284542" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:26Z" duration="0.083225" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1572" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;IDLE&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;IDLE&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1274702396" result="Passed" start-time="2026-09-10 22:00:26Z" end-time="2026-09-10 22:00:27Z" duration="0.068453" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1573" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;MAX_RPM&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;engine&quot;,&quot;MAX_RPM&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1310779227" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.083396" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1574" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;transmission&quot;,&quot;GEAR_EFFICIENCY&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;transmission&quot;,&quot;GEAR_EFFICIENCY&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="550988100" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.068270" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1575" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;tires&quot;,&quot;SECTION_WIDTH&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;tires&quot;,&quot;SECTION_WIDTH&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="802623428" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.083004" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1576" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;chassis&quot;,&quot;SPRING_STIFFNESS&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;chassis&quot;,&quot;SPRING_STIFFNESS&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="889425841" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.068106" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1577" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;brakes&quot;,&quot;BRAKES&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;brakes&quot;,&quot;BRAKES&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1302035295" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.084775" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1578" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;nos&quot;,&quot;NOS_CAPACITY&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;nos&quot;,&quot;NOS_CAPACITY&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="27863605" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.068562" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1579" name="MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;induction&quot;,&quot;SPOOL&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.MissingRequiredFieldsNeverReceiveGuessedDefaults(&quot;induction&quot;,&quot;SPOOL&quot;)" methodname="MissingRequiredFieldsNeverReceiveGuessedDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2050893203" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.083916" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1552" name="NitrousPreservesDurationAndMultiplicativeBoostSemantics" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.NitrousPreservesDurationAndMultiplicativeBoostSemantics" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.250235" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1549" name="NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;bmwm3gtre46&quot;,2.5f,0.75f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;bmwm3gtre46&quot;,2.5f,0.75f)" methodname="NitrousPreservesDurationAndMultiplicativeBoostSemantics" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="672229758" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.069349" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1550" name="NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;gti&quot;,0.0f,0.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;gti&quot;,0.0f,0.0f)" methodname="NitrousPreservesDurationAndMultiplicativeBoostSemantics" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1978348996" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.098602" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1551" name="NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;punto&quot;,0.0f,0.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.NitrousPreservesDurationAndMultiplicativeBoostSemantics(&quot;punto&quot;,0.0f,0.0f)" methodname="NitrousPreservesDurationAndMultiplicativeBoostSemantics" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1660276570" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.080718" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1589" name="PreviewCopiesBaselineWithoutChangingHistoricalEvidenceOrAuthoredTuning" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.PreviewCopiesBaselineWithoutChangingHistoricalEvidenceOrAuthoredTuning" methodname="PreviewCopiesBaselineWithoutChangingHistoricalEvidenceOrAuthoredTuning" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="548057896" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:27Z" duration="0.122154" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1602" name="ReadReportEnforcesByteAndDepthBudgetsBeforeImport" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportEnforcesByteAndDepthBudgetsBeforeImport" methodname="ReadReportEnforcesByteAndDepthBudgetsBeforeImport" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1165893481" result="Passed" start-time="2026-09-10 22:00:27Z" end-time="2026-09-10 22:00:28Z" duration="0.086892" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1597" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.551190" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1590" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1745517670" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.068972" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1591" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;null&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;null&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2133804740" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.083104" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1592" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;schema\&quot;:2}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;schema\&quot;:2}&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1233099849" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.067944" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1593" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;vehicles\&quot;:null}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;vehicles\&quot;:null}&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1795819097" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.083862" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1594" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;records\&quot;:null}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;records\&quot;:null}&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1283186504" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.068677" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1595" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;sources\&quot;:null}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;sources\&quot;:null}&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="208803733" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.090321" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1596" name="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;issues\&quot;:null}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections(&quot;{\&quot;issues\&quot;:null}&quot;)" methodname="ReadReportRejectsEmptyNullUnsupportedSchemaAndNullCollections" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1520359101" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.086388" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1601" name="ReadReportRejectsMalformedOrWrongRootJson" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsMalformedOrWrongRootJson" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.225793" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1598" name="ReadReportRejectsMalformedOrWrongRootJson(&quot;{not-json}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsMalformedOrWrongRootJson(&quot;{not-json}&quot;)" methodname="ReadReportRejectsMalformedOrWrongRootJson" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="913111977" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.071828" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1599" name="ReadReportRejectsMalformedOrWrongRootJson(&quot;{\&quot;schema\&quot;:[}&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsMalformedOrWrongRootJson(&quot;{\&quot;schema\&quot;:[}&quot;)" methodname="ReadReportRejectsMalformedOrWrongRootJson" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1231987381" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.080594" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1600" name="ReadReportRejectsMalformedOrWrongRootJson(&quot;[]&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.ReadReportRejectsMalformedOrWrongRootJson(&quot;[]&quot;)" methodname="ReadReportRejectsMalformedOrWrongRootJson" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1946201947" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.071997" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1570" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:29Z" duration="0.630122" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1562" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;pvehicle&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;pvehicle&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2086616053" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.078760" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1563" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;engine&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;engine&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1786152189" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:28Z" duration="0.070545" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1564" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;transmission&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;transmission&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1786242161" result="Passed" start-time="2026-09-10 22:00:28Z" end-time="2026-09-10 22:00:29Z" duration="0.081270" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1565" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;tires&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;tires&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1822957583" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.068135" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1566" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;chassis&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;chassis&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="872001401" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.083555" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1567" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;brakes&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;brakes&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="998725455" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.067387" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1568" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;nos&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;nos&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1742125445" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.108694" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1569" name="RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;induction&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnresolvedVehicleOrSelectedRecordInheritance(&quot;induction&quot;)" methodname="RejectsUnresolvedVehicleOrSelectedRecordInheritance" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1936685612" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.068266" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1561" name="RejectsUnverifiedOrChangedSourceHashes" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnverifiedOrChangedSourceHashes" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.234418" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1558" name="RejectsUnverifiedOrChangedSourceHashes(&quot;unverified&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnverifiedOrChangedSourceHashes(&quot;unverified&quot;)" methodname="RejectsUnverifiedOrChangedSourceHashes" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2086822908" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.082592" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1559" name="RejectsUnverifiedOrChangedSourceHashes(&quot;mismatch&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnverifiedOrChangedSourceHashes(&quot;mismatch&quot;)" methodname="RejectsUnverifiedOrChangedSourceHashes" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2113570505" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.068495" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1560" name="RejectsUnverifiedOrChangedSourceHashes(&quot;missing-sources&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RejectsUnverifiedOrChangedSourceHashes(&quot;missing-sources&quot;)" methodname="RejectsUnverifiedOrChangedSourceHashes" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1471891825" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.082086" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1586" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:30Z" duration="0.373375" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1581" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;field-unsupported&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;field-unsupported&quot;)" methodname="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="266568462" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.067986" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1582" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;value-unsupported&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;value-unsupported&quot;)" methodname="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1825051764" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.083798" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1583" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;wrong-type&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;wrong-type&quot;)" methodname="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="569620299" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.067592" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1584" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;non-finite&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;non-finite&quot;)" methodname="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1620270854" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:29Z" duration="0.084366" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1585" name="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;empty&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats(&quot;empty&quot;)" methodname="RequiredScalarPayloadsMustBeDecodedFiniteSingleFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2132577843" result="Passed" start-time="2026-09-10 22:00:29Z" end-time="2026-09-10 22:00:30Z" duration="0.068165" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1603" name="SaveCreatesSeparateAssetsAndRoundTripsProvenanceWithoutOverwriting" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveCreatesSeparateAssetsAndRoundTripsProvenanceWithoutOverwriting" methodname="SaveCreatesSeparateAssetsAndRoundTripsProvenanceWithoutOverwriting" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="617435262" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:30Z" duration="0.691963" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1608" name="SaveRejectsPathsOutsideAssetsOrWrongExtension" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveRejectsPathsOutsideAssetsOrWrongExtension" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:30Z" duration="0.231000" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1605" name="SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Tools/DrivingMechanics/Evidence/not-an-asset.asset&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Tools/DrivingMechanics/Evidence/not-an-asset.asset&quot;)" methodname="SaveRejectsPathsOutsideAssetsOrWrongExtension" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1676812417" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:30Z" duration="0.068558" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1606" name="SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Assets/not-an-asset.json&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Assets/not-an-asset.json&quot;)" methodname="SaveRejectsPathsOutsideAssetsOrWrongExtension" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="931641984" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:30Z" duration="0.085000" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1607" name="SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Assets/../not-an-asset.asset&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveRejectsPathsOutsideAssetsOrWrongExtension(&quot;Assets/../not-an-asset.asset&quot;)" methodname="SaveRejectsPathsOutsideAssetsOrWrongExtension" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="540925400" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:30Z" duration="0.068044" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1604" name="SaveRejectsSidecarCollisionWithoutReplacingExistingBytes" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.SaveRejectsSidecarCollisionWithoutReplacingExistingBytes" methodname="SaveRejectsSidecarCollisionWithoutReplacingExistingBytes" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1213259864" result="Passed" start-time="2026-09-10 22:00:30Z" end-time="2026-09-10 22:00:31Z" duration="0.274379" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1543" name="TiresAndSuspensionKeepPerAxleUnitConversions" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.TiresAndSuspensionKeepPerAxleUnitConversions" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.225880" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1540" name="TiresAndSuspensionKeepPerAxleUnitConversions(&quot;bmwm3gtre46&quot;,0.3433f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.TiresAndSuspensionKeepPerAxleUnitConversions(&quot;bmwm3gtre46&quot;,0.3433f)" methodname="TiresAndSuspensionKeepPerAxleUnitConversions" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="2037141887" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.069509" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1541" name="TiresAndSuspensionKeepPerAxleUnitConversions(&quot;gti&quot;,0.32165f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.TiresAndSuspensionKeepPerAxleUnitConversions(&quot;gti&quot;,0.32165f)" methodname="TiresAndSuspensionKeepPerAxleUnitConversions" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1913376858" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.084781" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1542" name="TiresAndSuspensionKeepPerAxleUnitConversions(&quot;punto&quot;,0.29225f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests.TiresAndSuspensionKeepPerAxleUnitConversions(&quot;punto&quot;,0.29225f)" methodname="TiresAndSuspensionKeepPerAxleUnitConversions" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingImporterTests" runstate="Runnable" seed="1079445333" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.069382" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1609" name="MostWantedDrivingPhysicsTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:32Z" duration="0.927604" total="10" passed="9" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="ParameterizedMethod" id="1616" name="CapturedBrakesReduceEightyKphToAStop" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedBrakesReduceEightyKphToAStop" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.160831" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1614" name="CapturedBrakesReduceEightyKphToAStop(&quot;bmwm3gtre46&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedBrakesReduceEightyKphToAStop(&quot;bmwm3gtre46&quot;)" methodname="CapturedBrakesReduceEightyKphToAStop" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="526104025" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.098731" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1615" name="CapturedBrakesReduceEightyKphToAStop(&quot;gti&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedBrakesReduceEightyKphToAStop(&quot;gti&quot;)" methodname="CapturedBrakesReduceEightyKphToAStop" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="1413947500" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.061457" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1613" name="CapturedVehicleLaunchesInProductionSolver" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedVehicleLaunchesInProductionSolver" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.246996" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1610" name="CapturedVehicleLaunchesInProductionSolver(&quot;bmwm3gtre46&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedVehicleLaunchesInProductionSolver(&quot;bmwm3gtre46&quot;)" methodname="CapturedVehicleLaunchesInProductionSolver" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="640799259" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.078240" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1611" name="CapturedVehicleLaunchesInProductionSolver(&quot;gti&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedVehicleLaunchesInProductionSolver(&quot;gti&quot;)" methodname="CapturedVehicleLaunchesInProductionSolver" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="125046860" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.081234" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1612" name="CapturedVehicleLaunchesInProductionSolver(&quot;punto&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.CapturedVehicleLaunchesInProductionSolver(&quot;punto&quot;)" methodname="CapturedVehicleLaunchesInProductionSolver" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="1562525750" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.085670" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1617" name="RecoveredSteeringTurnsAndUsesSmallerOutsideWheelAngle" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.RecoveredSteeringTurnsAndUsesSmallerOutsideWheelAngle" methodname="RecoveredSteeringTurnsAndUsesSmallerOutsideWheelAngle" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="1476684009" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:31Z" duration="0.080415" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1619" name="ReferenceAutomaticReverseLatchesAndAcceleratesThroughFormerTransitionGap" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.ReferenceAutomaticReverseLatchesAndAcceleratesThroughFormerTransitionGap" methodname="ReferenceAutomaticReverseLatchesAndAcceleratesThroughFormerTransitionGap" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="412389613" result="Passed" start-time="2026-09-10 22:00:31Z" end-time="2026-09-10 22:00:32Z" duration="0.067534" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1620" name="ReferenceAutomaticReverseToForwardBrakesThenChangesDirectionNearStop" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.ReferenceAutomaticReverseToForwardBrakesThenChangesDirectionNearStop" methodname="ReferenceAutomaticReverseToForwardBrakesThenChangesDirectionNearStop" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="2078796479" result="Failed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.079835" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  v=0,00 gear=-1 throttle=1,00 brake=0,00; v=-9,96 gear=-1 throttle=1,00 brake=0,00; v=-28,66 gear=-1 throttle=1,00 brake=0,00; v=-48,56 gear=-1 throttle=1,00 brake=0,00; v=-76,49 gear=-1 throttle=1,00 brake=0,00; v=-72,09 gear=-1 throttle=0,00 brake=1,00; v=-81,79 gear=-1 throttle=0,00 brake=1,00; v=-97,18 gear=-1 throttle=0,00 brake=1,00; v=-116,39 gear=-1 throttle=0,00 brake=1,00; v=-137,07 gear=-1 throttle=0,00 brake=1,00; v=-156,42 gear=-1 throttle=0,00 brake=1,00
+  Expected: greater than 0
+  But was:  -1
+]]></message>
+                  <stack-trace><![CDATA[at NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.ReferenceAutomaticReverseToForwardBrakesThenChangesDirectionNearStop () [0x000f5] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedDrivingPhysicsTests.cs:126
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1618" name="ReferenceLowSpeedSteeringUsesRecoveredPhysicalAngleInsteadOfAuthoredCap" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.ReferenceLowSpeedSteeringUsesRecoveredPhysicalAngleInsteadOfAuthoredCap" methodname="ReferenceLowSpeedSteeringUsesRecoveredPhysicalAngleInsteadOfAuthoredCap" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="1920412112" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.061289" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1621" name="ReferenceSteeringAndDrivetrainDoNotDependOnPresentationCadence" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests.ReferenceSteeringAndDrivetrainDoNotDependOnPresentationCadence" methodname="ReferenceSteeringAndDrivetrainDoNotDependOnPresentationCadence" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingPhysicsTests" runstate="Runnable" seed="658192521" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.225768" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1622" name="MostWantedDrivingTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.018830" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1639" name="AckermannUsesRecoveredRationalApproximation" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.AckermannUsesRecoveredRationalApproximation" methodname="AckermannUsesRecoveredRationalApproximation" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="697362493" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000444" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1642" name="AutomaticDirectionChangeWaitsForDrivenWheelSpinAndDoesNotPowerOldGear" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.AutomaticDirectionChangeWaitsForDrivenWheelSpinAndDoesNotPowerOldGear" methodname="AutomaticDirectionChangeWaitsForDrivenWheelSpinAndDoesNotPowerOldGear" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="324723948" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001086" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1640" name="DownforceIsLinearAndAirborneAttitudeDependent" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.DownforceIsLinearAndAirborneAttitudeDependent" methodname="DownforceIsLinearAndAirborneAttitudeDependent" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1559642548" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000215" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1641" name="EngineOffInvalidTimeAndNeutralCannotProduceWheelTorque" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.EngineOffInvalidTimeAndNeutralCannotProduceWheelTorque" methodname="EngineOffInvalidTimeAndNeutralCannotProduceWheelTorque" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="617861311" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000428" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1631" name="ForwardReverseAndNeutralUseTheirOwnEfficiencySlots" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.ForwardReverseAndNeutralUseTheirOwnEfficiencySlots" methodname="ForwardReverseAndNeutralUseTheirOwnEfficiencySlots" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="58693703" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000168" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1638" name="HeldPartialSteeringDoesNotRetriggerFullInputSpeedEveryTick" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.HeldPartialSteeringDoesNotRetriggerFullInputSpeedEveryTick" methodname="HeldPartialSteeringDoesNotRetriggerFullInputSpeedEveryTick" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="70363815" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000246" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1630" name="InductionUsesRpmThresholdBoostFractionsAndSpoolState" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.InductionUsesRpmThresholdBoostFractionsAndSpoolState" methodname="InductionUsesRpmThresholdBoostFractionsAndSpoolState" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="2146685897" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000201" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1633" name="InvalidReferenceSamplesFailBeforeSimulation" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.InvalidReferenceSamplesFailBeforeSimulation" methodname="InvalidReferenceSamplesFailBeforeSimulation" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="566801150" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001162" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1629" name="NitrousMultipliesTorqueIncludingPartialThrottleEngineBrakeBlend" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.NitrousMultipliesTorqueIncludingPartialThrottleEngineBrakeBlend" methodname="NitrousMultipliesTorqueIncludingPartialThrottleEngineBrakeBlend" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1311541527" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000198" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1635" name="NitrousRechargeUsesFullTankSecondsAndHonorsPermission" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.NitrousRechargeUsesFullTankSecondsAndHonorsPermission" methodname="NitrousRechargeUsesFullTankSecondsAndHonorsPermission" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1765379627" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000665" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1634" name="NitrousRequiresForwardGearAndHasStartContinueSpeedHysteresis" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.NitrousRequiresForwardGearAndHasStartContinueSpeedHysteresis" methodname="NitrousRequiresForwardGearAndHasStartContinueSpeedHysteresis" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="328663544" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000249" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1632" name="ShiftDelayUsesNewRatioAndDownshiftQuarterDuration" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.ShiftDelayUsesNewRatioAndDownshiftQuarterDuration" methodname="ShiftDelayUsesNewRatioAndDownshiftQuarterDuration" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="546418760" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000456" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1637" name="SteeringIsSymmetricRateLimitedAndResettable" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.SteeringIsSymmetricRateLimitedAndResettable" methodname="SteeringIsSymmetricRateLimitedAndResettable" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="246359537" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.003083" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1636" name="SteeringUsesMetersPerSecondAndReverseUsesLowSpeedEnd" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.SteeringUsesMetersPerSecondAndReverseUsesLowSpeedEnd" methodname="SteeringUsesMetersPerSecondAndReverseUsesLowSpeedEnd" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1261409877" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000197" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1627" name="TorqueClampsInputAtRedlineWithoutMovingLastKnotThere" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.TorqueClampsInputAtRedlineWithoutMovingLastKnotThere" methodname="TorqueClampsInputAtRedlineWithoutMovingLastKnotThere" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1911140066" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000162" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1626" name="TorqueKnotsUseIdleToMaximumAxis" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.TorqueKnotsUseIdleToMaximumAxis" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001538" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1623" name="TorqueKnotsUseIdleToMaximumAxis(800.0f,170.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.TorqueKnotsUseIdleToMaximumAxis(800.0f,170.0f)" methodname="TorqueKnotsUseIdleToMaximumAxis" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1782182380" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000249" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1624" name="TorqueKnotsUseIdleToMaximumAxis(1887.5f,251.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.TorqueKnotsUseIdleToMaximumAxis(1887.5f,251.0f)" methodname="TorqueKnotsUseIdleToMaximumAxis" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1346584787" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000066" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1625" name="TorqueKnotsUseIdleToMaximumAxis(5150.0f,467.0f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.TorqueKnotsUseIdleToMaximumAxis(5150.0f,467.0f)" methodname="TorqueKnotsUseIdleToMaximumAxis" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="1674377093" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000060" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1628" name="UnitConversionsMatchRecoveredConventions" fullname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests.UnitConversionsMatchRecoveredConventions" methodname="UnitConversionsMatchRecoveredConventions" classname="NfsMwRemaster.Driving.Tests.MostWantedDrivingTests" runstate="Runnable" seed="200177016" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000129" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1643" name="MostWantedHandlingReaderTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" testcasecount="23" result="Skipped" label="Ignored" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.069587" total="23" passed="22" failed="0" inconclusive="0" skipped="1" asserts="0">
+              <properties />
+              <reason>
+                <message><![CDATA[One or more child tests were ignored]]></message>
+              </reason>
+              <test-case id="1661" name="AllVehicleSelectionHasNoThreeCarWhitelist" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.AllVehicleSelectionHasNoThreeCarWhitelist" methodname="AllVehicleSelectionHasNoThreeCarWhitelist" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1506387770" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.022164" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1657" name="AudioReaderApisStillResolveTheSameValuesAndItemsAreNotNestedArrays" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.AudioReaderApisStillResolveTheSameValuesAndItemsAreNotNestedArrays" methodname="AudioReaderApisStillResolveTheSameValuesAndItemsAreNotNestedArrays" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="785668597" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.003010" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1647" name="BaseLayoutAxlePairsDecodeFrontRearWithoutUnitConversions" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.BaseLayoutAxlePairsDecodeFrontRearWithoutUnitConversions" methodname="BaseLayoutAxlePairsDecodeFrontRearWithoutUnitConversions" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="33580226" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.005015" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1656" name="CrossFileInheritanceKeepsParentSourceIdentity" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.CrossFileInheritanceKeepsParentSourceIdentity" methodname="CrossFileInheritanceKeepsParentSourceIdentity" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="749831640" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001511" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1664" name="DecoderRejectsArrayHeadersAndReaderRejectsTruncatedCapacity" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.DecoderRejectsArrayHeadersAndReaderRejectsTruncatedCapacity" methodname="DecoderRejectsArrayHeadersAndReaderRejectsTruncatedCapacity" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1909864357" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000289" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1645" name="DecodesEveryRequestedRoleAndKeepsDuplicateUpgradeSlots" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.DecodesEveryRequestedRoleAndKeepsDuplicateUpgradeSlots" methodname="DecodesEveryRequestedRoleAndKeepsDuplicateUpgradeSlots" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="717274921" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001903" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1649" name="ExactIntegersNeverRoundThroughFloat32" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.ExactIntegersNeverRoundThroughFloat32" methodname="ExactIntegersNeverRoundThroughFloat32" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1591682350" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000477" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1646" name="FieldInheritanceIdentifiesTheDeclaringRowAndExactSourceBytes" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.FieldInheritanceIdentifiesTheDeclaringRowAndExactSourceBytes" methodname="FieldInheritanceIdentifiesTheDeclaringRowAndExactSourceBytes" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="417975321" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.002961" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1665" name="FileApiVerifiesHashesAndCreatesNothingInsideSyntheticSourceDirectory" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.FileApiVerifiesHashesAndCreatesNothingInsideSyntheticSourceDirectory" methodname="FileApiVerifiesHashesAndCreatesNothingInsideSyntheticSourceDirectory" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="798686082" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.004623" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1644" name="HashesMatchPinnedGeneratedClassKeysRatherThanOnlySelfGeneratedFixtures" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.HashesMatchPinnedGeneratedClassKeysRatherThanOnlySelfGeneratedFixtures" methodname="HashesMatchPinnedGeneratedClassKeysRatherThanOnlySelfGeneratedFixtures" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="114971790" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000207" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1655" name="InheritanceCyclesPreserveOnlyOwnEvidenceAndFlagUnresolvedChain" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.InheritanceCyclesPreserveOnlyOwnEvidenceAndFlagUnresolvedChain" methodname="InheritanceCyclesPreserveOnlyOwnEvidenceAndFlagUnresolvedChain" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="231297076" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001373" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1666" name="InstalledHandlingIntegrationKeepsEverySourceHashUnchanged" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.InstalledHandlingIntegrationKeepsEverySourceHashUnchanged" methodname="InstalledHandlingIntegrationKeepsEverySourceHashUnchanged" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Explicit" seed="826963407" result="Skipped" label="Ignored" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000398" asserts="0">
+                <properties>
+                  <property name="_SKIPREASON" value="Read-only integration; requires an explicitly permitted BLACKBOX_GAME installation path." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <reason>
+                  <message><![CDATA[Set BLACKBOX_GAME to an explicitly permitted source installation.]]></message>
+                </reason>
+              </test-case>
+              <test-case id="1652" name="InvalidArraysAreExplicitInsteadOfSilentlyReturningNoValues" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.InvalidArraysAreExplicitInsteadOfSilentlyReturningNoValues" methodname="InvalidArraysAreExplicitInsteadOfSilentlyReturningNoValues" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1522235417" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000810" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1663" name="JunkmanModKeepsDefinitionKeyDistinctFromCollectionReferences" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.JunkmanModKeepsDefinitionKeyDistinctFromCollectionReferences" methodname="JunkmanModKeepsDefinitionKeyDistinctFromCollectionReferences" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="361177996" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000231" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1653" name="MissingReferenceTargetsAreNotReplacedByRoleDefaults" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.MissingReferenceTargetsAreNotReplacedByRoleDefaults" methodname="MissingReferenceTargetsAreNotReplacedByRoleDefaults" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1360698936" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000703" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1662" name="MultiVaultAbsoluteOffsetsIdentifyTheOriginalPackBytes" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.MultiVaultAbsoluteOffsetsIdentifyTheOriginalPackBytes" methodname="MultiVaultAbsoluteOffsetsIdentifyTheOriginalPackBytes" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="2120414430" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001049" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1651" name="NonFiniteFloatsKeepBitsWithoutProducingNonFiniteJsonNumbers" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.NonFiniteFloatsKeepBitsWithoutProducingNonFiniteJsonNumbers" methodname="NonFiniteFloatsKeepBitsWithoutProducingNonFiniteJsonNumbers" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1046942465" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1648" name="OriginalAndRelocatedReferenceWordsRemainDistinct" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.OriginalAndRelocatedReferenceWordsRemainDistinct" methodname="OriginalAndRelocatedReferenceWordsRemainDistinct" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="751319203" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000677" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1654" name="ReferenceClassComesFromPayloadRatherThanFieldName" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.ReferenceClassComesFromPayloadRatherThanFieldName" methodname="ReferenceClassComesFromPayloadRatherThanFieldName" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1326911194" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000688" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1658" name="RejectsInvalidPacksDuplicateIdentitiesAndEmptySelections" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.RejectsInvalidPacksDuplicateIdentitiesAndEmptySelections" methodname="RejectsInvalidPacksDuplicateIdentitiesAndEmptySelections" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1418285346" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000520" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1659" name="RequestedMissingVehiclesAreExplicitAndAllRowsRemainAvailableWithoutSelection" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.RequestedMissingVehiclesAreExplicitAndAllRowsRemainAvailableWithoutSelection" methodname="RequestedMissingVehiclesAreExplicitAndAllRowsRemainAvailableWithoutSelection" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="388164033" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.001743" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1650" name="UnknownTypesAndWrongWidthsDoNotInventFloats" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.UnknownTypesAndWrongWidthsDoNotInventFloats" methodname="UnknownTypesAndWrongWidthsDoNotInventFloats" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="926638412" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1660" name="UpgradeSpecsUnknownLayoutIsExplicitButCollectionIdentityIsRetained" fullname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests.UpgradeSpecsUnknownLayoutIsExplicitButCollectionIdentityIsRetained" methodname="UpgradeSpecsUnknownLayoutIsExplicitButCollectionIdentityIsRetained" classname="NfsMwRemaster.Driving.Tests.MostWantedHandlingReaderTests" runstate="Runnable" seed="1745001315" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000151" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1667" name="MostWantedPowertrainTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests" classname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.002389" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1669" name="NeutralEngineRacerStillIntegratesFreeRev" fullname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests.NeutralEngineRacerStillIntegratesFreeRev" methodname="NeutralEngineRacerStillIntegratesFreeRev" classname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests" runstate="Runnable" seed="976328006" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000448" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1668" name="SourceLoadedEngineInertiaUsesFlywheelEquation" fullname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests.SourceLoadedEngineInertiaUsesFlywheelEquation" methodname="SourceLoadedEngineInertiaUsesFlywheelEquation" classname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests" runstate="Runnable" seed="144229027" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000087" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1670" name="SourceNosUsesStartAndContinueHysteresis" fullname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests.SourceNosUsesStartAndContinueHysteresis" methodname="SourceNosUsesStartAndContinueHysteresis" classname="NfsMwRemaster.Driving.Tests.MostWantedPowertrainTests" runstate="Runnable" seed="562287044" result="Passed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:32Z" duration="0.000219" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1671" name="MostWantedSceneCoverageTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:38Z" duration="5.762414" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1672" name="EveryRegularDrivingSceneResolvesReferenceTuningIncludingInactiveVehicles" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests.EveryRegularDrivingSceneResolvesReferenceTuningIncludingInactiveVehicles" methodname="EveryRegularDrivingSceneResolvesReferenceTuningIncludingInactiveVehicles" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests" runstate="Runnable" seed="50644671" result="Failed" start-time="2026-09-10 22:00:32Z" end-time="2026-09-10 22:00:38Z" duration="5.705978" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[Unhandled log message: '[Error] Problem detected while opening the Scene file: 'Assets/NfsMw/Scenes/Showcase/WeatherDemo.unity'.
+Check the following logs for more details.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                  <stack-trace><![CDATA[UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests:EveryRegularDrivingSceneResolvesReferenceTuningIncludingInactiveVehicles () (at Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneCoverageTests.cs:28)
+System.Reflection.MethodBase:Invoke (object,object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod (System.Reflection.MethodInfo,object,object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke (object,object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod (NUnit.Framework.Internal.ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod (NUnit.Framework.Internal.ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute (NUnit.Framework.Internal.ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Problem detected while opening the Scene file: 'Assets/NfsMw/Scenes/Showcase/WeatherDemo.unity'.
+Check the following logs for more details.
+Prefab instance problem. Missing Prefab Asset: 'Demo Circuit (Missing Prefab with guid: 6c6b2517b661e4316844564e0f1d8980)'
+Prefab instance problem. Missing Prefab Asset: 'BMW M3 E42 (Missing Prefab with guid: d7dcfb174e2064dea8e86c17e6975661)'
+Problem detected while opening the Scene file: 'Assets/NfsMw/Scenes/World/RockportMap.unity'.
+Check the following logs for more details.
+Prefab instance problem. Missing Prefab Asset: 'BMW M3 E42 (Missing Prefab with guid: d7dcfb174e2064dea8e86c17e6975661)'
+MIGRATED_SCENE_COVERAGE scenes=21 vehicles=216 embeddedVehicles=5
+]]></output>
+              </test-case>
+              <test-case id="1673" name="EverySavedTuningAndConfiguredPhysicsSetupUsesReferenceMode" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests.EverySavedTuningAndConfiguredPhysicsSetupUsesReferenceMode" methodname="EverySavedTuningAndConfiguredPhysicsSetupUsesReferenceMode" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests" runstate="Runnable" seed="956092596" result="Passed" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:38Z" duration="0.029455" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1674" name="PlayerReferenceDoesNotDriveBackwardWithoutThrottle" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests.PlayerReferenceDoesNotDriveBackwardWithoutThrottle" methodname="PlayerReferenceDoesNotDriveBackwardWithoutThrottle" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneCoverageTests" runstate="Runnable" seed="2100486966" result="Passed" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:38Z" duration="0.025318" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1675" name="MostWantedSceneMigrationTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="26" result="Failed" site="Child" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:41Z" duration="3.327507" total="26" passed="23" failed="3" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="Category" value="DrivingMechanicsOffline" />
+              </properties>
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="ParameterizedMethod" id="1709" name="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:39Z" duration="0.734680" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0">
+                <properties>
+                  <property name="Category" value="DrivingMechanicsPostMigration" />
+                </properties>
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1706" name="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;bmwm3gtre46&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;bmwm3gtre46&quot;)" methodname="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="942176735" result="Failed" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:38Z" duration="0.169493" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Suspension-FL: wheel anchor moved.
+  Expected: less than 9.99999975E-05f
+  But was:  0.642558277f
+]]></message>
+                    <stack-trace><![CDATA[at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests+WheelGeometry.AssertUnchanged (NfsMwRemaster.Driving.VehicleTuning tuning) [0x00000] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:401
+at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse (System.String id) [0x0018e] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:304
+]]></stack-trace>
+                  </failure>
+                </test-case>
+                <test-case id="1707" name="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;hatch-fwd&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;hatch-fwd&quot;)" methodname="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1925558664" result="Failed" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:38Z" duration="0.161674" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Suspension-FL: wheel anchor moved.
+  Expected: less than 9.99999975E-05f
+  But was:  0.243975401f
+]]></message>
+                    <stack-trace><![CDATA[at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests+WheelGeometry.AssertUnchanged (NfsMwRemaster.Driving.VehicleTuning tuning) [0x00000] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:401
+at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse (System.String id) [0x0018e] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:304
+]]></stack-trace>
+                  </failure>
+                </test-case>
+                <test-case id="1708" name="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;coupe-rwd&quot;)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse(&quot;coupe-rwd&quot;)" methodname="ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1959060669" result="Failed" start-time="2026-09-10 22:00:38Z" end-time="2026-09-10 22:00:39Z" duration="0.136514" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Suspension-FL: wheel anchor moved.
+  Expected: less than 9.99999975E-05f
+  But was:  0.227798685f
+]]></message>
+                    <stack-trace><![CDATA[at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests+WheelGeometry.AssertUnchanged (NfsMwRemaster.Driving.VehicleTuning tuning) [0x00000] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:401
+at NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ActualPrefabUsesDefinitionPriorityAcrossConfigureRestoreAndPoolReuse (System.String id) [0x0018e] in /private/var/folders/_4/k81y692d14z7fyycs1w_jn900000gn/T/mw-driving-validation.KoWvL8/Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedSceneMigrationTests.cs:304
+]]></stack-trace>
+                  </failure>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1690" name="CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.224392" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1688" name="CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline(True)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline(True)" methodname="CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1039484960" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.091953" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1689" name="CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline(False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline(False)" methodname="CandidateOwnsDeepCopiesAndDisposalDoesNotDestroyBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="789943069" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.104288" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1694" name="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRefreshesSourceProvenanceWithoutMutatingBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.322046" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1691" name="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(True,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(True,False)" methodname="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1064236941" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.107398" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1692" name="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(False,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(False,False)" methodname="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="934695490" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.106416" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1693" name="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(False,True)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(False,True)" methodname="CandidateRefreshesSourceProvenanceWithoutMutatingBaseline" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="2142473361" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.106157" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1679" name="CandidateRetainsAuthoredContactGeometry" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRetainsAuthoredContactGeometry" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.327949" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1676" name="CandidateRetainsAuthoredContactGeometry(True,0.4678221f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRetainsAuthoredContactGeometry(True,0.4678221f)" methodname="CandidateRetainsAuthoredContactGeometry" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="640439829" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.104324" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1677" name="CandidateRetainsAuthoredContactGeometry(False,0.4678221f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRetainsAuthoredContactGeometry(False,0.4678221f)" methodname="CandidateRetainsAuthoredContactGeometry" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="276622404" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.092993" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1678" name="CandidateRetainsAuthoredContactGeometry(False,0.381f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.CandidateRetainsAuthoredContactGeometry(False,0.381f)" methodname="CandidateRetainsAuthoredContactGeometry" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1075978746" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:39Z" duration="0.128367" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1705" name="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:40Z" duration="0.334122" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties>
+                  <property name="Category" value="DrivingMechanicsPostMigration" />
+                </properties>
+                <test-case id="1702" name="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;bmwm3gtre46&quot;,Rwd,0.4678221f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;bmwm3gtre46&quot;,Rwd,0.4678221f)" methodname="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1711476219" result="Passed" start-time="2026-09-10 22:00:39Z" end-time="2026-09-10 22:00:40Z" duration="0.113525" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1703" name="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;hatch-fwd&quot;,Fwd,0.34f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;hatch-fwd&quot;,Fwd,0.34f)" methodname="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1000505904" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.109098" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1704" name="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;coupe-rwd&quot;,Rwd,0.34f)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment(&quot;coupe-rwd&quot;,Rwd,0.34f)" methodname="ExistingPrefabDraftDefinitionAndSetupKeepIdentityAndFitment" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="159625687" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.109600" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1684" name="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.435872" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1680" name="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Fwd)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Fwd)" methodname="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1390674199" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.094533" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1681" name="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Rwd)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Rwd)" methodname="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="2020902048" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.102146" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1682" name="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Awd)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(Awd)" methodname="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1398913804" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.131737" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1683" name="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(LegacyBindings)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation(LegacyBindings)" methodname="GenericCandidateRetainsVehicleStatisticsAndLabelsDonorAdaptation" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="6561076" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.104316" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1687" name="NpcCandidateKeepsExistingSteeringAndShiftControlLaws" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.NpcCandidateKeepsExistingSteeringAndShiftControlLaws" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.197545" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1685" name="NpcCandidateKeepsExistingSteeringAndShiftControlLaws(Fwd)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.NpcCandidateKeepsExistingSteeringAndShiftControlLaws(Fwd)" methodname="NpcCandidateKeepsExistingSteeringAndShiftControlLaws" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1007566442" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.104226" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1686" name="NpcCandidateKeepsExistingSteeringAndShiftControlLaws(Rwd)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.NpcCandidateKeepsExistingSteeringAndShiftControlLaws(Rwd)" methodname="NpcCandidateKeepsExistingSteeringAndShiftControlLaws" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="713747441" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:40Z" duration="0.091747" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1701" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:41Z" duration="0.626808" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1695" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/_Recovery/0.unity&quot;,True)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/_Recovery/0.unity&quot;,True)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1407258675" result="Passed" start-time="2026-09-10 22:00:40Z" end-time="2026-09-10 22:00:41Z" duration="0.086238" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1696" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets\\_Recovery\\0 (1).unity&quot;,True)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets\\_Recovery\\0 (1).unity&quot;,True)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="583106315" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.129137" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1697" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Scenes/Game/DrivingDemo.unity&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Scenes/Game/DrivingDemo.unity&quot;,False)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="873708052" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.101716" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1698" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Scenes/Tests/Traffic/TrafficStop.unity&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Scenes/Tests/Traffic/TrafficStop.unity&quot;,False)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="398433416" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.103000" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1699" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Modules/Driving/Examples/VehicleFramework/hatch-fwd/Driving.unity&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/NfsMw/Modules/Driving/Examples/VehicleFramework/hatch-fwd/Driving.unity&quot;,False)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="1968623249" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.089803" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1700" name="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/_RecoveryExamples/Driving.unity&quot;,False)" fullname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests.RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples(&quot;Assets/_RecoveryExamples/Driving.unity&quot;,False)" methodname="RecoveryExclusionIsExplicitAndDoesNotHideDrivingExamples" classname="NfsMwRemaster.Driving.Tests.MostWantedSceneMigrationTests" runstate="Runnable" seed="873383457" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.100097" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1710" name="MostWantedTireTests" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.006111" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1712" name="BeginFrameClearsTorquesForcesAndRestoresFrameScales" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.BeginFrameClearsTorquesForcesAndRestoresFrameScales" methodname="BeginFrameClearsTorquesForcesAndRestoresFrameScales" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="482378439" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000398" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1716" name="BrakeLockFactorOnlyChangesLockThreshold" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.BrakeLockFactorOnlyChangesLockThreshold" methodname="BrakeLockFactorOnlyChangesLockThreshold" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="2082699581" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000294" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1711" name="ConstructorClampsRadiusAndUsesWheelAxleIndex" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.ConstructorClampsRadiusAndUsesWheelAxleIndex" methodname="ConstructorClampsRadiusAndUsesWheelAxleIndex" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="2118685191" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000147" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1717" name="DifferentialLockedOrMissingTractionUsesBiasExactly" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.DifferentialLockedOrMissingTractionUsesBiasExactly" methodname="DifferentialLockedOrMissingTractionUsesBiasExactly" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="1771885050" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000389" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1718" name="DifferentialOpenSplitMatchesRecoveredFormula" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.DifferentialOpenSplitMatchesRecoveredFormula" methodname="DifferentialOpenSplitMatchesRecoveredFormula" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="1406530935" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000129" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1715" name="LoadedStaticCorneringForceIncludesInitialForwardAccelerationCorrection" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.LoadedStaticCorneringForceIncludesInitialForwardAccelerationCorrection" methodname="LoadedStaticCorneringForceIncludesInitialForwardAccelerationCorrection" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="1309570381" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000156" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1714" name="MatchSpeedResetsBrakeAndSlipState" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.MatchSpeedResetsBrakeAndSlipState" methodname="MatchSpeedResetsBrakeAndSlipState" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="1979932264" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000196" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1713" name="UnloadedWheelBrakesAndStopsWithoutGroundForce" fullname="NfsMwRemaster.Driving.Tests.MostWantedTireTests.UnloadedWheelBrakesAndStopsWithoutGroundForce" methodname="UnloadedWheelBrakesAndStopsWithoutGroundForce" classname="NfsMwRemaster.Driving.Tests.MostWantedTireTests" runstate="Runnable" seed="202578469" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000167" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="2072" name="VehicleFrameworkPhysicsRegressionTests" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.350987" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="2087" name="FixedSimulationRemainsConsistentAcrossPresentationCadences" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.FixedSimulationRemainsConsistentAcrossPresentationCadences" methodname="FixedSimulationRemainsConsistentAcrossPresentationCadences" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1372863793" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.081450" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2082" name="HandbrakeLocksRearAxleWhileFrontWheelsKeepRolling" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.HandbrakeLocksRearAxleWhileFrontWheelsKeepRolling" methodname="HandbrakeLocksRearAxleWhileFrontWheelsKeepRolling" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1780875732" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.026622" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2085" name="InputAuthorityAllowsHandoverButRejectsConcurrentOwners" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.InputAuthorityAllowsHandoverButRejectsConcurrentOwners" methodname="InputAuthorityAllowsHandoverButRejectsConcurrentOwners" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1381643909" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000431" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2083" name="ProductionRunnerBrakingProducesFiniteStoppingMetric" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerBrakingProducesFiniteStoppingMetric" methodname="ProductionRunnerBrakingProducesFiniteStoppingMetric" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1033000774" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.014652" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="2076" name="ProductionRunnerLaunchesEachExplicitDrivetrain" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerLaunchesEachExplicitDrivetrain" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.047837" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="2073" name="ProductionRunnerLaunchesEachExplicitDrivetrain(Fwd)" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerLaunchesEachExplicitDrivetrain(Fwd)" methodname="ProductionRunnerLaunchesEachExplicitDrivetrain" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="503972031" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.015631" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="2074" name="ProductionRunnerLaunchesEachExplicitDrivetrain(Rwd)" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerLaunchesEachExplicitDrivetrain(Rwd)" methodname="ProductionRunnerLaunchesEachExplicitDrivetrain" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="705058932" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.014969" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="2075" name="ProductionRunnerLaunchesEachExplicitDrivetrain(Awd)" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerLaunchesEachExplicitDrivetrain(Awd)" methodname="ProductionRunnerLaunchesEachExplicitDrivetrain" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="2078915771" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.014789" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="2080" name="ProductionRunnerRampLandingKeepsWheelForcesFiniteAndRegainsGround" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerRampLandingKeepsWheelForcesFiniteAndRegainsGround" methodname="ProductionRunnerRampLandingKeepsWheelForcesFiniteAndRegainsGround" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="45495451" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.055223" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2079" name="ProductionRunnerWetAndDryTracksProduceDifferentBoundedTraction" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.ProductionRunnerWetAndDryTracksProduceDifferentBoundedTraction" methodname="ProductionRunnerWetAndDryTracksProduceDifferentBoundedTraction" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1295584406" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.028524" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2077" name="RecordedManualSequenceConsumesDiscreteActionsAndRejectsReverseWhileMoving" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.RecordedManualSequenceConsumesDiscreteActionsAndRejectsReverseWhileMoving" methodname="RecordedManualSequenceConsumesDiscreteActionsAndRejectsReverseWhileMoving" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="828625289" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.015392" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2081" name="SourceBrakeLockModelProducesFiniteBraking" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.SourceBrakeLockModelProducesFiniteBraking" methodname="SourceBrakeLockModelProducesFiniteBraking" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1041868971" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.017353" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2084" name="SourceSpeedLimiterCutsThrottleWithoutClampingVehicleVelocity" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.SourceSpeedLimiterCutsThrottleWithoutClampingVehicleVelocity" methodname="SourceSpeedLimiterCutsThrottleWithoutClampingVehicleVelocity" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="880902418" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000584" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2086" name="UnevenKerbsProduceIndependentContactAndRemainStable" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.UnevenKerbsProduceIndependentContactAndRemainStable" methodname="UnevenKerbsProduceIndependentContactAndRemainStable" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="904982033" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.038546" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2078" name="WetSurfaceResponseIsFiniteAndBounded" fullname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests.WetSurfaceResponseIsFiniteAndBounded" methodname="WetSurfaceResponseIsFiniteAndBounded" classname="NfsMwRemaster.Driving.Tests.VehicleFrameworkPhysicsRegressionTests" runstate="Runnable" seed="1259049031" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000482" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="2100" name="VehiclePhysicsContractTests" fullname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests" classname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.003368" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="2102" name="ExplicitDriveLayoutRoutesTorqueToConfiguredAxle" fullname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests.ExplicitDriveLayoutRoutesTorqueToConfiguredAxle" methodname="ExplicitDriveLayoutRoutesTorqueToConfiguredAxle" classname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests" runstate="Runnable" seed="2130271846" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000558" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2101" name="LegacyDriveLayoutKeepsWheelFlagsAuthoritative" fullname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests.LegacyDriveLayoutKeepsWheelFlagsAuthoritative" methodname="LegacyDriveLayoutKeepsWheelFlagsAuthoritative" classname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests" runstate="Runnable" seed="168071422" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000148" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2103" name="WetnessChangesGripContinuously" fullname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests.WetnessChangesGripContinuously" methodname="WetnessChangesGripContinuously" classname="NfsMwRemaster.Driving.Tests.VehiclePhysicsContractTests" runstate="Runnable" seed="802904163" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000195" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="2116" name="VehiclePresentationBehaviorTests" fullname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests" classname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.008360" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="2117" name="BrakeStateEnablesLampAndEmissiveOutput" fullname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests.BrakeStateEnablesLampAndEmissiveOutput" methodname="BrakeStateEnablesLampAndEmissiveOutput" classname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests" runstate="Runnable" seed="654754643" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.004691" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2119" name="CaliperFollowsSteeringAndSuspensionWithoutWheelSpin" fullname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests.CaliperFollowsSteeringAndSuspensionWithoutWheelSpin" methodname="CaliperFollowsSteeringAndSuspensionWithoutWheelSpin" classname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests" runstate="Runnable" seed="1382848576" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000978" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2118" name="SteeringUsesAuthoredNeutralAndAxis" fullname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests.SteeringUsesAuthoredNeutralAndAxis" methodname="SteeringUsesAuthoredNeutralAndAxis" classname="NfsMwRemaster.Driving.Tests.VehiclePresentationBehaviorTests" runstate="Runnable" seed="229557280" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000858" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="2177" name="VehicleTopSpeedEstimateTests" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.006120" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="2183" name="EstimateDoesNotMutateTuning" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.EstimateDoesNotMutateTuning" methodname="EstimateDoesNotMutateTuning" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="819950787" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000777" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2178" name="EstimateIgnoresConfiguredTargetWithoutGovernor" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.EstimateIgnoresConfiguredTargetWithoutGovernor" methodname="EstimateIgnoresConfiguredTargetWithoutGovernor" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="1861149301" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000339" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2181" name="GearingCeilingUsesSmallestEffectiveRatio" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.GearingCeilingUsesSmallestEffectiveRatio" methodname="GearingCeilingUsesSmallestEffectiveRatio" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="272212361" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000196" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2180" name="MorePowerRaisesEstimateAndMoreDragLowersIt" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.MorePowerRaisesEstimateAndMoreDragLowersIt" methodname="MorePowerRaisesEstimateAndMoreDragLowersIt" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="1088951453" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000457" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2182" name="SourceGearEfficiencyReducesAvailableTopSpeed" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.SourceGearEfficiencyReducesAvailableTopSpeed" methodname="SourceGearEfficiencyReducesAvailableTopSpeed" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="488317511" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000323" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="2179" name="SourceLimiterReducesEstimateAndGearingCeilingIsReported" fullname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests.SourceLimiterReducesEstimateAndGearingCeilingIsReported" methodname="SourceLimiterReducesEstimateAndGearingCeilingIsReported" classname="NfsMwRemaster.Driving.Tests.VehicleTopSpeedEstimateTests" runstate="Runnable" seed="2081332513" result="Passed" start-time="2026-09-10 22:00:41Z" end-time="2026-09-10 22:00:41Z" duration="0.000254" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/tihan-nico/Library/Application Support/DefaultCompany/NFS MW Remaster/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,59 @@
+flowchart TB
+    engine["Engine world + attributes + messages"]
+    managers["Population managers<br/>traffic / cop / avoidables"]
+    actor["AIVehicle subtype"]
+    target["AITarget"]
+    roads["WRoadNav current + future<br/>collision navigation"]
+    goal["CRC-selected AIGoal"]
+    choose["ChooseAction<br/>ordered, later wins ties"]
+    action{Current action family}
+    traffic["Traffic<br/>route + speed + occlusion"]
+    racer["Racer<br/>potential + curvature + NOS"]
+    pursuit["Pursuit<br/>formation + intercept + recovery"]
+    heli["Helicopter<br/>chase / search / strike / exit"]
+    static["Static / damaged / airborne<br/>direct control"]
+    intent["Drive target + speed + flags"]
+    controls["Common steering + longitudinal control"]
+    input["IInput"]
+    physics["Vehicle / rigid body / suspension / engine"]
+    gaps["Fidelity seams<br/>runtime spawn, stripped math, scheduler timing"]
+
+    engine --> managers
+    managers --> actor
+    engine --> target
+    engine --> roads
+    actor --> target
+    actor --> roads
+    actor --> goal
+    goal --> choose
+    choose --> action
+    target --> action
+    roads --> action
+    action --> traffic
+    action --> racer
+    action --> pursuit
+    action --> heli
+    action --> static
+    traffic --> intent
+    racer --> intent
+    pursuit --> intent
+    heli --> intent
+    static --> input
+    intent --> controls
+    controls --> input
+    input --> physics
+    physics --> actor
+    physics --> target
+    physics --> roads
+    gaps -. constrain .-> managers
+    gaps -. constrain .-> action
+    gaps -. constrain .-> controls
+
+    classDef exact fill:#d9f7e8,stroke:#157347,color:#102a1d;
+    classDef near fill:#dbeafe,stroke:#2563eb,color:#172554;
+    classDef partial fill:#fef3c7,stroke:#b45309,color:#451a03;
+    classDef gap fill:#fee2e2,stroke:#b91c1c,color:#450a0a,stroke-dasharray: 5 3;
+    class choose,input,managers exact;
+    class actor,target,goal,physics near;
+    class engine,roads,action,traffic,racer,pursuit,heli,static,intent,controls partial;
+    class gaps gap;

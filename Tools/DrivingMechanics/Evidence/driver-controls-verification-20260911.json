@@ -1,0 +1,65 @@
+{
+  "revision": "nfsmw.3bb4ab24.source-port.2",
+  "upstream": {
+    "repository": "https://github.com/dbalatoni13/nfsmw",
+    "commit": "3bb4ab24df54840a290310fe6d249bc13abe8235",
+    "platform": "PS2 Black Edition SLUS-21351"
+  },
+  "validation": {
+    "unity": "6000.6.0f1",
+    "environment": "Complete isolated project copy, EditMode",
+    "finalFocused": {
+      "total": 90,
+      "passed": 90,
+      "failed": 0,
+      "results": "validation-20260911T073408Z.hc89dN/tests.xml"
+    },
+    "broader": {
+      "total": 158,
+      "passed": 156,
+      "failed": 2,
+      "results": "validation-20260911T073205Z.GJym7r/tests.xml",
+      "failure": "Two WeatherDemo scene-load tests: missing Demo Circuit prefab 6c6b2517b661e4316844564e0f1d8980; reference also exists in HEAD; no matching asset metadata in the current project."
+    },
+    "postBroaderChange": "Removed unused pedal-state fields; final focused rerun passed.",
+    "referenceComparisons": {
+      "driverControls": 1536,
+      "engineBraking": 84,
+      "tolerance": "Driver outputs 0.000001; braking torque 0.0001",
+      "generator": "../driver-controls-reference.cpp",
+      "sourceBodiesVerifiedVerbatim": true
+    },
+    "renderedGameplayTested": false,
+    "originalGameTrajectoriesCompared": false
+  },
+  "fidelityLimits": [
+    "PAD_DEAD_ZONE numerical value unresolved; authored 0.08 device calibration",
+    "Unity bindings, sampled event order, steering calibration and boolean handbrake",
+    "Original force-stop, staging, drag, human-AI and perfect-launch gameplay providers incomplete",
+    "Existing shift-point computation and authored downshift RPM remain separate fidelity limits",
+    "Unity rigidbody/contact integration"
+  ],
+  "changedFileSha256": {
+    "Assets/NfsMw/Modules/Driving/Editor/PhysicsLab/VehiclePhysicsLabRunner.cs": "4105fc360e429b36da289a59374a4efbe8de69bbb75aa2f1e6a7b7bd81945250",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedDrivingTests.cs": "1ea2e3c54206c6a47d87addd2ccce737d287a68967a55e833ed4cc2f2e8a5aa7",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/VehicleFrameworkPhysicsRegressionTests.cs": "5fae4f362e3a1a97b2b0fbc033aa25e7376474ceb706345edc2a77fe1e4b7d73",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedPowertrainTests.cs": "e3d9d084c982f6acb2f0bf6d86fc8fa922df00358a710c9cb3f391bfe0f6f3c9",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/PoliceReferenceTests.cs": "630882e7ac3fd4b460baaf766d783fb3b9c5834fb25a25520e3901a32832e4cf",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedDrivingPhysicsTests.cs": "a7875aa10c696f80e01046f22cc3740604bd4f1c0e685ee405d4f866fb2dedc2",
+    "Assets/NfsMw/Modules/Driving/Runtime/FreeRoam/RoadVehicleMotor.cs": "e99b4b01eb03ee528f03fd61e1061136e8db50f9fb85f78b3901e2c7c932e7f7",
+    "Assets/NfsMw/Modules/Driving/Runtime/FreeRoam/FreeRoamVehicleInput.cs": "7af820c6696a2a4ef2209690417971fc8ac6136428ebee3abdb6c44191a79c29",
+    "Assets/NfsMw/Modules/Driving/Runtime/Physics/VehicleController.cs": "639ff25a65e138357c8c1fc3129b804f99e29c509de2ba7ed2f69c201ed59aa1",
+    "Assets/NfsMw/Modules/Driving/Runtime/Physics/VehiclePowertrain.cs": "e93aaf48432600f17ac4b9714984fa1f7b0e1b0c7b7d8aa3906b0cb3e9fc2d04",
+    "Assets/NfsMw/Modules/Driving/Runtime/Physics/MostWantedVehicleMath.cs": "0b180829980e6e32cba4ea49bf90ff803b3775b52de02e1f101c7318242199dd",
+    "Assets/NfsMw/Modules/Driving/Runtime/Input/PlayerVehicleInput.cs": "a3cc6f023a66efc0e795e3c96ee68108021970ec33f333ae89c7e8b618af428e",
+    "Assets/NfsMw/Modules/Driving/Runtime/Input/VehicleInputAuthority.cs": "d30ab915eb243fb540d61f5230c132c2aed6e9f258d9008add275be641d9ce30",
+    "Assets/NfsMw/Modules/Driving/Runtime/RacingLines/RacingSimulationInput.cs": "065177b2ef9db32f95b8535b52f2050bd0e3ff9b830775c16e0fdd4704dcf54d",
+    "Assets/NfsMw/Modules/Driving/Runtime/RacingLines/RacingLineInput.cs": "1930bbc3d212540e90894d7cc99bf1015fe9f3833e750b8b2bb8ba53c7b65228",
+    "Tools/DrivingMechanics/SOURCE_PORT.md": "63619ab4a2515f452567040be34ab8df40b0335f755639ce8eb55e42621804d4",
+    "Assets/NfsMw/Modules/Driving/Runtime/Input/MostWantedDriverControls.cs": "28824efed590031d4f0e01bf07d00bfac88a4cc5282385394b1ca64e22c87c92",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/MostWantedDriverControlsTests.cs": "0f77a162be594d1f3dc021af23e2143e5aa9b9299949834a2421157570214ef1",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/driver-controls-reference.csv": "6d9c062a7e07bd5b8a3d73c02b2939a0ff92a316f6c610f2686dab72f8d52482",
+    "Assets/NfsMw/Modules/Driving/Tests/Editor/engine-braking-reference.csv": "903b95603b0c36621b212042d23cdf46f767de84f92ed03508cad54913a84d48",
+    "Tools/DrivingMechanics/driver-controls-reference.cpp": "f5210b8e6e7a091780209dcaba3ffd859f6ce387fd69ce75aa7e97f20e224468"
+  }
+}

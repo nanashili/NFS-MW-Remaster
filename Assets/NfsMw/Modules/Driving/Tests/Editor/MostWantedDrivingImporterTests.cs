@@ -94,7 +94,7 @@ namespace NfsMwRemaster.Driving.Tests
                 Assert.That(file.unchanged, Is.True);
                 Assert.That(file.sha256, Has.Length.EqualTo(64));
                 Assert.That(file.afterSha256, Is.EqualTo(file.sha256));
-                Assert.That(file.verification, Is.EqualTo("File SHA-256 before parsing and after decoding"));
+                Assert.That(file.verification, Is.EqualTo("File SHA-256 before parsing and after extraction"));
             }
         }
 
@@ -107,7 +107,6 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(MostWantedDrivingImporter.FirstReferences(vehicle), Is.EquivalentTo(choices));
             using var imported = MostWantedDrivingImporter.Create(source, vehicle, choices);
             var tuning = imported.Tuning;
-            Assert.That(tuning.UsesMostWantedReference, Is.True);
             Assert.That(EditorUtility.IsPersistent(tuning), Is.False);
             Assert.That(tuning.driveLayout, Is.EqualTo(layout));
             Assert.That(tuning.awdFrontTorqueBias, Is.EqualTo(layout == VehicleDriveLayout.Fwd ? 1f : 0f));
@@ -119,7 +118,7 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(imported.Report.selectedLinks.All(link => link.index == 0), Is.True);
             Assert.That(imported.Report.selectedLinks.Select(link => link.fieldName), Is.EquivalentTo(MostWantedDrivingImporter.Roles));
             Assert.That(imported.Report.retainedAdaptations, Is.Not.Empty);
-            Assert.That(imported.Report.unmapped, Is.Not.Empty);
+            Assert.That(imported.Report.unmapped, Is.Empty, "All resolved source handling fields now have a mapping.");
             Assert.DoesNotThrow(() => RacingLineSnapshot.ValidateTuning(tuning));
         }
 
@@ -243,7 +242,7 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(settings.nitrousRechargeMaximumKph, Is.EqualTo(RawFloat(nos, "RECHARGE_MAX_SPEED") * .44703001f * 3.6f).Within(.00002f));
             float plain = MostWantedVehicleMath.NetEngineTorque(tuning, 4000f, 1f, 1f, false);
             Assert.That(MostWantedVehicleMath.NetEngineTorque(tuning, 4000f, 1f, 1f, true), Is.EqualTo(plain * (1f + boost)).Within(.002f));
-            Assert.That(imported.Report.unmapped.Any(item => item.EndsWith("/FLOW_RATE (decoded)", StringComparison.Ordinal)), Is.True);
+            Assert.That(imported.Report.mapped.Any(item => item.field == "FLOW_RATE"), Is.True);
         }
 
         [TestCase("bmwm3gtre46", false)]
@@ -260,7 +259,7 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(settings.inductionSpoolRpmFraction, Is.EqualTo(RawFloat(induction, "SPOOL")));
             Assert.That(tuning.engine.boostSpoolSeconds, Is.EqualTo(RawFloat(induction, "SPOOL_TIME_UP")));
             Assert.That(settings.inductionSpoolDownSeconds, Is.EqualTo(RawFloat(induction, "SPOOL_TIME_DOWN")));
-            Assert.That(imported.Report.unmapped.Any(item => item.EndsWith("/PSI (decoded)", StringComparison.Ordinal)), Is.True);
+            Assert.That(imported.Report.mapped.Any(item => item.field == "PSI"), Is.True);
         }
 
         [Test]
@@ -373,9 +372,6 @@ namespace NfsMwRemaster.Driving.Tests
                     Assert.That(imported.Tuning.engine.gearRatios, Is.Not.SameAs(baseline.engine.gearRatios));
                     Assert.That(imported.Tuning.chassis.centerOfMass, Is.EqualTo(baseline.chassis.centerOfMass));
                     Assert.That(imported.Tuning.tires.wheelMass, Is.EqualTo(23f));
-                    Assert.That(imported.Tuning.assists.abs || imported.Tuning.assists.tractionControl || imported.Tuning.assists.stabilityControl || imported.Tuning.assists.countersteering, Is.False);
-                    Assert.That(imported.Tuning.handling.brakeToDrift, Is.False);
-                    Assert.That(imported.Tuning.handling.driftBias, Is.Zero);
                     imported.Tuning.engine.gearRatios[0] = 9f;
                 }
                 Assert.That(JsonUtility.ToJson(baseline), Is.EqualTo(before));
@@ -425,7 +421,6 @@ namespace NfsMwRemaster.Driving.Tests
             var saved = MostWantedDrivingWindow.SaveNew(imported, path);
             Assert.That(saved, Is.Not.SameAs(imported.Tuning)); Assert.That(EditorUtility.IsPersistent(saved), Is.True);
             Assert.That(EditorUtility.IsPersistent(imported.Tuning), Is.False);
-            Assert.That(saved.UsesMostWantedReference, Is.True);
             Assert.That(MostWantedVehicleMath.Torque(saved, 5150f), Is.EqualTo(633.1586f).Within(.001f));
             string evidencePath = Path.ChangeExtension(AssetDatabase.GetAssetPath(saved), ".provenance.json");
             string savedHash = HashFile(path), provenanceHash = HashFile(evidencePath);

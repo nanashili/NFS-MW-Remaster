@@ -65,12 +65,10 @@ namespace NfsMwRemaster.Driving.Editor
                 RoadNetworkBake.Publish(network, Folder + "/CompoundRoad.asset");
                 var route = ScriptableObject.CreateInstance<RacingLineRoute>(); route.network = network.Baked;
                 route.spans = new[] { new RacingRouteSpan { laneId = network.Baked.Lanes[0].Id.ToString(), startMetres = 5, endMetres = network.Baked.Lanes[0].Length - 5 } }; Save(route, "CompoundRoute.asset");
-                var gripTune = VehicleTuning.CreateStreetRacer(); gripTune.displayName = "Studio grip fixture"; gripTune.handling.brakeToDrift = false;
+                var gripTune = VehicleTuning.CreateStreetRacer(); gripTune.displayName = "Studio grip fixture";
                 Save(gripTune, "GripTuning.asset");
                 var driftTune = UnityEngine.Object.Instantiate(gripTune); driftTune.displayName = "Studio B2D fixture";
-                driftTune.handling.brakeToDrift = true; driftTune.handling.driftBias = 0.7f;
                 // Synthetic, deliberately distinct assist tune; these are not claimed NFS reference values.
-                driftTune.handling.yawGain = 6000; driftTune.handling.maximumYawTorque = 9000;
                 driftTune.tires.lateralGrip = 0.45f;
                 Save(driftTune, "DriftTuning.asset");
                 var grip = Document("Grip", gripTune, route); var drift = Document("Drift", driftTune, route);

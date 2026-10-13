@@ -134,7 +134,6 @@ namespace NfsMwRemaster.Driving.Tests
             Assert.That(tuning.differentialPreload, Is.EqualTo(baseline.differentialPreload));
             Assert.That(tuning.differentialLockStrength, Is.EqualTo(baseline.differentialLockStrength));
             Assert.That(tuning.transmissionMode, Is.EqualTo(baseline.transmissionMode));
-            Assert.That(tuning.speedGovernor, Is.EqualTo(baseline.speedGovernor));
             Assert.That(JsonUtility.ToJson(tuning.engine), Is.EqualTo(JsonUtility.ToJson(baseline.engine)), "Power, torque curve, ratios, shift points and induction remain authored.");
             Assert.That(JsonUtility.ToJson(tuning.tires), Is.EqualTo(JsonUtility.ToJson(baseline.tires)), "Contact, spring, damping and grip calibration remain authored.");
             Assert.That(tuning.controls.serviceBrakeTorque, Is.EqualTo(baseline.controls.serviceBrakeTorque));
@@ -199,7 +198,7 @@ namespace NfsMwRemaster.Driving.Tests
         [TestCase(true, false)]
         [TestCase(false, false)]
         [TestCase(false, true)]
-        public void AlreadyEnabledCandidateIsRetainedWithoutRecalibration(bool bmwSource, bool npc)
+        public void CandidateRefreshesSourceProvenanceWithoutMutatingBaseline(bool bmwSource, bool npc)
         {
             var authored = AuthoredBaseline();
             using var first = MostWantedSceneMigration.CreateCandidate(authored, capture, bmwSource, npc);
@@ -213,10 +212,9 @@ namespace NfsMwRemaster.Driving.Tests
             string before = JsonUtility.ToJson(enabled);
             using (var second = MostWantedSceneMigration.CreateCandidate(enabled, capture, bmwSource, npc))
             {
-                AssertReference(second.Tuning, "already enabled");
-                Assert.That(JsonUtility.ToJson(second.Tuning), Is.EqualTo(before));
-                Assert.That(second.Report.mapped, Is.Empty);
-                Assert.That(second.Report.fidelity, Does.Contain("Already-enabled"));
+                AssertReference(second.Tuning, "refreshed candidate");
+                Assert.That(JsonUtility.ToJson(second.Tuning), Is.Not.EqualTo(before));
+                Assert.That(second.Report.mapped, Is.Not.Empty);
                 Assert.That(second.Tuning.mostWanted.normalizedTorque, Is.Not.SameAs(enabled.mostWanted.normalizedTorque));
                 second.Tuning.mostWanted.normalizedTorque[0] = .7f;
                 second.Tuning.engine.gearRatios[0] = 9f;
@@ -289,7 +287,6 @@ namespace NfsMwRemaster.Driving.Tests
                 root.transform.SetPositionAndRotation(new Vector3(0f, 1.1f, 0f), Quaternion.identity);
                 var vehicle = root.GetComponent<VehicleController>();
                 var configuration = root.GetComponent<VehicleConfiguration>();
-                var geometry = vehicle.Wheels.Select(wheel => new WheelGeometry(wheel)).ToArray();
                 var input = root.AddComponent<RacingSimulationInput>();
                 var decoy = AuthoredBaseline();
                 decoy.chassis.mass = 1111f;
@@ -300,6 +297,9 @@ namespace NfsMwRemaster.Driving.Tests
                 Assert.That(vehicle.FactoryTuning, Is.SameAs(decoy));
                 AssertReference(vehicle.Tuning, id + " definition overrides legacy stock");
                 Assert.That(vehicle.Body.mass, Is.EqualTo(draft.tuning.chassis.mass).Within(.001f));
+                // The source model places wheel arms from TRACK_WIDTH/WHEEL_BASE.
+                // Capture that resolved geometry, then check that reuse never accumulates offsets.
+                var geometry = vehicle.Wheels.Select(wheel => new WheelGeometry(wheel)).ToArray();
                 for (int pass = 0; pass < 3; pass++)
                 {
                     vehicle.ConfigureForRuntime(draft.tuning, input, vehicle.Wheels);
@@ -364,6 +364,8 @@ namespace NfsMwRemaster.Driving.Tests
             tuning.differentialPreload = 33f; tuning.differentialLockStrength = .22f;
             tuning.engine.maxTorqueNewtonMeters = 287f; tuning.engine.gearRatios = new[] { 3.6f, 2.25f, 1.47f, 1.05f, .81f };
             tuning.engine.drivelineEfficiency = .83f; tuning.engine.finalDrive = 3.73f;
+            tuning.mostWanted.gearEfficiency = Enumerable.Repeat(tuning.engine.drivelineEfficiency, tuning.engine.gearRatios.Length).ToArray();
+            tuning.mostWanted.reverseGearEfficiency = tuning.engine.drivelineEfficiency;
             tuning.engine.forcedInduction = true; tuning.engine.boostTorqueMultiplier = 1.17f;
             tuning.tires.wheelRadius = .46782207f; tuning.tires.wheelWidth = .281f;
             tuning.tires.wheelLateralOffset = .027f; tuning.tires.suspensionRestLength = .373f;
@@ -407,7 +409,6 @@ namespace NfsMwRemaster.Driving.Tests
         private static void AssertReference(VehicleTuning tuning, string context)
         {
             Assert.That(tuning, Is.Not.Null, context);
-            Assert.That(tuning.UsesMostWantedReference, Is.True, context + ": reference mode is not enabled.");
             Assert.DoesNotThrow(() => RacingLineSnapshot.ValidateTuning(tuning), context);
         }
 

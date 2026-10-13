@@ -14,19 +14,6 @@ namespace NfsMwRemaster.Driving.Tests
         }
 
         [Test]
-        public void StabilityStrengthChangesAssistTorque()
-        {
-            var model = new VehicleHandlingModel();
-            var settings = new VehicleHandlingSettings { yawGain = 1000f, maximumYawTorque = 10000f };
-            float low = model.Step(settings, new VehicleInputState { Steering = 1f }, 20f, 0f, 0f,
-                true, true, 0.2f, 0.02f);
-            model.Reset();
-            float high = model.Step(settings, new VehicleInputState { Steering = 1f }, 20f, 0f, 0f,
-                true, true, 0.8f, 0.02f);
-            Assert.That(Mathf.Abs(high), Is.GreaterThan(Mathf.Abs(low)));
-        }
-
-        [Test]
         public void ExplicitDriveLayoutRoutesTorqueToConfiguredAxle()
         {
             var root = new GameObject("powertrain test");

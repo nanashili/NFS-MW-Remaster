@@ -147,7 +147,7 @@ namespace NfsMwRemaster.Driving.Editor
                     {
                         // Initial-condition assignment only. No pose/velocity/yaw correction occurs during a measured rollout.
                         rigs[i].Body.linearVelocity = rigs[i].Root.transform.forward * trial.entrySpeed;
-                        rigs[i].Assists.ResetHandling(); trackers[i].Reset();
+                        rigs[i].Vehicle.NotifyPoseReset(); trackers[i].Reset();
                     }
                 return;
             }
@@ -162,7 +162,7 @@ namespace NfsMwRemaster.Driving.Editor
                 float slip = Mathf.Atan2(local.x, Mathf.Max(0.1f, Mathf.Abs(local.z))) * Mathf.Rad2Deg;
                 int contacts = 0; foreach (var wheel in rig.Vehicle.Wheels) if (wheel.Grounded) contacts++;
                 float clearance = RacingCorridorGeometry.FootprintClearance(snapshot, body.position, body.rotation, tracker.Station);
-                var mode = rig.Assists.HandlingMode;
+                var mode = rig.Vehicle.Telemetry.HandlingMode;
                 trial.driftEngaged |= mode == VehicleHandlingMode.Drifting;
                 trial.driftRecovered |= trial.driftEngaged && mode == VehicleHandlingMode.Grip;
                 float actualSpeed = Mathf.Max(0, local.z); float error = actualSpeed - tracker.TargetSpeed;
@@ -183,7 +183,7 @@ namespace NfsMwRemaster.Driving.Editor
                     telemetry.Add(new RacingTelemetrySample { time = trial.elapsed, station = tracker.Station, targetSpeed = tracker.TargetSpeed,
                         actualSpeed = actualSpeed, lateralError = tracker.LateralError, headingError = tracker.HeadingError,
                         steering = rig.Input.Current.Steering, throttle = rig.Input.Current.Throttle, brake = rig.Input.Current.Brake,
-                        slipDegrees = slip, yawRate = Vector3.Dot(body.angularVelocity, rig.Root.transform.up), assistTorque = rig.Assists.AppliedYawTorque,
+                        slipDegrees = slip, yawRate = Vector3.Dot(body.angularVelocity, rig.Root.transform.up), assistTorque = rig.Vehicle.Telemetry.AssistYawTorque,
                         contacts = contacts, clearance = clearance, handling = mode, position = body.position, vehicleIndex = i });
                 allFinished &= tracker.Finished;
             }

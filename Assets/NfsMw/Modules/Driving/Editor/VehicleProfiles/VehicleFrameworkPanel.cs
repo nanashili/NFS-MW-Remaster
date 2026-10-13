@@ -103,11 +103,10 @@ namespace NfsMwRemaster.Driving.Editor
             {
                 EditorGUILayout.LabelField("Factory handling (shared asset)", EditorStyles.boldLabel);
                 using var obj = new SerializedObject(tuning); obj.Update();
-                foreach (string field in new[] { "driveLayout", "transmissionMode", "differential", "speedGovernor" }) Field(obj, field);
-                Field(obj, "simulationModel");
-                if (tuning.UsesMostWantedReference) Field(obj, "mostWanted");
+                foreach (string field in new[] { "driveLayout", "transmissionMode", "differential" }) Field(obj, field);
+                Field(obj, "mostWanted");
                 foreach (string field in new[] { "chassis", "engine", "tires", "controls" }) Field(obj, field);
-                if (advanced) foreach (string field in new[] { "assists", "handling", "aero" }) Field(obj, field);
+                if (advanced) Field(obj, "aero");
                 obj.ApplyModifiedProperties();
             }
             DrawResolved(draft);
@@ -187,7 +186,7 @@ namespace NfsMwRemaster.Driving.Editor
                     if (advanced) foreach (var c in row.contributions) EditorGUILayout.LabelField("  " + c.source, $"{c.before:0.###} → {c.after:0.###}");
                 }
                 VehicleTopSpeedEstimate estimate = VehicleTopSpeedEstimator.Estimate(resolved.Tuning);
-                EditorGUILayout.HelpBox($"Configured target {resolved.Tuning.chassis.maxSpeedKph:0} km/h. Engineering estimate {estimate.estimatedKph:0} km/h (gearing ceiling {estimate.gearingCeilingKph:0} km/h; flat-road full throttle, ideal gear selection; no automatic shift logic/slip/transients/assists/nitrous). Measured results come from a completed Physics Lab run. Governor {(resolved.Tuning.speedGovernor ? "enabled" : "disabled")}.", MessageType.None);
+                EditorGUILayout.HelpBox($"Configured target {resolved.Tuning.chassis.maxSpeedKph:0} km/h. Engineering estimate {estimate.estimatedKph:0} km/h (gearing ceiling {estimate.gearingCeilingKph:0} km/h; flat-road full throttle, ideal gear selection; no automatic shift logic/slip/transients/assists/nitrous). Measured results come from a completed Physics Lab run.", MessageType.None);
             }
             catch (ArgumentException error) { EditorGUILayout.HelpBox(error.Message, MessageType.Error); }
         }

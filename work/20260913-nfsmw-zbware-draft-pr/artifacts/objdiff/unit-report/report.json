@@ -1,0 +1,3578 @@
+{
+  "measures": {
+    "fuzzy_match_percent": 67.43484,
+    "total_code": "35235",
+    "matched_code": "11360",
+    "matched_code_percent": 32.24067,
+    "total_data": "21812",
+    "total_functions": 467,
+    "matched_functions": 159,
+    "matched_functions_percent": 34.047108,
+    "total_units": 1
+  },
+  "units": [
+    {
+      "name": "main/Speed/Indep/SourceLists/zBWare",
+      "measures": {
+        "fuzzy_match_percent": 67.43484,
+        "total_code": "35235",
+        "matched_code": "11360",
+        "matched_code_percent": 32.24067,
+        "total_data": "21812",
+        "total_functions": 467,
+        "matched_functions": 159,
+        "matched_functions_percent": 34.047108,
+        "total_units": 1
+      },
+      "sections": [
+        {
+          "name": ".bss",
+          "size": "13104",
+          "fuzzy_match_percent": 0.2632784,
+          "metadata": {}
+        },
+        {
+          "name": ".data",
+          "size": "6516",
+          "fuzzy_match_percent": 25.858124,
+          "metadata": {}
+        },
+        {
+          "name": ".rdata",
+          "size": "2192",
+          "fuzzy_match_percent": 47.63423,
+          "metadata": {}
+        },
+        {
+          "name": ".text",
+          "size": "35235",
+          "fuzzy_match_percent": 67.43484,
+          "metadata": {}
+        }
+      ],
+      "functions": [
+        {
+          "name": "sub_45C930",
+          "size": "32",
+          "metadata": {},
+          "address": "0"
+        },
+        {
+          "name": "sub_45C950",
+          "size": "10",
+          "metadata": {},
+          "address": "32"
+        },
+        {
+          "name": "sub_45C960",
+          "size": "12",
+          "metadata": {},
+          "address": "42"
+        },
+        {
+          "name": "sub_45C970",
+          "size": "3",
+          "metadata": {},
+          "address": "54"
+        },
+        {
+          "name": "sub_45C980",
+          "size": "32",
+          "metadata": {},
+          "address": "57"
+        },
+        {
+          "name": "sub_45C9A0",
+          "size": "41",
+          "metadata": {},
+          "address": "89"
+        },
+        {
+          "name": "sub_45C9D0",
+          "size": "39",
+          "metadata": {},
+          "address": "130"
+        },
+        {
+          "name": "sub_45CA00",
+          "size": "8",
+          "metadata": {},
+          "address": "169"
+        },
+        {
+          "name": "sub_45CA10",
+          "size": "11",
+          "metadata": {},
+          "address": "177"
+        },
+        {
+          "name": "sub_45CA20",
+          "size": "4",
+          "metadata": {},
+          "address": "188"
+        },
+        {
+          "name": "sub_45CA30",
+          "size": "4",
+          "metadata": {},
+          "address": "192"
+        },
+        {
+          "name": "sub_45CA40",
+          "size": "22",
+          "metadata": {},
+          "address": "196"
+        },
+        {
+          "name": "?bCalculateCrc32@@YAIPBXHI@Z",
+          "size": "100",
+          "fuzzy_match_percent": 67.69231,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bCalculateCrc32(void const *, int, unsigned int)"
+          },
+          "address": "218"
+        },
+        {
+          "name": "sub_45CAD0",
+          "size": "21",
+          "metadata": {},
+          "address": "318"
+        },
+        {
+          "name": "sub_45CAF0",
+          "size": "6",
+          "metadata": {},
+          "address": "339"
+        },
+        {
+          "name": "sub_45CB00",
+          "size": "24",
+          "metadata": {},
+          "address": "345"
+        },
+        {
+          "name": "sub_45CB20",
+          "size": "23",
+          "metadata": {},
+          "address": "369"
+        },
+        {
+          "name": "sub_45CB40",
+          "size": "5",
+          "metadata": {},
+          "address": "392"
+        },
+        {
+          "name": "sub_45CB50",
+          "size": "4",
+          "metadata": {},
+          "address": "397"
+        },
+        {
+          "name": "sub_45CB60",
+          "size": "7",
+          "metadata": {},
+          "address": "401"
+        },
+        {
+          "name": "sub_45CB70",
+          "size": "4",
+          "metadata": {},
+          "address": "408"
+        },
+        {
+          "name": "sub_45CB80",
+          "size": "13",
+          "metadata": {},
+          "address": "412"
+        },
+        {
+          "name": "sub_45CB90",
+          "size": "11",
+          "metadata": {},
+          "address": "425"
+        },
+        {
+          "name": "sub_45CBA0",
+          "size": "75",
+          "metadata": {},
+          "address": "436"
+        },
+        {
+          "name": "sub_45CBF0",
+          "size": "4",
+          "metadata": {},
+          "address": "511"
+        },
+        {
+          "name": "sub_45CC00",
+          "size": "4",
+          "metadata": {},
+          "address": "515"
+        },
+        {
+          "name": "nullsub_1058",
+          "size": "1",
+          "metadata": {},
+          "address": "519"
+        },
+        {
+          "name": "?bSetUserPutStringFunction@@YAXP6A_NHPBD@Z@Z",
+          "size": "10",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bSetUserPutStringFunction(bool (__cdecl *)(int, char const *))"
+          },
+          "address": "520"
+        },
+        {
+          "name": "?HandleUserPutString@@YA_NHPBD@Z",
+          "size": "52",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "bool __cdecl HandleUserPutString(int, char const *)"
+          },
+          "address": "530"
+        },
+        {
+          "name": "?bReleasePutString@@YAXDPBD@Z",
+          "size": "86",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bReleasePutString(char, char const *)"
+          },
+          "address": "582"
+        },
+        {
+          "name": "?bNewFileCheckerAdd@@YAHPBD@Z",
+          "size": "3",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bNewFileCheckerAdd(char const *)"
+          },
+          "address": "668"
+        },
+        {
+          "name": "?bNewFileCheckerRemove@@YAXH@Z",
+          "size": "1",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bNewFileCheckerRemove(int)"
+          },
+          "address": "671"
+        },
+        {
+          "name": "?bCheckForNewFiles@@YAHXZ",
+          "size": "3",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bCheckForNewFiles(void)"
+          },
+          "address": "672"
+        },
+        {
+          "name": "?bCheckForNewFiles@@YAHM@Z",
+          "size": "3",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bCheckForNewFiles(float)"
+          },
+          "address": "675"
+        },
+        {
+          "name": "?bIsDebuggerConnected@@YA_NXZ",
+          "size": "3",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "bool __cdecl bIsDebuggerConnected(void)"
+          },
+          "address": "678"
+        },
+        {
+          "name": "?bIsValidPointer@@YAHPAXH@Z",
+          "size": "33",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bIsValidPointer(void *, int)"
+          },
+          "address": "681"
+        },
+        {
+          "name": "?bLaunch@@YAHPBDH@Z",
+          "size": "4",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bLaunch(char const *, int)"
+          },
+          "address": "714"
+        },
+        {
+          "name": "?bLaunchWindows@@YAHPBD@Z",
+          "size": "81",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bLaunchWindows(char const *)"
+          },
+          "address": "718"
+        },
+        {
+          "name": "?bInitTicker@@YAXM@Z",
+          "size": "103",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitTicker(float)"
+          },
+          "address": "799"
+        },
+        {
+          "name": "?bGetTicker@@YAIXZ",
+          "size": "35",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bGetTicker(void)"
+          },
+          "address": "902"
+        },
+        {
+          "name": "?bGetTickerDifference@@YAMII@Z",
+          "size": "77",
+          "fuzzy_match_percent": 86.416664,
+          "metadata": {
+            "demangled_name": "float __cdecl bGetTickerDifference(unsigned int, unsigned int)"
+          },
+          "address": "937"
+        },
+        {
+          "name": "?bGetFixTickerDifference@@YAHII@Z",
+          "size": "101",
+          "fuzzy_match_percent": 87.46154,
+          "metadata": {
+            "demangled_name": "int __cdecl bGetFixTickerDifference(unsigned int, unsigned int)"
+          },
+          "address": "1014"
+        },
+        {
+          "name": "?bHasTickerExpired@@YA_NIM@Z",
+          "size": "129",
+          "fuzzy_match_percent": 78.81579,
+          "metadata": {
+            "demangled_name": "bool __cdecl bHasTickerExpired(unsigned int, float)"
+          },
+          "address": "1115"
+        },
+        {
+          "name": "?bDisableInterrupts@@YAHXZ",
+          "size": "3",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bDisableInterrupts(void)"
+          },
+          "address": "1244"
+        },
+        {
+          "name": "?bRestoreInterrupts@@YAXH@Z",
+          "size": "1",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bRestoreInterrupts(int)"
+          },
+          "address": "1247"
+        },
+        {
+          "name": "sub_45CFE0",
+          "size": "8",
+          "metadata": {},
+          "address": "1248"
+        },
+        {
+          "name": "?Destroy@bMutex@@QAEXXZ",
+          "size": "5",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bMutex::Destroy(void)"
+          },
+          "address": "1256"
+        },
+        {
+          "name": "?Lock@bMutex@@QAEXXZ",
+          "size": "5",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bMutex::Lock(void)"
+          },
+          "address": "1261"
+        },
+        {
+          "name": "?Unlock@bMutex@@QAEXXZ",
+          "size": "5",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bMutex::Unlock(void)"
+          },
+          "address": "1266"
+        },
+        {
+          "name": "j_bMutex::Create",
+          "size": "5",
+          "metadata": {},
+          "address": "1271"
+        },
+        {
+          "name": "j_bMutex::Destroy_0",
+          "size": "5",
+          "metadata": {},
+          "address": "1276"
+        },
+        {
+          "name": "j_bMutex::Lock_0",
+          "size": "5",
+          "metadata": {},
+          "address": "1281"
+        },
+        {
+          "name": "j_bMutex::Unlock_0",
+          "size": "5",
+          "metadata": {},
+          "address": "1286"
+        },
+        {
+          "name": "sub_45D060",
+          "size": "20",
+          "metadata": {},
+          "address": "1291"
+        },
+        {
+          "name": "sub_45D080",
+          "size": "12",
+          "metadata": {},
+          "address": "1311"
+        },
+        {
+          "name": "sub_45D090",
+          "size": "12",
+          "metadata": {},
+          "address": "1323"
+        },
+        {
+          "name": "sub_45D0A0",
+          "size": "33",
+          "metadata": {},
+          "address": "1335"
+        },
+        {
+          "name": "sub_45D0D0",
+          "size": "34",
+          "metadata": {},
+          "address": "1368"
+        },
+        {
+          "name": "sub_45D100",
+          "size": "34",
+          "metadata": {},
+          "address": "1402"
+        },
+        {
+          "name": "sub_45D130",
+          "size": "29",
+          "metadata": {},
+          "address": "1436"
+        },
+        {
+          "name": "sub_45D150",
+          "size": "294",
+          "metadata": {},
+          "address": "1465"
+        },
+        {
+          "name": "sub_45D280",
+          "size": "131",
+          "metadata": {},
+          "address": "1759"
+        },
+        {
+          "name": "sub_45D310",
+          "size": "4",
+          "metadata": {},
+          "address": "1890"
+        },
+        {
+          "name": "sub_45D320",
+          "size": "12",
+          "metadata": {},
+          "address": "1894"
+        },
+        {
+          "name": "sub_45D330",
+          "size": "11",
+          "metadata": {},
+          "address": "1906"
+        },
+        {
+          "name": "sub_45D340",
+          "size": "7",
+          "metadata": {},
+          "address": "1917"
+        },
+        {
+          "name": "sub_45D350",
+          "size": "4",
+          "metadata": {},
+          "address": "1924"
+        },
+        {
+          "name": "sub_45D360",
+          "size": "4",
+          "metadata": {},
+          "address": "1928"
+        },
+        {
+          "name": "sub_45D370",
+          "size": "4",
+          "metadata": {},
+          "address": "1932"
+        },
+        {
+          "name": "?GetNode@bList@@QAEPAVbNode@@H@Z",
+          "size": "31",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: class bNode * __thiscall bList::GetNode(int)"
+          },
+          "address": "1936"
+        },
+        {
+          "name": "?TraversebList@bList@@AAEHPAVbNode@@@Z",
+          "size": "37",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "private: int __thiscall bList::TraversebList(class bNode *)"
+          },
+          "address": "1967"
+        },
+        {
+          "name": "sub_45D3D0",
+          "size": "38",
+          "metadata": {},
+          "address": "2004"
+        },
+        {
+          "name": "sub_45D400",
+          "size": "37",
+          "metadata": {},
+          "address": "2042"
+        },
+        {
+          "name": "sub_45D430",
+          "size": "81",
+          "metadata": {},
+          "address": "2079"
+        },
+        {
+          "name": "?MergeSort@bList@@AAEXP6AHPAVbNode@@0@Z@Z",
+          "size": "339",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "private: void __thiscall bList::MergeSort(int (__cdecl *)(class bNode *, class bNode *))"
+          },
+          "address": "2160"
+        },
+        {
+          "name": "sub_45D5F0",
+          "size": "14",
+          "metadata": {},
+          "address": "2499"
+        },
+        {
+          "name": "??0bChunkLoader@@QAE@IP6AHPAUbChunk@@@Z1@Z",
+          "size": "75",
+          "fuzzy_match_percent": 99.434784,
+          "metadata": {
+            "demangled_name": "public: __thiscall bChunkLoader::bChunkLoader(unsigned int, int (__cdecl *)(struct bChunk *), int (__cdecl *)(struct bChunk *))"
+          },
+          "address": "2513"
+        },
+        {
+          "name": "?FindLoader@bChunkLoader@@SAPAV1@I@Z",
+          "size": "46",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: static class bChunkLoader * __cdecl bChunkLoader::FindLoader(unsigned int)"
+          },
+          "address": "2588"
+        },
+        {
+          "name": "sub_45D680",
+          "size": "105",
+          "metadata": {},
+          "address": "2634"
+        },
+        {
+          "name": "sub_45D6F0",
+          "size": "105",
+          "metadata": {},
+          "address": "2739"
+        },
+        {
+          "name": "nullsub_168",
+          "size": "1",
+          "metadata": {},
+          "address": "2844"
+        },
+        {
+          "name": "sub_45D770",
+          "size": "178",
+          "metadata": {},
+          "address": "2845"
+        },
+        {
+          "name": "sub_45D830",
+          "size": "39",
+          "metadata": {},
+          "address": "3023"
+        },
+        {
+          "name": "sub_45D860",
+          "size": "105",
+          "metadata": {},
+          "address": "3062"
+        },
+        {
+          "name": "sub_45D8D0",
+          "size": "31",
+          "metadata": {},
+          "address": "3167"
+        },
+        {
+          "name": "?bEndianSwap16@@YAXPAX@Z",
+          "size": "13",
+          "fuzzy_match_percent": 76.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bEndianSwap16(void *)"
+          },
+          "address": "3198"
+        },
+        {
+          "name": "sub_45D900",
+          "size": "19",
+          "metadata": {},
+          "address": "3211"
+        },
+        {
+          "name": "sub_45D920",
+          "size": "55",
+          "metadata": {},
+          "address": "3230"
+        },
+        {
+          "name": "sub_45D960",
+          "size": "51",
+          "metadata": {},
+          "address": "3285"
+        },
+        {
+          "name": "?bRandom@@YAIH@Z",
+          "size": "55",
+          "fuzzy_match_percent": 65.96154,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bRandom(int)"
+          },
+          "address": "3336"
+        },
+        {
+          "name": "?bRandom@@YAMMPAI@Z",
+          "size": "76",
+          "fuzzy_match_percent": 63.827587,
+          "metadata": {
+            "demangled_name": "float __cdecl bRandom(float, unsigned int *)"
+          },
+          "address": "3391"
+        },
+        {
+          "name": "?bRandom@@YAIH@Z",
+          "size": "57",
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bRandom(int)"
+          },
+          "address": "3467"
+        },
+        {
+          "name": "?bRandom@@YAMM@Z",
+          "size": "78",
+          "fuzzy_match_percent": 67.84615,
+          "metadata": {
+            "demangled_name": "float __cdecl bRandom(float)"
+          },
+          "address": "3524"
+        },
+        {
+          "name": "?bFMod@@YAMMM@Z",
+          "size": "51",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bFMod(float, float)"
+          },
+          "address": "3602"
+        },
+        {
+          "name": "sub_45DB00",
+          "size": "39",
+          "metadata": {},
+          "address": "3653"
+        },
+        {
+          "name": "?bSin@@YAMG@Z",
+          "size": "150",
+          "fuzzy_match_percent": 92.55102,
+          "metadata": {
+            "demangled_name": "float __cdecl bSin(unsigned short)"
+          },
+          "address": "3692"
+        },
+        {
+          "name": "?bSin@@YAMM@Z",
+          "size": "24",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bSin(float)"
+          },
+          "address": "3842"
+        },
+        {
+          "name": "?bCos@@YAMG@Z",
+          "size": "18",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bCos(unsigned short)"
+          },
+          "address": "3866"
+        },
+        {
+          "name": "?bSinCos@@YAXPAM0G@Z",
+          "size": "253",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bSinCos(float *, float *, unsigned short)"
+          },
+          "address": "3884"
+        },
+        {
+          "name": "?bASin@@YAGM@Z",
+          "size": "216",
+          "fuzzy_match_percent": 97.14286,
+          "metadata": {
+            "demangled_name": "unsigned short __cdecl bASin(float)"
+          },
+          "address": "4137"
+        },
+        {
+          "name": "sub_45DDF0",
+          "size": "215",
+          "metadata": {},
+          "address": "4353"
+        },
+        {
+          "name": "?bATan@@YAGMM@Z",
+          "size": "276",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned short __cdecl bATan(float, float)"
+          },
+          "address": "4568"
+        },
+        {
+          "name": "sub_45DFF0",
+          "size": "50",
+          "metadata": {},
+          "address": "4844"
+        },
+        {
+          "name": "?bFixATan@@YAGH@Z",
+          "size": "158",
+          "fuzzy_match_percent": 76.40385,
+          "metadata": {
+            "demangled_name": "unsigned short __cdecl bFixATan(int)"
+          },
+          "address": "4894"
+        },
+        {
+          "name": "?bFixATan@@YAGHH@Z",
+          "size": "138",
+          "fuzzy_match_percent": 94.54386,
+          "metadata": {
+            "demangled_name": "unsigned short __cdecl bFixATan(int, int)"
+          },
+          "address": "5052"
+        },
+        {
+          "name": "?bToPolar@@YAPAUbPolar@@PAU1@PAUbVector2@@@Z",
+          "size": "64",
+          "fuzzy_match_percent": 77.391304,
+          "metadata": {
+            "demangled_name": "struct bPolar * __cdecl bToPolar(struct bPolar *, struct bVector2*)"
+          },
+          "address": "5190"
+        },
+        {
+          "name": "?bConvertToBond@@YAXAAUbMatrix4@@ABU1@@Z",
+          "size": "155",
+          "fuzzy_match_percent": 69.03704,
+          "metadata": {
+            "demangled_name": "void __cdecl bConvertToBond(struct bMatrix4&, struct bMatrix4const &)"
+          },
+          "address": "5254"
+        },
+        {
+          "name": "?bConvertFromBond@@YAXAAUbMatrix4@@ABU1@@Z",
+          "size": "161",
+          "fuzzy_match_percent": 30.145454,
+          "metadata": {
+            "demangled_name": "void __cdecl bConvertFromBond(struct bMatrix4&, struct bMatrix4const &)"
+          },
+          "address": "5409"
+        },
+        {
+          "name": "?bMathTimingTest@@YAXXZ",
+          "size": "1",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMathTimingTest(void)"
+          },
+          "address": "5570"
+        },
+        {
+          "name": "?bInvertMatrix@@YAXPAUbMatrix4@@PBU1@@Z",
+          "size": "458",
+          "fuzzy_match_percent": 85.52027,
+          "metadata": {
+            "demangled_name": "void __cdecl bInvertMatrix(struct bMatrix4*, struct bMatrix4const *)"
+          },
+          "address": "5571"
+        },
+        {
+          "name": "?fDeterminant@@YAMPAUbMatrix4@@@Z",
+          "size": "313",
+          "fuzzy_match_percent": 96.73505,
+          "metadata": {
+            "demangled_name": "float __cdecl fDeterminant(struct bMatrix4*)"
+          },
+          "address": "6029"
+        },
+        {
+          "name": "?fInvertMatrix@@YAXPAUbMatrix4@@0@Z",
+          "size": "1111",
+          "fuzzy_match_percent": 97.93627,
+          "metadata": {
+            "demangled_name": "void __cdecl fInvertMatrix(struct bMatrix4*, struct bMatrix4*)"
+          },
+          "address": "6342"
+        },
+        {
+          "name": "?hermite_basis@@YAXPAUbMatrix4@@0MMMM@Z",
+          "size": "546",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl hermite_basis(struct bMatrix4*, struct bMatrix4*, float, float, float, float)"
+          },
+          "address": "7453"
+        },
+        {
+          "name": "?hermite_parameter@@YAXPAUbVector4@@PBUbMatrix4@@M@Z",
+          "size": "67",
+          "fuzzy_match_percent": 77.625,
+          "metadata": {
+            "demangled_name": "void __cdecl hermite_parameter(struct bVector4*, struct bMatrix4const *, float)"
+          },
+          "address": "7999"
+        },
+        {
+          "name": "?bMulMatrix@@YAXPAUbMatrix4@@PBU1@1@Z",
+          "size": "24",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMulMatrix(struct bMatrix4*, struct bMatrix4const *, struct bMatrix4const *)"
+          },
+          "address": "8066"
+        },
+        {
+          "name": "eMulVector",
+          "size": "5",
+          "metadata": {},
+          "address": "8090"
+        },
+        {
+          "name": "?bMulMatrix@@YAXPAUbVector3@@PBUbMatrix4@@PBU1@@Z",
+          "size": "5",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMulMatrix(struct bVector3*, struct bMatrix4const *, struct bVector3const *)"
+          },
+          "address": "8095"
+        },
+        {
+          "name": "?bTransposeMatrix@@YAPAUbMatrix4@@PAU1@PBU1@@Z",
+          "size": "20",
+          "fuzzy_match_percent": 93.333336,
+          "metadata": {
+            "demangled_name": "struct bMatrix4* __cdecl bTransposeMatrix(struct bMatrix4*, struct bMatrix4const *)"
+          },
+          "address": "8100"
+        },
+        {
+          "name": "_bOverlappedMemCpy",
+          "size": "124",
+          "fuzzy_match_percent": 92.0339,
+          "metadata": {},
+          "address": "8120"
+        },
+        {
+          "name": "?bPrintfSetLocaleInfo@@YAXDDD@Z",
+          "size": "30",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bPrintfSetLocaleInfo(char, char, char)"
+          },
+          "address": "8244"
+        },
+        {
+          "name": "sub_45EDF0",
+          "size": "48",
+          "metadata": {},
+          "address": "8274"
+        },
+        {
+          "name": "?bBufferedPutChar@@YAXD@Z",
+          "size": "69",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bBufferedPutChar(char)"
+          },
+          "address": "8322"
+        },
+        {
+          "name": "?_stuff_char@@YAXPAUbOutputInfo@@DPAH@Z",
+          "size": "67",
+          "fuzzy_match_percent": 76.13793,
+          "metadata": {
+            "demangled_name": "void __cdecl _stuff_char(struct bOutputInfo *, char, int *)"
+          },
+          "address": "8391"
+        },
+        {
+          "name": "?_stuff_str@@YAXPAUbOutputInfo@@PBDHPAH@Z",
+          "size": "212",
+          "fuzzy_match_percent": 83.46429,
+          "metadata": {
+            "demangled_name": "void __cdecl _stuff_str(struct bOutputInfo *, char const *, int, int *)"
+          },
+          "address": "8458"
+        },
+        {
+          "name": "?bMatrixToQuaternion@@YAXAAUbQuaternion@@ABUbMatrix4@@@Z",
+          "size": "317",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMatrixToQuaternion(struct bQuaternion &, struct bMatrix4const &)"
+          },
+          "address": "8670"
+        },
+        {
+          "name": "sub_45F0E0",
+          "size": "47",
+          "metadata": {},
+          "address": "8987"
+        },
+        {
+          "name": "sub_45F110",
+          "size": "48",
+          "metadata": {},
+          "address": "9034"
+        },
+        {
+          "name": "?bIsSlotPoolFull@@YAHPAVSlotPool@@@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bIsSlotPoolFull(class SlotPool *)"
+          },
+          "address": "9082"
+        },
+        {
+          "name": "?bCountFreeSlots@@YAHPAVSlotPool@@@Z",
+          "size": "11",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bCountFreeSlots(class SlotPool *)"
+          },
+          "address": "9098"
+        },
+        {
+          "name": "?bCountTotalSlots@@YAHPAVSlotPool@@@Z",
+          "size": "8",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bCountTotalSlots(class SlotPool *)"
+          },
+          "address": "9109"
+        },
+        {
+          "name": "?FlushSlotPool@SlotPool@@QAEXXZ",
+          "size": "75",
+          "fuzzy_match_percent": 97.77778,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPool::FlushSlotPool(void)"
+          },
+          "address": "9117"
+        },
+        {
+          "name": "?GetSlotNumber@SlotPool@@QAEHPAX@Z",
+          "size": "65",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: int __thiscall SlotPool::GetSlotNumber(void *)"
+          },
+          "address": "9192"
+        },
+        {
+          "name": "?GetSlot@SlotPool@@QAEPAXH@Z",
+          "size": "57",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall SlotPool::GetSlot(int)"
+          },
+          "address": "9257"
+        },
+        {
+          "name": "?VerifyPoolIntegrity@SlotPool@@QAEXXZ",
+          "size": "102",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPool::VerifyPoolIntegrity(void)"
+          },
+          "address": "9314"
+        },
+        {
+          "name": "?FastMalloc@SlotPool@@QAEPAXXZ",
+          "size": "30",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall SlotPool::FastMalloc(void)"
+          },
+          "address": "9416"
+        },
+        {
+          "name": "?Free@SlotPool@@QAEXPAX@Z",
+          "size": "24",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPool::Free(void *)"
+          },
+          "address": "9446"
+        },
+        {
+          "name": "sub_45F300",
+          "size": "47",
+          "metadata": {},
+          "address": "9470"
+        },
+        {
+          "name": "unknown_libname_82",
+          "size": "12",
+          "metadata": {},
+          "address": "9517"
+        },
+        {
+          "name": "?bDistBetween@@YAMPBUbVector3@@0@Z",
+          "size": "49",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bDistBetween(struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "9529"
+        },
+        {
+          "name": "?bDistBetween@@YAMPBUbVector4@@0@Z",
+          "size": "63",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bDistBetween(struct bVector4const *, struct bVector4const *)"
+          },
+          "address": "9578"
+        },
+        {
+          "name": "?bNormalize@@YAPAUbVector2@@PAU1@PBU1@@Z",
+          "size": "93",
+          "fuzzy_match_percent": 96.25,
+          "metadata": {
+            "demangled_name": "struct bVector2* __cdecl bNormalize(struct bVector2*, struct bVector2const *)"
+          },
+          "address": "9641"
+        },
+        {
+          "name": "?bNormalize@@YAPAUbVector2@@PAU1@PBU1@M@Z",
+          "size": "97",
+          "fuzzy_match_percent": 80.454544,
+          "metadata": {
+            "demangled_name": "struct bVector2* __cdecl bNormalize(struct bVector2*, struct bVector2const *, float)"
+          },
+          "address": "9734"
+        },
+        {
+          "name": "?bNormalize@@YAPAUbVector3@@PAU1@PBU1@@Z",
+          "size": "117",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector3* __cdecl bNormalize(struct bVector3*, struct bVector3const *)"
+          },
+          "address": "9831"
+        },
+        {
+          "name": "?bNormalize@@YAPAUbVector3@@PAU1@PBU1@M@Z",
+          "size": "121",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector3* __cdecl bNormalize(struct bVector3*, struct bVector3const *, float)"
+          },
+          "address": "9948"
+        },
+        {
+          "name": "?bNormalize@@YAPAUbVector4@@PAU1@PBU1@@Z",
+          "size": "128",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector4* __cdecl bNormalize(struct bVector4*, struct bVector4const *)"
+          },
+          "address": "10069"
+        },
+        {
+          "name": "?bScaleAdd@@YAPAUbVector2@@PAU1@PBU1@1M@Z",
+          "size": "36",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector2* __cdecl bScaleAdd(struct bVector2*, struct bVector2const *, struct bVector2const *, float)"
+          },
+          "address": "10197"
+        },
+        {
+          "name": "?bScaleAdd@@YAPAUbVector3@@PAU1@PBU1@1M@Z",
+          "size": "51",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector3* __cdecl bScaleAdd(struct bVector3*, struct bVector3const *, struct bVector3const *, float)"
+          },
+          "address": "10233"
+        },
+        {
+          "name": "?bScaleAdd@@YAPAUbVector4@@PAU1@PBU1@1M@Z",
+          "size": "72",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector4* __cdecl bScaleAdd(struct bVector4*, struct bVector4const *, struct bVector4const *, float)"
+          },
+          "address": "10284"
+        },
+        {
+          "name": "?bEqual@@YAHPBUbVector2@@0M@Z",
+          "size": "53",
+          "fuzzy_match_percent": 77.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bEqual(struct bVector2const *, struct bVector2const *, float)"
+          },
+          "address": "10356"
+        },
+        {
+          "name": "?bEqual@@YAHPBUbVector3@@0M@Z",
+          "size": "72",
+          "fuzzy_match_percent": 82.96296,
+          "metadata": {
+            "demangled_name": "int __cdecl bEqual(struct bVector3const *, struct bVector3const *, float)"
+          },
+          "address": "10409"
+        },
+        {
+          "name": "?bEqual@@YAHPBUbVector4@@0M@Z",
+          "size": "91",
+          "fuzzy_match_percent": 86.47059,
+          "metadata": {
+            "demangled_name": "int __cdecl bEqual(struct bVector4const *, struct bVector4const *, float)"
+          },
+          "address": "10481"
+        },
+        {
+          "name": "?bCross@@YAPAUbVector3@@PAU1@PBU1@1@Z",
+          "size": "61",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "struct bVector3* __cdecl bCross(struct bVector3*, struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "10572"
+        },
+        {
+          "name": "?bInitializeBoundingBox@@YAXPAUbVector2@@0@Z",
+          "size": "35",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitializeBoundingBox(struct bVector2*, struct bVector2*)"
+          },
+          "address": "10633"
+        },
+        {
+          "name": "?bInitializeBoundingBox@@YAXPAUbVector2@@0PBU1@@Z",
+          "size": "32",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitializeBoundingBox(struct bVector2*, struct bVector2*, struct bVector2const *)"
+          },
+          "address": "10668"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector2@@0PBU1@@Z",
+          "size": "125",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector2*, struct bVector2*, struct bVector2const *)"
+          },
+          "address": "10700"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector2@@0PBU1@M@Z",
+          "size": "141",
+          "fuzzy_match_percent": 39.057693,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector2*, struct bVector2*, struct bVector2const *, float)"
+          },
+          "address": "10825"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector2@@0PBU1@1@Z",
+          "size": "129",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector2*, struct bVector2*, struct bVector2const *, struct bVector2const *)"
+          },
+          "address": "10966"
+        },
+        {
+          "name": "?bBoundingBoxIsInside@@YAHPBUbVector2@@00M@Z",
+          "size": "88",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxIsInside(struct bVector2const *, struct bVector2const *, struct bVector2const *, float)"
+          },
+          "address": "11095"
+        },
+        {
+          "name": "?bBoundingBoxIsInside@@YAHPBUbVector2@@000@Z",
+          "size": "79",
+          "fuzzy_match_percent": 92.882355,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxIsInside(struct bVector2const *, struct bVector2const *, struct bVector2const *, struct bVector2const *)"
+          },
+          "address": "11183"
+        },
+        {
+          "name": "?bBoundingBoxOverlapping@@YAHPBUbVector2@@000@Z",
+          "size": "79",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxOverlapping(struct bVector2const *, struct bVector2const *, struct bVector2const *, struct bVector2const *)"
+          },
+          "address": "11262"
+        },
+        {
+          "name": "?bBoundingBoxDistOutside@@YAMPBUbVector2@@00@Z",
+          "size": "118",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bBoundingBoxDistOutside(struct bVector2const *, struct bVector2const *, struct bVector2const *)"
+          },
+          "address": "11341"
+        },
+        {
+          "name": "?bInitializeBoundingBox@@YAXPAUbVector3@@0@Z",
+          "size": "35",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitializeBoundingBox(struct bVector3*, struct bVector3*)"
+          },
+          "address": "11459"
+        },
+        {
+          "name": "?bInitializeBoundingBox@@YAXPAUbVector3@@0PBU1@@Z",
+          "size": "43",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitializeBoundingBox(struct bVector3*, struct bVector3*, struct bVector3const *)"
+          },
+          "address": "11494"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector3@@0PBU1@@Z",
+          "size": "140",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector3*, struct bVector3*, struct bVector3const *)"
+          },
+          "address": "11537"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector3@@0PBU1@M@Z",
+          "size": "196",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector3*, struct bVector3*, struct bVector3const *, float)"
+          },
+          "address": "11677"
+        },
+        {
+          "name": "?bExpandBoundingBox@@YAXPAUbVector3@@0PBU1@1@Z",
+          "size": "176",
+          "fuzzy_match_percent": 64.70492,
+          "metadata": {
+            "demangled_name": "void __cdecl bExpandBoundingBox(struct bVector3*, struct bVector3*, struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "11873"
+        },
+        {
+          "name": "?bBoundingBoxIsInside@@YAHPBUbVector3@@00M@Z",
+          "size": "122",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxIsInside(struct bVector3const *, struct bVector3const *, struct bVector3const *, float)"
+          },
+          "address": "12049"
+        },
+        {
+          "name": "?bBoundingBoxIsInside@@YAHPBUbVector3@@000@Z",
+          "size": "105",
+          "fuzzy_match_percent": 91.75,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxIsInside(struct bVector3const *, struct bVector3const *, struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "12171"
+        },
+        {
+          "name": "?bBoundingBoxOverlapping@@YAHPBUbVector3@@000@Z",
+          "size": "105",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bBoundingBoxOverlapping(struct bVector3const *, struct bVector3const *, struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "12276"
+        },
+        {
+          "name": "?bBoundingBoxDistOutside@@YAMPBUbVector3@@00@Z",
+          "size": "181",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bBoundingBoxDistOutside(struct bVector3const *, struct bVector3const *, struct bVector3const *)"
+          },
+          "address": "12381"
+        },
+        {
+          "name": "?bDistToLine@@YAMPBUbVector2@@00@Z",
+          "size": "212",
+          "fuzzy_match_percent": 77.76712,
+          "metadata": {
+            "demangled_name": "float __cdecl bDistToLine(struct bVector2const *, struct bVector2const *, struct bVector2const *)"
+          },
+          "address": "12562"
+        },
+        {
+          "name": "?bGetPolyArea@@YAMPBUbVector2@@H@Z",
+          "size": "206",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bGetPolyArea(struct bVector2const *, int)"
+          },
+          "address": "12774"
+        },
+        {
+          "name": "?bIsPointInPoly@@YA_NPBUbVector2@@0H@Z",
+          "size": "682",
+          "fuzzy_match_percent": 98.85714,
+          "metadata": {
+            "demangled_name": "bool __cdecl bIsPointInPoly(struct bVector2const *, struct bVector2const *, int)"
+          },
+          "address": "12980"
+        },
+        {
+          "name": "?bIsPointInPoly@@YA_NPBUbVector2@@PBUbVector3@@H@Z",
+          "size": "690",
+          "fuzzy_match_percent": 98.88066,
+          "metadata": {
+            "demangled_name": "bool __cdecl bIsPointInPoly(struct bVector2const *, struct bVector3const *, int)"
+          },
+          "address": "13662"
+        },
+        {
+          "name": "sub_460720",
+          "size": "7",
+          "metadata": {},
+          "address": "14352"
+        },
+        {
+          "name": "sub_460730",
+          "size": "31",
+          "metadata": {},
+          "address": "14359"
+        },
+        {
+          "name": "sub_460750",
+          "size": "7",
+          "metadata": {},
+          "address": "14390"
+        },
+        {
+          "name": "sub_460760",
+          "size": "10",
+          "metadata": {},
+          "address": "14397"
+        },
+        {
+          "name": "sub_460770",
+          "size": "9",
+          "metadata": {},
+          "address": "14407"
+        },
+        {
+          "name": "sub_460780",
+          "size": "35",
+          "metadata": {},
+          "address": "14416"
+        },
+        {
+          "name": "sub_4607B0",
+          "size": "6",
+          "metadata": {},
+          "address": "14451"
+        },
+        {
+          "name": "?GetAlignmentAdjustTop@@YAHHHH@Z",
+          "size": "30",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl GetAlignmentAdjustTop(int, int, int)"
+          },
+          "address": "14457"
+        },
+        {
+          "name": "?GetAlignmentAdjustBottom@@YAHHHH@Z",
+          "size": "25",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl GetAlignmentAdjustBottom(int, int, int)"
+          },
+          "address": "14487"
+        },
+        {
+          "name": "sub_460800",
+          "size": "9",
+          "metadata": {},
+          "address": "14512"
+        },
+        {
+          "name": "sub_460810",
+          "size": "4",
+          "metadata": {},
+          "address": "14521"
+        },
+        {
+          "name": "sub_460820",
+          "size": "6",
+          "metadata": {},
+          "address": "14525"
+        },
+        {
+          "name": "sub_460830",
+          "size": "3",
+          "metadata": {},
+          "address": "14531"
+        },
+        {
+          "name": "sub_460840",
+          "size": "3",
+          "metadata": {},
+          "address": "14534"
+        },
+        {
+          "name": "j__malloc",
+          "size": "5",
+          "metadata": {},
+          "address": "14537"
+        },
+        {
+          "name": "j____delete__007C7250",
+          "size": "5",
+          "metadata": {},
+          "address": "14542"
+        },
+        {
+          "name": "sub_460870",
+          "size": "4",
+          "metadata": {},
+          "address": "14547"
+        },
+        {
+          "name": "sub_460880",
+          "size": "4",
+          "metadata": {},
+          "address": "14551"
+        },
+        {
+          "name": "sub_460890",
+          "size": "3",
+          "metadata": {},
+          "address": "14555"
+        },
+        {
+          "name": "sub_4608A0",
+          "size": "28",
+          "metadata": {},
+          "address": "14558"
+        },
+        {
+          "name": "?_Get_deleter@_Ref_count_base@std@@UBEPAXABVtype_info@@@Z_19",
+          "size": "5",
+          "metadata": {
+            "demangled_name": "public: virtual void * __thiscall std::_Ref_count_base::_Get_deleter(class type_info const &) const"
+          },
+          "address": "14586"
+        },
+        {
+          "name": "sub_4608D0",
+          "size": "4",
+          "metadata": {},
+          "address": "14591"
+        },
+        {
+          "name": "sub_4608E0",
+          "size": "11",
+          "metadata": {},
+          "address": "14595"
+        },
+        {
+          "name": "sub_4608F0",
+          "size": "13",
+          "metadata": {},
+          "address": "14606"
+        },
+        {
+          "name": "sub_460900",
+          "size": "13",
+          "metadata": {},
+          "address": "14619"
+        },
+        {
+          "name": "sub_460910",
+          "size": "21",
+          "metadata": {},
+          "address": "14632"
+        },
+        {
+          "name": "?CheckFlipMemoryByAddress@@YAHPAVAllocationHeader@@0@Z",
+          "size": "26",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl CheckFlipMemoryByAddress(class AllocationHeader *, class AllocationHeader *)"
+          },
+          "address": "14653"
+        },
+        {
+          "name": "?CheckFlipMemoryByAllocationNumber@@YAHPAVAllocationHeader@@0@Z",
+          "size": "6",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl CheckFlipMemoryByAllocationNumber(class AllocationHeader *, class AllocationHeader *)"
+          },
+          "address": "14679"
+        },
+        {
+          "name": "sub_460960",
+          "size": "97",
+          "metadata": {},
+          "address": "14685"
+        },
+        {
+          "name": "nullsub_1061",
+          "size": "1",
+          "metadata": {},
+          "address": "14782"
+        },
+        {
+          "name": "sub_4609E0",
+          "size": "42",
+          "metadata": {},
+          "address": "14783"
+        },
+        {
+          "name": "?bGetFreeMemoryPoolNum@@YAHXZ",
+          "size": "46",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bGetFreeMemoryPoolNum(void)"
+          },
+          "address": "14825"
+        },
+        {
+          "name": "?bReserveMemoryPool@@YAXH@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bReserveMemoryPool(int)"
+          },
+          "address": "14871"
+        },
+        {
+          "name": "?bSetMemoryPoolOverrideInfo@@YAXHPAUMemoryPoolOverrideInfo@@@Z",
+          "size": "29",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bSetMemoryPoolOverrideInfo(int, struct MemoryPoolOverrideInfo *)"
+          },
+          "address": "14887"
+        },
+        {
+          "name": "?bSetMemoryPoolDebugFill@@YA_NH_N@Z",
+          "size": "22",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "bool __cdecl bSetMemoryPoolDebugFill(int, bool)"
+          },
+          "address": "14916"
+        },
+        {
+          "name": "?bSetMemoryPoolTopDirection@@YAXH_N@Z",
+          "size": "19",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bSetMemoryPoolTopDirection(int, bool)"
+          },
+          "address": "14938"
+        },
+        {
+          "name": "sub_460AB0",
+          "size": "19",
+          "metadata": {},
+          "address": "14957"
+        },
+        {
+          "name": "sub_460AD0",
+          "size": "30",
+          "metadata": {},
+          "address": "14976"
+        },
+        {
+          "name": "?bGetMallocSize@@YAIPBX@Z",
+          "size": "15",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bGetMallocSize(void const *)"
+          },
+          "address": "15006"
+        },
+        {
+          "name": "sub_460B00",
+          "size": "16",
+          "metadata": {},
+          "address": "15021"
+        },
+        {
+          "name": "sub_460B20",
+          "size": "14",
+          "metadata": {},
+          "address": "15037"
+        },
+        {
+          "name": "?bGetPoolSize@@YAHH@Z",
+          "size": "20",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bGetPoolSize(int)"
+          },
+          "address": "15051"
+        },
+        {
+          "name": "?bGetMemoryPoolName@@YAPBDH@Z",
+          "size": "38",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char const * __cdecl bGetMemoryPoolName(int)"
+          },
+          "address": "15071"
+        },
+        {
+          "name": "?bMemoryGetAllocationNumber@@YAHXZ",
+          "size": "6",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bMemoryGetAllocationNumber(void)"
+          },
+          "address": "15109"
+        },
+        {
+          "name": "?AddRef@bMemoryAllocator@@UAEHXZ",
+          "size": "8",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: virtual int __thiscall bMemoryAllocator::AddRef(void)"
+          },
+          "address": "15115"
+        },
+        {
+          "name": "?Release@bMemoryAllocator@@UAEHXZ",
+          "size": "21",
+          "fuzzy_match_percent": 88.0,
+          "metadata": {
+            "demangled_name": "public: virtual int __thiscall bMemoryAllocator::Release(void)"
+          },
+          "address": "15123"
+        },
+        {
+          "name": "?bStringHashUpper@@YAIPBD@Z",
+          "size": "46",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bStringHashUpper(char const *)"
+          },
+          "address": "15144"
+        },
+        {
+          "name": "?bStringHash@@YAIPBD@Z",
+          "size": "33",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bStringHash(char const *)"
+          },
+          "address": "15190"
+        },
+        {
+          "name": "?bStringHash@@YAIPBDH@Z",
+          "size": "33",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "unsigned int __cdecl bStringHash(char const *, int)"
+          },
+          "address": "15223"
+        },
+        {
+          "name": "?bStrLen@@YAHPBD@Z",
+          "size": "26",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrLen(char const *)"
+          },
+          "address": "15256"
+        },
+        {
+          "name": "?bStrCpy@@YAPADPADPBD@Z",
+          "size": "34",
+          "fuzzy_match_percent": 69.6875,
+          "metadata": {
+            "demangled_name": "char * __cdecl bStrCpy(char *, char const *)"
+          },
+          "address": "15282"
+        },
+        {
+          "name": "?bStrNCpy@@YAPADPADPBDH@Z",
+          "size": "40",
+          "fuzzy_match_percent": 89.75,
+          "metadata": {
+            "demangled_name": "char * __cdecl bStrNCpy(char *, char const *, int)"
+          },
+          "address": "15316"
+        },
+        {
+          "name": "?bSafeStrCpy@@YAPADPADPBDH@Z",
+          "size": "66",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char * __cdecl bSafeStrCpy(char *, char const *, int)"
+          },
+          "address": "15356"
+        },
+        {
+          "name": "?bStrCmp@@YAHPBD0@Z",
+          "size": "62",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrCmp(char const *, char const *)"
+          },
+          "address": "15422"
+        },
+        {
+          "name": "?bStrNCmp@@YAHPBD0H@Z",
+          "size": "102",
+          "fuzzy_match_percent": 46.285713,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrNCmp(char const *, char const *, int)"
+          },
+          "address": "15484"
+        },
+        {
+          "name": "?bStrICmp@@YAHPBD0@Z",
+          "size": "85",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrICmp(char const *, char const *)"
+          },
+          "address": "15586"
+        },
+        {
+          "name": "?bStrNICmp@@YAHPBD0H@Z",
+          "size": "152",
+          "fuzzy_match_percent": 60.732395,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrNICmp(char const *, char const *, int)"
+          },
+          "address": "15671"
+        },
+        {
+          "name": "?bStrCat@@YAPADPADPBD1@Z",
+          "size": "66",
+          "fuzzy_match_percent": 91.29032,
+          "metadata": {
+            "demangled_name": "char * __cdecl bStrCat(char *, char const *, char const *)"
+          },
+          "address": "15823"
+        },
+        {
+          "name": "AddItem__13UIMemcardListPCcT1ii",
+          "size": "34",
+          "metadata": {
+            "demangled_name": "UIMemcardList::AddItem(char const *, char const *, int, int)"
+          },
+          "address": "15889"
+        },
+        {
+          "name": "?bToUpper@@YAPADPAD@Z",
+          "size": "42",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char * __cdecl bToUpper(char *)"
+          },
+          "address": "15923"
+        },
+        {
+          "name": "?bStrToLong@@YAHPBD@Z",
+          "size": "152",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrToLong(char const *)"
+          },
+          "address": "15965"
+        },
+        {
+          "name": "?bStrToFloat@@YAMPBD@Z",
+          "size": "313",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "float __cdecl bStrToFloat(char const *)"
+          },
+          "address": "16117"
+        },
+        {
+          "name": "?bStrLen@@YAHPBG@Z",
+          "size": "25",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bStrLen(unsigned short const *)"
+          },
+          "address": "16430"
+        },
+        {
+          "name": "?bStrCpy@@YAPAGPAGPBG@Z",
+          "size": "50",
+          "fuzzy_match_percent": 71.888885,
+          "metadata": {
+            "demangled_name": "unsigned short * __cdecl bStrCpy(unsigned short *, unsigned short const *)"
+          },
+          "address": "16455"
+        },
+        {
+          "name": "?bStrCpy@@YAPAGPAGPBD@Z",
+          "size": "42",
+          "fuzzy_match_percent": 85.625,
+          "metadata": {
+            "demangled_name": "unsigned short * __cdecl bStrCpy(unsigned short *, char const *)"
+          },
+          "address": "16505"
+        },
+        {
+          "name": "sub_4611F0",
+          "size": "45",
+          "metadata": {},
+          "address": "16547"
+        },
+        {
+          "name": "?bStrNCpy@@YAPAGPAGPBDH@Z",
+          "size": "44",
+          "fuzzy_match_percent": 88.9,
+          "metadata": {
+            "demangled_name": "unsigned short * __cdecl bStrNCpy(unsigned short *, char const *, int)"
+          },
+          "address": "16592"
+        },
+        {
+          "name": "sub_461250",
+          "size": "53",
+          "metadata": {},
+          "address": "16636"
+        },
+        {
+          "name": "sub_461290",
+          "size": "98",
+          "metadata": {},
+          "address": "16689"
+        },
+        {
+          "name": "?bStrStr@@YAPADPBD0@Z",
+          "size": "89",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char * __cdecl bStrStr(char const *, char const *)"
+          },
+          "address": "16787"
+        },
+        {
+          "name": "?bStrIStr@@YAPADPBD0@Z",
+          "size": "71",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char * __cdecl bStrIStr(char const *, char const *)"
+          },
+          "address": "16876"
+        },
+        {
+          "name": "sub_4613B0",
+          "size": "91",
+          "metadata": {},
+          "address": "16947"
+        },
+        {
+          "name": "?bMatchNameWithWildcard@@YAHPBD0@Z",
+          "size": "198",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bMatchNameWithWildcard(char const *, char const *)"
+          },
+          "address": "17038"
+        },
+        {
+          "name": "sub_4614E0",
+          "size": "7",
+          "metadata": {},
+          "address": "17236"
+        },
+        {
+          "name": "sub_4614F0",
+          "size": "12",
+          "metadata": {},
+          "address": "17243"
+        },
+        {
+          "name": "sub_461500",
+          "size": "18",
+          "metadata": {},
+          "address": "17255"
+        },
+        {
+          "name": "sub_461520",
+          "size": "25",
+          "metadata": {},
+          "address": "17273"
+        },
+        {
+          "name": "sub_461540",
+          "size": "23",
+          "metadata": {},
+          "address": "17298"
+        },
+        {
+          "name": "sub_461560",
+          "size": "19",
+          "metadata": {},
+          "address": "17321"
+        },
+        {
+          "name": "?_Get_deleter@_Ref_count_base@std@@UBEPAXABVtype_info@@@Z_21",
+          "size": "5",
+          "metadata": {
+            "demangled_name": "public: virtual void * __thiscall std::_Ref_count_base::_Get_deleter(class type_info const &) const"
+          },
+          "address": "17340"
+        },
+        {
+          "name": "sub_461580",
+          "size": "4",
+          "metadata": {},
+          "address": "17345"
+        },
+        {
+          "name": "sub_461590",
+          "size": "9",
+          "metadata": {},
+          "address": "17349"
+        },
+        {
+          "name": "?Allocate@bSharedStringPool@@QAEPBDPBD@Z",
+          "size": "568",
+          "fuzzy_match_percent": 90.85915,
+          "metadata": {
+            "demangled_name": "public: char const * __thiscall bSharedStringPool::Allocate(char const *)"
+          },
+          "address": "17358"
+        },
+        {
+          "name": "?Free@bSharedStringPool@@QAEXPBD@Z",
+          "size": "302",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bSharedStringPool::Free(char const *)"
+          },
+          "address": "17926"
+        },
+        {
+          "name": "sub_461910",
+          "size": "51",
+          "metadata": {},
+          "address": "18228"
+        },
+        {
+          "name": "sub_461950",
+          "size": "27",
+          "metadata": {},
+          "address": "18279"
+        },
+        {
+          "name": "?bAllocateSharedString@@YAPBDPBD@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "char const * __cdecl bAllocateSharedString(char const *)"
+          },
+          "address": "18306"
+        },
+        {
+          "name": "?bFreeSharedString@@YAXPBD@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bFreeSharedString(char const *)"
+          },
+          "address": "18322"
+        },
+        {
+          "name": "sub_4619B0",
+          "size": "20",
+          "metadata": {},
+          "address": "18338"
+        },
+        {
+          "name": "sub_4619D0",
+          "size": "29",
+          "metadata": {},
+          "address": "18358"
+        },
+        {
+          "name": "sub_4619F0",
+          "size": "29",
+          "metadata": {},
+          "address": "18387"
+        },
+        {
+          "name": "sub_461A10",
+          "size": "4",
+          "metadata": {},
+          "address": "18416"
+        },
+        {
+          "name": "sub_461A20",
+          "size": "11",
+          "metadata": {},
+          "address": "18420"
+        },
+        {
+          "name": "sub_461A30",
+          "size": "7",
+          "metadata": {},
+          "address": "18431"
+        },
+        {
+          "name": "sub_461A40",
+          "size": "13",
+          "metadata": {},
+          "address": "18438"
+        },
+        {
+          "name": "sub_461A50",
+          "size": "20",
+          "metadata": {},
+          "address": "18451"
+        },
+        {
+          "name": "sub_461A70",
+          "size": "35",
+          "metadata": {},
+          "address": "18471"
+        },
+        {
+          "name": "sub_461AA0",
+          "size": "30",
+          "metadata": {},
+          "address": "18506"
+        },
+        {
+          "name": "sub_461AC0",
+          "size": "33",
+          "metadata": {},
+          "address": "18536"
+        },
+        {
+          "name": "??1SpeedScript@@QAE@XZ",
+          "size": "60",
+          "fuzzy_match_percent": 75.0,
+          "metadata": {
+            "demangled_name": "public: __thiscall SpeedScript::~SpeedScript(void)"
+          },
+          "address": "18569"
+        },
+        {
+          "name": "?ResizeEntryTable@SpeedScript@@QAEXH@Z",
+          "size": "122",
+          "fuzzy_match_percent": 76.568184,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SpeedScript::ResizeEntryTable(int)"
+          },
+          "address": "18629"
+        },
+        {
+          "name": "sub_461BC0",
+          "size": "87",
+          "metadata": {},
+          "address": "18751"
+        },
+        {
+          "name": "sub_461C20",
+          "size": "223",
+          "metadata": {},
+          "address": "18838"
+        },
+        {
+          "name": "?Init@SpeedScript@@QAEXPBD0H@Z",
+          "size": "572",
+          "fuzzy_match_percent": 99.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SpeedScript::Init(char const *, char const *, int)"
+          },
+          "address": "19061"
+        },
+        {
+          "name": "sub_461F40",
+          "size": "102",
+          "metadata": {},
+          "address": "19633"
+        },
+        {
+          "name": "?GetNextCommand@SpeedScript@@QAEPADPBD@Z",
+          "size": "136",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: char * __thiscall SpeedScript::GetNextCommand(char const *)"
+          },
+          "address": "19735"
+        },
+        {
+          "name": "sub_462040",
+          "size": "24",
+          "metadata": {},
+          "address": "19871"
+        },
+        {
+          "name": "?IsAnotherArgument@SpeedScript@@QAE_NXZ",
+          "size": "46",
+          "fuzzy_match_percent": 53.0,
+          "metadata": {
+            "demangled_name": "public: bool __thiscall SpeedScript::IsAnotherArgument(void)"
+          },
+          "address": "19895"
+        },
+        {
+          "name": "sub_462090",
+          "size": "65",
+          "metadata": {},
+          "address": "19941"
+        },
+        {
+          "name": "sub_4620E0",
+          "size": "78",
+          "metadata": {},
+          "address": "20006"
+        },
+        {
+          "name": "sub_462130",
+          "size": "3",
+          "metadata": {},
+          "address": "20084"
+        },
+        {
+          "name": "nullsub_1062",
+          "size": "1",
+          "metadata": {},
+          "address": "20087"
+        },
+        {
+          "name": "sub_462150",
+          "size": "13",
+          "metadata": {},
+          "address": "20088"
+        },
+        {
+          "name": "sub_462160",
+          "size": "3",
+          "metadata": {},
+          "address": "20101"
+        },
+        {
+          "name": "sub_462170",
+          "size": "3",
+          "metadata": {},
+          "address": "20104"
+        },
+        {
+          "name": "sub_462180",
+          "size": "3",
+          "metadata": {},
+          "address": "20107"
+        },
+        {
+          "name": "sub_462190",
+          "size": "20",
+          "metadata": {},
+          "address": "20110"
+        },
+        {
+          "name": "sub_4621B0",
+          "size": "17",
+          "metadata": {},
+          "address": "20130"
+        },
+        {
+          "name": "sub_4621D0",
+          "size": "3",
+          "metadata": {},
+          "address": "20147"
+        },
+        {
+          "name": "sub_4621E0",
+          "size": "4",
+          "metadata": {},
+          "address": "20150"
+        },
+        {
+          "name": "sub_4621F0",
+          "size": "3",
+          "metadata": {},
+          "address": "20154"
+        },
+        {
+          "name": "sub_462200",
+          "size": "4",
+          "metadata": {},
+          "address": "20157"
+        },
+        {
+          "name": "sub_462210",
+          "size": "3",
+          "metadata": {},
+          "address": "20161"
+        },
+        {
+          "name": "nullsub_1063",
+          "size": "1",
+          "metadata": {},
+          "address": "20164"
+        },
+        {
+          "name": "sub_462230",
+          "size": "3",
+          "metadata": {},
+          "address": "20165"
+        },
+        {
+          "name": "sub_462240",
+          "size": "3",
+          "metadata": {},
+          "address": "20168"
+        },
+        {
+          "name": "sub_462250",
+          "size": "3",
+          "metadata": {},
+          "address": "20171"
+        },
+        {
+          "name": "sub_462260",
+          "size": "4",
+          "metadata": {},
+          "address": "20174"
+        },
+        {
+          "name": "sub_462270",
+          "size": "24",
+          "metadata": {},
+          "address": "20178"
+        },
+        {
+          "name": "sub_462290",
+          "size": "23",
+          "metadata": {},
+          "address": "20202"
+        },
+        {
+          "name": "sub_4622B0",
+          "size": "17",
+          "metadata": {},
+          "address": "20225"
+        },
+        {
+          "name": "sub_4622D0",
+          "size": "3",
+          "metadata": {},
+          "address": "20242"
+        },
+        {
+          "name": "sub_4622E0",
+          "size": "3",
+          "metadata": {},
+          "address": "20245"
+        },
+        {
+          "name": "sub_4622F0",
+          "size": "20",
+          "metadata": {},
+          "address": "20248"
+        },
+        {
+          "name": "sub_462310",
+          "size": "17",
+          "metadata": {},
+          "address": "20268"
+        },
+        {
+          "name": "sub_462330",
+          "size": "3",
+          "metadata": {},
+          "address": "20285"
+        },
+        {
+          "name": "sub_462340",
+          "size": "3",
+          "metadata": {},
+          "address": "20288"
+        },
+        {
+          "name": "sub_462350",
+          "size": "20",
+          "metadata": {},
+          "address": "20291"
+        },
+        {
+          "name": "sub_462370",
+          "size": "17",
+          "metadata": {},
+          "address": "20311"
+        },
+        {
+          "name": "sub_462390",
+          "size": "13",
+          "metadata": {},
+          "address": "20328"
+        },
+        {
+          "name": "nullsub_1064",
+          "size": "1",
+          "metadata": {},
+          "address": "20341"
+        },
+        {
+          "name": "sub_4623B0",
+          "size": "13",
+          "metadata": {},
+          "address": "20342"
+        },
+        {
+          "name": "sub_4623C0",
+          "size": "24",
+          "metadata": {},
+          "address": "20355"
+        },
+        {
+          "name": "sub_4623E0",
+          "size": "57",
+          "metadata": {},
+          "address": "20379"
+        },
+        {
+          "name": "?bWareInit@@YAXXZ",
+          "size": "12",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bWareInit(void)"
+          },
+          "address": "20436"
+        },
+        {
+          "name": "?bGetTickerDifference@@YAMI@Z",
+          "size": "109",
+          "fuzzy_match_percent": 89.67742,
+          "metadata": {
+            "demangled_name": "float __cdecl bGetTickerDifference(unsigned int)"
+          },
+          "address": "20448"
+        },
+        {
+          "name": "?bFunkCallASync@@YAXPBDHPBXH@Z",
+          "size": "1",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bFunkCallASync(char const *, int, void const *, int)"
+          },
+          "address": "20557"
+        },
+        {
+          "name": "sub_4624B0",
+          "size": "6",
+          "metadata": {},
+          "address": "20558"
+        },
+        {
+          "name": "sub_4624C0",
+          "size": "6",
+          "metadata": {},
+          "address": "20564"
+        },
+        {
+          "name": "?bFunkDoesServerExist@@YAHPBD@Z",
+          "size": "43",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bFunkDoesServerExist(char const *)"
+          },
+          "address": "20570"
+        },
+        {
+          "name": "sub_462500",
+          "size": "25",
+          "metadata": {},
+          "address": "20613"
+        },
+        {
+          "name": "?bRefreshTweaker@@YAXXZ",
+          "size": "1",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bRefreshTweaker(void)"
+          },
+          "address": "20638"
+        },
+        {
+          "name": "sub_462530",
+          "size": "3",
+          "metadata": {},
+          "address": "20639"
+        },
+        {
+          "name": "sub_462540",
+          "size": "154",
+          "metadata": {},
+          "address": "20642"
+        },
+        {
+          "name": "sub_4625E0",
+          "size": "3",
+          "metadata": {},
+          "address": "20796"
+        },
+        {
+          "name": "sub_4625F0",
+          "size": "18",
+          "metadata": {},
+          "address": "20799"
+        },
+        {
+          "name": "sub_462610",
+          "size": "60",
+          "metadata": {},
+          "address": "20817"
+        },
+        {
+          "name": "sub_462650",
+          "size": "27",
+          "metadata": {},
+          "address": "20877"
+        },
+        {
+          "name": "??8_ContextCallback@details@Concurrency@@QBE_NABV012@@Z_10",
+          "size": "5",
+          "metadata": {
+            "demangled_name": "public: bool __thiscall Concurrency::details::_ContextCallback::operator==(class Concurrency::details::_ContextCallback const &) const"
+          },
+          "address": "20904"
+        },
+        {
+          "name": "sub_462670",
+          "size": "60",
+          "metadata": {},
+          "address": "20909"
+        },
+        {
+          "name": "sub_4626B0",
+          "size": "218",
+          "metadata": {},
+          "address": "20969"
+        },
+        {
+          "name": "sub_462790",
+          "size": "80",
+          "metadata": {},
+          "address": "21187"
+        },
+        {
+          "name": "?reserve_message@?$_Order_node_base@W4agent_status@Concurrency@@@Concurrency@@UAE_NH@Z_40",
+          "size": "5",
+          "metadata": {
+            "demangled_name": "public: virtual bool __thiscall Concurrency::_Order_node_base<enum Concurrency::agent_status>::reserve_message(int)"
+          },
+          "address": "21267"
+        },
+        {
+          "name": "sub_4627F0",
+          "size": "62",
+          "metadata": {},
+          "address": "21272"
+        },
+        {
+          "name": "?Sort@bList@@QAEXP6AHPAVbNode@@0@Z@Z",
+          "size": "92",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bList::Sort(int (__cdecl *)(class bNode *, class bNode *))"
+          },
+          "address": "21334"
+        },
+        {
+          "name": "?bSetRandomSeed@@YAXIPAI@Z",
+          "size": "32",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bSetRandomSeed(unsigned int, unsigned int *)"
+          },
+          "address": "21426"
+        },
+        {
+          "name": "sub_462A10",
+          "size": "109",
+          "metadata": {},
+          "address": "21458"
+        },
+        {
+          "name": "?_bOutput@@YAHPAUbOutputInfo@@PBDPAD@Z",
+          "size": "3735",
+          "fuzzy_match_percent": 43.528156,
+          "metadata": {
+            "demangled_name": "int __cdecl _bOutput(struct bOutputInfo *, char const *, char *)"
+          },
+          "address": "21567"
+        },
+        {
+          "name": "?Slerp@bQuaternion@@QBEAAU1@AAU1@ABU1@M@Z",
+          "size": "355",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: struct bQuaternion & __thiscall bQuaternion::Slerp(struct bQuaternion &, struct bQuaternion const &, float) const"
+          },
+          "address": "25302"
+        },
+        {
+          "name": "j___bClampVector__0045F590",
+          "size": "5",
+          "metadata": {},
+          "address": "25657"
+        },
+        {
+          "name": "sub_463BA0",
+          "size": "191",
+          "metadata": {},
+          "address": "25662"
+        },
+        {
+          "name": "?bFlushSlotPool@@YAXPAVSlotPool@@@Z",
+          "size": "9",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bFlushSlotPool(class SlotPool *)"
+          },
+          "address": "25853"
+        },
+        {
+          "name": "?bMalloc@@YAPAXPAVSlotPool@@@Z",
+          "size": "34",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void * __cdecl bMalloc(class SlotPool *)"
+          },
+          "address": "25862"
+        },
+        {
+          "name": "?bFree@@YAXPAVSlotPool@@PAX@Z",
+          "size": "26",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bFree(class SlotPool *, void *)"
+          },
+          "address": "25896"
+        },
+        {
+          "name": "?bFree@@YAXPAVSlotPool@@PAX1@Z",
+          "size": "54",
+          "fuzzy_match_percent": 97.391304,
+          "metadata": {
+            "demangled_name": "void __cdecl bFree(class SlotPool *, void *, void *)"
+          },
+          "address": "25922"
+        },
+        {
+          "name": "?bGetSlotNumber@@YAHPAVSlotPool@@PAX@Z",
+          "size": "15",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bGetSlotNumber(class SlotPool *, void *)"
+          },
+          "address": "25976"
+        },
+        {
+          "name": "?bGetSlot@@YAPAXPAVSlotPool@@H@Z",
+          "size": "15",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void * __cdecl bGetSlot(class SlotPool *, int)"
+          },
+          "address": "25991"
+        },
+        {
+          "name": "sub_463D20",
+          "size": "23",
+          "metadata": {},
+          "address": "26006"
+        },
+        {
+          "name": "sub_463D40",
+          "size": "23",
+          "metadata": {},
+          "address": "26029"
+        },
+        {
+          "name": "sub_463D60",
+          "size": "30",
+          "metadata": {},
+          "address": "26052"
+        },
+        {
+          "name": "sub_463D80",
+          "size": "28",
+          "metadata": {},
+          "address": "26082"
+        },
+        {
+          "name": "sub_463DA0",
+          "size": "11",
+          "metadata": {},
+          "address": "26110"
+        },
+        {
+          "name": "sub_463DB0",
+          "size": "23",
+          "metadata": {},
+          "address": "26121"
+        },
+        {
+          "name": "sub_463DD0",
+          "size": "17",
+          "metadata": {},
+          "address": "26144"
+        },
+        {
+          "name": "sub_463DF0",
+          "size": "30",
+          "metadata": {},
+          "address": "26161"
+        },
+        {
+          "name": "?GetAmountFree@MemoryPool@@QAEHXZ",
+          "size": "56",
+          "fuzzy_match_percent": 76.92308,
+          "metadata": {
+            "demangled_name": "public: int __thiscall MemoryPool::GetAmountFree(void)"
+          },
+          "address": "26191"
+        },
+        {
+          "name": "?GetLargestFreeBlock@MemoryPool@@QAEHXZ",
+          "size": "60",
+          "fuzzy_match_percent": 78.57143,
+          "metadata": {
+            "demangled_name": "public: int __thiscall MemoryPool::GetLargestFreeBlock(void)"
+          },
+          "address": "26247"
+        },
+        {
+          "name": "sub_463E90",
+          "size": "79",
+          "metadata": {},
+          "address": "26307"
+        },
+        {
+          "name": "sub_463EE0",
+          "size": "26",
+          "metadata": {},
+          "address": "26386"
+        },
+        {
+          "name": "?_Get_deleter@_Ref_count_base@std@@UBEPAXABVtype_info@@@Z_22",
+          "size": "5",
+          "metadata": {
+            "demangled_name": "public: virtual void * __thiscall std::_Ref_count_base::_Get_deleter(class type_info const &) const"
+          },
+          "address": "26412"
+        },
+        {
+          "name": "?TraceNewPool@MemoryPool@@QAEXXZ",
+          "size": "84",
+          "fuzzy_match_percent": 64.51613,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::TraceNewPool(void)"
+          },
+          "address": "26417"
+        },
+        {
+          "name": "nullsub_1065",
+          "size": "1",
+          "metadata": {},
+          "address": "26501"
+        },
+        {
+          "name": "nullsub_1066",
+          "size": "3",
+          "metadata": {},
+          "address": "26502"
+        },
+        {
+          "name": "nullsub_1067",
+          "size": "3",
+          "metadata": {},
+          "address": "26505"
+        },
+        {
+          "name": "sub_463F90",
+          "size": "157",
+          "metadata": {},
+          "address": "26508"
+        },
+        {
+          "name": "nullsub_1068",
+          "size": "1",
+          "metadata": {},
+          "address": "26665"
+        },
+        {
+          "name": "nullsub_1069",
+          "size": "1",
+          "metadata": {},
+          "address": "26666"
+        },
+        {
+          "name": "?bCountFreeMemory@@YAHH@Z",
+          "size": "47",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bCountFreeMemory(int)"
+          },
+          "address": "26667"
+        },
+        {
+          "name": "?bLargestMalloc@@YAHH@Z",
+          "size": "104",
+          "fuzzy_match_percent": 78.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bLargestMalloc(int)"
+          },
+          "address": "26714"
+        },
+        {
+          "name": "?bGetMemoryPoolNum@@YAHPBD@Z",
+          "size": "87",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bGetMemoryPoolNum(char const *)"
+          },
+          "address": "26818"
+        },
+        {
+          "name": "sub_464150",
+          "size": "29",
+          "metadata": {},
+          "address": "26905"
+        },
+        {
+          "name": "sub_464170",
+          "size": "53",
+          "metadata": {},
+          "address": "26934"
+        },
+        {
+          "name": "sub_4641B0",
+          "size": "78",
+          "metadata": {},
+          "address": "26987"
+        },
+        {
+          "name": "sub_464200",
+          "size": "62",
+          "metadata": {},
+          "address": "27065"
+        },
+        {
+          "name": "?Sort@?$bTList@VAllocationHeader@@@@QAEXP6AHPAVAllocationHeader@@0@Z@Z",
+          "size": "5",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bTList<class AllocationHeader>::Sort(int (__cdecl *)(class AllocationHeader *, class AllocationHeader *))"
+          },
+          "address": "27127"
+        },
+        {
+          "name": "nullsub_1070",
+          "size": "1",
+          "metadata": {},
+          "address": "27132"
+        },
+        {
+          "name": "sub_464260",
+          "size": "127",
+          "metadata": {},
+          "address": "27133"
+        },
+        {
+          "name": "sub_4642E0",
+          "size": "6",
+          "metadata": {},
+          "address": "27260"
+        },
+        {
+          "name": "sub_4642F0",
+          "size": "10",
+          "metadata": {},
+          "address": "27266"
+        },
+        {
+          "name": "sub_464300",
+          "size": "10",
+          "metadata": {},
+          "address": "27276"
+        },
+        {
+          "name": "sub_464310",
+          "size": "10",
+          "metadata": {},
+          "address": "27286"
+        },
+        {
+          "name": "sub_464320",
+          "size": "30",
+          "metadata": {},
+          "address": "27296"
+        },
+        {
+          "name": "sub_464353",
+          "size": "11",
+          "metadata": {},
+          "address": "27326"
+        },
+        {
+          "name": "?bVPrintf@@YAHPBDPAD@Z",
+          "size": "45",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bVPrintf(char const *, char *)"
+          },
+          "address": "27337"
+        },
+        {
+          "name": "sub_464390",
+          "size": "50",
+          "metadata": {},
+          "address": "27382"
+        },
+        {
+          "name": "?bVSPrintf@@YAHPADPBD0@Z",
+          "size": "125",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bVSPrintf(char *, char const *, char *)"
+          },
+          "address": "27432"
+        },
+        {
+          "name": "sub_464450",
+          "size": "66",
+          "metadata": {},
+          "address": "27557"
+        },
+        {
+          "name": "sub_4644A0",
+          "size": "106",
+          "metadata": {},
+          "address": "27623"
+        },
+        {
+          "name": "?AddFreeMemory@MemoryPool@@QAEXPAXHPBD@Z",
+          "size": "374",
+          "fuzzy_match_percent": 60.768116,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::AddFreeMemory(void *, int, char const *)"
+          },
+          "address": "27729"
+        },
+        {
+          "name": "?GetAllocations@MemoryPool@@QAEHPAPAXH@Z",
+          "size": "57",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: int __thiscall MemoryPool::GetAllocations(void **, int)"
+          },
+          "address": "28103"
+        },
+        {
+          "name": "sub_4646D0",
+          "size": "27",
+          "metadata": {},
+          "address": "28160"
+        },
+        {
+          "name": "?bMemoryGetAllocations@@YAHHPAPAXH@Z",
+          "size": "34",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bMemoryGetAllocations(int, void **, int)"
+          },
+          "address": "28187"
+        },
+        {
+          "name": "?Error@SpeedScript@@QAAXPBDZZ",
+          "size": "50",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __cdecl SpeedScript::Error(char const *, ...)"
+          },
+          "address": "28221"
+        },
+        {
+          "name": "sub_464760",
+          "size": "25",
+          "metadata": {},
+          "address": "28271"
+        },
+        {
+          "name": "?bReleasePrintf@@YAHPBDZZ",
+          "size": "62",
+          "fuzzy_match_percent": 73.333336,
+          "metadata": {
+            "demangled_name": "int __cdecl bReleasePrintf(char const *, ...)"
+          },
+          "address": "28296"
+        },
+        {
+          "name": "?bSPrintf@@YAHPADPBDZZ",
+          "size": "24",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "int __cdecl bSPrintf(char *, char const *, ...)"
+          },
+          "address": "28358"
+        },
+        {
+          "name": "?bSNPrintf@@YAHPADHPBDZZ",
+          "size": "66",
+          "fuzzy_match_percent": 73.26087,
+          "metadata": {
+            "demangled_name": "int __cdecl bSNPrintf(char *, int, char const *, ...)"
+          },
+          "address": "28382"
+        },
+        {
+          "name": "sub_464830",
+          "size": "24",
+          "metadata": {},
+          "address": "28448"
+        },
+        {
+          "name": "sub_464850",
+          "size": "75",
+          "metadata": {},
+          "address": "28472"
+        },
+        {
+          "name": "?PrintAllocationsByAddress@MemoryPool@@QAEXHH@Z",
+          "size": "187",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::PrintAllocationsByAddress(int, int)"
+          },
+          "address": "28547"
+        },
+        {
+          "name": "?PrintAllocations@MemoryPool@@QAEXHH@Z",
+          "size": "135",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::PrintAllocations(int, int)"
+          },
+          "address": "28734"
+        },
+        {
+          "name": "sub_4649F0",
+          "size": "5",
+          "metadata": {},
+          "address": "28869"
+        },
+        {
+          "name": "?AddMemory@MemoryPool@@QAEXPAXH@Z",
+          "size": "33",
+          "fuzzy_match_percent": 76.181816,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::AddMemory(void *, int)"
+          },
+          "address": "28874"
+        },
+        {
+          "name": "?bMemoryPrintAllocations@@YAXHHH@Z",
+          "size": "27",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMemoryPrintAllocations(int, int, int)"
+          },
+          "address": "28907"
+        },
+        {
+          "name": "?bMemoryPrintAllocationsByAddress@@YAXHHH@Z",
+          "size": "31",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMemoryPrintAllocationsByAddress(int, int, int)"
+          },
+          "address": "28934"
+        },
+        {
+          "name": "?GetPositionName@SpeedScript@@QAEPADXZ",
+          "size": "103",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: char * __thiscall SpeedScript::GetPositionName(void)"
+          },
+          "address": "28965"
+        },
+        {
+          "name": "?GetNextArgumentString@SpeedScript@@QAEPADXZ",
+          "size": "96",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: char * __thiscall SpeedScript::GetNextArgumentString(void)"
+          },
+          "address": "29068"
+        },
+        {
+          "name": "?GetNextArgumentInt@SpeedScript@@QAEHXZ",
+          "size": "79",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: int __thiscall SpeedScript::GetNextArgumentInt(void)"
+          },
+          "address": "29164"
+        },
+        {
+          "name": "?GetNextArgumentShort@SpeedScript@@QAEFXZ",
+          "size": "56",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: short __thiscall SpeedScript::GetNextArgumentShort(void)"
+          },
+          "address": "29243"
+        },
+        {
+          "name": "?GetNextArgumentFloat@SpeedScript@@QAEMXZ",
+          "size": "15",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: float __thiscall SpeedScript::GetNextArgumentFloat(void)"
+          },
+          "address": "29299"
+        },
+        {
+          "name": "?GetNextArgumentVector2@SpeedScript@@QAE?AUbVector2@@XZ",
+          "size": "56",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: struct bVector2 __thiscall SpeedScript::GetNextArgumentVector2(void)"
+          },
+          "address": "29314"
+        },
+        {
+          "name": "?GetNextArgumentVector3@SpeedScript@@QAE?AUbVector3@@XZ",
+          "size": "87",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: struct bVector3 __thiscall SpeedScript::GetNextArgumentVector3(void)"
+          },
+          "address": "29370"
+        },
+        {
+          "name": "?GetNextArgumentVector4@SpeedScript@@QAE?AUbVector4@@XZ",
+          "size": "114",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: struct bVector4 __thiscall SpeedScript::GetNextArgumentVector4(void)"
+          },
+          "address": "29457"
+        },
+        {
+          "name": "sub_464D00",
+          "size": "43",
+          "metadata": {},
+          "address": "29571"
+        },
+        {
+          "name": "??0SlotPoolManager@@QAE@XZ",
+          "size": "17",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: __thiscall SlotPoolManager::SlotPoolManager(void)"
+          },
+          "address": "29614"
+        },
+        {
+          "name": "??1SlotPoolManager@@QAE@XZ",
+          "size": "48",
+          "fuzzy_match_percent": 82.95,
+          "metadata": {
+            "demangled_name": "public: __thiscall SlotPoolManager::~SlotPoolManager(void)"
+          },
+          "address": "29631"
+        },
+        {
+          "name": "?Init@MemoryPool@@QAEXPAXHPBD@Z",
+          "size": "131",
+          "fuzzy_match_percent": 98.82353,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::Init(void *, int, char const *)"
+          },
+          "address": "29679"
+        },
+        {
+          "name": "?Close@MemoryPool@@QAEXXZ",
+          "size": "80",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::Close(void)"
+          },
+          "address": "29810"
+        },
+        {
+          "name": "?AllocateMemory@MemoryPool@@QAEPAXHHHHHPAH@Z",
+          "size": "674",
+          "fuzzy_match_percent": 63.07438,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall MemoryPool::AllocateMemory(int, int, int, int, int, int *)"
+          },
+          "address": "29890"
+        },
+        {
+          "name": "?VerifyPoolIntegrity@MemoryPool@@QAEX_N@Z",
+          "size": "298",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall MemoryPool::VerifyPoolIntegrity(bool)"
+          },
+          "address": "30564"
+        },
+        {
+          "name": "?bInitMemoryPool@@YAXHPAXHPBD@Z",
+          "size": "64",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitMemoryPool(int, void *, int, char const *)"
+          },
+          "address": "30862"
+        },
+        {
+          "name": "?bCloseMemoryPool@@YAXH@Z",
+          "size": "30",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bCloseMemoryPool(int)"
+          },
+          "address": "30926"
+        },
+        {
+          "name": "?bMemoryInit@@YAXXZ",
+          "size": "62",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMemoryInit(void)"
+          },
+          "address": "30956"
+        },
+        {
+          "name": "sub_4652E0",
+          "size": "41",
+          "metadata": {},
+          "address": "31018"
+        },
+        {
+          "name": "?bVerifyPoolIntegrity@@YAXH@Z",
+          "size": "23",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bVerifyPoolIntegrity(int)"
+          },
+          "address": "31059"
+        },
+        {
+          "name": "sub_465330",
+          "size": "5",
+          "metadata": {},
+          "address": "31082"
+        },
+        {
+          "name": "sub_465340",
+          "size": "66",
+          "metadata": {},
+          "address": "31087"
+        },
+        {
+          "name": "sub_465390",
+          "size": "52",
+          "metadata": {},
+          "address": "31153"
+        },
+        {
+          "name": "?bWareMalloc@@YAPAXHPBDHH@Z",
+          "size": "533",
+          "fuzzy_match_percent": 86.52973,
+          "metadata": {
+            "demangled_name": "void * __cdecl bWareMalloc(int, char const *, int, int)"
+          },
+          "address": "31205"
+        },
+        {
+          "name": "?bFree@@YAXPAX@Z",
+          "size": "519",
+          "fuzzy_match_percent": 81.86034,
+          "metadata": {
+            "demangled_name": "void __cdecl bFree(void *)"
+          },
+          "address": "31738"
+        },
+        {
+          "name": "?Free@bMemoryAllocator@@UAEXPAXI@Z",
+          "size": "14",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: virtual void __thiscall bMemoryAllocator::Free(void *, unsigned int)"
+          },
+          "address": "32257"
+        },
+        {
+          "name": "?Close@bSharedStringPool@@QAEXXZ",
+          "size": "60",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bSharedStringPool::Close(void)"
+          },
+          "address": "32271"
+        },
+        {
+          "name": "sub_465850",
+          "size": "58",
+          "metadata": {},
+          "address": "32331"
+        },
+        {
+          "name": "?InitFromFile@SpeedScript@@QAEXPBD@Z",
+          "size": "71",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SpeedScript::InitFromFile(char const *)"
+          },
+          "address": "32389"
+        },
+        {
+          "name": "?DeleteSlotPool@SlotPool@@SAXPAV1@@Z",
+          "size": "18",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: static void __cdecl SlotPool::DeleteSlotPool(class SlotPool *)"
+          },
+          "address": "32460"
+        },
+        {
+          "name": "?CleanupExpandedSlotPools@SlotPool@@QAEXXZ",
+          "size": "335",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPool::CleanupExpandedSlotPools(void)"
+          },
+          "address": "32478"
+        },
+        {
+          "name": "?CleanupExpandedSlotPools@SlotPoolManager@@QAEXXZ",
+          "size": "32",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPoolManager::CleanupExpandedSlotPools(void)"
+          },
+          "address": "32813"
+        },
+        {
+          "name": "?bMalloc@@YAPAXHH@Z",
+          "size": "23",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void * __cdecl bMalloc(int, int)"
+          },
+          "address": "32845"
+        },
+        {
+          "name": "sub_465A90",
+          "size": "22",
+          "metadata": {},
+          "address": "32868"
+        },
+        {
+          "name": "sub_465AB0",
+          "size": "60",
+          "metadata": {},
+          "address": "32890"
+        },
+        {
+          "name": "??0SpeedScript@@QAE@PBDH@Z",
+          "size": "92",
+          "fuzzy_match_percent": 99.85294,
+          "metadata": {
+            "demangled_name": "public: __thiscall SpeedScript::SpeedScript(char const *, int)"
+          },
+          "address": "32950"
+        },
+        {
+          "name": "sub_465B50",
+          "size": "81",
+          "metadata": {},
+          "address": "33042"
+        },
+        {
+          "name": "?HandleIncludeScript@SpeedScript@@QAEXPBD@Z",
+          "size": "458",
+          "fuzzy_match_percent": 95.54929,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SpeedScript::HandleIncludeScript(char const *)"
+          },
+          "address": "33123"
+        },
+        {
+          "name": "?NewSlotPool@SlotPool@@SAPAV1@HHPBDH@Z",
+          "size": "94",
+          "fuzzy_match_percent": 95.89474,
+          "metadata": {
+            "demangled_name": "public: static class SlotPool * __cdecl SlotPool::NewSlotPool(int, int, char const *, int)"
+          },
+          "address": "33581"
+        },
+        {
+          "name": "?ExpandSlotPool@SlotPool@@QAEXH@Z",
+          "size": "115",
+          "fuzzy_match_percent": 95.652176,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPool::ExpandSlotPool(int)"
+          },
+          "address": "33675"
+        },
+        {
+          "name": "?GetAllocatedSlot@SlotPool@@QAEPAXH@Z",
+          "size": "263",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall SlotPool::GetAllocatedSlot(int)"
+          },
+          "address": "33790"
+        },
+        {
+          "name": "?Malloc@SlotPool@@QAEPAXXZ",
+          "size": "90",
+          "fuzzy_match_percent": 94.375,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall SlotPool::Malloc(void)"
+          },
+          "address": "34053"
+        },
+        {
+          "name": "?Malloc@SlotPool@@QAEPAXHPAPAX@Z",
+          "size": "195",
+          "fuzzy_match_percent": 63.977272,
+          "metadata": {
+            "demangled_name": "public: void * __thiscall SlotPool::Malloc(int, void **)"
+          },
+          "address": "34143"
+        },
+        {
+          "name": "?NewSlotPool@SlotPoolManager@@QAEPAVSlotPool@@HHPBDH@Z",
+          "size": "70",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: class SlotPool * __thiscall SlotPoolManager::NewSlotPool(int, int, char const *, int)"
+          },
+          "address": "34338"
+        },
+        {
+          "name": "?DeleteSlotPool@SlotPoolManager@@QAEXPAVSlotPool@@@Z",
+          "size": "71",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall SlotPoolManager::DeleteSlotPool(class SlotPool *)"
+          },
+          "address": "34408"
+        },
+        {
+          "name": "?bSetMemoryPoolDebugTracing@@YA_NH_N@Z",
+          "size": "80",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "bool __cdecl bSetMemoryPoolDebugTracing(int, bool)"
+          },
+          "address": "34479"
+        },
+        {
+          "name": "?Alloc@bMemoryAllocator@@UAEPAXIABUTagValuePair@EA@@@Z",
+          "size": "94",
+          "fuzzy_match_percent": 84.34375,
+          "metadata": {
+            "demangled_name": "public: virtual void * __thiscall bMemoryAllocator::Alloc(unsigned int, struct EA::TagValuePair const &)"
+          },
+          "address": "34559"
+        },
+        {
+          "name": "?bMemoryCreatePersistentPool@@YAXH@Z",
+          "size": "101",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bMemoryCreatePersistentPool(int)"
+          },
+          "address": "34653"
+        },
+        {
+          "name": "?Init@bSharedStringPool@@QAEXH@Z",
+          "size": "84",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: void __thiscall bSharedStringPool::Init(int)"
+          },
+          "address": "34754"
+        },
+        {
+          "name": "?bInitSharedStringPool@@YAXH@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bInitSharedStringPool(int)"
+          },
+          "address": "34838"
+        },
+        {
+          "name": "?bNewSlotPool@@YAPAVSlotPool@@HHPBDH@Z",
+          "size": "71",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "class SlotPool * __cdecl bNewSlotPool(int, int, char const *, int)"
+          },
+          "address": "34854"
+        },
+        {
+          "name": "?bDeleteSlotPool@@YAXPAVSlotPool@@@Z",
+          "size": "16",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bDeleteSlotPool(class SlotPool *)"
+          },
+          "address": "34925"
+        },
+        {
+          "name": "?bOMalloc@@YAPAXPAVSlotPool@@@Z",
+          "size": "9",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void * __cdecl bOMalloc(class SlotPool *)"
+          },
+          "address": "34941"
+        },
+        {
+          "name": "?bMalloc@@YAPAXPAVSlotPool@@HPAPAX@Z",
+          "size": "20",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void * __cdecl bMalloc(class SlotPool *, int, void **)"
+          },
+          "address": "34950"
+        },
+        {
+          "name": "?bPListInit@@YAXH@Z",
+          "size": "93",
+          "fuzzy_match_percent": 99.96,
+          "metadata": {
+            "demangled_name": "void __cdecl bPListInit(int)"
+          },
+          "address": "34970"
+        },
+        {
+          "name": "?bPListClose@@YAXXZ",
+          "size": "49",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "void __cdecl bPListClose(void)"
+          },
+          "address": "35063"
+        },
+        {
+          "name": "?Malloc@bPNode@@SAPAXXZ",
+          "size": "33",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: static void * __cdecl bPNode::Malloc(void)"
+          },
+          "address": "35112"
+        },
+        {
+          "name": "?Free@bPNode@@SAXPAX@Z",
+          "size": "90",
+          "fuzzy_match_percent": 100.0,
+          "metadata": {
+            "demangled_name": "public: static void __cdecl bPNode::Free(void *)"
+          },
+          "address": "35145"
+        }
+      ],
+      "metadata": {
+        "complete": false,
+        "auto_generated": false
+      }
+    }
+  ],
+  "version": 2
+}

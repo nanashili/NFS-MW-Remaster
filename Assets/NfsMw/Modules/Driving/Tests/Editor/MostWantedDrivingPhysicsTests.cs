@@ -84,7 +84,7 @@ namespace NfsMwRemaster.Driving.Tests
             var vehicle = runner.PreviewVehicle.GetComponent<VehicleController>();
             float insideAngle = vehicle.Wheels.Where(wheel => wheel.IsFrontWheel).Max(wheel => Mathf.Abs(wheel.SteerAngle));
             Assert.That(insideAngle, Is.GreaterThan(vehicle.Tuning.controls.maxSteerAngle + 1f));
-            Assert.That(insideAngle, Is.LessThanOrEqualTo(MostWantedSteeringModel.AbsoluteMaximumDegrees));
+            Assert.That(insideAngle, Is.LessThanOrEqualTo(MostWantedChassis.AbsoluteMaximumDegrees));
         }
 
         [Test]
@@ -105,7 +105,7 @@ namespace NfsMwRemaster.Driving.Tests
         }
 
         [Test]
-        public void ReferenceAutomaticReverseToForwardBrakesThenChangesDirectionNearStop()
+        public void SourceReverseToForwardSelectsFirstAboveMinusFiveMetersPerSecond()
         {
             var definition = Fixture("bmwm3gtre46", VehiclePhysicsLabExperimentKind.Custom, 5f);
             definition.warmupSeconds = 0f;
@@ -117,15 +117,24 @@ namespace NfsMwRemaster.Driving.Tests
                 return elapsed < 2f ? new VehicleInputState { Brake = 1f } : new VehicleInputState { Throttle = 1f };
             });
             var vehicle = runner.PreviewVehicle.GetComponent<VehicleController>();
-            vehicle.PhysicsSampled += dt => elapsed += dt;
+            int previousGear = 1;
+            float transitionSpeed = float.NaN;
+            vehicle.PhysicsSampled += dt =>
+            {
+                int gear = vehicle.GetComponent<VehiclePowertrain>().Gear;
+                if (previousGear < 0 && gear > 0)
+                    transitionSpeed = Vector3.Dot(vehicle.Body.linearVelocity, vehicle.transform.forward);
+                previousGear = gear;
+                elapsed += dt;
+            };
             Complete(runner);
             int firstReverse = Array.FindIndex(runner.Report.samples, sample => sample.gear < 0);
             int firstForwardAfterReverse = firstReverse < 0 ? -1 : Array.FindIndex(runner.Report.samples, firstReverse + 1,
                 sample => sample.gear > 0);
             Assert.That(firstReverse, Is.GreaterThanOrEqualTo(0));
-            Assert.That(firstForwardAfterReverse, Is.GreaterThan(firstReverse));
-            Assert.That(Mathf.Abs(runner.Report.samples[firstForwardAfterReverse].forwardSpeedKph), Is.LessThan(3f),
-                "Forward gear must not be selected while the car is still materially reversing.");
+            Assert.That(firstForwardAfterReverse, Is.GreaterThan(firstReverse), string.Join("; ", runner.Report.samples.Where((sample, index) => index % 25 == 0).Select(sample => $"v={sample.forwardSpeedKph:0.00} gear={sample.gear} throttle={sample.finalInput.Throttle:0.00} brake={sample.finalInput.Brake:0.00}")));
+            Assert.That(transitionSpeed, Is.GreaterThan(-5f),
+                "InputPlayer selects first above -5 m/s; the old near-zero speed gate is not the source rule.");
             Assert.That(runner.Report.samples.Skip(firstForwardAfterReverse).Max(sample => sample.forwardSpeedKph), Is.GreaterThan(3f));
         }
 
@@ -175,6 +184,9 @@ namespace NfsMwRemaster.Driving.Tests
             track.length = 1000f; track.width = 40;
             var definition = Own(ScriptableObject.CreateInstance<VehiclePhysicsLabDefinition>());
             definition.id = Guid.NewGuid().ToString("N"); definition.vehicle = setup; definition.track = track;
+            // Leave road behind the spawn for reverse runs; the default extent only
+            // reaches 20 metres behind a 1000-metre track's starting line.
+            definition.safety.fixtureHalfExtent = 1000f;
             definition.experiment = kind; definition.warmupSeconds = .5f; definition.safety.maximumSeconds = duration;
             definition.capture.maximumSamples = 1024; definition.evaluation.requireTargetSpeed = false;
             definition.capture.captureFilteredInput = true;

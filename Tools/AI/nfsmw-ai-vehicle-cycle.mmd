@@ -1,0 +1,31 @@
+stateDiagram-v2
+    [*] --> Constructed: Construct / query capabilities / create nav + target + tasks
+    Constructed --> Reset: ResetInternals
+    Reset --> Thinking: policy task eligible
+    Thinking --> Paused: simulation paused or race ending
+    Paused --> Thinking: execution resumes
+    Thinking --> Tracking: update target + roads + collision state
+    Tracking --> Choosing: update subtype and goal
+    Choosing --> Choosing: scan non-current eligible actions
+    Choosing --> Transition: later candidate score >= current score
+    Transition --> Acting: old.Finish then new.Begin
+    Choosing --> Acting: keep current
+    Acting --> Latched: action.Update writes target/speed/flags or direct controls
+    Latched --> Simulating: OnTaskSimulate
+    Simulating --> Thinking: apply common steering/longitudinal outputs
+    Acting --> SimplePhysics: off-world/simple mode
+    SimplePhysics --> Thinking: advance pose and road elevation directly
+    Thinking --> Unspawned: unspawn request / terminal helicopter exit
+    Unspawned --> Reset: respawn/spawn
+    Reset --> [*]: behavior destroyed
+
+    note right of Choosing
+        Current action is excluded.
+        Finished current permits replacement.
+        Equal scores choose the later eligible action.
+    end note
+
+    note right of Latched
+        flags: steer=1, longitudinal=2,
+        reverse allowance=4
+    end note

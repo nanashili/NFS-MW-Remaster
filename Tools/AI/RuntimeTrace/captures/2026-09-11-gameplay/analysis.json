@@ -1,0 +1,923 @@
+{
+  "action_transitions": {
+    "<none> -> AIActionRace": 2,
+    "<none> -> AIActionTraffic": 92,
+    "AIActionPursuitOffRoad -> AIActionRace": 1,
+    "AIActionRace -> AIActionPursuitOffRoad": 1,
+    "AIActionRace -> AIActionTraffic": 1
+  },
+  "analysis_schema": 2,
+  "boolean_results": {
+    "AICopManager::SpawnPursuitIVehicle=False": 10,
+    "AICopManager::SpawnPursuitIVehicle=True": 1,
+    "AIPursuit::OnTask=True": 82,
+    "AISpawnManager::CheckSpawnPosition=False": 6,
+    "AISpawnManager::CheckSpawnPosition=True": 3,
+    "AISpawnManager::GetSpawnLocation=False": 51,
+    "AISpawnManager::GetSpawnLocation=True": 3,
+    "AITrafficManager::SpawnTraffic=False": 1831,
+    "AITrafficManager::SpawnTraffic=True": 89,
+    "AIVehicle::OnTask=True": 204
+  },
+  "capture": {
+    "sample_config_sha256": "d3c0a027c7fe56a2204ee354d4010353db6811d0fd5a0bc6d58125d2b5646aa6",
+    "sha256": "f3c2a4c2a2f61dd23e53e77805865e8c2245a8bab838c3fd886801d3181f2265",
+    "size_bytes": 9231856
+  },
+  "event_count": 15386,
+  "field_validation": {
+    "hsimtask_representation": "opaque monotonically assigned integer handle; the C++ typedef is pointer-shaped but the value is not an object address",
+    "legacy_specialized_slots": "preserved only as untrusted hexadecimal slots in per-event JSONL",
+    "task_hook_snapshot_adjustment": "schema 1 hooks 2 and 9 begin at complete object + 0x08",
+    "unavailable_from_capture": [
+      "AIVehicle.top_speed",
+      "AIVehicle.race_throttle_brake_raw",
+      "late AIPursuit fields when outside a hook's 256-byte snapshot",
+      "AIVehicle action snapshots outside AIGoal::ChooseAction"
+    ],
+    "values_source": "retail-layout re-decode of each bounded raw object snapshot"
+  },
+  "header": {
+    "flags": 1,
+    "header_size": 256,
+    "hook_count": 9,
+    "image_base": "0x00400000",
+    "image_size": 6786638,
+    "preferred_base": "0x00400000",
+    "process_id": 212,
+    "qpc_frequency": 10000000,
+    "record_size": 600,
+    "schema_version": 1,
+    "started_filetime_utc": 134336097700876950,
+    "target_name": "speed.exe PC 1.3",
+    "target_sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+    "tracer_version": "0.1.0"
+  },
+  "hook_phase_counts": {
+    "AICopManager::SpawnPursuitIVehicle [entry]": 11,
+    "AICopManager::SpawnPursuitIVehicle [exit]": 11,
+    "AIGoal::ChooseAction [entry]": 3803,
+    "AIGoal::ChooseAction [exit]": 3803,
+    "AIPursuit::OnTask [entry]": 82,
+    "AIPursuit::OnTask [exit]": 82,
+    "AIPursuit::UpdateFormation [entry]": 33,
+    "AIPursuit::UpdateFormation [exit]": 33,
+    "AISpawnManager::CheckSpawnPosition [entry]": 9,
+    "AISpawnManager::CheckSpawnPosition [exit]": 9,
+    "AISpawnManager::GetSpawnLocation [entry]": 54,
+    "AISpawnManager::GetSpawnLocation [exit]": 54,
+    "AITrafficManager::SpawnTraffic [entry]": 1920,
+    "AITrafficManager::SpawnTraffic [exit]": 1920,
+    "AIVehicle::OnTask [entry]": 204,
+    "AIVehicle::OnTask [exit]": 204,
+    "AIVehicle::OnTaskSimulate [entry]": 1577,
+    "AIVehicle::OnTaskSimulate [exit]": 1577
+  },
+  "instrumented_duration_ms": {
+    "AICopManager::SpawnPursuitIVehicle": {
+      "count": 11,
+      "max": 9.082,
+      "median": 0.1946,
+      "min": 0.0691,
+      "p95_nearest_rank": 9.082
+    },
+    "AIGoal::ChooseAction": {
+      "count": 3803,
+      "max": 9.5555,
+      "median": 0.0454,
+      "min": 0.0144,
+      "p95_nearest_rank": 1.1788
+    },
+    "AIPursuit::OnTask": {
+      "count": 82,
+      "max": 0.263,
+      "median": 0.0504,
+      "min": 0.0245,
+      "p95_nearest_rank": 0.1423
+    },
+    "AIPursuit::UpdateFormation": {
+      "count": 33,
+      "max": 1.1813,
+      "median": 0.0859,
+      "min": 0.0496,
+      "p95_nearest_rank": 1.0051
+    },
+    "AISpawnManager::CheckSpawnPosition": {
+      "count": 9,
+      "max": 0.1127,
+      "median": 0.0369,
+      "min": 0.0152,
+      "p95_nearest_rank": 0.1127
+    },
+    "AISpawnManager::GetSpawnLocation": {
+      "count": 54,
+      "max": 0.4396,
+      "median": 0.06265,
+      "min": 0.0273,
+      "p95_nearest_rank": 0.2212
+    },
+    "AITrafficManager::SpawnTraffic": {
+      "count": 1920,
+      "max": 15.1557,
+      "median": 0.57545,
+      "min": 0.0258,
+      "p95_nearest_rank": 6.4321
+    },
+    "AIVehicle::OnTask": {
+      "count": 204,
+      "max": 4.067,
+      "median": 0.3022,
+      "min": 0.069,
+      "p95_nearest_rank": 1.0299
+    },
+    "AIVehicle::OnTaskSimulate": {
+      "count": 1577,
+      "max": 0.3841,
+      "median": 0.0731,
+      "min": 0.0193,
+      "p95_nearest_rank": 0.1902
+    }
+  },
+  "integrity": {
+    "contiguous": true,
+    "dropped_reported": 0,
+    "duplicate_sequence_count": 0,
+    "hook_mismatch_count": 0,
+    "missing_sequence_count": 0,
+    "pair_count": 7693,
+    "pair_mismatch_count": 0,
+    "return_address_mismatch_count": 0,
+    "sequence_max": 15386,
+    "sequence_min": 1,
+    "starts_at_one": true,
+    "this_mismatch_count": 0,
+    "unmatched_entry_count": 0,
+    "unmatched_exit_count": 0
+  },
+  "qpc_span_seconds": 291.2530456,
+  "runtime_values": {
+    "action_exit_states": {
+      "AIActionPursuitOffRoad [score=0.009999999776482582]": 87,
+      "AIActionRace [score=0.0]": 200,
+      "AIActionTraffic [score=0.10000000149011612]": 3516
+    },
+    "hook_entry_arguments": {
+      "AICopManager::SpawnPursuitIVehicle": {
+        "pursuit_ptr": {
+          "count": 11,
+          "distinct_count": 1,
+          "values": [
+            "0x0208e5a8"
+          ]
+        },
+        "vehicle_ptr": {
+          "count": 11,
+          "distinct_count": 1,
+          "values": [
+            "0x0207e3ac"
+          ]
+        }
+      },
+      "AIGoal::ChooseAction": {
+        "dT": {
+          "count": 3803,
+          "distinct_count": 157,
+          "examples": [
+            0.0,
+            0.013333330862224102,
+            0.0133333345875144,
+            0.01666666753590107,
+            0.017500000074505806,
+            0.018333332613110542,
+            0.01916666515171528,
+            0.019999997690320015,
+            0.02083333022892475,
+            0.021666662767529488,
+            0.022499995306134224,
+            0.02333332784473896
+          ],
+          "max": 0.5666667222976685,
+          "min": 0.0
+        }
+      },
+      "AIPursuit::OnTask": {
+        "dT": {
+          "count": 82,
+          "distinct_count": 14,
+          "examples": [
+            0.0066666672937572,
+            0.008333333767950535,
+            0.00958333257585764,
+            0.013333328999578953,
+            0.019895823672413826,
+            0.02374999225139618,
+            0.02500000223517418,
+            0.02531249262392521,
+            0.0266666691750288,
+            0.02916666306555271,
+            0.03333333507180214,
+            0.05749997869133949
+          ],
+          "max": 0.13333334028720856,
+          "min": 0.0066666672937572
+        },
+        "task_handle": {
+          "count": 82,
+          "distinct_count": 2,
+          "max": 140,
+          "min": 139,
+          "values": [
+            139,
+            140
+          ]
+        }
+      },
+      "AIPursuit::UpdateFormation": {
+        "dT": {
+          "count": 33,
+          "distinct_count": 8,
+          "max": 0.13333334028720856,
+          "min": 0.0266666691750288,
+          "values": [
+            0.0266666691750288,
+            0.0508333183825016,
+            0.06583330780267715,
+            0.09333333373069763,
+            0.10374997556209564,
+            0.12208332121372223,
+            0.125,
+            0.13333334028720856
+          ]
+        }
+      },
+      "AISpawnManager::CheckSpawnPosition": {
+        "check_dist": {
+          "count": 9,
+          "distinct_count": 1,
+          "max": 1,
+          "min": 1,
+          "values": [
+            1
+          ]
+        },
+        "check_lane": {
+          "count": 9,
+          "distinct_count": 1,
+          "max": 1,
+          "min": 1,
+          "values": [
+            1
+          ]
+        },
+        "check_pos_ptr": {
+          "count": 9,
+          "distinct_count": 2,
+          "values": [
+            "0x0022f678",
+            "0x0022f9d0"
+          ]
+        },
+        "lane": {
+          "count": 9,
+          "distinct_count": 4,
+          "max": 4,
+          "min": 1,
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "node": {
+          "count": 9,
+          "distinct_count": 2,
+          "max": 1,
+          "min": 0,
+          "values": [
+            0,
+            1
+          ]
+        }
+      },
+      "AISpawnManager::GetSpawnLocation": {
+        "lane_ptr": {
+          "count": 54,
+          "distinct_count": 2,
+          "values": [
+            "0x0022f9c4",
+            "0x0022fcf4"
+          ]
+        },
+        "segment_ptr": {
+          "count": 54,
+          "distinct_count": 2,
+          "values": [
+            "0x0022f9bc",
+            "0x0022fcf8"
+          ]
+        },
+        "time_step_ptr": {
+          "count": 54,
+          "distinct_count": 2,
+          "values": [
+            "0x0022f99c",
+            "0x0022fcf0"
+          ]
+        }
+      },
+      "AITrafficManager::SpawnTraffic": {},
+      "AIVehicle::OnTask": {
+        "dT": {
+          "count": 204,
+          "distinct_count": 14,
+          "examples": [
+            0.006041665095835924,
+            0.007708330173045397,
+            0.009166662581264973,
+            0.0133333345875144,
+            0.013697913847863674,
+            0.01666666753590107,
+            0.04916664958000183,
+            0.06666667014360428,
+            0.06875000894069672,
+            0.18843740224838257,
+            0.28833329677581787,
+            0.32499998807907104
+          ],
+          "max": 0.3333333432674408,
+          "min": 0.006041665095835924
+        },
+        "task_handle": {
+          "count": 204,
+          "distinct_count": 20,
+          "examples": [
+            11,
+            22,
+            28,
+            31,
+            34,
+            37,
+            42,
+            49,
+            58,
+            61,
+            64,
+            94
+          ],
+          "max": 144,
+          "min": 11
+        }
+      },
+      "AIVehicle::OnTaskSimulate": {
+        "dT": {
+          "count": 1577,
+          "distinct_count": 61,
+          "examples": [
+            0.0016666668234393,
+            0.0020833334419876337,
+            0.0021875000093132257,
+            0.002291666576638818,
+            0.00239583314396441,
+            0.002499999711290002,
+            0.002604166278615594,
+            0.002708332845941186,
+            0.002812499413266778,
+            0.00291666598059237,
+            0.003020832547917962,
+            0.003124999115243554
+          ],
+          "max": 0.008333333767950535,
+          "min": 0.0016666668234393
+        }
+      }
+    },
+    "pursuit_exit_fields": {
+      "base_heat": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": 0.0,
+        "min": 0.0,
+        "values": [
+          0.0
+        ]
+      },
+      "breaker_timer": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": -1.0,
+        "min": -1.0,
+        "values": [
+          -1.0
+        ]
+      },
+      "busted_timer_task_handle": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": 140,
+        "min": 140,
+        "values": [
+          140
+        ]
+      },
+      "formation_attempt_count": {
+        "count": 82,
+        "distinct_count": 2,
+        "max": 1,
+        "min": 0,
+        "values": [
+          0,
+          1
+        ]
+      },
+      "formation_ptr": {
+        "count": 115,
+        "distinct_count": 1,
+        "values": [
+          "0x0208e850"
+        ]
+      },
+      "heat_scale": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0
+        ]
+      },
+      "in_formation_timer": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": 0.0,
+        "min": 0.0,
+        "values": [
+          0.0
+        ]
+      },
+      "maximum_heat": {
+        "count": 115,
+        "distinct_count": 1,
+        "max": 5.0,
+        "min": 5.0,
+        "values": [
+          5.0
+        ]
+      },
+      "pursuit_level": {
+        "count": 115,
+        "distinct_count": 2,
+        "max": 1,
+        "min": 0,
+        "values": [
+          0,
+          1
+        ]
+      },
+      "target_ptr": {
+        "count": 115,
+        "distinct_count": 1,
+        "values": [
+          "0x020213b0"
+        ]
+      },
+      "total_pursuit_time": {
+        "count": 115,
+        "distinct_count": 55,
+        "examples": [
+          0.0,
+          0.15833333134651184,
+          0.27708330750465393,
+          0.3887499272823334,
+          0.5270832180976868,
+          0.7845831513404846,
+          1.1020830869674683,
+          1.490833044052124,
+          1.8908330202102661,
+          2.1491663455963135,
+          2.4158332347869873,
+          2.815833568572998
+        ],
+        "max": 17.98248863220215,
+        "min": 0.0
+      }
+    },
+    "pursuit_vehicle_attempts": [
+      {
+        "entry_sequence": 14009,
+        "exit_sequence": 14014,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14017,
+        "exit_sequence": 14020,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14023,
+        "exit_sequence": 14028,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14029,
+        "exit_sequence": 14034,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14043,
+        "exit_sequence": 14046,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14047,
+        "exit_sequence": 14050,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14051,
+        "exit_sequence": 14056,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14059,
+        "exit_sequence": 14064,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14071,
+        "exit_sequence": 14074,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14075,
+        "exit_sequence": 14078,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": false,
+        "vehicle_ptr": "0x0207e3ac"
+      },
+      {
+        "entry_sequence": 14085,
+        "exit_sequence": 14092,
+        "pursuit_ptr": "0x0208e5a8",
+        "result": true,
+        "vehicle_ptr": "0x0207e3ac"
+      }
+    ],
+    "spawn_manager_exit_fields": {
+      "max_spawn_distance": {
+        "count": 63,
+        "distinct_count": 1,
+        "max": 400.0,
+        "min": 400.0,
+        "values": [
+          400.0
+        ]
+      },
+      "min_spawn_distance": {
+        "count": 63,
+        "distinct_count": 1,
+        "max": 150.0,
+        "min": 150.0,
+        "values": [
+          150.0
+        ]
+      }
+    },
+    "successful_check_spawn_position": [
+      {
+        "args": {
+          "check_dist": 1,
+          "check_lane": 1,
+          "check_pos_ptr": "0x0022f9d0",
+          "lane": 3,
+          "node": 1
+        },
+        "entry_sequence": 5372,
+        "exit_sequence": 5373,
+        "pointees_at_entry": {
+          "check_position": [
+            -1069.945556640625,
+            61.67757034301758,
+            4374.70947265625
+          ]
+        },
+        "pointees_at_exit": {
+          "check_position": [
+            -1069.945556640625,
+            61.67757034301758,
+            4374.70947265625
+          ]
+        }
+      },
+      {
+        "args": {
+          "check_dist": 1,
+          "check_lane": 1,
+          "check_pos_ptr": "0x0022f9d0",
+          "lane": 3,
+          "node": 1
+        },
+        "entry_sequence": 7092,
+        "exit_sequence": 7093,
+        "pointees_at_entry": {
+          "check_position": [
+            -781.1290893554688,
+            31.234590530395508,
+            3946.98486328125
+          ]
+        },
+        "pointees_at_exit": {
+          "check_position": [
+            -781.1290893554688,
+            31.234590530395508,
+            3946.98486328125
+          ]
+        }
+      },
+      {
+        "args": {
+          "check_dist": 1,
+          "check_lane": 1,
+          "check_pos_ptr": "0x0022f678",
+          "lane": 1,
+          "node": 0
+        },
+        "entry_sequence": 14087,
+        "exit_sequence": 14088,
+        "pointees_at_entry": {
+          "check_position": [
+            -1128.601806640625,
+            71.39480590820312,
+            3489.6669921875
+          ]
+        },
+        "pointees_at_exit": {
+          "check_position": [
+            -1128.601806640625,
+            71.39480590820312,
+            3489.6669921875
+          ]
+        }
+      }
+    ],
+    "successful_get_spawn_location": [
+      {
+        "args": {
+          "lane_ptr": "0x0022fcf4",
+          "segment_ptr": "0x0022fcf8",
+          "time_step_ptr": "0x0022fcf0"
+        },
+        "entry_sequence": 5371,
+        "exit_sequence": 5374,
+        "pointees_at_entry": {
+          "lane": 0,
+          "segment": 0,
+          "time_step": 0.0
+        },
+        "pointees_at_exit": {
+          "lane": 3,
+          "segment": 830,
+          "time_step": 0.164520263671875
+        }
+      },
+      {
+        "args": {
+          "lane_ptr": "0x0022fcf4",
+          "segment_ptr": "0x0022fcf8",
+          "time_step_ptr": "0x0022fcf0"
+        },
+        "entry_sequence": 7091,
+        "exit_sequence": 7094,
+        "pointees_at_entry": {
+          "lane": 0,
+          "segment": 0,
+          "time_step": 0.0
+        },
+        "pointees_at_exit": {
+          "lane": 3,
+          "segment": 812,
+          "time_step": 0.6930084228515625
+        }
+      },
+      {
+        "args": {
+          "lane_ptr": "0x0022f9c4",
+          "segment_ptr": "0x0022f9bc",
+          "time_step_ptr": "0x0022f99c"
+        },
+        "entry_sequence": 14086,
+        "exit_sequence": 14089,
+        "pointees_at_entry": {
+          "lane": 0,
+          "segment": 0,
+          "time_step": 0.0
+        },
+        "pointees_at_exit": {
+          "lane": 1,
+          "segment": 978,
+          "time_step": 0.7348785400390625
+        }
+      }
+    ],
+    "vehicle_exit_fields": {
+      "current_goal_ptr": {
+        "count": 1781,
+        "distinct_count": 51,
+        "examples": [
+          "0x00000000",
+          "0x01ff6bf0",
+          "0x01ff6c10",
+          "0x01ff6c50",
+          "0x01ff6c70",
+          "0x01ff6cd0",
+          "0x01ff6d50",
+          "0x01ff6f30",
+          "0x01ff72f0",
+          "0x01ff7370",
+          "0x01ff74f0",
+          "0x01ff7510"
+        ]
+      },
+      "drive_flags": {
+        "count": 1781,
+        "distinct_count": 3,
+        "max": 7,
+        "min": 0,
+        "values": [
+          0,
+          3,
+          7
+        ]
+      },
+      "drive_speed": {
+        "count": 1781,
+        "distinct_count": 492,
+        "examples": [
+          0.0,
+          5.28814343851991e-05,
+          0.015118365176022053,
+          0.4374998211860657,
+          0.470958948135376,
+          0.48749983310699463,
+          0.5208331346511841,
+          0.5766665935516357,
+          0.6499999761581421,
+          0.6500000357627869,
+          0.6666666865348816,
+          1.0327560901641846
+        ],
+        "max": 66.94175720214844,
+        "min": 0.0
+      },
+      "goal_crc": {
+        "count": 1781,
+        "distinct_count": 5,
+        "values": [
+          "0x00000000",
+          "0x08d0d8a7",
+          "0x492916a2",
+          "0x9af1bf40",
+          "0xae24b089"
+        ]
+      },
+      "last_spawn_time": {
+        "count": 1781,
+        "distinct_count": 308,
+        "examples": [
+          0.0,
+          0.32500001788139343,
+          0.3333333432674408,
+          0.48499998450279236,
+          0.5,
+          0.5333333611488342,
+          0.6000000238418579,
+          0.6583333611488342,
+          0.6666666865348816,
+          0.824999988079071,
+          0.9916666746139526,
+          1.0
+        ],
+        "max": 30.109149932861328,
+        "min": 0.0
+      },
+      "pursuit_ptr": {
+        "count": 1781,
+        "distinct_count": 2,
+        "values": [
+          "0x00000000",
+          "0x0208e5a8"
+        ]
+      },
+      "think_task_handle": {
+        "count": 1781,
+        "distinct_count": 20,
+        "examples": [
+          11,
+          22,
+          28,
+          31,
+          34,
+          37,
+          42,
+          49,
+          58,
+          61,
+          64,
+          94
+        ],
+        "max": 144,
+        "min": 11
+      }
+    }
+  },
+  "sampling_bounds": {
+    "AICopManager::SpawnPursuitIVehicle": {
+      "call_count_max": 11,
+      "call_count_min": 11,
+      "exact": true,
+      "observed_samples": 11,
+      "sample_divisor": 1
+    },
+    "AIGoal::ChooseAction": {
+      "call_count_max": 3803,
+      "call_count_min": 3803,
+      "exact": true,
+      "observed_samples": 3803,
+      "sample_divisor": 1
+    },
+    "AIPursuit::OnTask": {
+      "call_count_max": 1312,
+      "call_count_min": 1297,
+      "exact": false,
+      "observed_samples": 82,
+      "sample_divisor": 16
+    },
+    "AIPursuit::UpdateFormation": {
+      "call_count_max": 264,
+      "call_count_min": 257,
+      "exact": false,
+      "observed_samples": 33,
+      "sample_divisor": 8
+    },
+    "AISpawnManager::CheckSpawnPosition": {
+      "call_count_max": 9,
+      "call_count_min": 9,
+      "exact": true,
+      "observed_samples": 9,
+      "sample_divisor": 1
+    },
+    "AISpawnManager::GetSpawnLocation": {
+      "call_count_max": 54,
+      "call_count_min": 54,
+      "exact": true,
+      "observed_samples": 54,
+      "sample_divisor": 1
+    },
+    "AITrafficManager::SpawnTraffic": {
+      "call_count_max": 1920,
+      "call_count_min": 1920,
+      "exact": true,
+      "observed_samples": 1920,
+      "sample_divisor": 1
+    },
+    "AIVehicle::OnTask": {
+      "call_count_max": 13056,
+      "call_count_min": 12993,
+      "exact": false,
+      "observed_samples": 204,
+      "sample_divisor": 64
+    },
+    "AIVehicle::OnTaskSimulate": {
+      "call_count_max": 201856,
+      "call_count_min": 201729,
+      "exact": false,
+      "observed_samples": 1577,
+      "sample_divisor": 128
+    }
+  },
+  "thread_ids": [
+    216
+  ],
+  "warnings": [
+    "Instrumented durations include probe, snapshot, and ReadProcessMemory overhead and are compatibility timings, not uninstrumented performance benchmarks.",
+    "Schema 1 specialized field labels came from non-retail header offsets; this analysis ignores those labels and re-decodes only binary-validated fields from raw snapshots."
+  ]
+}

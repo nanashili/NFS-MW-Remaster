@@ -136,9 +136,9 @@ namespace NfsMwRemaster.Driving.Tests
             try
             {
                 var powertrain = root.AddComponent<VehiclePowertrain>(); powertrain.Configure(tuning, Array.Empty<VehicleWheel>());
-                powertrain.SetIgnition(false); var output = powertrain.Simulate(0.02f, 0f, 1f, false, true);
+                powertrain.SetIgnition(false); var output = powertrain.Simulate(0.02f, 0f, 1f, true);
                 Assert.That(output.EngineRpm, Is.Zero); Assert.That(output.WheelTorque, Is.Zero);
-                powertrain.SetIgnition(true); Assert.That(powertrain.Simulate(0.02f, 0f, 1f, false, false).EngineRpm, Is.GreaterThan(0));
+                powertrain.SetIgnition(true); Assert.That(powertrain.Simulate(0.02f, 0f, 1f, false).EngineRpm, Is.GreaterThan(0));
             }
             finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(tuning); }
         }

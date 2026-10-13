@@ -14,13 +14,18 @@ namespace NfsMwRemaster.Driving
         private VehicleTuning tuning;
         private float engagement;
         public bool RechargeAllowed { get; set; } = true;
-
         public bool IsActive { get; private set; }
+        // EngineRacer::DoNos returns the neutral scale while disengaging; the
+        // engagement timer only gates when recharge may resume.
+        public float BoostMultiplier => IsActive ? engagement : 0f;
         public float NormalizedFuel => capacitySeconds > 0f ? Mathf.Clamp01(remainingSeconds / capacitySeconds) : 0f;
 
         public float RemainingSeconds
         {
-            get { return remainingSeconds; }
+            get
+            {
+                return remainingSeconds;
+            }
         }
 
         public void Configure(VehicleTuning tuning)
@@ -33,30 +38,45 @@ namespace NfsMwRemaster.Driving
             engagement = 0f;
         }
 
-        public void ResetForSpawn() { remainingSeconds = capacitySeconds; IsActive = false; engagement = 0f; RechargeAllowed = true; }
+        public void ResetForSpawn()
+        {
+            remainingSeconds = capacitySeconds;
+            IsActive = false;
+            engagement = 0f;
+            RechargeAllowed = true;
+        }
 
-        public bool Tick(float deltaTime, bool requested, float speedKph)
-            => Tick(deltaTime, requested, speedKph, 1);
-
+        public bool Tick(float deltaTime, bool requested, float speedKph) => Tick(deltaTime, requested, speedKph, 1);
         public bool Tick(float deltaTime, bool requested, float speedKph, int gear)
         {
-            if (!float.IsFinite(deltaTime) || deltaTime <= 0f || !float.IsFinite(speedKph)) { IsActive = false; return false; }
-            if (tuning != null && tuning.UsesMostWantedReference) return TickReference(deltaTime, requested, speedKph, gear);
-            bool canBoost = requested && remainingSeconds > 0.001f && speedKph > 8f;
-            IsActive = canBoost;
-            if (IsActive)
+            if (!float.IsFinite(deltaTime) || deltaTime <= 0f || !float.IsFinite(speedKph))
             {
-                remainingSeconds = Mathf.Max(0f, remainingSeconds - Mathf.Max(0f, deltaTime));
+                IsActive = false;
+                return false;
             }
 
-            return IsActive;
+            // EngineRacer::DoNos is the sole NOS state machine. The former
+            // authored branch had different thresholds and refill semantics.
+            return TickReference(deltaTime, requested, speedKph, gear);
         }
 
         private bool TickReference(float deltaTime, bool requested, float speedKph, int gear)
         {
+            if (tuning == null)
+            {
+                IsActive = false;
+                engagement = 0f;
+                return false;
+            }
+
             var settings = tuning.mostWanted;
             IsActive = false;
-            if (capacitySeconds <= 0f || settings.nitrousTorqueBoost <= 0f) { engagement = 0f; return false; }
+            if (capacitySeconds <= 0f || settings.nitrousTorqueBoost <= 0f)
+            {
+                engagement = 0f;
+                return false;
+            }
+
             float minimumSpeed = (engagement >= 1f ? 5f : 10f) * MostWantedVehicleMath.ReferenceMphToKph;
             if (requested && gear > 0 && Mathf.Abs(speedKph) >= minimumSpeed && remainingSeconds > 0f)
             {
@@ -73,9 +93,11 @@ namespace NfsMwRemaster.Driving
                 {
                     float fraction = Mathf.InverseLerp(settings.nitrousRechargeMinimumKph, settings.nitrousRechargeMaximumKph, Mathf.Abs(speedKph));
                     float seconds = Mathf.Lerp(settings.nitrousRechargeMinimumSeconds, settings.nitrousRechargeMaximumSeconds, fraction);
-                    if (seconds > 0f) remainingSeconds = Mathf.Min(capacitySeconds, remainingSeconds + capacitySeconds * deltaTime / seconds);
+                    if (seconds > 0f)
+                        remainingSeconds = Mathf.Min(capacitySeconds, remainingSeconds + capacitySeconds * deltaTime / seconds);
                 }
             }
+
             return IsActive;
         }
 

@@ -12,6 +12,8 @@ namespace NfsMwRemaster.Driving
     public sealed class PlayerVehicleInput : MonoBehaviour, IVehicleInputSource, IVehicleDiscreteInputSource
     {
         [SerializeField, Range(0f, 0.5f)] private float stickDeadZone = 0.08f;
+        [SerializeField, Range(0f, 0.5f), Tooltip("Device calibration; the recovered PAD_DEAD_ZONE value is unknown.")]
+        private float pedalDeadZone = 0.08f;
 
         private VehicleInputState current;
         private bool resetRequested;
@@ -25,7 +27,7 @@ namespace NfsMwRemaster.Driving
 
         private void Update()
         {
-            if (MapInputFocus.Captured) { current = VehicleInputState.Neutral; resetRequested = cameraToggleRequested = false; return; }
+            if (MapInputFocus.Captured) { current = pendingActions = VehicleInputState.Neutral; resetRequested = cameraToggleRequested = false; return; }
             Keyboard keyboard = Keyboard.current;
             Gamepad gamepad = Gamepad.current;
 
@@ -66,7 +68,8 @@ namespace NfsMwRemaster.Driving
             bool gearDown = keyboard != null && keyboard.qKey.wasPressedThisFrame;
             bool gearNeutral = keyboard != null && keyboard.nKey.isPressed;
             bool gearReverse = keyboard != null && keyboard.rKey.isPressed;
-            pendingActions.GearUp |= gearUp; pendingActions.GearDown |= gearDown;
+            if (gearUp) { pendingActions.GearUp = true; pendingActions.GearDown = false; }
+            if (gearDown) { pendingActions.GearDown = true; pendingActions.GearUp = false; }
 
             if (gamepad != null)
             {
@@ -74,8 +77,8 @@ namespace NfsMwRemaster.Driving
                 // processors, which would apply another axis/stick dead zone before ours and
                 // compress the useful analogue range twice.
                 float padSteering = ApplyDeadZone(gamepad.leftStick.x.ReadUnprocessedValue());
-                float padThrottle = gamepad.rightTrigger.ReadValue();
-                float padBrake = gamepad.leftTrigger.ReadValue();
+                float padThrottle = gamepad.rightTrigger.ReadUnprocessedValue();
+                float padBrake = gamepad.leftTrigger.ReadUnprocessedValue();
 
                 if (Mathf.Abs(padSteering) > Mathf.Abs(steering))
                 {
@@ -101,12 +104,10 @@ namespace NfsMwRemaster.Driving
             current = new VehicleInputState
             {
                 Steering = Mathf.Clamp(steering, -1f, 1f),
-                Throttle = Mathf.Clamp01(throttle),
-                Brake = Mathf.Clamp01(brake),
+                Throttle = MostWantedDriverControls.SnapPedal(Mathf.Clamp01(throttle), pedalDeadZone),
+                Brake = MostWantedDriverControls.SnapPedal(Mathf.Clamp01(brake), pedalDeadZone),
                 Handbrake = handbrake,
                 Nitrous = nitrous,
-                GearUp = gearUp,
-                GearDown = gearDown,
                 GearNeutral = gearNeutral,
                 GearReverse = gearReverse
             };
@@ -116,7 +117,7 @@ namespace NfsMwRemaster.Driving
         {
             VehicleInputState result = pendingActions;
             pendingActions.GearUp = pendingActions.GearDown = false;
-            return result;
+            return MapInputFocus.Captured ? VehicleInputState.Neutral : result;
         }
 
         public bool ConsumeResetRequest()

@@ -1,0 +1,23 @@
+flowchart LR
+  trace_start["Trace start<br/>20:50:05.766 UTC"]
+  baseline["29-35 s<br/>Racer, human vehicle, traffic"]
+  patrol["103.164 s<br/>Patrol goal first observed"]
+  pursuit["122.779 s<br/>Pursuit goal first observed"]
+  spawn["180.341 s<br/>Cop-spawn entries begin"]
+  tactics["207-588 s<br/>StopShort, Flee, RoadBlock, HeadOnRam"]
+  helicopter["720-729 s<br/>Helicopter simulation and pursuit goal"]
+  heli_exit["821.634-840.345 s<br/>HeliExit chooser observations<br/>fuel sample reaches 0 at 825.858 s"]
+  late_race["980.636 s<br/>Racecar Update first sampled"]
+  trace_end["1415.293 s<br/>Terminal: record limit"]
+  boundary["First-observation ordering only<br/>not proven state transitions"]
+
+  trace_start --> baseline
+  baseline -. later first observation .-> patrol
+  patrol -. later first observation .-> pursuit
+  pursuit -. later first observation .-> spawn
+  spawn -. later first observation .-> tactics
+  tactics -. later first observation .-> helicopter
+  helicopter -. sampled countdown .-> heli_exit
+  heli_exit -. later first observation .-> late_race
+  late_race --> trace_end
+  boundary -. interpretation boundary .-> pursuit

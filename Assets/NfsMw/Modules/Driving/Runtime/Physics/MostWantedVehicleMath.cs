@@ -34,7 +34,6 @@ namespace NfsMwRemaster.Driving
 
         public static float GearEfficiency(VehicleTuning tuning, int gear)
         {
-            if (!tuning.UsesMostWantedReference) return tuning.engine.drivelineEfficiency;
             if (gear < 0) return tuning.mostWanted.reverseGearEfficiency;
             var values = tuning.mostWanted.gearEfficiency;
             return gear > 0 && values != null && gear <= values.Length ? values[gear - 1] : 0f;
@@ -46,9 +45,20 @@ namespace NfsMwRemaster.Driving
         public static float LoadedEngineInertia(float flywheelMass) => flywheelMass * 0.025f + 0.25f;
 
         public static float EngineBrakingFraction(VehicleTuning tuning, float rpm)
-            => Mathf.Clamp01(SampleUniform(tuning.mostWanted.engineBraking,
+            => tuning.mostWanted.engineBraking.Length == 1 ? tuning.mostWanted.engineBraking[0]
+                : Mathf.Clamp01(SampleUniform(tuning.mostWanted.engineBraking,
                 Mathf.Clamp(rpm, tuning.engine.idleRpm, tuning.engine.redlineRpm),
                 tuning.engine.idleRpm, tuning.mostWanted.torqueTableMaximumRpm));
+
+        public static float EngineBrakingTorque(VehicleTuning tuning, float engineTorque, float rpm,
+            int gear, bool clutchEngaged, float axleAngularVelocity)
+        {
+            float braking = -engineTorque * EngineBrakingFraction(tuning, rpm);
+            float direction = gear < 0 ? -1f : 1f;
+            if (gear != 0 && clutchEngaged && braking * axleAngularVelocity * direction > 0f)
+                braking = -braking;
+            return braking;
+        }
 
         public static float NetEngineTorque(VehicleTuning tuning, float rpm, float throttle, float spool, bool nitrous)
         {

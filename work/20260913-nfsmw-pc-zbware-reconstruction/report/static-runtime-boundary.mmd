@@ -1,0 +1,9 @@
+flowchart LR
+  sample["Exact PC 1.3 SPEED.EXE"] --> map["PE + symbols + 48 anchors"]
+  map --> pure["Pure zBWare routines"]
+  pure --> compile["Historical MSVC build"]
+  compile --> diff{"objdiff"}
+  diff -- "exact / near" --> static["Static recovery"]
+  map --> runtime["Runtime boundary"]
+  runtime --> transport["bFunk transport, debug, VM, D3DX"]
+  static --> runtimeQ["Only behavior, timing, external state need runtime"]

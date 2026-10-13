@@ -109,7 +109,6 @@ namespace NfsMwRemaster.Driving.Tests
         private static void AssertReference(VehicleTuning tuning, string subject)
         {
             Assert.That(tuning, Is.Not.Null, subject);
-            Assert.That(tuning.UsesMostWantedReference, Is.True, subject);
             Assert.DoesNotThrow(() => RacingLineSnapshot.ValidateTuning(tuning), subject);
         }
     }

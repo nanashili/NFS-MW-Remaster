@@ -1,0 +1,208 @@
+{
+  "action_transitions": {
+    "<none> -> AIActionRace": 2,
+    "<none> -> AIActionTraffic": 92,
+    "AIActionPursuitOffRoad -> AIActionRace": 1,
+    "AIActionRace -> AIActionPursuitOffRoad": 1,
+    "AIActionRace -> AIActionTraffic": 1
+  },
+  "boolean_results": {
+    "AICopManager::SpawnPursuitIVehicle=False": 10,
+    "AICopManager::SpawnPursuitIVehicle=True": 1,
+    "AIPursuit::OnTask=True": 82,
+    "AISpawnManager::CheckSpawnPosition=False": 6,
+    "AISpawnManager::CheckSpawnPosition=True": 3,
+    "AISpawnManager::GetSpawnLocation=False": 51,
+    "AISpawnManager::GetSpawnLocation=True": 3,
+    "AITrafficManager::SpawnTraffic=False": 1831,
+    "AITrafficManager::SpawnTraffic=True": 89,
+    "AIVehicle::OnTask=True": 204
+  },
+  "event_count": 15386,
+  "header": {
+    "flags": 1,
+    "header_size": 256,
+    "hook_count": 9,
+    "image_base": "0x00400000",
+    "image_size": 6786638,
+    "preferred_base": "0x00400000",
+    "process_id": 212,
+    "qpc_frequency": 10000000,
+    "record_size": 600,
+    "schema_version": 1,
+    "started_filetime_utc": 134336097700876950,
+    "target_name": "speed.exe PC 1.3",
+    "target_sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+    "tracer_version": "0.1.0"
+  },
+  "hook_phase_counts": {
+    "AICopManager::SpawnPursuitIVehicle [entry]": 11,
+    "AICopManager::SpawnPursuitIVehicle [exit]": 11,
+    "AIGoal::ChooseAction [entry]": 3803,
+    "AIGoal::ChooseAction [exit]": 3803,
+    "AIPursuit::OnTask [entry]": 82,
+    "AIPursuit::OnTask [exit]": 82,
+    "AIPursuit::UpdateFormation [entry]": 33,
+    "AIPursuit::UpdateFormation [exit]": 33,
+    "AISpawnManager::CheckSpawnPosition [entry]": 9,
+    "AISpawnManager::CheckSpawnPosition [exit]": 9,
+    "AISpawnManager::GetSpawnLocation [entry]": 54,
+    "AISpawnManager::GetSpawnLocation [exit]": 54,
+    "AITrafficManager::SpawnTraffic [entry]": 1920,
+    "AITrafficManager::SpawnTraffic [exit]": 1920,
+    "AIVehicle::OnTask [entry]": 204,
+    "AIVehicle::OnTask [exit]": 204,
+    "AIVehicle::OnTaskSimulate [entry]": 1577,
+    "AIVehicle::OnTaskSimulate [exit]": 1577
+  },
+  "instrumented_duration_ms": {
+    "AICopManager::SpawnPursuitIVehicle": {
+      "count": 11,
+      "max": 9.082,
+      "median": 0.1946,
+      "min": 0.0691,
+      "p95_nearest_rank": 9.082
+    },
+    "AIGoal::ChooseAction": {
+      "count": 3803,
+      "max": 9.5555,
+      "median": 0.0454,
+      "min": 0.0144,
+      "p95_nearest_rank": 1.1788
+    },
+    "AIPursuit::OnTask": {
+      "count": 82,
+      "max": 0.263,
+      "median": 0.0504,
+      "min": 0.0245,
+      "p95_nearest_rank": 0.1423
+    },
+    "AIPursuit::UpdateFormation": {
+      "count": 33,
+      "max": 1.1813,
+      "median": 0.0859,
+      "min": 0.0496,
+      "p95_nearest_rank": 1.0051
+    },
+    "AISpawnManager::CheckSpawnPosition": {
+      "count": 9,
+      "max": 0.1127,
+      "median": 0.0369,
+      "min": 0.0152,
+      "p95_nearest_rank": 0.1127
+    },
+    "AISpawnManager::GetSpawnLocation": {
+      "count": 54,
+      "max": 0.4396,
+      "median": 0.06265,
+      "min": 0.0273,
+      "p95_nearest_rank": 0.2212
+    },
+    "AITrafficManager::SpawnTraffic": {
+      "count": 1920,
+      "max": 15.1557,
+      "median": 0.57545,
+      "min": 0.0258,
+      "p95_nearest_rank": 6.4321
+    },
+    "AIVehicle::OnTask": {
+      "count": 204,
+      "max": 4.067,
+      "median": 0.3022,
+      "min": 0.069,
+      "p95_nearest_rank": 1.0299
+    },
+    "AIVehicle::OnTaskSimulate": {
+      "count": 1577,
+      "max": 0.3841,
+      "median": 0.0731,
+      "min": 0.0193,
+      "p95_nearest_rank": 0.1902
+    }
+  },
+  "integrity": {
+    "contiguous": true,
+    "dropped_reported": 0,
+    "duplicate_sequence_count": 0,
+    "hook_mismatch_count": 0,
+    "missing_sequence_count": 0,
+    "pair_count": 7693,
+    "pair_mismatch_count": 0,
+    "return_address_mismatch_count": 0,
+    "sequence_max": 15386,
+    "sequence_min": 1,
+    "starts_at_one": true,
+    "this_mismatch_count": 0,
+    "unmatched_entry_count": 0,
+    "unmatched_exit_count": 0
+  },
+  "qpc_span_seconds": 291.2530456,
+  "sampling_bounds": {
+    "AICopManager::SpawnPursuitIVehicle": {
+      "call_count_max": 11,
+      "call_count_min": 11,
+      "exact": true,
+      "observed_samples": 11,
+      "sample_divisor": 1
+    },
+    "AIGoal::ChooseAction": {
+      "call_count_max": 3803,
+      "call_count_min": 3803,
+      "exact": true,
+      "observed_samples": 3803,
+      "sample_divisor": 1
+    },
+    "AIPursuit::OnTask": {
+      "call_count_max": 1312,
+      "call_count_min": 1297,
+      "exact": false,
+      "observed_samples": 82,
+      "sample_divisor": 16
+    },
+    "AIPursuit::UpdateFormation": {
+      "call_count_max": 264,
+      "call_count_min": 257,
+      "exact": false,
+      "observed_samples": 33,
+      "sample_divisor": 8
+    },
+    "AISpawnManager::CheckSpawnPosition": {
+      "call_count_max": 9,
+      "call_count_min": 9,
+      "exact": true,
+      "observed_samples": 9,
+      "sample_divisor": 1
+    },
+    "AISpawnManager::GetSpawnLocation": {
+      "call_count_max": 54,
+      "call_count_min": 54,
+      "exact": true,
+      "observed_samples": 54,
+      "sample_divisor": 1
+    },
+    "AITrafficManager::SpawnTraffic": {
+      "call_count_max": 1920,
+      "call_count_min": 1920,
+      "exact": true,
+      "observed_samples": 1920,
+      "sample_divisor": 1
+    },
+    "AIVehicle::OnTask": {
+      "call_count_max": 13056,
+      "call_count_min": 12993,
+      "exact": false,
+      "observed_samples": 204,
+      "sample_divisor": 64
+    },
+    "AIVehicle::OnTaskSimulate": {
+      "call_count_max": 201856,
+      "call_count_min": 201729,
+      "exact": false,
+      "observed_samples": 1577,
+      "sample_divisor": 128
+    }
+  },
+  "thread_ids": [
+    216
+  ]
+}

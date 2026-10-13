@@ -1,0 +1,554 @@
+{
+  "catalogue_version": 1,
+  "target": {
+    "name": "speed.exe PC 1.3",
+    "sha256": "80774c2e5d619b4f120b48d4462896fd504c263399d203a238769cffde1d253c",
+    "image_base": "0x00400000",
+    "image_size": "0x00678e4e"
+  },
+  "profiles": [
+    {"id": 1, "name": "survey", "mask": "0x00000001"},
+    {"id": 2, "name": "core", "mask": "0x00000002"},
+    {"id": 3, "name": "racer", "mask": "0x00000004"},
+    {"id": 4, "name": "traffic", "mask": "0x00000008"},
+    {"id": 5, "name": "pursuit", "mask": "0x00000010"},
+    {"id": 6, "name": "helicopter", "mask": "0x00000020"},
+    {"id": 7, "name": "navigation", "mask": "0x00000040"},
+    {"id": 8, "name": "zbware", "mask": "0x00000080"},
+    {"id": 9, "name": "all", "mask": "0xffffffff"}
+  ],
+  "region_templates": {
+    "none": [],
+    "vehicle": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "object_000"},
+      {"source": "normalized_this", "offset": "0x700", "length": 256, "label": "object_700"},
+      {"source": "normalized_this", "offset": "0x800", "length": 256, "label": "object_800"}
+    ],
+    "action": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "action_000"}
+    ],
+    "pid": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "pid_000"}
+    ],
+    "goal": [
+      {"source": "normalized_this", "offset": "0x000", "length": 128, "label": "goal_000"}
+    ],
+    "spawn_check": [
+      {"source": "normalized_this", "offset": "0x000", "length": 64, "label": "manager_000"},
+      {"source": "arg0", "offset": 0, "length": 16, "label": "check_position"}
+    ],
+    "spawn_location": [
+      {"source": "arg0", "offset": 0, "length": 16, "label": "segment_out"},
+      {"source": "arg1", "offset": 0, "length": 16, "label": "lane_out"},
+      {"source": "arg2", "offset": 0, "length": 16, "label": "time_step_out"}
+    ],
+    "cop_spawn": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "cop_manager"},
+      {"source": "arg0", "offset": 0, "length": 256, "label": "pursuit_arg"},
+      {"source": "arg1", "offset": 0, "length": 256, "label": "vehicle_arg"}
+    ],
+    "pursuit": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "pursuit_000"},
+      {"source": "normalized_this", "offset": "0x100", "length": 256, "label": "pursuit_100"},
+      {"source": "normalized_this", "offset": "0x200", "length": 72, "label": "pursuit_200"}
+    ],
+    "traffic_manager": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "traffic_000"},
+      {"source": "normalized_this", "offset": "0x100", "length": 256, "label": "traffic_100"},
+      {"source": "normalized_this", "offset": "0x2c0", "length": 256, "label": "traffic_2c0"}
+    ],
+    "cop_manager": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "cop_000"},
+      {"source": "normalized_this", "offset": "0x100", "length": 48, "label": "cop_100"}
+    ],
+    "helicopter": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "heli_000"},
+      {"source": "normalized_this", "offset": "0x700", "length": 256, "label": "heli_700"},
+      {"source": "normalized_this", "offset": "0x800", "length": 192, "label": "heli_800"}
+    ],
+    "target": [
+      {"source": "normalized_this", "offset": 0, "length": 64, "label": "target_000"}
+    ],
+    "gps": [
+      {"source": "normalized_this", "offset": "0x000", "length": 256, "label": "gps_000"},
+      {"source": "normalized_this", "offset": "0x300", "length": 160, "label": "gps_300"}
+    ],
+    "bware_text": [
+      {"source": "arg1", "offset": 0, "length": 128, "label": "text"}
+    ],
+    "bware_command": [
+      {"source": "arg0", "offset": 0, "length": 128, "label": "command_line"}
+    ],
+    "memory_pool": [
+      {"source": "normalized_this", "offset": 0, "length": 128, "label": "pool_000"}
+    ],
+    "bware_debug": [
+      {"source": "arg1", "offset": 0, "length": 128, "label": "debug_text"}
+    ]
+  },
+  "hooks": [
+    {
+      "id": 1, "name": "AIVehicle::OnTaskSimulate", "config_key": "sample_AIVehicle_OnTaskSimulate",
+      "va": "0x004081e0", "profiles": ["core", "survey"], "default_divisor": 128,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "existing", "stolen": "56 8b f1 8b 46 4c", "instruction_lengths": [1, 2, 3],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 2, "name": "AIVehicle::OnTask", "config_key": "sample_AIVehicle_OnTask",
+      "va": "0x004082d0", "profiles": ["core"], "default_divisor": 64,
+      "args": [{"name": "task_handle", "type": "handle"}, {"name": "dT", "type": "float"}],
+      "this_adjust": -8, "return_kind": "bool", "recovery": "existing",
+      "stolen": "8b 44 24 04 56", "instruction_lengths": [4, 1], "region_template": "vehicle"
+    },
+    {
+      "id": 3, "name": "AIGoal::ChooseAction", "config_key": "sample_AIGoal_ChooseAction",
+      "va": "0x0042b070", "profiles": ["core", "survey"], "default_divisor": 1,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "existing", "stolen": "83 ec 08 53 55", "instruction_lengths": [3, 1, 1],
+      "region_template": "goal"
+    },
+    {
+      "id": 4, "name": "AISpawnManager::CheckSpawnPosition", "config_key": "sample_AISpawnManager_CheckSpawnPosition",
+      "va": "0x00419fc0", "profiles": ["core"], "default_divisor": 1,
+      "args": [{"name": "check_pos_ptr", "type": "pointer"}, {"name": "check_lane", "type": "integer"}, {"name": "lane", "type": "integer"}, {"name": "node", "type": "integer"}, {"name": "check_dist", "type": "float"}],
+      "this_adjust": 0, "return_kind": "bool", "recovery": "existing",
+      "stolen": "83 ec 14 56 57", "instruction_lengths": [3, 1, 1], "region_template": "spawn_check"
+    },
+    {
+      "id": 5, "name": "AISpawnManager::GetSpawnLocation", "config_key": "sample_AISpawnManager_GetSpawnLocation",
+      "va": "0x0042fa40", "profiles": ["core"], "default_divisor": 1,
+      "args": [{"name": "segment_ptr", "type": "pointer"}, {"name": "lane_ptr", "type": "pointer"}, {"name": "time_step_ptr", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "bool", "recovery": "existing",
+      "stolen": "64 a1 00 00 00 00", "instruction_lengths": [6], "region_template": "spawn_location"
+    },
+    {
+      "id": 6, "name": "AICopManager::SpawnPursuitIVehicle", "config_key": "sample_AICopManager_SpawnPursuitIVehicle",
+      "va": "0x00430e60", "profiles": ["pursuit", "survey"], "default_divisor": 1,
+      "args": [{"name": "pursuit_ptr", "type": "pointer"}, {"name": "vehicle_ptr", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "bool", "recovery": "existing",
+      "stolen": "6a ff 68 c6 84 86 00", "instruction_lengths": [2, 5], "region_template": "cop_spawn"
+    },
+    {
+      "id": 7, "name": "AIPursuit::UpdateFormation", "config_key": "sample_AIPursuit_UpdateFormation",
+      "va": "0x00443300", "profiles": ["pursuit"], "default_divisor": 8,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "existing", "stolen": "64 a1 00 00 00 00", "instruction_lengths": [6],
+      "region_template": "pursuit"
+    },
+    {
+      "id": 8, "name": "AITrafficManager::SpawnTraffic", "config_key": "sample_AITrafficManager_SpawnTraffic",
+      "va": "0x00439a10", "profiles": ["traffic", "survey"], "default_divisor": 1,
+      "args": [], "this_adjust": 0, "return_kind": "bool", "recovery": "existing",
+      "stolen": "83 ec 20 53 55", "instruction_lengths": [3, 1, 1], "region_template": "traffic_manager"
+    },
+    {
+      "id": 9, "name": "AIPursuit::OnTask", "config_key": "sample_AIPursuit_OnTask",
+      "va": "0x00443ba0", "profiles": ["pursuit", "survey"], "default_divisor": 16,
+      "args": [{"name": "task_handle", "type": "handle"}, {"name": "dT", "type": "float"}],
+      "this_adjust": -8, "return_kind": "bool", "recovery": "existing",
+      "stolen": "8b 44 24 04 83 ec 44", "instruction_lengths": [4, 3], "region_template": "pursuit"
+    },
+    {
+      "id": 10, "name": "AIVehicle::Update", "config_key": "sample_AIVehicle_Update",
+      "va": "0x004292a0", "profiles": ["core", "survey"], "default_divisor": 128,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 10 56 8b f1", "instruction_lengths": [3, 1, 2],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 11, "name": "AIVehicleRacecar::Update", "config_key": "sample_AIVehicleRacecar_Update",
+      "va": "0x0042aa80", "profiles": ["racer", "survey"], "default_divisor": 128,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "53 56 8b f1 8b 46 4c", "instruction_lengths": [1, 1, 2, 3],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 12, "name": "AIActionRace::Update", "config_key": "sample_AIActionRace_Update",
+      "va": "0x00428720", "profiles": ["racer"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 74 53 55", "instruction_lengths": [3, 1, 1],
+      "region_template": "action"
+    },
+    {
+      "id": 13, "name": "AIVehicle::OnGasBrake", "config_key": "sample_AIVehicle_OnGasBrake",
+      "va": "0x00408430", "profiles": ["racer"], "default_divisor": 256,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "near", "stolen": "83 ec 0c 56 8b f1", "instruction_lengths": [3, 1, 2],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 14, "name": "AIVehicle::OnDriving", "config_key": "sample_AIVehicle_OnDriving",
+      "va": "0x00408690", "profiles": ["racer"], "default_divisor": 256,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "56 57 8b 7c 24 0c", "instruction_lengths": [1, 1, 4],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 15, "name": "AIVehicle::OnSteering", "config_key": "sample_AIVehicle_OnSteering",
+      "va": "0x00415290", "profiles": ["racer"], "default_divisor": 256,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 28 56 8b f1", "instruction_lengths": [3, 1, 2],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 16, "name": "AIVehiclePid::OnGasBrake", "config_key": "sample_AIVehiclePid_OnGasBrake",
+      "va": "0x0042a0b0", "profiles": ["racer"], "default_divisor": 256,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 0c 55 57", "instruction_lengths": [3, 1, 1],
+      "region_template": "pid"
+    },
+    {
+      "id": 17, "name": "AIVehiclePid::OnSteering", "config_key": "sample_AIVehiclePid_OnSteering",
+      "va": "0x0042a390", "profiles": ["racer"], "default_divisor": 256,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 44 55 56", "instruction_lengths": [3, 1, 1],
+      "region_template": "pid"
+    },
+    {
+      "id": 18, "name": "AITrafficManager::OnTask", "config_key": "sample_AITrafficManager_OnTask",
+      "va": "0x00439cd0", "profiles": ["traffic", "survey"], "default_divisor": 32,
+      "args": [{"name": "task_handle", "type": "handle"}, {"name": "dT", "type": "float"}],
+      "this_adjust": -8, "return_kind": "bool", "recovery": "exact",
+      "stolen": "8b 44 24 04 3b 41 54", "instruction_lengths": [4, 3], "region_template": "traffic_manager"
+    },
+    {
+      "id": 19, "name": "AITrafficManager::Update", "config_key": "sample_AITrafficManager_Update",
+      "va": "0x00439bb0", "profiles": ["traffic"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "51 53 55 56 8b f1", "instruction_lengths": [1, 1, 1, 1, 2],
+      "region_template": "traffic_manager"
+    },
+    {
+      "id": 20, "name": "AITrafficManager::NextSpawn", "config_key": "sample_AITrafficManager_NextSpawn",
+      "va": "0x00426230", "profiles": ["traffic"], "default_divisor": 1,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "partial",
+      "stolen": "83 ec 24 53 55", "instruction_lengths": [3, 1, 1], "region_template": "traffic_manager"
+    },
+    {
+      "id": 21, "name": "AITrafficManager::GetAvailableTrafficVehicle", "config_key": "sample_AITrafficManager_GetAvailableVehicle",
+      "va": "0x00426380", "profiles": ["traffic"], "default_divisor": 1,
+      "args": [{"name": "vehicle_type", "type": "integer"}, {"name": "allow_reuse", "type": "integer"}],
+      "this_adjust": 0, "return_kind": "pointer", "recovery": "partial",
+      "stolen": "83 ec 48 53 8b 5c 24 50", "instruction_lengths": [3, 1, 4], "region_template": "traffic_manager"
+    },
+    {
+      "id": 22, "name": "AITrafficManager::ValidateVehicle", "config_key": "sample_AITrafficManager_ValidateVehicle",
+      "va": "0x00410b00", "profiles": ["traffic"], "default_divisor": 16,
+      "args": [{"name": "vehicle_ptr", "type": "pointer"}, {"name": "dT", "type": "float"}],
+      "this_adjust": 0, "return_kind": "bool", "recovery": "near",
+      "stolen": "64 a1 00 00 00 00", "instruction_lengths": [6],
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 256, "label": "traffic_000"},
+        {"source": "arg0", "offset": 0, "length": 256, "label": "vehicle_arg"}
+      ]
+    },
+    {
+      "id": 23, "name": "AIVehicleTraffic::StartDriving", "config_key": "sample_AIVehicleTraffic_StartDriving",
+      "va": "0x00423190", "profiles": ["traffic"], "default_divisor": 1,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": -1852, "return_kind": "void",
+      "recovery": "exact", "stolen": "83 ec 10 56 8b f1", "instruction_lengths": [3, 1, 2],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 24, "name": "AIActionTraffic::Update", "config_key": "sample_AIActionTraffic_Update",
+      "va": "0x00411cf0", "profiles": ["traffic"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "near", "stolen": "83 ec 2c 53 55", "instruction_lengths": [3, 1, 1],
+      "region_template": "action"
+    },
+    {
+      "id": 25, "name": "AIAvoidable::UpdateAllAvoidables", "config_key": "sample_AIAvoidable_UpdateAll",
+      "va": "0x0043a810", "profiles": ["traffic"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "static": true, "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "83 ec 18 a1 40 d7 90 00", "instruction_lengths": [3, 5],
+      "regions": [{"source": "absolute", "offset": "0x0090d740", "length": 16, "label": "avoid_global"}]
+    },
+    {
+      "id": 26, "name": "AICopManager::OnTask", "config_key": "sample_AICopManager_OnTask",
+      "va": "0x0043ef00", "profiles": ["pursuit", "survey"], "default_divisor": 16,
+      "args": [{"name": "task_handle", "type": "handle"}, {"name": "dT", "type": "float"}],
+      "this_adjust": -8, "return_kind": "bool", "recovery": "exact",
+      "stolen": "8b 44 24 04 57", "instruction_lengths": [4, 1], "region_template": "cop_manager"
+    },
+    {
+      "id": 27, "name": "AICopManager::UpdateRoadBlocks", "config_key": "sample_AICopManager_UpdateRoadBlocks",
+      "va": "0x00439ee0", "profiles": ["pursuit"], "default_divisor": 16,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "partial",
+      "stolen": "6a ff 68 88 8d 86 00", "instruction_lengths": [2, 5], "region_template": "cop_manager"
+    },
+    {
+      "id": 28, "name": "AIPursuit::RequestRoadBlock", "config_key": "sample_AIPursuit_RequestRoadBlock",
+      "va": "0x004194b0", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [], "this_adjust": -72, "return_kind": "bool", "recovery": "partial",
+      "stolen": "51 56 8b f1 8a 86 e8 00 00 00", "instruction_lengths": [1, 1, 2, 6],
+      "region_template": "pursuit"
+    },
+    {
+      "id": 29, "name": "AICopManager::CreateRoadBlock", "config_key": "sample_AICopManager_CreateRoadBlock",
+      "va": "0x0043dd30", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [{"name": "arg0", "type": "raw"}, {"name": "arg1", "type": "raw"}, {"name": "arg2", "type": "raw"}, {"name": "arg3", "type": "raw"}],
+      "this_adjust": 0, "return_kind": "pointer", "recovery": "near",
+      "stolen": "6a ff 68 16 95 86 00", "instruction_lengths": [2, 5], "region_template": "cop_manager"
+    },
+    {
+      "id": 30, "name": "AIRoadBlock::Construct", "config_key": "sample_AIRoadBlock_Construct",
+      "va": "0x0043db80", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [{"name": "param0", "type": "raw"}, {"name": "param1", "type": "raw"}, {"name": "param2", "type": "raw"}, {"name": "param3", "type": "raw"}],
+      "static": true, "this_adjust": 0, "return_kind": "pointer", "recovery": "exact",
+      "stolen": "6a ff 68 f2 94 86 00", "instruction_lengths": [2, 5], "region_template": "none"
+    },
+    {
+      "id": 31, "name": "AIVehiclePursuit::StartRoadBlock", "config_key": "sample_AIVehiclePursuit_StartRoadBlock",
+      "va": "0x00423430", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [], "this_adjust": -1804, "return_kind": "void", "recovery": "exact",
+      "stolen": "51 56 57 8b f9", "instruction_lengths": [1, 1, 1, 2], "region_template": "vehicle"
+    },
+    {
+      "id": 32, "name": "AIVehiclePursuit::Update", "config_key": "sample_AIVehiclePursuit_Update",
+      "va": "0x0042ac90", "profiles": ["pursuit"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "56 57 8b 7c 24 0c", "instruction_lengths": [1, 1, 4],
+      "region_template": "vehicle"
+    },
+    {
+      "id": 33, "name": "AIPursuit::BailPursuit", "config_key": "sample_AIPursuit_BailPursuit",
+      "va": "0x004198e0", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [], "this_adjust": -72, "return_kind": "void", "recovery": "near",
+      "stolen": "8d 41 b8 f7 d8", "instruction_lengths": [3, 2], "region_template": "pursuit"
+    },
+    {
+      "id": 34, "name": "AICopManager::PursuitIsEvaded", "config_key": "sample_AICopManager_PursuitIsEvaded",
+      "va": "0x00411070", "profiles": ["pursuit"], "default_divisor": 1,
+      "args": [{"name": "pursuit_ptr", "type": "pointer"}], "this_adjust": 0, "return_kind": "bool",
+      "recovery": "near", "stolen": "64 a1 00 00 00 00", "instruction_lengths": [6],
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 256, "label": "cop_000"},
+        {"source": "arg0", "offset": 0, "length": 256, "label": "pursuit_arg"}
+      ]
+    },
+    {
+      "id": 35, "name": "AICopManager::SpawnPursuitHelicopter", "config_key": "sample_AICopManager_SpawnHelicopter",
+      "va": "0x004269a0", "profiles": ["pursuit", "helicopter"], "default_divisor": 1,
+      "args": [{"name": "pursuit_ptr", "type": "pointer"}], "this_adjust": 0, "return_kind": "bool",
+      "recovery": "exact", "stolen": "6a ff 68 bb 80 86 00", "instruction_lengths": [2, 5],
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 256, "label": "cop_000"},
+        {"source": "arg0", "offset": 0, "length": 256, "label": "pursuit_arg"}
+      ]
+    },
+    {
+      "id": 36, "name": "AIVehicleHelicopter::Update", "config_key": "sample_AIVehicleHelicopter_Update",
+      "va": "0x0042adb0", "profiles": ["helicopter", "survey"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 3c 53 55", "instruction_lengths": [3, 1, 1],
+      "region_template": "helicopter"
+    },
+    {
+      "id": 37, "name": "AIVehicleHelicopter::CanSeeTarget", "config_key": "sample_AIVehicleHelicopter_CanSeeTarget",
+      "va": "0x004170d0", "profiles": ["helicopter"], "default_divisor": 8,
+      "args": [{"name": "target_ptr", "type": "pointer"}], "this_adjust": -1804, "return_kind": "bool",
+      "recovery": "exact", "stolen": "81 ec a0 00 00 00", "instruction_lengths": [6],
+      "regions": [
+        {"source": "normalized_this", "offset": "0x700", "length": 256, "label": "heli_700"},
+        {"source": "normalized_this", "offset": "0x800", "length": 192, "label": "heli_800"},
+        {"source": "arg0", "offset": 0, "length": 64, "label": "target_arg"}
+      ]
+    },
+    {
+      "id": 38, "name": "AIActionHeliPursuit::Update", "config_key": "sample_AIActionHeliPursuit_Update",
+      "va": "0x004277e0", "profiles": ["helicopter"], "default_divisor": 32,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "d9 44 24 04 56", "instruction_lengths": [4, 1],
+      "region_template": "action"
+    },
+    {
+      "id": 39, "name": "AIActionHeliExit::Update", "config_key": "sample_AIActionHeliExit_Update",
+      "va": "0x004279f0", "profiles": ["helicopter"], "default_divisor": 32,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "d9 44 24 04 83 ec 24", "instruction_lengths": [4, 3],
+      "region_template": "action"
+    },
+    {
+      "id": 40, "name": "AIVehicleHelicopter::OnDriving", "config_key": "sample_AIVehicleHelicopter_OnDriving",
+      "va": "0x00417a20", "profiles": ["helicopter"], "default_divisor": 128,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "partial", "stolen": "83 ec 68 53 55", "instruction_lengths": [3, 1, 1],
+      "region_template": "helicopter"
+    },
+    {
+      "id": 41, "name": "AITarget::TrackAll", "config_key": "sample_AITarget_TrackAll",
+      "va": "0x004237f0", "profiles": ["navigation", "survey"], "default_divisor": 64,
+      "args": [], "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "a1 78 d8 90 00", "instruction_lengths": [5],
+      "regions": [{"source": "absolute", "offset": "0x0090d878", "length": 16, "label": "target_global"}]
+    },
+    {
+      "id": 42, "name": "AITarget::TrackInternal", "config_key": "sample_AITarget_TrackInternal",
+      "va": "0x004180f0", "profiles": ["navigation"], "default_divisor": 32,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "56 8b f1 8a 46 2c", "instruction_lengths": [1, 2, 3], "region_template": "target"
+    },
+    {
+      "id": 43, "name": "AITarget::Aquire(ISimable*)", "config_key": "sample_AITarget_AquireSimable",
+      "va": "0x00423860", "profiles": ["navigation"], "default_divisor": 1,
+      "args": [{"name": "simable_ptr", "type": "pointer"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "56 8b f1 8b 46 1c", "instruction_lengths": [1, 2, 3],
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 64, "label": "target_000"},
+        {"source": "arg0", "offset": 0, "length": 256, "label": "simable_arg"}
+      ]
+    },
+    {
+      "id": 44, "name": "AITarget::Aquire(vector)", "config_key": "sample_AITarget_AquireVector",
+      "va": "0x004238b0", "profiles": ["navigation"], "default_divisor": 1,
+      "args": [{"name": "position_ptr", "type": "pointer"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "exact", "stolen": "56 8b f1 e8 a8 65 fe ff", "instruction_lengths": [1, 2, 5],
+      "relocation": {"kind": "call_rel32", "offset": 3, "target": "0x00409e60"},
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 64, "label": "target_000"},
+        {"source": "arg0", "offset": 0, "length": 16, "label": "position_arg"}
+      ]
+    },
+    {
+      "id": 45, "name": "AITarget::Aquire(vector,vector)", "config_key": "sample_AITarget_AquireVectors",
+      "va": "0x00423900", "profiles": ["navigation"], "default_divisor": 1,
+      "args": [{"name": "position_ptr", "type": "pointer"}, {"name": "direction_ptr", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "56 8b f1 e8 58 65 fe ff", "instruction_lengths": [1, 2, 5],
+      "relocation": {"kind": "call_rel32", "offset": 3, "target": "0x00409e60"},
+      "regions": [
+        {"source": "normalized_this", "offset": 0, "length": 64, "label": "target_000"},
+        {"source": "arg0", "offset": 0, "length": 16, "label": "position_arg"},
+        {"source": "arg1", "offset": 0, "length": 16, "label": "direction_arg"}
+      ]
+    },
+    {
+      "id": 46, "name": "AITarget::Clear", "config_key": "sample_AITarget_Clear",
+      "va": "0x00409e60", "profiles": ["navigation"], "default_divisor": 1,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "56 33 c0 88 41 2c", "instruction_lengths": [1, 2, 3], "region_template": "target"
+    },
+    {
+      "id": 47, "name": "Gps::Update", "config_key": "sample_Gps_Update",
+      "va": "0x0042c390", "profiles": ["navigation", "survey"], "default_divisor": 64,
+      "args": [{"name": "dT", "type": "float"}], "this_adjust": 0, "return_kind": "void",
+      "recovery": "near", "stolen": "64 a1 00 00 00 00", "instruction_lengths": [6], "region_template": "gps"
+    },
+    {
+      "id": 48, "name": "Gps::Engage", "config_key": "sample_Gps_Engage",
+      "va": "0x0042c6c0", "profiles": ["navigation"], "default_divisor": 1,
+      "args": [{"name": "mode", "type": "integer"}, {"name": "arg1", "type": "raw"}],
+      "this_adjust": 0, "return_kind": "void", "recovery": "near",
+      "stolen": "53 55 56 8b f1", "instruction_lengths": [1, 1, 1, 2], "region_template": "gps"
+    },
+    {
+      "id": 49, "name": "bReleasePutString", "config_key": "sample_bReleasePutString",
+      "va": "0x0045cc70", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "terminal_channel", "type": "integer"}, {"name": "text", "type": "pointer"}],
+      "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "a1 30 e6 90 00", "instruction_lengths": [5], "region_template": "bware_text"
+    },
+    {
+      "id": 50, "name": "bLaunchWindows", "config_key": "sample_bLaunchWindows",
+      "va": "0x0045cd70", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "command_line", "type": "pointer"}],
+      "static": true, "this_adjust": 0, "return_kind": "integer", "recovery": "exact",
+      "stolen": "83 ec 54 8b 54 24 58", "instruction_lengths": [3, 4], "region_template": "bware_command"
+    },
+    {
+      "id": 51, "name": "bInitTicker", "config_key": "sample_bInitTicker",
+      "va": "0x0045cdd0", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "min_wraparound_time", "type": "float"}],
+      "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "83 ec 08 8d 04 24", "instruction_lengths": [3, 3], "region_template": "none"
+    },
+    {
+      "id": 52, "name": "bGetTicker", "config_key": "sample_bGetTicker",
+      "va": "0x0045ce40", "profiles": ["zbware"], "default_divisor": 4096,
+      "args": [], "static": true, "this_adjust": 0, "return_kind": "integer", "recovery": "exact",
+      "stolen": "83 ec 08 8d 04 24", "instruction_lengths": [3, 3], "region_template": "none"
+    },
+    {
+      "id": 53, "name": "bGetTickerDifference", "config_key": "sample_bGetTickerDifference",
+      "va": "0x0045ce70", "profiles": ["zbware"], "default_divisor": 1024,
+      "args": [{"name": "start_ticks", "type": "integer"}, {"name": "end_ticks", "type": "integer"}],
+      "static": true, "this_adjust": 0, "return_kind": "unknown", "recovery": "exact",
+      "stolen": "51 d9 05 68 09 89 00", "instruction_lengths": [1, 6], "region_template": "none"
+    },
+    {
+      "id": 54, "name": "bHasTickerExpired", "config_key": "sample_bHasTickerExpired",
+      "va": "0x0045cf30", "profiles": ["zbware"], "default_divisor": 256,
+      "args": [{"name": "start_ticks", "type": "integer"}, {"name": "duration", "type": "float"}],
+      "static": true, "this_adjust": 0, "return_kind": "bool", "recovery": "exact",
+      "stolen": "83 ec 08 8d 04 24", "instruction_lengths": [3, 3], "region_template": "none"
+    },
+    {
+      "id": 55, "name": "MemoryPool::TraceNewPool", "config_key": "sample_MemoryPool_TraceNewPool",
+      "va": "0x00463f00", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "83 ec 24 33 c0", "instruction_lengths": [3, 2], "region_template": "memory_pool"
+    },
+    {
+      "id": 56, "name": "MemoryPool::AddFreeMemory", "config_key": "sample_MemoryPool_AddFreeMemory",
+      "va": "0x00464510", "profiles": ["zbware"], "default_divisor": 8,
+      "args": [{"name": "memory", "type": "pointer"}, {"name": "size", "type": "integer"}, {"name": "debug_name", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "83 ec 0c 53 56", "instruction_lengths": [3, 1, 1], "region_template": "memory_pool"
+    },
+    {
+      "id": 57, "name": "MemoryPool::Init", "config_key": "sample_MemoryPool_Init",
+      "va": "0x00464d80", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "memory", "type": "pointer"}, {"name": "memory_size", "type": "integer"}, {"name": "debug_name", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "53 8b 5c 24 0c", "instruction_lengths": [1, 4], "region_template": "memory_pool"
+    },
+    {
+      "id": 58, "name": "MemoryPool::Close", "config_key": "sample_MemoryPool_Close",
+      "va": "0x00464e10", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [], "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "53 8b d9 8b 43 24", "instruction_lengths": [1, 2, 3], "region_template": "memory_pool"
+    },
+    {
+      "id": 59, "name": "MemoryPool::AllocateMemory", "config_key": "sample_MemoryPool_AllocateMemory",
+      "va": "0x00464e60", "profiles": ["zbware"], "default_divisor": 256,
+      "args": [{"name": "size", "type": "integer"}, {"name": "alignment", "type": "integer"}, {"name": "alignment_offset", "type": "integer"}, {"name": "start_from_top", "type": "integer"}, {"name": "use_best_fit", "type": "integer"}, {"name": "new_size", "type": "pointer"}],
+      "this_adjust": 0, "return_kind": "pointer", "recovery": "exact",
+      "stolen": "83 ec 10 53 55", "instruction_lengths": [3, 1, 1], "region_template": "memory_pool"
+    },
+    {
+      "id": 60, "name": "MemoryPool::VerifyPoolIntegrity", "config_key": "sample_MemoryPool_VerifyIntegrity",
+      "va": "0x00465110", "profiles": ["zbware"], "default_divisor": 16,
+      "args": [{"name": "verify_free_pattern", "type": "integer"}],
+      "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "51 53 55 8b e9", "instruction_lengths": [1, 1, 1, 2], "region_template": "memory_pool"
+    },
+    {
+      "id": 61, "name": "bInitMemoryPool", "config_key": "sample_bInitMemoryPool",
+      "va": "0x00465240", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "pool_num", "type": "integer"}, {"name": "memory", "type": "pointer"}, {"name": "memory_size", "type": "integer"}, {"name": "debug_name", "type": "pointer"}],
+      "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "8b 44 24 04 8b 54 24 10", "instruction_lengths": [4, 4], "region_template": "none"
+    },
+    {
+      "id": 62, "name": "bCloseMemoryPool", "config_key": "sample_bCloseMemoryPool",
+      "va": "0x00465280", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [{"name": "pool_num", "type": "integer"}],
+      "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "56 8b 74 24 08", "instruction_lengths": [1, 4], "region_template": "none"
+    },
+    {
+      "id": 63, "name": "bMemoryInit", "config_key": "sample_bMemoryInit",
+      "va": "0x004652a0", "profiles": ["zbware"], "default_divisor": 1,
+      "args": [], "static": true, "this_adjust": 0, "return_kind": "void", "recovery": "exact",
+      "stolen": "a1 88 e6 90 00", "instruction_lengths": [5], "region_template": "none"
+    },
+    {
+      "id": 64, "name": "bWareMalloc", "config_key": "sample_bWareMalloc",
+      "va": "0x004653d0", "profiles": ["zbware"], "default_divisor": 256,
+      "args": [{"name": "size", "type": "integer"}, {"name": "debug_text", "type": "pointer"}, {"name": "debug_line", "type": "integer"}, {"name": "allocation_params", "type": "integer"}],
+      "static": true, "this_adjust": 0, "return_kind": "pointer", "recovery": "exact",
+      "stolen": "83 ec 08 53 8b 5c 24 1c", "instruction_lengths": [3, 1, 4], "region_template": "bware_debug"
+    }
+  ]
+}

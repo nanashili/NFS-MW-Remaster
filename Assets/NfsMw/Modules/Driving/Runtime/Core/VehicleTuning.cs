@@ -6,7 +6,6 @@ namespace NfsMwRemaster.Driving
     public enum VehicleDriveLayout { LegacyBindings = 0, Fwd = 1, Rwd = 2, Awd = 3 }
     public enum VehicleTransmissionMode { Automatic = 0, Manual = 1 }
     public enum VehicleDifferentialMode { Open = 0, LimitedSlip = 1, Locked = 2 }
-    public enum VehicleSimulationModel { Authored = 0, MostWantedReference = 1 }
     /// <summary>
     /// Data-only vehicle specification. Multiple cars can share the same
     /// runtime modules while using different tuning assets.
@@ -19,8 +18,6 @@ namespace NfsMwRemaster.Driving
         public EngineSettings engine = new EngineSettings();
         public TireSettings tires = new TireSettings();
         public ControlSettings controls = new ControlSettings();
-        public AssistSettings assists = new AssistSettings();
-        public VehicleHandlingSettings handling = new VehicleHandlingSettings();
         public AeroSettings aero = new AeroSettings();
         public VehicleDriveLayout driveLayout = VehicleDriveLayout.LegacyBindings;
         public VehicleTransmissionMode transmissionMode = VehicleTransmissionMode.Automatic;
@@ -28,11 +25,7 @@ namespace NfsMwRemaster.Driving
         [Range(0f, 1f)] public float awdFrontTorqueBias = 0.5f;
         [Min(0f)] public float differentialPreload = 0f;
         [Range(0f, 1f)] public float differentialLockStrength = 0f;
-        public bool speedGovernor;
-        [Tooltip("Authored preserves existing vehicles. Most Wanted uses the recovered reference equations with the shared Unity contact solver; it is not a binary-identical port.")]
-        public VehicleSimulationModel simulationModel;
         public MostWantedDrivingSettings mostWanted = new MostWantedDrivingSettings();
-        public bool UsesMostWantedReference => simulationModel == VehicleSimulationModel.MostWantedReference;
 
         /// <summary>
         /// Creates a playable baseline without requiring an asset to exist.
@@ -46,7 +39,6 @@ namespace NfsMwRemaster.Driving
             tuning.engine = new EngineSettings();
             tuning.tires = new TireSettings();
             tuning.controls = new ControlSettings();
-            tuning.assists = new AssistSettings();
             tuning.aero = new AeroSettings();
 
             tuning.chassis.mass = 1450f;
@@ -80,10 +72,6 @@ namespace NfsMwRemaster.Driving
             tuning.tires.longitudinalGrip = 1.16f;
             tuning.tires.lateralGrip = 1.22f;
             tuning.tires.handbrakeRearGrip = 0.30f;
-            tuning.tires.peakLongitudinalSlip = 0.105f;
-            tuning.tires.peakLateralSlipRadians = 0.115f;
-            tuning.tires.postPeakGrip = 0.78f;
-            tuning.tires.rollingResistance = 0.014f;
 
             tuning.controls.maxSteerAngle = 31f;
             tuning.controls.highSpeedSteerScale = 0.38f;
@@ -97,14 +85,6 @@ namespace NfsMwRemaster.Driving
             tuning.controls.handbrakeTorque = 6200f;
             tuning.controls.frontBrakeBias = 0.64f;
 
-            tuning.assists.tractionControl = true;
-            tuning.assists.tractionSlipLimit = 0.16f;
-            tuning.assists.abs = true;
-            tuning.assists.absSlipLimit = 0.19f;
-            tuning.assists.stabilityControl = true;
-            tuning.assists.stabilityStrength = 0.42f;
-            tuning.assists.driftYawStrength = 0.35f;
-            tuning.assists.driftSpeedKph = 25f;
 
             tuning.aero.airDensity = 1.225f;
             tuning.aero.dragCoefficient = 0.32f;
@@ -179,10 +159,6 @@ namespace NfsMwRemaster.Driving
             [Min(0f)] public float longitudinalGrip = 1.16f;
             [Min(0f)] public float lateralGrip = 1.22f;
             [Range(0f, 1f)] public float handbrakeRearGrip = 0.30f;
-            [Min(0.001f)] public float peakLongitudinalSlip = 0.105f;
-            [Min(0.001f)] public float peakLateralSlipRadians = 0.115f;
-            [Range(0f, 1f)] public float postPeakGrip = 0.78f;
-            [Min(0f)] public float rollingResistance = 0.014f;
         }
 
         [Serializable]
@@ -199,21 +175,6 @@ namespace NfsMwRemaster.Driving
             [Min(0f)] public float serviceBrakeTorque = 5200f;
             [Min(0f)] public float handbrakeTorque = 6200f;
             [Range(0f, 1f)] public float frontBrakeBias = 0.64f;
-        }
-
-        [Serializable]
-        public sealed class AssistSettings
-        {
-            public bool tractionControl = true;
-            [Min(0f)] public float tractionSlipLimit = 0.16f;
-            public bool abs = true;
-            [Min(0f)] public float absSlipLimit = 0.19f;
-            public bool stabilityControl = true;
-            [Range(0f, 1f)] public float stabilityStrength = 0.42f;
-            [Range(0f, 1f)] public float driftYawStrength = 0.35f;
-            [Min(0f)] public float driftSpeedKph = 25f;
-            public bool countersteering;
-            [Range(0f, 1f)] public float countersteeringStrength;
         }
 
         [Serializable]

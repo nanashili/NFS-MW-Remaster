@@ -14,7 +14,6 @@ namespace NfsMwRemaster.Driving.Editor
             {
                 tuning = VehicleTuning.CreateStreetRacer(); tuning.displayName = "Provisional Ventura Bay Police";
                 tuning.chassis.mass = 1550f; tuning.engine.maxTorqueNewtonMeters = 410f;
-                tuning.handling.driftBias = 0f; tuning.handling.brakeToDrift = false;
                 AssetDatabase.CreateAsset(tuning, path);
             }
             var body = unit.GetComponent<Rigidbody>(); body.constraints = RigidbodyConstraints.None;

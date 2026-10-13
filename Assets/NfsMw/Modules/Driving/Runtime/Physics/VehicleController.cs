@@ -5,31 +5,22 @@ namespace NfsMwRemaster.Driving
 {
     /// <summary>
     /// Thin orchestration layer. Every major concern is a replaceable module:
-    /// input, powertrain, wheel/tire, assists, nitrous, and camera can evolve
+    /// input, recovered powertrain, wheel contacts, nitrous, and camera can evolve
     /// independently without turning the vehicle into one monolithic script.
     /// </summary>
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(VehiclePowertrain))]
-    [RequireComponent(typeof(VehicleAssists))]
     [RequireComponent(typeof(VehicleModuleHost))]
     public sealed class VehicleController : MonoBehaviour
     {
-        public const string SimulationRevision = "shared-vehicle.mw-reference.7";
-        private const float AutomaticDirectionChangeSpeedKph = 1f;
-        private const float AutomaticDirectionIntentDeadZone = 0.05f;
-        private enum AutomaticDriveDirection
-        {
-            Forward,
-            BrakingToReverse,
-            Reverse
-        }
+        public const string SimulationRevision = "nfsmw.3bb4ab24.source-port.2";
+        private bool gearUpHeld, gearDownHeld;
         private bool manualSimulation;
         public bool ManualSimulation => manualSimulation;
         public bool UsesBuiltInAero => useBuiltInAero;
         // Authoring/preview adapters must reject serialized physics references outside this chassis before cloning.
         public bool HasLocalPhysicsBindings => (powertrain == null || powertrain.gameObject == gameObject)
-            && (assists == null || assists.gameObject == gameObject)
             && (nitrous == null || nitrous.gameObject == gameObject)
             && (moduleHost == null || moduleHost.gameObject == gameObject);
 
@@ -52,7 +43,6 @@ namespace NfsMwRemaster.Driving
         [SerializeField] private VehicleTuning stockTuning;
         [SerializeField] private MonoBehaviour inputSourceComponent;
         [SerializeField] private VehiclePowertrain powertrain;
-        [SerializeField] private VehicleAssists assists;
         [SerializeField] private VehicleNitrous nitrous;
         [SerializeField] private VehicleWheel[] wheels;
         [SerializeField] private VehicleCameraRig cameraRig;
@@ -65,29 +55,28 @@ namespace NfsMwRemaster.Driving
         private Vector3 safePosition;
         private Quaternion safeRotation;
         private float smoothedSteering;
-        private float smoothedThrottle;
-        private float smoothedBrake;
-        private AutomaticDriveDirection automaticDriveDirection;
         private bool configured;
-        private readonly MostWantedSteeringModel referenceSteering = new MostWantedSteeringModel();
+        private readonly MostWantedChassis chassis = new MostWantedChassis();
+        private readonly MostWantedTire[] tires = new MostWantedTire[4];
+        private readonly bool[] grounded = new bool[4];
+        private int previousGroundedWheels;
+        private bool chassisContact;
         private float referenceFrontAxle = 1.3f, referenceRearAxle = -1.3f, referenceFrontTrack = 1.5f;
 
         public VehicleTelemetry Telemetry { get; private set; }
         public VehicleTuning FactoryTuning => stockTuning;
         public event System.Action<float> PhysicsSampled;
         public event System.Action PoseReset;
-        public void NotifyPoseReset() { referenceSteering.Reset(); PoseReset?.Invoke(); }
+        public void NotifyPoseReset() { chassis.Reset(); gearUpHeld = gearDownHeld = false; PoseReset?.Invoke(); }
         public void ResetSimulationForPool()
         {
             if (gameObject.activeSelf) throw new System.InvalidOperationException("Pool reset requires an inactive vehicle.");
             if (!configured) ConfigureModules();
-            smoothedSteering = smoothedThrottle = smoothedBrake = 0;
-            automaticDriveDirection = AutomaticDriveDirection.Forward;
+            smoothedSteering = 0;
             Telemetry = default;
             for (int i = 0; i < wheels.Length; i++) { wheels[i].Configure(body, tuning); wheels[i].ResetSimulation(); }
             powertrain.Configure(tuning, wheels); powertrain.ResetPowertrain(); powertrain.SetIgnition(true);
             if (nitrous != null) nitrous.ResetForSpawn();
-            assists.Configure(body, tuning, wheels);
             NotifyPoseReset();
         }
         public bool EngineRunning => powertrain == null || powertrain.EngineRunning;
@@ -136,6 +125,7 @@ namespace NfsMwRemaster.Driving
             {
                 inputSourceComponent = value;
                 inputSource = value as IVehicleInputSource;
+                gearUpHeld = gearDownHeld = false;
             }
         }
 
@@ -190,6 +180,11 @@ namespace NfsMwRemaster.Driving
             VehicleInputState rawInput = inputSource != null
                 ? inputSource.Current.Clamped()
                 : VehicleInputState.Neutral;
+            bool up = rawInput.GearUp, down = rawInput.GearDown;
+            rawInput.GearUp &= !gearUpHeld;
+            rawInput.GearDown &= !gearDownHeld;
+            gearUpHeld = up;
+            gearDownHeld = down;
             if (inputSource is IVehicleDiscreteInputSource discrete)
             {
                 VehicleInputState actions = discrete.ConsumeDiscreteActions();
@@ -219,129 +214,85 @@ namespace NfsMwRemaster.Driving
 
             float forwardSpeed = Vector3.Dot(body.linearVelocity, transform.forward);
             float speedKph = VehicleMath.MetersPerSecondToKph(body.linearVelocity.magnitude);
-            assists.BeginStep(deltaTime);
-            float shapedSteering;
-            float steeringAngle;
-            if (tuning.UsesMostWantedReference && tuning.mostWanted.useSteeringTables)
+            powertrain.SetManualRequests(rawInput.GearUp, rawInput.GearDown,
+                rawInput.GearNeutral, rawInput.GearReverse);
+            bool playerControls = inputSource != null
+                && (inputSource is not IVehicleInputControlPolicy policy || policy.ApplyPlayerControls);
+            var input = playerControls ? powertrain.ApplyDriverPedals(rawInput, forwardSpeed) : rawInput;
+            float driveThrottle = input.Throttle, serviceBrake = input.Brake;
+            Vector3 localVelocity = transform.InverseTransformDirection(body.linearVelocity);
+            Vector3 localAngular = transform.InverseTransformDirection(body.angularVelocity);
+            float slipAngle = localVelocity.z < 1f ? 0f : Mathf.Atan2(localVelocity.x, localVelocity.z);
+            int contacts = 0;
+            float maxSlip = 0; int maxSlipWheel = 0;
+            for (int i = 0; i < 4; i++)
             {
-                float rearSlipDegrees = GetReferenceRearSlipDegrees(rawInput.Steering);
-                steeringAngle = referenceSteering.Step(tuning.mostWanted, rawInput, forwardSpeed,
-                    rearSlipDegrees, deltaTime);
-                // The recovered steering model already outputs a physical wheel angle. Do not
-                // run it through the authored max-angle/smoothing path a second time. This also
-                // keeps source-backed player steering independent from generic authored caps;
-                // NPC/reference-adaptation profiles opt out of these tables entirely.
-                smoothedSteering = Mathf.Clamp(steeringAngle / MostWantedSteeringModel.AbsoluteMaximumDegrees, -1f, 1f);
-                shapedSteering = smoothedSteering;
+                tires[i] = wheels[i].Tire;
+                grounded[i] = wheels[i].Grounded;
+                if (grounded[i]) contacts++;
+                if (tires[i].Slip > maxSlip) { maxSlip = tires[i].Slip; maxSlipWheel = i; }
             }
-            else
+            bool nitrousActive = nitrous != null && nitrous.Tick(deltaTime,
+                EngineRunning && rawInput.Nitrous && driveThrottle > .01f, speedKph, powertrain.Gear);
+            var frame = new MostWantedChassis.Frame(input, deltaTime, forwardSpeed, slipAngle, localAngular.y, contacts,
+                gear: powertrain.Gear, playerSteering: tuning.mostWanted.useSteeringTables,
+                frontAxle: referenceFrontAxle, rearAxle: referenceRearAxle, frontTrack: referenceFrontTrack,
+                localLateralSpeed: localVelocity.x, grade: transform.forward.y,
+                nosBoost: 1f + (nitrous != null ? nitrous.BoostMultiplier * tuning.mostWanted.nitrousTorqueBoost : 0f),
+                bodySpeed: body.linearVelocity.magnitude);
+            chassis.BeginStep(frame, tires);
+            Vector3 center = body.centerOfMass;
+            float frontBias = contacts == 0 ? .5f : tuning.mostWanted.frontWeightBias * .01f;
+            center.z = Mathf.Lerp(referenceRearAxle, referenceFrontAxle, frontBias);
+            body.centerOfMass = center;
+            if (useBuiltInAero) chassis.ApplyAerodynamics(body, tuning, wheels, driveThrottle, false, referenceFrontAxle, referenceRearAxle);
+            VehiclePowertrainOutput powertrainOutput = powertrain.Simulate(deltaTime, forwardSpeed, driveThrottle, nitrous != null ? nitrous.BoostMultiplier : 0f);
+            chassis.ApplyDriveForces(body, tuning, tires, grounded, powertrainOutput.WheelTorque, frame,
+                wheels[0].IsDrivenWheel || wheels[1].IsDrivenWheel, wheels[2].IsDrivenWheel || wheels[3].IsDrivenWheel);
+            var steering = chassis.SteerAndTune(frame, tuning, tires, wheels[2].LateralSlipRadians,
+                wheels[3].LateralSlipRadians, maxSlip, maxSlipWheel);
+            smoothedSteering = steering.SteeringDegrees / MostWantedChassis.AbsoluteMaximumDegrees;
+            float shapedSteering = smoothedSteering;
+            float frontSway = (wheels[0].CompressionMeters - wheels[1].CompressionMeters) * tuning.mostWanted.swaybarStiffness.x;
+            float rearSway = (wheels[2].CompressionMeters - wheels[3].CompressionMeters) * tuning.mostWanted.swaybarStiffness.y;
+            Vector3 totalForce = Vector3.zero, totalTorque = Vector3.zero;
+            float correction = 0; int newContacts = 0;
+            for (int i = 0; i < 4; i++)
             {
-                shapedSteering = VehicleMath.ShapeSteering(rawInput.Steering, speedKph, tuning.controls);
-                shapedSteering = assists.ResolveSteering(shapedSteering, forwardSpeed, rawInput.Handbrake);
-                smoothedSteering = VehicleMath.SmoothInput(
-                    smoothedSteering,
-                    shapedSteering,
-                    tuning.controls.steeringResponse,
-                    deltaTime);
-                steeringAngle = smoothedSteering * tuning.controls.maxSteerAngle;
+                float angle = i == 0 ? steering.FrontLeftDegrees : i == 1 ? steering.FrontRightDegrees : 0;
+                float sway = (i < 2 ? frontSway : rearSway) * (i % 2 == 0 ? 1 : -1);
+                wheels[i].Simulate(deltaTime, angle, sway);
+                totalForce += wheels[i].WorldForce;
+                totalTorque += Vector3.Cross(wheels[i].ForcePosition - body.worldCenterOfMass, wheels[i].WorldForce);
+                correction = Mathf.Max(correction, wheels[i].BottomOutCorrection);
+                if (wheels[i].Grounded) newContacts++;
             }
-            smoothedThrottle = VehicleMath.SmoothInput(
-                smoothedThrottle,
-                rawInput.Throttle,
-                tuning.controls.throttleResponse,
-                deltaTime);
-            smoothedBrake = VehicleMath.SmoothInput(
-                smoothedBrake,
-                rawInput.Brake,
-                tuning.controls.brakeResponse,
-                deltaTime);
-
-            bool reverseRequested;
-            float driveThrottle;
-            float serviceBrake;
-            ResolveDriveIntent(forwardSpeed, rawInput, out driveThrottle, out serviceBrake, out reverseRequested);
-
-            bool nitrousActive = nitrous != null
-                && nitrous.Tick(deltaTime, EngineRunning && rawInput.Nitrous && driveThrottle > 0.01f, speedKph, powertrain.Gear);
-            powertrain.SetManualRequests(rawInput.GearUp, rawInput.GearDown, rawInput.GearNeutral, rawInput.GearReverse);
-            VehiclePowertrainOutput powertrainOutput = powertrain.Simulate(
-                deltaTime,
-                forwardSpeed,
-                driveThrottle,
-                reverseRequested,
-                nitrousActive);
-
-            int drivenWheelCount = CountDrivenWheels();
-            float forwardBrakeTorque = serviceBrake
-                * tuning.controls.serviceBrakeTorque
-                * tuning.controls.frontBrakeBias;
-            float rearBrakeTorque = serviceBrake
-                * tuning.controls.serviceBrakeTorque
-                * (1f - tuning.controls.frontBrakeBias);
-
-            for (int i = 0; i < wheels.Length; i++)
+            float yaw = Vector3.Dot(transform.up, totalTorque);
+            totalTorque += transform.up * (yaw * tuning.mostWanted.yawSpeed - yaw);
+            body.AddForce(totalForce, ForceMode.Force);
+            body.AddTorque(totalTorque, ForceMode.Force);
+            if (correction > 0) body.position += Vector3.up * correction;
+            if (newContacts != 0 && previousGroundedWheels == 0)
             {
-                VehicleWheel wheel = wheels[i];
-                float driveShare = powertrain.GetDriveTorqueShare(wheel, wheels);
-                float driveTorque = driveShare > 0f
-                    ? powertrainOutput.WheelTorque * driveShare
-                    : 0f;
-                // The shared Unity adapter has no original clutch/road-reaction solve.
-                // Deliver negative engine torque as dissipative wheel braking, not as a
-                // reverse drive motor. The wheel integrator then cannot cross zero angular
-                // momentum and propel an idle car backward. Positive torque in reverse is
-                // still propulsion; engine torque, not wheel-torque sign, distinguishes it.
-                float engineBrakeTorque = 0f;
-                if (tuning.UsesMostWantedReference && powertrainOutput.EngineTorque < 0f)
-                {
-                    engineBrakeTorque = Mathf.Abs(driveTorque);
-                    driveTorque = 0f;
-                }
-                if (rawInput.Handbrake && wheel.IsHandbrakeWheel)
-                {
-                    driveTorque = 0f;
-                }
-
-                driveTorque *= assists.GetDriveTorqueMultiplier(wheel);
-                float brakeTorque = wheel.IsFrontWheel ? forwardBrakeTorque : rearBrakeTorque;
-                brakeTorque *= assists.GetBrakeTorqueMultiplier(wheel, brakeTorque > 0.01f);
-                brakeTorque += engineBrakeTorque; // Service-brake ABS does not govern engine braking.
-                if (rawInput.Handbrake && wheel.IsHandbrakeWheel)
-                {
-                    brakeTorque += tuning.controls.handbrakeTorque;
-                }
-
-                float lateralGripMultiplier = rawInput.Handbrake
-                    && wheel.IsHandbrakeWheel
-                    ? tuning.tires.handbrakeRearGrip
-                    : 1f;
-
-                float wheelSteering = steeringAngle;
-                if (tuning.UsesMostWantedReference && tuning.mostWanted.useSteeringTables && wheel.IsFrontWheel)
-                {
-                    float side = transform.InverseTransformPoint(wheel.transform.position).x;
-                    if (side * steeringAngle < 0f)
-                        wheelSteering = MostWantedVehicleMath.OutsideSteerDegrees(steeringAngle,
-                            referenceFrontAxle - referenceRearAxle, referenceFrontTrack);
-                }
-                wheel.Simulate(deltaTime, new VehicleWheelCommand
-                {
-                    SteerAngle = wheel.IsSteeringWheel ? wheelSteering : 0f,
-                    DriveTorque = driveTorque,
-                    BrakeTorque = brakeTorque,
-                    LongitudinalGripMultiplier = 1f,
-                    LateralGripMultiplier = lateralGripMultiplier
-                });
+                localAngular.y *= .5f; localAngular.z *= .5f;
+                body.angularVelocity = transform.TransformDirection(localAngular);
             }
-
-            if (useBuiltInAero)
+            previousGroundedWheels = newContacts;
+            chassis.ApplyDriftYawTorque(body, transform.up);
+            chassis.ApplyWallSteer(body, frame, newContacts, powertrain.Gear > 0);
+            Vector3 groundNormal = Vector3.up;
+            float altitude = 0;
+            if (gameObject.scene.GetPhysicsScene().Raycast(body.position, Vector3.down, out RaycastHit groundHit,
+                1000f, wheels[0].GroundMask, QueryTriggerInteraction.Ignore))
             {
-                ApplyAeroForces(driveThrottle);
+                groundNormal = groundHit.normal;
+                altitude = Mathf.Max(0, groundHit.distance + wheels[0].LocalArm.y);
             }
-
-            VehicleInputState handlingInput = rawInput;
-            handlingInput.Steering = smoothedSteering;
-            assists.ApplyPostWheelForces(forwardSpeed, handlingInput, deltaTime);
+            var landingFrame = new MostWantedChassis.Frame(input, deltaTime, forwardSpeed, slipAngle,
+                localAngular.y, newContacts, powertrain.Gear);
+            chassis.ApplyJumpStabilizer(body, landingFrame, groundNormal, altitude, chassisContact);
+            ApplySleep(input, newContacts, totalForce, totalTorque);
+            chassisContact = false;
             if (moduleHost != null)
             {
                 moduleHost.RunAfterPhysics(deltaTime);
@@ -355,6 +306,40 @@ namespace NfsMwRemaster.Driving
                 moduleHost.Context.Telemetry = Telemetry;
             }
             PhysicsSampled?.Invoke(deltaTime);
+        }
+
+        private void OnCollisionStay(Collision collision)
+        {
+            chassisContact = true;
+            for (int i = 0; i < collision.contactCount; i++)
+            {
+                ContactPoint contact = collision.GetContact(i);
+                chassis.OnWallCollision(contact.normal, contact.point, collision.relativeVelocity,
+                    collision.rigidbody != null ? collision.rigidbody.linearVelocity : Vector3.zero, body);
+            }
+        }
+
+        private void ApplySleep(VehicleInputState input, int contacts, Vector3 wheelForce, Vector3 wheelTorque)
+        {
+            float speed = body.linearVelocity.magnitude;
+            if (speed >= 1f || body.angularVelocity.magnitude >= .25f || input.Throttle > 0) return;
+            if (speed < .5f && contacts == 4 && (input.Brake > 0 || input.Handbrake) && !chassisContact)
+            {
+                // Chassis::DoSleep SS_ALL. Damp's argument is the removed fraction.
+                body.linearVelocity *= speed;
+                body.angularVelocity *= speed;
+                foreach (var wheel in wheels) wheel.Tire.AngularVelocity = 0;
+                return;
+            }
+            Vector3 velocity = transform.InverseTransformDirection(body.linearVelocity);
+            Vector3 angular = transform.InverseTransformDirection(body.angularVelocity);
+            Vector3 force = transform.InverseTransformDirection(wheelForce);
+            Vector3 torque = transform.InverseTransformDirection(wheelTorque);
+            velocity.x *= speed; angular.y *= speed;
+            body.linearVelocity = transform.TransformDirection(velocity);
+            body.angularVelocity = transform.TransformDirection(angular);
+            body.AddForce(transform.right * (-force.x * (1 - speed)), ForceMode.Force);
+            body.AddTorque(transform.up * (-torque.y * (1 - speed)), ForceMode.Force);
         }
 
         private void LateUpdate()
@@ -419,11 +404,6 @@ namespace NfsMwRemaster.Driving
                 powertrain = GetComponent<VehiclePowertrain>();
             }
 
-            if (assists == null)
-            {
-                assists = GetComponent<VehicleAssists>();
-            }
-
             if (nitrous == null)
             {
                 nitrous = GetComponent<VehicleNitrous>();
@@ -434,6 +414,13 @@ namespace NfsMwRemaster.Driving
                 wheels = GetComponentsInChildren<VehicleWheel>();
             }
 
+            if (wheels.Length != 4) throw new System.InvalidOperationException("MW physics requires four wheels.");
+            System.Array.Sort(wheels, (a, b) =>
+            {
+                int axleOrder = a.Axle.CompareTo(b.Axle);
+                return axleOrder != 0 ? axleOrder : transform.InverseTransformPoint(a.transform.position).x.CompareTo(transform.InverseTransformPoint(b.transform.position).x);
+            });
+
             if (moduleHost != null)
             {
                 moduleHost.Configure(this, body, tuning, wheels);
@@ -441,10 +428,14 @@ namespace NfsMwRemaster.Driving
             }
 
             body.mass = tuning.chassis.mass;
-            body.centerOfMass = tuning.chassis.centerOfMass;
-            body.linearDamping = 0.02f;
-            body.angularDamping = 0.05f;
-            body.maxAngularVelocity = 25f;
+            var box = GetComponent<BoxCollider>();
+            float halfHeight = box != null ? box.size.y * .5f : .65f;
+            var source = tuning.mostWanted;
+            body.centerOfMass = new Vector3(0, source.rollCenter - halfHeight - Mathf.Max(source.rideHeight.x, source.rideHeight.y),
+                source.frontAxle - source.wheelBase * (1 - source.frontWeightBias * .01f));
+            body.linearDamping = 0f;
+            body.angularDamping = 0f;
+            body.maxAngularVelocity = 30f;
             body.interpolation = RigidbodyInterpolation.Interpolate;
             body.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
@@ -452,7 +443,6 @@ namespace NfsMwRemaster.Driving
             {
                 wheels[i].Configure(body, tuning);
             }
-            if (tuning.UsesMostWantedReference)
             {
                 float front = 0f, rear = 0f, minX = float.PositiveInfinity, maxX = float.NegativeInfinity;
                 int fronts = 0, rears = 0;
@@ -468,10 +458,6 @@ namespace NfsMwRemaster.Driving
             }
 
             powertrain.Configure(tuning, wheels);
-            automaticDriveDirection = tuning.transmissionMode == VehicleTransmissionMode.Automatic && powertrain.Gear < 0
-                ? AutomaticDriveDirection.Reverse
-                : AutomaticDriveDirection.Forward;
-            assists.Configure(body, tuning, wheels);
             if (nitrous != null)
             {
                 nitrous.Configure(tuning);
@@ -630,147 +616,6 @@ namespace NfsMwRemaster.Driving
             return moduleHost.TryRemoveCustomization(category, out failure);
         }
 
-        private void ResolveDriveIntent(
-            float forwardSpeed,
-            VehicleInputState rawInput,
-            out float driveThrottle,
-            out float serviceBrake,
-            out bool reverseRequested)
-        {
-            driveThrottle = smoothedThrottle;
-            serviceBrake = smoothedBrake;
-            reverseRequested = false;
-
-            if (tuning.transmissionMode == VehicleTransmissionMode.Automatic)
-            {
-                float directionChangeSpeed = VehicleMath.KphToMetersPerSecond(AutomaticDirectionChangeSpeedKph);
-                bool nearDirectionChange = Mathf.Abs(forwardSpeed) <= directionChangeSpeed;
-                bool wantsReverse = rawInput.GearReverse
-                    || rawInput.Brake > rawInput.Throttle + AutomaticDirectionIntentDeadZone;
-                bool wantsForward = !rawInput.GearReverse
-                    && rawInput.Throttle > rawInput.Brake + AutomaticDirectionIntentDeadZone;
-
-                switch (automaticDriveDirection)
-                {
-                    case AutomaticDriveDirection.Forward:
-                        if (wantsReverse)
-                            automaticDriveDirection = nearDirectionChange
-                                ? AutomaticDriveDirection.Reverse
-                                : AutomaticDriveDirection.BrakingToReverse;
-                        break;
-                    case AutomaticDriveDirection.BrakingToReverse:
-                        if (!wantsReverse || wantsForward)
-                            automaticDriveDirection = AutomaticDriveDirection.Forward;
-                        else if (nearDirectionChange)
-                            automaticDriveDirection = AutomaticDriveDirection.Reverse;
-                        break;
-                    case AutomaticDriveDirection.Reverse:
-                        if (wantsForward && nearDirectionChange)
-                            automaticDriveDirection = AutomaticDriveDirection.Forward;
-                        break;
-                }
-
-                if (automaticDriveDirection == AutomaticDriveDirection.BrakingToReverse)
-                {
-                    driveThrottle = 0f;
-                    serviceBrake = smoothedBrake;
-                }
-                else if (automaticDriveDirection == AutomaticDriveDirection.Reverse)
-                {
-                    reverseRequested = true;
-                    if (wantsForward)
-                    {
-                        driveThrottle = 0f;
-                        serviceBrake = smoothedThrottle;
-                    }
-                    else
-                    {
-                        driveThrottle = smoothedBrake;
-                        serviceBrake = 0f;
-                    }
-                }
-            }
-            else automaticDriveDirection = AutomaticDriveDirection.Forward;
-
-            if (rawInput.Handbrake && serviceBrake < 0.1f)
-            {
-                serviceBrake = 0f;
-            }
-        }
-
-        private float GetReferenceRearSlipDegrees(float steeringInput)
-        {
-            if (wheels == null || Mathf.Abs(steeringInput) < 0.0001f) return 0f;
-            VehicleWheel fallback = null;
-            for (int i = 0; i < wheels.Length; i++)
-            {
-                VehicleWheel wheel = wheels[i];
-                if (wheel == null || wheel.IsFrontWheel || !wheel.Grounded) continue;
-                fallback ??= wheel;
-                float side = transform.InverseTransformPoint(wheel.transform.position).x;
-                if (steeringInput > 0f && side > 0f || steeringInput < 0f && side < 0f)
-                    return wheel.LateralSlipRadians * Mathf.Rad2Deg;
-            }
-            return fallback != null ? fallback.LateralSlipRadians * Mathf.Rad2Deg : 0f;
-        }
-
-        private void ApplyAeroForces(float throttle)
-        {
-            VehicleTuning.AeroSettings aero = tuning.aero;
-            Vector3 velocity = body.linearVelocity;
-            float speed = velocity.magnitude;
-            if (speed > 0.05f)
-            {
-                float dragMagnitude = 0.5f
-                    * aero.airDensity
-                    * aero.dragCoefficient
-                    * aero.frontalArea
-                    * speed
-                    * speed;
-                if (tuning.UsesMostWantedReference)
-                {
-                    int contacts = 0; foreach (var wheel in wheels) if (wheel.Grounded) contacts++;
-                    Vector3 center = body.centerOfMass;
-                    if (contacts >= 2) center.y -= .1f * (1f - Mathf.Clamp01(throttle));
-                    body.AddForceAtPosition(-velocity.normalized * dragMagnitude * (2f - Mathf.Clamp01(throttle)), transform.TransformPoint(center), ForceMode.Force);
-                }
-                else
-                {
-                    body.AddForce(-velocity.normalized * dragMagnitude, ForceMode.Force);
-                    body.AddForce(-velocity.normalized * tuning.chassis.rollingResistance * tuning.chassis.mass * Physics.gravity.magnitude, ForceMode.Force);
-                }
-            }
-
-            float speedSquared = speed * speed;
-            float downforceMagnitude = aero.downforceCoefficient * speedSquared;
-            if (tuning.UsesMostWantedReference)
-            {
-                int contacts = 0; foreach (var wheel in wheels) if (wheel.Grounded) contacts++;
-                float forwardness = speed > .0001f ? Vector3.Dot(velocity / speed, transform.forward) : 1f;
-                float force = MostWantedVehicleMath.ReferenceDownforce(speed, tuning.mostWanted.linearDownforceCoefficient,
-                    forwardness, transform.up.y, contacts);
-                Vector3 center = body.centerOfMass;
-                if (contacts > 0) center.z = Mathf.Lerp(referenceRearAxle, referenceFrontAxle, aero.downforceBalance);
-                body.AddForceAtPosition(-transform.up * force, transform.TransformPoint(center), ForceMode.Force);
-            }
-            else if (downforceMagnitude > 0f)
-            {
-                Vector3 downforce = -transform.up * downforceMagnitude;
-                Vector3 frontPoint = transform.position + transform.forward * 1.2f;
-                Vector3 rearPoint = transform.position - transform.forward * 1.2f;
-                body.AddForceAtPosition(downforce * aero.downforceBalance, frontPoint, ForceMode.Force);
-                body.AddForceAtPosition(downforce * (1f - aero.downforceBalance), rearPoint, ForceMode.Force);
-            }
-
-            float maxSpeed = VehicleMath.KphToMetersPerSecond(tuning.chassis.maxSpeedKph);
-            if (tuning.speedGovernor && speed > maxSpeed && Vector3.Dot(velocity, transform.forward) > 0f)
-            {
-                body.AddForce(
-                    -velocity.normalized * (speed - maxSpeed) * 4f,
-                    ForceMode.Acceleration);
-            }
-        }
-
         private void UpdateSafePose(float forwardSpeed, float speedKph)
         {
             bool hasGroundedWheel = false;
@@ -830,13 +675,13 @@ namespace NfsMwRemaster.Driving
                 RawInput = rawInput,
                 ShapedInput = shapedInput,
                 FinalInput = finalInput,
-                HandlingMode = assists == null ? VehicleHandlingMode.Grip : assists.HandlingMode,
-                AssistYawTorque = assists == null ? 0f : assists.AppliedYawTorque,
+                HandlingMode = groundedWheels < 2 ? VehicleHandlingMode.Airborne : chassis.DriftAmount > 0 ? VehicleHandlingMode.Drifting : VehicleHandlingMode.Grip,
+                AssistYawTorque = chassis.ApplyDriftYaw * body.inertiaTensor.y,
                 AverageLateralSlipRadians = wheels.Length == 0 ? 0f : AverageLateralSlip(),
                 AverageFrictionUtilization = wheels.Length == 0 ? 0f : AverageFrictionUtilization(),
-                TractionControlReduction = assists == null ? 0f : assists.LastTractionControlReduction,
-                AbsReduction = assists == null ? 0f : assists.LastAbsReduction,
-                CountersteeringContribution = assists == null ? 0f : assists.LastCountersteering,
+                TractionControlReduction = 0,
+                AbsReduction = 0,
+                CountersteeringContribution = 0,
                 BrakeLightsRequired = serviceBrake > 0.01f || forwardSpeed < -0.25f,
                 GroundedWheels = groundedWheels,
                 NitrousSeconds = nitrous == null ? 0f : nitrous.RemainingSeconds,
@@ -865,20 +710,6 @@ namespace NfsMwRemaster.Driving
             return count == 0 ? 0f : total / count;
         }
 
-        private int CountDrivenWheels()
-        {
-            int count = 0;
-            for (int i = 0; i < wheels.Length; i++)
-            {
-                if (wheels[i].IsDrivenWheel)
-                {
-                    count++;
-                }
-            }
-
-            return count;
-        }
-
         public void ResetVehicle()
         {
             if (body == null)
@@ -891,12 +722,12 @@ namespace NfsMwRemaster.Driving
             body.linearVelocity = Vector3.zero;
             body.angularVelocity = Vector3.zero;
             body.WakeUp();
-            if (assists != null) assists.ResetHandling();
+            chassis.Reset();
+            foreach (var wheel in wheels) wheel.ResetSimulation();
             if (powertrain != null)
             {
                 powertrain.ResetPowertrain();
             }
-            automaticDriveDirection = AutomaticDriveDirection.Forward;
 
             if (nitrous != null)
             {

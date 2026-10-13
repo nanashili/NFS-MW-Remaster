@@ -38,6 +38,57 @@ namespace NfsMwRemaster.Driving.Tests
         }
 
         [Test]
+        public void DriverShiftQueueConsumesOnceAndAcceptsConsecutiveEventsThroughAuthority()
+        {
+            var definition = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.Custom);
+            definition.vehicle.tuning.transmissionMode = VehicleTransmissionMode.Manual;
+            using var runner = new VehiclePhysicsLabRunner(definition);
+            var vehicle = runner.PreviewVehicle.GetComponent<VehicleController>();
+            var driver = runner.PreviewVehicle.AddComponent<DriverControlsTestInput>();
+            var authority = runner.PreviewVehicle.GetComponent<VehicleInputAuthority>()
+                ?? runner.PreviewVehicle.AddComponent<VehicleInputAuthority>();
+            authority.SetNeutral();
+            Assert.That(authority.TryAcquire(driver, driver), Is.True);
+            vehicle.SetInputSource(authority);
+            driver.Pending = new VehicleInputState { GearUp = true };
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.GetComponent<VehiclePowertrain>().Gear, Is.EqualTo(2));
+            driver.Pending = new VehicleInputState { GearUp = true };
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.GetComponent<VehiclePowertrain>().Gear, Is.EqualTo(3));
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.GetComponent<VehiclePowertrain>().Gear, Is.EqualTo(3));
+        }
+
+        [Test]
+        public void SourceDriverControlsReachProductionChassisAndRespectDirectControlOwnership()
+        {
+            var definition = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.Custom);
+            definition.vehicle.tuning.transmissionMode = VehicleTransmissionMode.Manual;
+            using var runner = new VehiclePhysicsLabRunner(definition);
+            var vehicle = runner.PreviewVehicle.GetComponent<VehicleController>();
+            var input = runner.PreviewVehicle.GetComponent<RacingSimulationInput>();
+            input.ApplyPlayerControls = true;
+            vehicle.Body.linearVelocity = vehicle.transform.forward * 4f;
+            input.Current = VehicleInputState.Neutral;
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.Telemetry.FinalInput.Brake, Is.EqualTo(.625f).Within(.000001f));
+            vehicle.Body.linearVelocity = vehicle.transform.forward * 2f;
+            input.Current = new VehicleInputState { Brake = .7f };
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.GetComponent<VehiclePowertrain>().Gear, Is.EqualTo(-1));
+            Assert.That(vehicle.Telemetry.FinalInput.Throttle, Is.EqualTo(.7f));
+            Assert.That(vehicle.Telemetry.FinalInput.Brake, Is.Zero);
+            vehicle.Body.linearVelocity = vehicle.transform.forward * 10f;
+            input.Current = new VehicleInputState { Throttle = .1f, Brake = 1f, Handbrake = true };
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.Telemetry.FinalInput.Brake, Is.Zero);
+            input.ApplyPlayerControls = false;
+            vehicle.StepSimulation(.02f);
+            Assert.That(vehicle.Telemetry.FinalInput.Brake, Is.EqualTo(1f));
+        }
+
+        [Test]
         public void RecordedManualSequenceConsumesDiscreteActionsAndRejectsReverseWhileMoving()
         {
             VehiclePhysicsLabDefinition definition = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.Gearshift);
@@ -127,18 +178,15 @@ namespace NfsMwRemaster.Driving.Tests
             }
         }
 
-        [TestCase(true)] [TestCase(false)]
-        public void BrakingReportsAbsOnlyWhenEnabled(bool enabled)
+        [Test]
+        public void SourceBrakeLockModelProducesFiniteBraking()
         {
             var definition = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.Custom);
-            definition.startingSpeedKph = 80; definition.vehicle.tuning.assists.abs = enabled;
+            definition.startingSpeedKph = 80;
             definition.vehicle.tuning.controls.serviceBrakeTorque = 12000;
             definition.input.mode = VehiclePhysicsLabInputMode.Live;
             using var runner = new VehiclePhysicsLabRunner(definition, () => new VehicleInputState { Brake = 1 });
             Run(runner, 300); Assert.That(runner.Report.Passed, Is.True, runner.Report.failureMessage); AssertFinite(runner.Report.samples);
-            float intervention = Max(runner.Report.samples, s => s.absReduction);
-            if (enabled) Assert.That(intervention, Is.GreaterThan(.1f).And.LessThanOrEqualTo(1));
-            else Assert.That(intervention, Is.EqualTo(0));
             Assert.That(runner.Report.samples[runner.Report.samples.Length - 1].speedKph, Is.LessThan(70));
         }
 
@@ -175,37 +223,22 @@ namespace NfsMwRemaster.Driving.Tests
         }
 
         [Test]
-        public void GovernorChangesMeasuredLimitWhileDisabledDoesNotClampSeededSpeed()
+        public void SourceSpeedLimiterCutsThrottleWithoutClampingVehicleVelocity()
         {
-            VehiclePhysicsLabDefinition governed = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.CoastDown);
-            governed.vehicle.tuning.speedGovernor = true;
-            governed.vehicle.tuning.chassis.maxSpeedKph = 30f;
-            governed.startingSpeedKph = 80f;
-            governed.safety.maximumSeconds = 2f;
-
-            VehiclePhysicsLabDefinition ungoverned = MakeDefinition(VehicleDriveLayout.Rwd, VehiclePhysicsLabExperimentKind.CoastDown);
-            ungoverned.vehicle.tuning.speedGovernor = false;
-            ungoverned.vehicle.tuning.chassis.maxSpeedKph = 30f;
-            ungoverned.startingSpeedKph = 80f;
-            ungoverned.safety.maximumSeconds = 2f;
-
-            float governedFinal;
-            float ungovernedFinal;
-            using (var runner = new VehiclePhysicsLabRunner(governed, () => VehicleInputState.Neutral))
+            var tuning = VehicleTuning.CreateStreetRacer();
+            tuning.mostWanted.speedLimiterMph = new[] { 30f, 5f };
+            var root = new GameObject("Source ECU test");
+            try
             {
-                Run(runner, 300);
-                Assert.That(runner.Report.Passed, Is.True, runner.Report.failureMessage);
-                governedFinal = runner.Report.samples[runner.Report.samples.Length - 1].speedKph;
+                var engine = root.AddComponent<VehiclePowertrain>();
+                engine.Configure(tuning, System.Array.Empty<VehicleWheel>());
+                var limited = engine.Simulate(.02f, 40f * .44703001f, 1f, false);
+                engine.ResetPowertrain();
+                var unrestricted = engine.Simulate(.02f, 20f * .44703001f, 1f, false);
+                Assert.That(limited.EngineTorque, Is.LessThanOrEqualTo(0f));
+                Assert.That(unrestricted.EngineTorque, Is.GreaterThan(0f));
             }
-            using (var runner = new VehiclePhysicsLabRunner(ungoverned, () => VehicleInputState.Neutral))
-            {
-                Run(runner, 300);
-                Assert.That(runner.Report.Passed, Is.True, runner.Report.failureMessage);
-                ungovernedFinal = runner.Report.samples[runner.Report.samples.Length - 1].speedKph;
-            }
-
-            Assert.That(governedFinal, Is.GreaterThan(0f).And.LessThan(ungovernedFinal));
-            Assert.That(ungovernedFinal, Is.GreaterThan(35f));
+            finally { UnityEngine.Object.DestroyImmediate(root); UnityEngine.Object.DestroyImmediate(tuning); }
         }
 
         [Test]
@@ -302,5 +335,14 @@ namespace NfsMwRemaster.Driving.Tests
             public bool ConsumeResetRequest() => false;
             public bool ConsumeCameraToggleRequest() => false;
         }
+    }
+
+    public sealed class DriverControlsTestInput : MonoBehaviour, IVehicleInputSource, IVehicleDiscreteInputSource
+    {
+        public VehicleInputState Pending;
+        public VehicleInputState Current => new VehicleInputState { Throttle = .2f };
+        public VehicleInputState ConsumeDiscreteActions() { var result = Pending; Pending = default; return result; }
+        public bool ConsumeResetRequest() => false;
+        public bool ConsumeCameraToggleRequest() => false;
     }
 }

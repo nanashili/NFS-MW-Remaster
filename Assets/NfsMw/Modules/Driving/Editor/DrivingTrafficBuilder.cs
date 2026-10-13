@@ -155,7 +155,6 @@ namespace NfsMwRemaster.Driving.Editor
             tuning.chassis.mass = masses[index]; tuning.chassis.maxSpeedKph = index == 6 ? 105 : 140;
             tuning.engine.maxTorqueNewtonMeters = masses[index] * 0.16f; tuning.engine.nitrousFuelSeconds = tuning.engine.nitrousTorque = 0;
             tuning.engine.shiftUpRpm = 4000; tuning.engine.shiftDownRpm = 1800;
-            tuning.handling.driftBias = 0; tuning.handling.brakeToDrift = false;
             tuning.controls.steeringExponent = 1; tuning.controls.highSpeedSteerScale = 1;
             tuning.tires.springRate *= masses[index] / 1450; tuning.tires.damperRate *= masses[index] / 1450;
             AssetDatabase.CreateAsset(tuning, TrafficFolder + "/" + category + "Tuning.asset"); profile.tuning = tuning;

@@ -4,23 +4,71 @@ using UnityEngine;
 namespace NfsMwRemaster.Driving
 {
     /// <summary>
-    /// Supplemental data for the opt-in reference model. Common SI quantities remain in
+    /// Resolved inputs for the recovered source model. Common SI quantities remain in
     /// VehicleTuning so the existing parts, configuration resolver and telemetry retain ownership.
     /// Provenance and unmapped source fields live in the editor's import report, not in the tick loop.
     /// </summary>
     [Serializable]
     public sealed class MostWantedDrivingSettings
     {
+        // Complete resolved handling payload. Physical source units are converted
+        // to SI during import; ratios and grip values remain dimensionless.
+        [Header("Resolved chassis (SI)")]
+        public Vector2 shockDigression = new Vector2(.2f, .2f);
+        public Vector2 springProgression = new Vector2(.1f, .1f);
+        public Vector2 travel = new Vector2(.18f, .18f);
+        public Vector2 rideHeight = new Vector2(.32f, .32f);
+        public Vector2 trackWidth = new Vector2(1.72f, 1.72f);
+        public Vector2 shockExtensionStiffness = new Vector2(4700f, 4700f);
+        public Vector2 shockStiffness = new Vector2(4700f, 4700f);
+        public Vector2 springStiffness = new Vector2(31000f, 31000f);
+        public Vector2 shockValving = new Vector2(1f, 1f);
+        public Vector2 swaybarStiffness = new Vector2(1000f, 1000f);
+        public float rollCenter = .15f;
+        public float wheelBase = 2.76f;
+        public float shockBlowout = 1f;
+        public float aeroCenterOfGravity = 50f;
+        public float renderMotion = 1f;
+        public float frontAxle = 1.38f;
+        public float aeroCoefficient = .32f;
+        public float frontWeightBias = 50f;
+        public float dragCoefficient = .32f;
+
+        [Header("Resolved tires (SI / dimensionless)")]
+        public Vector4 yawControl = new Vector4(1f, 1f, 1f, 1f);
+        public Vector2 gripScale = new Vector2(1f, 1f);
+        public Vector2 dynamicGrip = new Vector2(1f, 1f);
+        public Vector2 staticGrip = new Vector2(1f, 1f);
+        public Vector2 rimSizeInches = new Vector2(17f, 17f);
+        public Vector2 sectionWidth = new Vector2(260f, 260f);
+        public Vector2 aspectRatio = new Vector2(45f, 45f);
+        public float steering = 1f;
+        public float yawSpeed = 1f;
+
+        [Header("Resolved brakes (SI / dimensionless)")]
+        public Vector2 brakeLock = new Vector2(1f, 1f);
+        public Vector2 brakeTorque = new Vector2(5200f, 5200f);
+        public float handbrake = 6200f;
+
+        [Header("Resolved transmission (dimensionless)")]
+        public Vector3 differential = new Vector3(.2f, .2f, .2f);
+        public float torqueConverter = 1f;
+        public float clutchSlip = .1f;
+        public float optimalShift = .9f;
+
         [Tooltip("Source MAX_RPM: the end of the torque table, not the rev limiter (RED_LINE).")]
         [Min(500f)] public float torqueTableMaximumRpm = 9000f;
         [Tooltip("Equally spaced from IDLE to MAX_RPM, normalized by engine.maxTorqueNewtonMeters. Linear interpolation only.")]
-        public float[] normalizedTorque = Array.Empty<float>();
+        // Generic playable fixture only; imported vehicles replace these with the
+        // resolved source table and carry source provenance in the import report.
+        public float[] normalizedTorque = { .7f, .84f, .96f, 1f, .98f, .91f, .82f, .72f, .62f };
         [Tooltip("Source ENGINE_BRAKING fractions on the same RPM domain as TORQUE.")]
-        public float[] engineBraking = Array.Empty<float>();
+        public float[] engineBraking = { .2f, .2f, .25f };
+        public float[] speedLimiterMph = Array.Empty<float>();
         [Tooltip("One efficiency per forward gear. Reverse and neutral source entries are not forward gears.")]
-        public float[] gearEfficiency = Array.Empty<float>();
+        public float[] gearEfficiency = { .90f, .90f, .89f, .88f, .87f, .86f };
         [Range(0f, 1f)] public float reverseGearEfficiency = 1f;
-        [Tooltip("Use torque crossover to choose per-gear upshifts. The Unity clutch and RPM transient remain adaptations.")]
+        [Tooltip("Use torque crossover to choose per-gear upshifts.")]
         public bool torqueBasedShifting = true;
 
         [Header("Induction: source dimensionless boost fractions")]
@@ -29,6 +77,7 @@ namespace NfsMwRemaster.Driving
         [Min(0f)] public float inductionHighBoost;
         [Range(-1f, 0f)] public float inductionVacuum;
         [Min(0f)] public float inductionSpoolDownSeconds = 0.2f;
+        [Min(0f)] public float inductionPsi;
 
         [Header("Nitrous")]
         [Min(0f)] public float nitrousTorqueBoost;
@@ -38,6 +87,7 @@ namespace NfsMwRemaster.Driving
         [Tooltip("Time to recharge an empty tank, not units of fuel per second.")]
         [Min(0f)] public float nitrousRechargeMinimumSeconds;
         [Min(0f)] public float nitrousRechargeMaximumSeconds;
+        [Min(0f)] public float nitrousFlowRate;
 
         [Header("Steering")]
         [Range(0.01f, 3f)] public float steeringCoefficient = 1f;

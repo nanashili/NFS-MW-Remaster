@@ -1,0 +1,53 @@
+flowchart LR
+    patrol["Patrol target scan<br/>WatchForPerps"] --> visible{"Visible and eligible?"}
+    visible -- no --> patrol
+    visible -- yes --> admission["Admission gates<br/>911 / recent hit / heat / speed"]
+    admission --> manager["AICopManager<br/>cache + pursuits + requests"]
+
+    subgraph manager_tick["Exact manager task order"]
+        breaker["1 Breaker zones"] --> patrols["2 Patrols"]
+        patrols --> pursuits["3 Pursuits"]
+        pursuits --> roadblocks["4 Roadblocks"]
+        roadblocks --> explicit_spawn["5 Explicit spawns"]
+        explicit_spawn --> support_delay["6 Support delay"]
+    end
+
+    manager --> manager_tick
+    pursuits --> pursuit["AIPursuit lifecycle<br/>heat + sight + formation"]
+    pursuit --> state{"Status"}
+    state --> initial["Initial chase"]
+    state --> backup["Backup requested"]
+    state --> cooldown["Cooldown / search"]
+    state --> busted["Busted"]
+    state --> evaded["Evaded"]
+
+    initial --> requests["Cop / roadblock / support requests"]
+    backup --> requests
+    cooldown --> requests
+    requests --> spawn_gap["Named-car spawn placement"]
+    requests --> support["Heavy / leader support"]
+    requests --> rb["Roadblock creation"]
+    requests --> heli["Singleton helicopter"]
+
+    spawn_gap --> units["Per-unit goal<br/>patrol / pursuit / RB / flee / support"]
+    support --> units
+    rb --> units
+    rb --> spikes["Spike strip wheel sweep<br/>and puncture"]
+    heli --> heli_modes["Fuel + chase / search / strike / exit"]
+    units --> pursuit
+    spikes --> pursuit
+    heli_modes --> pursuit
+
+    busted --> teardown["Commit known pursuit data<br/>then send cops to flee"]
+    evaded --> teardown
+    teardown --> infractions_gap["Infraction semantics"]
+
+    classDef exact fill:#d9f7e8,stroke:#157347,color:#102a1d;
+    classDef near fill:#dbeafe,stroke:#2563eb,color:#172554;
+    classDef partial fill:#fef3c7,stroke:#b45309,color:#451a03;
+    classDef gap fill:#fee2e2,stroke:#b91c1c,color:#450a0a,stroke-dasharray: 5 3;
+
+    class patrol,manager,breaker,patrols,pursuits,roadblocks,explicit_spawn,support_delay,spikes exact;
+    class admission,pursuit,initial,backup,cooldown,busted,evaded,requests,support,rb,units near;
+    class visible,heli_modes,teardown partial;
+    class spawn_gap,infractions_gap gap;
